@@ -1,0 +1,499 @@
+{
+  "TBL-US": {
+    "CheetahURL": [
+      {
+        "UserName": "haneef_ahamed@vfc.com",
+        "URL": "https:\/\/cust1297.teststellar.com\/",
+        "PassWord": "logintocheetahTBL@123"
+      }
+    ],
+    "SFCC-SKU": [
+      {
+        "Promo-without-coupon-category": "TB0A1KYY231",
+        "Promo-with-coupon-category": "TB0A1LVW231",
+        "BOGO-category": "TB0A1NJ4001"
+      }
+    ],
+    "coupons": [
+      {
+        "AmountOff-10$": "05061112",
+        "Spend-50$-get-10$Off": "12031111",
+        "Coupon-20%": "27020000",
+        "Coupon-AllItem": "21030000",
+        "XPLR-pass": "13030001",
+        "Coupon-10%": "02041111",
+        "Coupon-SFCC": "20030000",
+        "Buy-for-$XX-get-$YY": "19110000"
+      }
+    ],
+    "giftCard": [
+      {
+        "pin": "19370144",
+        "cardNumber": "7777308005179625"
+      },
+      {
+        "pin": "10830635",
+        "cardNumber": "7777308005186205"
+      },
+      {
+        "pin": "79862331",
+        "cardNumber": "7777308005193625"
+      },
+      {
+        "pin": "4479",
+        "cardNumber": "7777238174382948"
+      },
+      {
+        "pin": "8726",
+        "cardNumber": "7777238174428726"
+      },
+      {
+        "pin": "5439",
+        "cardNumber": "7777238174415439"
+      },
+      {
+        "pin": "4479",
+        "cardNumber": "7777238174394479"
+      },
+      {
+        "pin": "3352",
+        "cardNumber": "7777238174373352"
+      },
+      {
+        "pin": "3730",
+        "cardNumber": "7777238174403730"
+      },
+      {
+        "pin": "0000",
+        "cardNumber": "0000000000000000"
+      }
+    ],
+    "employeeId": [
+      {
+        "valid": "867530",
+        "sameEmployee": "600400",
+        "invalid": "123456",
+        "terminated": "454549"
+      }
+    ],
+    "customers": [
+      {
+        "zip": "10871",
+        "firstName": "Patrick",
+        "lastName": "Rempel",
+        "Phone": "9912616525",
+        "email": "posautomation@outlook.com"
+      },
+      {
+        "zip": "10879",
+        "firstName": "Jacob",
+        "lastName": "Shirley",
+        "Phone": "9987998799",
+        "email": "shirley.jacobs@gmail.com"
+      },
+      {
+        "zip": "10237",
+        "firstName": "Franchesca",
+        "lastName": "Krajcik",
+        "Phone": "9986590969",
+        "email": "renijacob@gmail.com"
+      },
+      {
+        "zip": "10647",
+        "firstName": "Angel",
+        "lastName": "Tos",
+        "Phone": "9923232323",
+        "email": "angel.tos@hotmail.com"
+      },
+      {
+        "zip": "10580",
+        "firstName": "Graham",
+        "lastName": "Kutch",
+        "Phone": "9932808999",
+        "email": "francene.wiza@hotmail.com"
+      },
+      {
+        "zip": "45679",
+        "firstName": "Lony",
+        "lastName": "Jerin",
+        "Phone": "7689086547",
+        "email": "tbl_us@yopmail.com"
+      },
+      {
+        "firstName": "Tbl",
+        "lastName": "Reward",
+        "Phone": "7654325643",
+        "email": "rewardcustomer@yopmail.com"
+      },
+      {
+        "firstName": "Lemke",
+        "lastName": "Bergnaum",
+        "Phone": "9976227483",
+        "email": "clare.nolan@yahoo.com"
+      }
+    ]
+  },
+  "TBL-CA": {
+    "SFCC-SKU": [
+      {
+        "Promo-without-coupon-category": "TB0A2J32001",
+        "Promo-with-coupon-category": "TB0A1CPN001",
+        "BOGO-category": " TB0A1CX6A58"
+      }
+    ],
+    "coupons": [
+      {
+        "AmountOff-10$": "17040000",
+        "Spend-50$-get-10$Off": "01040000",
+        "Coupon-20%": "17072024",
+        "Coupon-AllItem": "01066666",
+        "Coupon-10%": "02042222",
+        "Coupon-SFCC": "20241122",
+        "Buy-for-$XX-get-$YY": "02122000"
+      }
+    ],
+    "giftCard": [
+      {
+        "pin": "73655770",
+        "cardNumber": "7777374676093493"
+      },
+      {
+        "pin": "57981090",
+        "cardNumber": "7777374676107771"
+      },
+      {
+        "pin": "17733481",
+        "cardNumber": "7777374676111187"
+      },
+      {
+        "pin": "18960418",
+        "cardNumber": "7777374676125597"
+      },
+      {
+        "pin": "37341435",
+        "cardNumber": "7777374676135062"
+      },
+      {
+        "pin": "15502907",
+        "cardNumber": "7777374676141575"
+      },
+      {
+        "pin": "0000",
+        "cardNumber": "0000000000000000"
+      }
+    ],
+    "employeeId": [
+      {
+        "valid": "867530",
+        "sameEmployee": "600400",
+        "invalid": "123456",
+        "terminated": "454549"
+      }
+    ],
+    "customers": [
+      {
+        "firstName": "Valentine",
+        "lastName": "Haag",
+        "Phone": "9100000001",
+        "email": "valentine.haag@hotmail.com"
+      },
+      {
+        "zip": "U2X5E6",
+        "firstName": "Pasty",
+        "lastName": "Wyman",
+        "Phone": "9996370254",
+        "email": "hal.rath@hotmail.com"
+      },
+      {
+        "zip": "X9S7C7",
+        "firstName": "Scot",
+        "lastName": "Schumm",
+        "Phone": "9929554289",
+        "email": "fransisca.witting@yahoo.com"
+      },
+      {
+        "zip": "C3A2U9",
+        "firstName": "Corina",
+        "lastName": "Hassel",
+        "Phone": "9100000004",
+        "email": "corina.hessel@hotmail.com"
+      },
+      {
+        "zip": "45679",
+        "firstName": "Lony",
+        "lastName": "Jerin",
+        "Phone": "7689086547",
+        "email": "tbl_us@yopmail.com"
+      }
+    ]
+  },
+  "TNF-US": {
+    "coupons": [
+      {
+        "AmountOff-10$": "09122000",
+        "Spend-50$-get-10$Off": "14050000",
+        "CantBeCombined": "05122001",
+        "Coupon-20%": "08082000",
+        "Coupon-AllItem": "14053333",
+        "XPLR-pass": "28030000",
+        "Coupon-10%": "07272000",
+        "Buy-for-$XX-get-$YY": "12122000"
+      }
+    ],
+    "giftCard": [
+      {
+        "pin": "1255",
+        "cardNumber": "6035718880040086488"
+      },
+      {
+        "pin": "8967",
+        "cardNumber": "6035718880040086496"
+      },
+      {
+        "pin": "6853",
+        "cardNumber": "6035718880000425882"
+      },
+      {
+        "pin": "0920",
+        "cardNumber": "6035718880000425874"
+      },
+      {
+        "pin": "0000",
+        "cardNumber": "0000000000000000000"
+      },
+      {
+        "pin": "2625",
+        "cardNumber": "6035718880000382851"
+      },
+      {
+        "pin": "0898",
+        "cardNumber": "6035718880000382869"
+      },
+      {
+        "pin": "7795",
+        "cardNumber": "6035718880000382877"
+      },
+      {
+        "pin": "4669",
+        "cardNumber": "6035718880000382885"
+      },
+      {
+        "pin": "8600",
+        "cardNumber": "6035718880000382893"
+      }
+    ],
+    "employeeId": [
+      {
+        "valid": "900700",
+        "RCM Employee": "100400",
+        "sameEmployee": "800400",
+        "invalid": "123456",
+        "terminated": "454549"
+      }
+    ],
+    "customers": [
+      {
+        "firstName": "Chris",
+        "lastName": "Jhon",
+        "Phone": "9876453213",
+        "email": "chrisjhon123@gmail.com"
+      },
+      {
+        "firstName": "Buster",
+        "lastName": "Kulas",
+        "Phone": "9960544380",
+        "email": "janie.considine@hotmail.com"
+      },
+      {
+        "zip": "10438",
+        "firstName": "Geraldo",
+        "lastName": "Kessler",
+        "Phone": "9998963249",
+        "email": "lester.langosh@hotmail.com"
+      },
+      {
+        "zip": "10987",
+        "firstName": "Anto",
+        "lastName": "James",
+        "Phone": "9988998899",
+        "email": "james@gmail.com"
+      },
+      {
+        "zip": "10667",
+        "firstName": "Olson",
+        "lastName": "Bins",
+        "Phone": "9995114772",
+        "email": "bailey.mertz@hotmail.com"
+      },
+      {
+        "zip": "10409",
+        "firstName": "Fisher",
+        "lastName": "Lynch",
+        "Phone": "9913654059",
+        "email": "royal.parisian@yahoo.com"
+      },
+      {
+        "zip": "65789",
+        "firstName": "Melvin",
+        "lastName": "Mith",
+        "Phone": "3426910385",
+        "email": "tbl_us@yopmail.com"
+      },
+      {
+        "firstName": "SIT",
+        "lastName": "Testing",
+        "Phone": "2345678765",
+        "email": "tnf_pp3_nora_sit01@yopmail.com"
+      }
+    ]
+  },
+  "TNF-CA": {
+    "coupons": [
+      {
+        "AmountOff-10$": "15122001",
+        "Coupon-20%": "14092001",
+        "Coupon-AllItem": "18012000",
+        "Coupon-10%": "13091111",
+        "Buy-for-$XX-get-$YY": "15012000",
+        "Coupon-10%-AllItem": "18012000"
+      }
+    ],
+    "giftCard": [
+      {
+        "pin": "6853",
+        "cardNumber": "6035718880000425882"
+      },
+      {
+        "pin": "1255",
+        "cardNumber": "6035718880040086488"
+      },
+      {
+        "pin": "8967",
+        "cardNumber": "6035718880040086496"
+      },
+      {
+        "pin": "0920",
+        "cardNumber": "6035718880000425874"
+      },
+      {
+        "pin": "0000",
+        "cardNumber": "0000000000000000000"
+      }
+    ],
+    "employeeId": [
+      {
+        "valid": "867530",
+        "RCM Employee": "100400",
+        "sameEmployee": "800400",
+        "invalid": "12345",
+        "terminated": "454549"
+      }
+    ],
+    "customers": [
+      {
+        "zip": "W3J4S0",
+        "firstName": "Pat",
+        "lastName": "Hoeger",
+        "Phone": "9922900577",
+        "email": "brittany.kling@gmail.com"
+      },
+      {
+        "firstName": "Jibin",
+        "lastName": "Mathew",
+        "Phone": "9108103175",
+        "email": "jibinmathew@yopmail.com"
+      },
+      {
+        "zip": "MS34SE",
+        "firstName": "Lobin",
+        "lastName": "Dona",
+        "Phone": "1961051049",
+        "email": "lobindona@yopmail.com"
+      },
+      {
+        "zip": "D1W0U1",
+        "firstName": "Margaretta",
+        "lastName": "Koss",
+        "Phone": "9911354143",
+        "email": "loufgold@gmail.com"
+      },
+      {
+        "zip": "S5W3T9",
+        "firstName": "Waelchi",
+        "lastName": "Amore",
+        "Phone": "9931285413",
+        "email": "soila.sanford@gmail.com"
+      },
+      {
+        "zip": "T6P1N6",
+        "firstName": "Hane",
+        "lastName": "Maggio",
+        "Phone": "9915207710",
+        "email": "joanie.koch@gmail.com"
+      },
+      {
+        "zip": "UC3DF3",
+        "firstName": "Tose",
+        "lastName": "Jode",
+        "Phone": "9999445566",
+        "email": "rioples@gmail.com"
+      },
+      {
+        "zip": "G9Q2S3",
+        "firstName": "Joseph",
+        "lastName": "Paul",
+        "Phone": "9876556437",
+        "email": "tbl_us@yopmail.com"
+      },
+      {
+        "firstName": "SIT",
+        "lastName": "Testing",
+        "Phone": "2345678765",
+        "email": "tnf_pp3_nora_sit01@yopmail.com"
+      },
+      {
+        "firstName": "Amritha",
+        "lastName": "Krishna",
+        "Phone": "4567984650",
+        "email": "amrithakrishna@yopmail.com"
+      }
+    ]
+  },
+  "DCK": {
+    "SFCC-SKU": [
+      {
+        "Promo-without-coupon-category": "DK0211012",
+        "Promo-with-coupon-category": "DK02110119",
+        "BOGO-category": "DK02110186"
+      }
+    ],
+    "coupons": [
+      {
+        "Spend-50$-get-10$Off": "12020000",
+        "Coupon-20%": "13090000",
+        "Coupon-AllItem": "06090000",
+        "Coupon-SFCC": "12090000"
+      }
+    ],
+    "giftCard": [
+      {
+        "pin": "3148",
+        "cardNumber": "6035713347947913148"
+      },
+      {
+        "pin": "5686",
+        "cardNumber": "6035716317236613239"
+      },
+      {
+        "pin": "1922",
+        "cardNumber": "120070000009550"
+      }
+    ],
+    "employeeId": [
+      {
+        "valid": "867530",
+        "Invalid": "12345"
+      }
+    ]
+  }
+}

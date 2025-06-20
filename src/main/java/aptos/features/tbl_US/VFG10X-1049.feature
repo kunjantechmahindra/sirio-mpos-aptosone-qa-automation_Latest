@@ -1,0 +1,49 @@
+@VFG10X-1049 @PromotionsAndDiscounts @Regression
+Feature: VFG10X-1049 Promotions and Discounts _Transaction level Discount_In a Sale transaction with 2 items_Apply 31% OFF_Error_Apply 30% OFF in TBL
+
+  Scenario: Promotions and Discounts _Transaction level Discount_In a Sale transaction with 2 items_Apply 31% OFF_Error_Apply 30% OFF in TBL
+
+    # Login and add item to basket
+    Given the sales assistant login to the application with valid username and password
+    When the sales assistant clicks on Start Basket button
+    Then the sales assistant add 2 items from "General" product to the basket without customer
+
+    # Add transaction level discount
+    And the sales assistant clicks on Discount button from basket page
+    And the sales assistant select transaction discount button
+    And the sales assistant clicks on percentage button
+    And the sales assistant enter discount percentage as 31
+    And the sales assistant clicks on Select a reason code button
+    And the sales assistant selects "E-MAIL" as reason code
+    And the sales assistant clicks on Apply button
+    And the sales assistant validate error message for exceeding discount threshold value
+    And the sales assistant clicks on cancel button
+
+    # Add transaction level discount
+    And the sales assistant clicks on Discount button from basket page
+    And the sales assistant select transaction discount button
+    And the sales assistant clicks on percentage button
+    And the sales assistant enter discount percentage as 30
+    And the sales assistant clicks on Select a reason code button
+    And the sales assistant selects "E-MAIL" as reason code
+    And the sales assistant clicks on Apply button
+
+    # Payment transaction
+    And the sales assistant clicks on Pay button
+    And the sales assistant clicks on Accept button
+    And the sales assistant save the transaction details of the sales transaction
+    And the sales assistant clicks on Cash button
+    And the sales assistant enter the Drawer ID
+    And the sales assistant save the payment details for the sales transaction
+    And the sales assistant clicks on Print button
+    And the sales assistant select the printer
+    And the sales assistant logout from the application
+
+    # EJ Validation
+    And the sales assistant login to EJViewer
+    And the sales assistant enter the store and transaction detail
+    And the sales assistant validate the payment details
+    And the sales assistant validate the the reason code ID 43
+    And the sales assistant validate details "E-MAIL" in EJ
+    And the sales assistant validate details "Transaction Discount" in EJ
+    And the sales assistant logout from EJViewer
