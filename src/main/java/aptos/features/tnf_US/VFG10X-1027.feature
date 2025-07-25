@@ -1,4 +1,4 @@
-@VFG10X-1027 @StoreSelling @Regression @SmokeTNF
+@VFG10X-1027 @StoreSelling @Regression
 Feature: VFG10X-1027 Store Selling Functions_Validate receipt reprinting option- Last receipt option
 
   Scenario: Store Selling Functions_Validate receipt reprinting option- Last receipt option

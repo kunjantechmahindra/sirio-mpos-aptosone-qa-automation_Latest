@@ -1,4 +1,4 @@
-@VFG10X-16 @SaleTransaction @Regression @Card @Amex
+@VFG10X-16 @SaleTransaction @Regression @Card @Amex @SmokeTNF
 Feature: VFG10X-16 Sale Transaction _Single Item _Payment by Amex Card_ Existing customer
 
   Scenario: Sale Transaction _Single Item _Payment by Amex Card_ Existing customer

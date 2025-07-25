@@ -1,4 +1,4 @@
-@VFG10X-948 @ReturnTransaction @Regression
+@VFG10X-948 @ReturnTransaction @Regression @SmokeTBL
 Feature: VFG10X-948 Return Transaction _Single item and Void Transaction
   Scenario: Return Transaction _Single item and Void Transaction
 

@@ -10,6 +10,7 @@ Feature: VFG10X-1155 Tax _ Sale Mono Temp MD item with tax exempt, suspended and
     #Assign customer and add item to basket
     And then sales assistant clicks on Assign Customer button
     And the sales assistant assign customer details with index 1
+    And the sales assistant lands on Basket Page
     Then the sales assistant add 1 items from "WithOutCoupon-10%" product to the basket
 
     #Tax exempt
@@ -28,7 +29,7 @@ Feature: VFG10X-1155 Tax _ Sale Mono Temp MD item with tax exempt, suspended and
     And then sales assistant clicks on Suspend button
     And the sales assistant enter the reference ID
     And the sales assistant clicks on Resume button
-    And the sales assistant navigate to basket page
+    And the sales assistant clicks on Basket button from header
     And the sales assistant clicks on Resume button
     And the sales assistant select the transaction to be resumed
 

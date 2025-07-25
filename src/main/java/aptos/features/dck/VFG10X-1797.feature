@@ -1,4 +1,4 @@
-@VFG10X-1797 @ExchangeTransaction @Regression
+@VFG10X-1797 @ExchangeTransaction @Regression @SmokeDCK
 Feature: VFG10X-1797 Return Transaction _Blind return_Single temp MD item with payment by Gift Card _Refund to Gift card
 
   Scenario: Return Transaction _Blind return_Single temp MD item with payment by Gift Card _Refund to Gift card

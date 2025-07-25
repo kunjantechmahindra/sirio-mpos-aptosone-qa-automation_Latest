@@ -1,4 +1,4 @@
-@VFG10X-258 @ExchangeTransaction @Regression @Smoke @SmokeTesting
+@VFG10X-258 @ExchangeTransaction @Regression
 Feature: VFG10X-258 Exchange_ Return with receipt of multiple items with employee discount _Single item sale
 
   Scenario: Exchange_ Return with receipt of multiple items with employee discount _Single item sale

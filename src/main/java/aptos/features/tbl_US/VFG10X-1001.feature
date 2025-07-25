@@ -17,6 +17,6 @@ Feature: VFG10X-1001 Cash Management _PAID IN_Void Paid In Transaction.
     And the sales assistant selects "SUPPLIES" as reason code
     And the sales assistant void the transaction from till operation page
     And the sales assistant clicks on store operations from header
-    And the sales assistant navigate to basket page
+    And the sales assistant clicks on Basket button from header
     And the sales assistant logout from the application
 

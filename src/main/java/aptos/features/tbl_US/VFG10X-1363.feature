@@ -1,4 +1,4 @@
-@VFG10X-1363 @ReturnTransaction @Regression @SmokeTesting
+@VFG10X-1363 @ReturnTransaction @Regression
 
 Feature: VFG10X-1363 Return Transaction _Multiple items with Tax exempt and coupon applied _Existing customer Assigned
 
@@ -10,7 +10,7 @@ Feature: VFG10X-1363 Return Transaction _Multiple items with Tax exempt and coup
 
   #Assign customer
     And then sales assistant clicks on Assign Customer button
-    And the sales assistant assign customer details with index 4
+    And the sales assistant assign customer details with index 5
     Then the sales assistant add 2 items from "Coupon-10%" product to the basket
 
   #Tax exempt
@@ -28,9 +28,9 @@ Feature: VFG10X-1363 Return Transaction _Multiple items with Tax exempt and coup
     And  the sales assistant enter coupons code for "Coupon-AllItem"
     And the sales assistant lands on Basket Page
     And the sales assistant selects the product at index 1
-    And the sales assistant validate "10% off with coupon" is applied to item
+    And the sales assistant validate "10% off for all" is applied to item
     And the sales assistant selects the product at index 2
-    And the sales assistant validate "10% off with coupon" is applied to item
+    And the sales assistant validate "10% off for all" is applied to item
 
     # Payment transaction
     And the sales assistant clicks on Pay button

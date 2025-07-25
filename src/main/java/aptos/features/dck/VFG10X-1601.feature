@@ -1,4 +1,4 @@
-@VFG10X-1601 @SaleTransaction @Regression @Card @GiftCard @SmokeDCK
+@VFG10X-1601 @SaleTransaction @Regression @Card @GiftCard
 
   Feature: VFG10X-1601 DCK-Sale Transaction with Employee discount applied at Transaction level - Multiple items - Tender using GC
 

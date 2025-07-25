@@ -1,4 +1,4 @@
-@VFG10X-1454 @ReturnTransaction @Regression @SmokeDCK
+@VFG10X-1454 @ReturnTransaction @Regression
 Feature: VFG10X-1454 Return Transaction_Item level dollar off discount_Multiple Items
 
   Scenario: Return Transaction_Item level dollar off discount_Multiple Items

@@ -1,4 +1,4 @@
-@VFG10X-70 @SaleTransaction @Regression
+@VFG10X-70 @SaleTransaction @Regression @SmokeTNF
 Feature: VFG10X-70 Sale Transaction _Multiple items_ Void one item and Suspend the transaction
 
   Scenario: Sale Transaction _Multiple items_ Void one item and Suspend the transaction

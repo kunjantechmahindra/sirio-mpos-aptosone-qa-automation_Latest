@@ -1,4 +1,4 @@
-@VFG10X-1411 @PromotionsAndDiscounts @Regression @Smoke @SmokeTesting
+@VFG10X-1411 @PromotionsAndDiscounts @Regression
 Feature: VFG10X-1411 Promotions and Discounts _ Sale transaction with %off item and Promotion(with coupon) on same line item and apply manual transactional discount
 
   Scenario: Promotions and Discounts _ Sale transaction with %off item and Promotion(with coupon) on same line item and apply manual transactional discount
@@ -10,9 +10,9 @@ Feature: VFG10X-1411 Promotions and Discounts _ Sale transaction with %off item 
 
   # Validate discount
     And the sales assistant selects the product at index 1
-    And the sales assistant validate "10% off WithOut Coupon" is applied to item
+    And the sales assistant validate "10% off without coupon" is applied to item
     And the sales assistant selects the product at index 2
-    And the sales assistant validate "10% off WithOut Coupon" is applied to item
+    And the sales assistant validate "10% off without coupon" is applied to item
 
   # Apply coupon
     When the sales assistant clicks on "Coupons" button from basket
@@ -50,5 +50,5 @@ Feature: VFG10X-1411 Promotions and Discounts _ Sale transaction with %off item 
     And the sales assistant validate the payment details
     And the sales assistant validate details "Coupon discount" in EJ
     And the sales assistant validate details "Transaction Discount" in EJ
-    And the sales assistant validate details "10% off WithOut Coupon" in EJ
+    And the sales assistant validate details "10% off without coupon" in EJ
     And the sales assistant logout from EJViewer

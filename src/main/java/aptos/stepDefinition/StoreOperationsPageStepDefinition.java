@@ -52,7 +52,8 @@ public class StoreOperationsPageStepDefinition extends TestBase {
     }
 
     @And("the sales assistant clicks on counted amount for till out")
-    public void theSalesAssistantClicksOnCountedAmountForTillOut() {
+    public void theSalesAssistantClicksOnCountedAmountForTillOut() throws InterruptedException {
+        mobileActions.clickHideKeyboard();
         storeOperationPage.clickOnCountedAmount();
     }
 
@@ -73,7 +74,8 @@ public class StoreOperationsPageStepDefinition extends TestBase {
     }
 
     @And("the sales assistant clicks on proceed button from variance in amount")
-    public void theSalesAssistantClicksOnProceedButtonFromVarianceInAmount() {
+    public void theSalesAssistantClicksOnProceedButtonFromVarianceInAmount() throws InterruptedException {
+        Thread.sleep(1000);         //Since the page takes time to load
         storeOperationPage.clicksOnProceedButtonFromVarianceInAmount();
     }
 
@@ -103,7 +105,8 @@ public class StoreOperationsPageStepDefinition extends TestBase {
     }
 
     @And("the sales assistant enter the amount")
-    public void theSalesAssistantEnterTheAmount() {
+    public void theSalesAssistantEnterTheAmount() throws InterruptedException {
+        mobileActions.clickHideKeyboard();
         storeOperationPage.clickOnEnterAmount();
     }
 
@@ -241,5 +244,20 @@ public class StoreOperationsPageStepDefinition extends TestBase {
     @And("the sales assistant validate all the reason codes for Paid In")
     public void theSalesAssistantValidateAllTheReasonCodesForPaidIn() {
         storeOperationPage.validateAllPaidInReasonCodes();
+    }
+
+    @And("the sales assistant navigate from store operation to basket page")
+    public void theSalesAssistantNavigateFromStoreOperationToBasketPage() {
+        storeOperationPage.navigateFromStoreOperationToBasketPage();
+    }
+
+    @And("the sales assistant enter the amount for Till to Safe")
+    public void theSalesAssistantEnterTheAmountForTillToSafe() {
+        storeOperationPage.clickOnEnterAmount();
+    }
+
+    @And("the sales assistant clicks on counted amount")
+    public void theSalesAssistantClicksOnCountedAmount() throws InterruptedException {
+        storeOperationPage.clickOnCountedAmount();
     }
 }

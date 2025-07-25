@@ -12,7 +12,7 @@ Feature: VFG10X-605 Cash Management _ Till OUT _On or Above Security level
     And the sales assistant clicks on "Till operations" for cash management
     And the sales assistant clicks on "Till out" for cash management
     And the sales assistant enter the Drawer ID
-    And the sales assistant clicks on counted amount for till out
+    And the sales assistant clicks on counted amount
     And the sales assistant enters the quantity as 100 on first index
     And the sales assistant assign click on done
     And the sales assistant clicks on proceed button

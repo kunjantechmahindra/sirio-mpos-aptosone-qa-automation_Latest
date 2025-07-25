@@ -1,4 +1,4 @@
-@VFG10X-269 @PromotionsAndDiscounts @Regression @Smoke @SmokeTesting
+@VFG10X-269 @PromotionsAndDiscounts @Regression
 Feature: VFG10X-269 Promotions and Discounts _ Sale Transaction with B1G1F promotion
 
   Scenario: Promotions and Discounts _ Sale Transaction with B1G1F promotion

@@ -1,4 +1,4 @@
-@VFG10X-80 @StoreSelling @Regression @SmokeTesting
+@VFG10X-80 @StoreSelling @Regression @SmokeTBL
 Feature: VFG10X-80 Store Selling Functions_Landing page_Close Terminal and Start New Basket Validation
 
   Scenario: Store Selling Functions_Landing page_Close Terminal and Start New Basket Validation

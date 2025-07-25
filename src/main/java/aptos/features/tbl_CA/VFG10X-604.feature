@@ -1,4 +1,4 @@
-@VFG10X-604 @CashManagement @Regression @TillOut
+@VFG10X-604 @CashManagement @Regression @TillOut @SmokeTBL
 Feature: VFG10X-604 Cash Management _ Till OUT _Below Security level
 
   Scenario: Cash Management _ Till OUT _Below Security level

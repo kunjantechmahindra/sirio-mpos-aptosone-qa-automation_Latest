@@ -1,4 +1,4 @@
-@VFG10X-1711 @PromotionsAndDiscounts @Regression @DetailedCalculation @Smoke
+@VFG10X-1711 @PromotionsAndDiscounts @Regression @DetailedCalculation
 Feature: VFG10X-1711 Promotions and Discounts _ Sale transaction with stacked promotions _Exclusivity set to "Do not Combine"
 
   Scenario: Promotions and Discounts _ Sale transaction with stacked promotions _Exclusivity set to "Do not Combine"

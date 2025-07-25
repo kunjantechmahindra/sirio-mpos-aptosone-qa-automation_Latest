@@ -1,4 +1,4 @@
-@VFG10X-603 @CashManagement @Regression
+@VFG10X-603 @CashManagement @Regression @SmokeTBL
 Feature: VFG10X-603 Cash Management _ Till IN _Below Security level
 
   Scenario: Cash Management _ Till IN _Below Security level

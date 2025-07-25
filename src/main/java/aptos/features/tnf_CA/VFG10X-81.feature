@@ -1,4 +1,4 @@
-@VFG10X-81 @StoreSelling @Regression @SmokeTNF
+@VFG10X-81 @StoreSelling @Regression
 Feature: VFG10X-81 Store Selling Functions_ Item Level Sales person Assignment
 
   Scenario: Store Selling Functions_ Item Level Sales person Assignment

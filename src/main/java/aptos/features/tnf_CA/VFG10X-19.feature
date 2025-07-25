@@ -1,4 +1,4 @@
-@VFG10X-19 @SaleTransaction @Regression @Card @GiftCard @Visa @SmokeTNF
+@VFG10X-19 @SaleTransaction @Regression @Card @GiftCard @Visa
 Feature: VFG10X-19 Sale Transaction _Normal item and Gift card item_ Partial Payment by Cash & Visa Card_ No customer
 
   Scenario: Sale Transaction _Normal item and Gift card item_ Partial Payment by Cash & Visa Card_ No customer

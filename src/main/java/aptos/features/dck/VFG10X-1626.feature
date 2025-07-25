@@ -1,4 +1,4 @@
-@VFG10X-1626  @ReturnTransaction @Regression @SmokeDCK
+@VFG10X-1626  @ReturnTransaction @Regression
 Feature: VFG10X-1626 Return transaction with multiple items having Temporary markdown price
 
   Scenario: Return transaction with multiple items having Temporary markdown price

@@ -1,4 +1,4 @@
-@VFG10X-1700 @ReturnTransaction @Regression @DetailedCalculation @Card @Master @Smoke @SmokeTesting
+@VFG10X-1700 @ReturnTransaction @Regression @DetailedCalculation @Card @Master
 Feature: VFG10X-1700 Return Transaction_ Blind Return with Single item with Price override and employee discount  applied during return_Refund as Cash_Existing customer assigned
 
   Scenario: Return Transaction_ Blind Return with Single item with Price override and employee discount  applied during return_Refund as Cash_Existing customer assigned
@@ -10,7 +10,8 @@ Feature: VFG10X-1700 Return Transaction_ Blind Return with Single item with Pric
     #Assign customer
     And then sales assistant clicks on Assign Customer button
     And the sales assistant assign customer details with index 0
-    
+    And the sales assistant validate if void button is enabled
+
   #Return transaction
     And the sales assistant clicks on return button
     And the sales assistant select No receipt for blind return

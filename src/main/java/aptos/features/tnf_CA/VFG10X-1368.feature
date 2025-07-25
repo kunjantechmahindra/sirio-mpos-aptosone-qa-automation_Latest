@@ -1,4 +1,4 @@
-@VFG10X-1368 @Regression @ReturnTransaction
+@VFG10X-1368 @Regression @ReturnTransaction @Card
 Feature: VFG10X-1368 Return Transaction _Refund to different Payment methods _ 1st item 24% OFF and 2nd Item 30$ amount off with receipt with Reason Code:RTL - WRONG SIZE/COLOR
 
   Scenario: Return Transaction _Refund to different Payment methods _ 1st item 24% OFF and 2nd Item 30$ amount off with receipt with Reason Code:RTL - WRONG SIZE/COLOR

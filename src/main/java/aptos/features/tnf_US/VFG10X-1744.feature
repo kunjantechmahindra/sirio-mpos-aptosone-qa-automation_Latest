@@ -11,7 +11,7 @@ Feature: VFG10X-1744 Return Transaction_Temp MD Sale from Prev Version
   #Return transaction
     And the sales assistant clicks on return button
     And the sales assistant clicks on return search button
-    And  the sales assistant enters store number "400318" terminal "81" and transaction number "183"
+    And  the sales assistant enters store number "400318" terminal "79" and transaction number "73"
     And the sales assistant return all items from the transaction
     And the sales assistant selects "RTL - Damaged/Defective" as reason code
 

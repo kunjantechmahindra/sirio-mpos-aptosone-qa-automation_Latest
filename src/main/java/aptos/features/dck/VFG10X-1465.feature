@@ -1,4 +1,4 @@
-@VFG10X-1465 @Regression @GiftCard @Card @SmokeDCK
+@VFG10X-1465 @Regression @GiftCard @Card
 Feature: VFG10X-1465 Gift Card - Balance Inquiry
 
   Scenario: Gift Card - Balance Inquiry

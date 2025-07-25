@@ -1,4 +1,4 @@
-@VFG10X-1611 @SaleTransaction @Regression @GiftCard @SmokeDCK
+@VFG10X-1611 @SaleTransaction @Regression @GiftCard
 Feature: VFG10X-1611 Validate sale transaction by adding Gift Receipt Option at Line level
 
   Scenario: Validate sale transaction by adding Gift Receipt Option at Line level

@@ -1,4 +1,4 @@
-@VFG10X-288 @ExchangeTransaction @Regression @SmokeTesting
+@VFG10X-288 @ExchangeTransaction @Regression
 
 Feature: VFG10X-288 Exchange _Single Item with Item level discount on the return transaction_ Existing Customer
 

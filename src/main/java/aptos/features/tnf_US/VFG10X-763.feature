@@ -1,4 +1,4 @@
-@VFG10X-763 @SaleTransaction @Regression @GiftCard @Card
+@VFG10X-763 @SaleTransaction @Regression @GiftCard @Card @SmokeTNF
 Feature: VFG10X-763 Gift Card _ Gift Card Balance enquiry typing the Gift Card number + PIN
 
   Scenario: Gift Card _ Gift Card Balance enquiry typing the Gift Card number + PIN
@@ -9,13 +9,14 @@ Feature: VFG10X-763 Gift Card _ Gift Card Balance enquiry typing the Gift Card n
 
   # Gift card balance enquiry
     Then the sales assistant validates the Gift Card balance from basket page for index 0
+    Then the sales assistant enter the the pin from index 0
     Then the sales assistant saves the Gift Card balance amount for EJ
     And the sales assistant closes the Balance Inquiry screen
 
   # Get transaction number from information
     And the sales assistant navigate to information page
     And the sales assistant save the transaction number from information page
-    And the sales assistant navigate to basket page
+    And the sales assistant clicks on Basket button from header
 
   # Logout from the application
     And the sales assistant logout from the application

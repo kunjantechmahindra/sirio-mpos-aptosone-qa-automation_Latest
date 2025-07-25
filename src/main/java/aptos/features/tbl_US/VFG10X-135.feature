@@ -1,4 +1,4 @@
-@VFG10X-135 @CashManagement @Regression @SmokeTesting
+@VFG10X-135 @CashManagement @Regression
 Feature: VFG10X-135 Cash Management _PAID IN_ Reason Code - Supplies
 
   Scenario: Cash Management _PAID IN_ Reason Code - Supplies

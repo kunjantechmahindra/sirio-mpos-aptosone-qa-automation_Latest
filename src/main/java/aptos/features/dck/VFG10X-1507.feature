@@ -1,4 +1,4 @@
-@VFG10X-1507 @ReturnTransaction @Regression @Card @Visa @SmokeDCK
+@VFG10X-1507 @ReturnTransaction @Regression @Card @Visa
 Feature: VFG10X-1507 Return Transaction_Item level discount(percent) off_Multiple Items_Return to Credit card_With No Receipt
 
   Scenario: Return Transaction_Item level discount(percent) off_Multiple Items_Return to Credit card_With No Receipt

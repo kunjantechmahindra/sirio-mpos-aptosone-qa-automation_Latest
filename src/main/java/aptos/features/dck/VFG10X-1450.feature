@@ -1,4 +1,4 @@
-@VFG10X-1450 @ReturnTransaction @Regression @SmokeDCK
+@VFG10X-1450 @ReturnTransaction @Regression
 
 Feature: VFG10X-1450 DCK - Return Transaction_Item level percentage off discount_Single Item
 

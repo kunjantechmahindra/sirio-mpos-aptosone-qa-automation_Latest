@@ -1,4 +1,4 @@
-@VFG10X-289 @ExchangeTransaction @Regression @GiftCard @Smoke
+@VFG10X-289 @ExchangeTransaction @Regression @GiftCard
 Feature: VFG10X-289 Exchange _Multiple sale items _Void one item and void payment by gift card and complete by cash
 
   Scenario: Exchange _Multiple sale items _Void one item and void payment by gift card and complete by cash
@@ -37,9 +37,9 @@ Feature: VFG10X-289 Exchange _Multiple sale items _Void one item and void paymen
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant enters half of the total amount in the payment section
     And the sales assistant clicks on gift card button from payment page
-    And the sales assistant enter the gift card number for payment from index 4
+    And the sales assistant enter the gift card number for payment from index 2
     And the sales assistant clicks on redeem button
-    And the sales assistant enter the the pin from index 4
+    And the sales assistant enter the the pin from index 2
     And the sales assistant validate the partial payment by gift card
 
   # Void the transaction

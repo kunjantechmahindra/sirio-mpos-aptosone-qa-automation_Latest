@@ -1,4 +1,4 @@
-@VFG10X-1789 @ReturnTransaction @Regression
+@VFG10X-1789 @ReturnTransaction @Regression @SmokeDCK
 Feature: VFG10X-1789 Promotions and Discounts _ Verified Return_Sale with Item level Discount_ Temp MD item _with change quantity .
 
   Scenario: Promotions and Discounts _ Verified Return_Sale with Item level Discount_ Temp MD item _with change quantity .

@@ -1,4 +1,4 @@
-@VFG10X-1303 @ReturnTransaction @Card @Regression @Visa @Smoke @SmokeTesting
+@VFG10X-1303 @ReturnTransaction @Card @Regression @Visa
 
 Feature: VFG10X-1303 Return Transaction _ Blind Return with single item and add tax exempt to the return transaction_Refund to Card_Existing customer assigned
 
@@ -11,11 +11,11 @@ Feature: VFG10X-1303 Return Transaction _ Blind Return with single item and add 
   # Return transaction
     And the sales assistant clicks on return button
     And the sales assistant select No receipt for blind return
-    And the sales assistant clicks on Skip button
 
   # Add Product
     Then the sales assistant add an items from "General" product for return
     And the sales assistant selects "DAMAGED/DEFECTIVE" as reason code
+    And the sales assistant clicks on Skip button
     And the sales assistant navigate to basket page from return mode page
 
   # Apply Tax exempt
@@ -31,12 +31,17 @@ Feature: VFG10X-1303 Return Transaction _ Blind Return with single item and add 
     And the sales assistant validate "Tax exempt" is applied to item
 
   # Add a customer
-    And then sales assistant clicks on Assign Customer button
-    And the sales assistant search a customer using email at index 2
-    And the sales assistant clicks on search results back button from customer profile
-    And then sales assistant clicks on Assign Customer button
+    #And then sales assistant clicks on Assign Customer button
+    #And the sales assistant search a customer using email at index 2
+    #And the sales assistant clicks on search results back button from customer profile
+    #And then sales assistant clicks on Assign Customer button
 
-  # Refund transaction
+    #Assign customer
+    And the sales assistant lands on Basket Page
+    And then sales assistant clicks on Assign Customer button
+    And the sales assistant assign customer details with index 5
+
+    #Refund transaction
     And the sales assistant clicks on Pay button
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant clicks on card for refund

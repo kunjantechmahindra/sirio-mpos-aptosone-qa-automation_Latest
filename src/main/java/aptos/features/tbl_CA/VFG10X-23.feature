@@ -1,4 +1,4 @@
-@VFG10X-23 @SaleTransaction @Regression @Card @Diners @SmokeTesting
+@VFG10X-23 @SaleTransaction @Regression @Card @Diners
 Feature: VFG10X-23 Sale Transaction _Multiple Items with Tax Exempt and Coupon Applied_ Payment by Diners card_ No customer
 
   Scenario: Sale Transaction _Multiple Items with Tax Exempt and Coupon Applied_ Payment by Diners card_ No customer

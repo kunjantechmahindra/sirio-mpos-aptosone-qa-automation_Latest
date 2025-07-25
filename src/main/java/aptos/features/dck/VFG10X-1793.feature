@@ -1,4 +1,4 @@
-@VFG10X-1793 @ReturnTransaction @Regression
+@VFG10X-1793 @ReturnTransaction @Regression @SmokeDCK
 
   Feature: VFG10X-1793 Return Transaction_Sale Transaction _Gift Receipt_Multiple Item_Taxexempt _and price override applied_Assign a sales person_Payment by Amex Card
 

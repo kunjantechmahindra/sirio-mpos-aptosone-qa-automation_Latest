@@ -1,4 +1,4 @@
-@VFG10X-1153 @Regression @ExchangeTransaction
+@VFG10X-1153 @Regression @ExchangeTransaction @SmokeTBL
 
 Feature: VFG10X-1153 Exchange Transaction_Positive Exchange of multiple items with Multiple Employees on initial sale transaction
 

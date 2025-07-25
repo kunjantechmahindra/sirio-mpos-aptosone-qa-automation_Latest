@@ -1,4 +1,4 @@
-@VFG10X-944 @ReturnTransaction @Regression @Smoke
+@VFG10X-944 @ReturnTransaction @Regression @SmokeTBL
 Feature: VFG10X-944 Return Transaction _Multiple items with Promo_No Customer Assigned
 
   Scenario: Return Transaction _Multiple items with Promo_No Customer Assigned

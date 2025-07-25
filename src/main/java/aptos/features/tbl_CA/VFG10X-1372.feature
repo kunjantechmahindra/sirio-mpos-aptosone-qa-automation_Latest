@@ -1,4 +1,4 @@
-@VFG10X-1372 @ReturnTransaction @Regression @Card @DinersDiscover
+@VFG10X-1372 @ReturnTransaction @Regression @Card @DinersDiscover @SmokeTBL
 Feature: VFG10X-1372 Return Transaction _Refund to different Payment methods _ multiple cards-Multiple payments
 
   Scenario: Return Transaction _Refund to different Payment methods _ multiple cards-Multiple payments

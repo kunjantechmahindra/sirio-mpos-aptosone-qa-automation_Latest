@@ -1,5 +1,5 @@
-@VFG10X-1748 @Regression @DetailedCalculation @GiftCard
-Feature: VFG10X-1748 Sale Transaction _Single Item with Tax Override and Coupon Applied_ Payment by Gift card & Cash
+@VFG10X-1875 @Regression @DetailedCalculation @GiftCard
+Feature: VFG10X-1875 Sale Transaction _Single Item with Tax Override and Coupon Applied_ Payment by Gift card & Cash
 
   Scenario: Sale Transaction _Single Item with Tax Override and Coupon Applied_ Payment by Gift card & Cash
 

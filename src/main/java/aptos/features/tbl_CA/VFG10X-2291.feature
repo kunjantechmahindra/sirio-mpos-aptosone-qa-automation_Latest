@@ -1,4 +1,4 @@
-@VFG10X-2291 @GiftCard @Regression @Card @Smoke
+@VFG10X-2291 @GiftCard @Regression @Card
 Feature: VFG10X-2291 Gift Card _Sales of new gift card and Void transaction
 
   Scenario: Gift Card _Sales of new gift card and Void transaction

@@ -1,4 +1,4 @@
-@VFG10X-1476 @CashManagement @Regression @SmokeDCK
+@VFG10X-1476 @CashManagement @Regression
 
   Feature: VFG10X-1476 DCK - Cash Management_TILL IN_No Reason code for Dickies
 

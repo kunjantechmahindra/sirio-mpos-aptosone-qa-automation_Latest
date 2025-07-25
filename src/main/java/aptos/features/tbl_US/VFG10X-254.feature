@@ -10,11 +10,11 @@ Feature: VFG10X-254 Return Transaction _ Receipt less Return with Different reas
   # Return transaction
     And the sales assistant clicks on return button
     And the sales assistant select No receipt for blind return
-    And the sales assistant clicks on Skip button
 
   # Add Product
     Then the sales assistant add an items from "General" product for return
     And the sales assistant selects "PRICE ADJUSTMENT" as reason code
+    And the sales assistant clicks on Skip button
     Then the sales assistant add an items from "General" product for return
     And the sales assistant selects "CHANGED MIND" as reason code
     And the sales assistant navigate to basket page from return mode page

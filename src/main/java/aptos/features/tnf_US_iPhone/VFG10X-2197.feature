@@ -12,6 +12,4 @@ Feature: VFG10X-2197 Customer _Search using Email Id
     And the sales assistant search a customer using email at index 1
     And the sales assistant validate the customer details at index 1
     And the sales assistant navigate to basket page from customer profile
-    And the sales assistant clicks on menu button for iPhone basket
-    And the sales assistant void the transaction from basket with reason code "Cashier Error"
     And the sales assistant logout from the application

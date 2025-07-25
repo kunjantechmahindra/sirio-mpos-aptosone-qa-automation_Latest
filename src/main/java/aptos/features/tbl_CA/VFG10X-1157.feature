@@ -1,4 +1,4 @@
-@VFG10X-1157 @TaxManagement @Regression @SmokeTesting
+@VFG10X-1157 @TaxManagement @Regression @SmokeTBL
 
 Feature: VFG10X-1157 Tax _ Return transaction with multiple items with Tax Override, and Tax Exempt, Get E-Receipt
 

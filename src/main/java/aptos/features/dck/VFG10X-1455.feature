@@ -1,4 +1,4 @@
-@VFG10X-1455 @ReturnTransaction @Regression @SmokeDCK
+@VFG10X-1455 @ReturnTransaction @Regression
 Feature: VFG10X-1455 Returns with discount applied at Transaction level $ off - Multiple Item
 
   Scenario: Returns with discount applied at Transaction level $ off - Multiple Item

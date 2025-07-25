@@ -1,4 +1,4 @@
-@VFG10X-436 @PriceOverride @Regression
+@VFG10X-436 @PriceOverride @Regression @SmokeTBL
 
 Feature: VFG10X-436 Price Override _Sale Transaction with Price override for Multiple items_ Reason code PRICE MATCH & RETURN/EXCHANGE
 

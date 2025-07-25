@@ -10,7 +10,7 @@ Feature: VFG10X-1671 Gift Card _Unable to apply Item Level & Transactional Level
 
   #Issue New Gift Card
     And the sales assistant clicks on gift card button
-    And the sales assistant enters gift card number from index 5
+    And the sales assistant enters gift card number from index 8
     And the sales assistant enters gift card amount "50.00"
     And the sales assistant clicks on issue button
     And the sales assistant clicks on Skip button
@@ -80,8 +80,8 @@ Feature: VFG10X-1671 Gift Card _Unable to apply Item Level & Transactional Level
     And the sales assistant select the printer
 
   #Gift card balance enquiry
-    Then the sales assistant validates the Gift Card balance from basket page for index 5
-    Then the sales assistant enter the the pin from index 5
+    Then the sales assistant validates the Gift Card balance from basket page for index 8
+    Then the sales assistant enter the the pin from index 8
     Then the sales assistant saves the Gift Card balance amount
     And the sales assistant closes the Balance Inquiry screen
     And the sales assistant validates the gift card balance

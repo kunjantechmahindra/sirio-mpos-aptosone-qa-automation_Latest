@@ -1,4 +1,4 @@
-@VFG10X-1546 @PromotionsAndDiscounts @Regression
+@VFG10X-1546 @PromotionsAndDiscounts @Regression @SmokeTBL
 Feature: VFG10X-1546  Promotions and Discounts _Transactional level discount reason code -In Store Promo in TNF and SPECIAL EVENT in TBL
 
   Scenario: Promotions and Discounts _Transactional level discount reason code -In Store Promo in TNF and SPECIAL EVENT in TBL

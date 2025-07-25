@@ -1,4 +1,4 @@
-@VFG10X-1236 @Card @ReturnTransaction @Regression @Master @SmokeTesting
+@VFG10X-1236 @Card @ReturnTransaction @Regression @Master
 Feature: VFG10X-1236 Return transaction_ Return single item with Item level discount _Refund to Gift Card_No customer assigned
 
   Scenario: Return transaction_ Return single item with Item level discount _Refund to Gift Card_No customer assigned

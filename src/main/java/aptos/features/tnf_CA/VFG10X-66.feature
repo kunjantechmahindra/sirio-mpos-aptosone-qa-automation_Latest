@@ -1,4 +1,4 @@
-@VFG10X-66 @SaleTransaction @Regression @Card @DinersDiscover
+@VFG10X-66 @SaleTransaction @Regression @Card @DinersDiscover @SmokeTNF
 Feature: VFG10X-66 Sale Transaction  _Multiple Payments of Multiple credit card _Diners Tap or Insert and Discover Tap
 
   Scenario: Sale Transaction  _Multiple Payments of Multiple credit card _FDiners Tap or Insert and Discover Tap

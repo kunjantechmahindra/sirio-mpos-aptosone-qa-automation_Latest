@@ -1,4 +1,4 @@
-@VFG10X-151 @PromotionsAndDiscounts @Regression @Smoke
+@VFG10X-151 @PromotionsAndDiscounts @Regression
 Feature: VFG10X-151 Promotions and Discounts _ Employee Discount validation with Invalid Employee ID
 
   Scenario: Promotions and Discounts _ Employee Discount validation with Invalid Employee ID

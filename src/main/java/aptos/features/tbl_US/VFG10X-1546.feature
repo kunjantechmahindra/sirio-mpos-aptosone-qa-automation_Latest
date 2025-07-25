@@ -1,4 +1,4 @@
-@VFG10X-1546 @PromotionsAndDiscounts @Regression
+@VFG10X-1546 @PromotionsAndDiscounts @Regression @SmokeTBL
 Feature: VFG10X-1546  Promotions and Discounts _Transactional level discount reason code -In Store Promo in TNF and SPECIAL EVENT in TBL
 
   Scenario: Promotions and Discounts _Transactional level discount reason code -In Store Promo in TNF and SPECIAL EVENT in TBL
@@ -11,11 +11,11 @@ Feature: VFG10X-1546  Promotions and Discounts _Transactional level discount rea
   #Apply transactional level discount
     And the sales assistant clicks on Discount button from basket page
     And the sales assistant select transaction discount button
-    And the sales assistant enter discount amount as 10
+    And the sales assistant enter discount amount as 5
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "SPECIAL EVENT" as reason code
     And the sales assistant clicks on Apply button
-    And sales assistant validates transactional level discount 10 applied
+    And sales assistant validates transactional level discount 5 applied
 
   #Payment transaction
     And the sales assistant clicks on Pay button

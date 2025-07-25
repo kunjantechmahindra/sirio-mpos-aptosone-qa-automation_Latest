@@ -1,4 +1,4 @@
-@VFG10X-1446 @Regression @GiftCard @SaleTransaction @SmokeDCK
+@VFG10X-1446 @Regression @GiftCard @SaleTransaction
 Feature: VFG10X-1446 Sale Transaction_Transaction level percentage off discount_Single Item_Redeem Gift Card
 
   Scenario: Sale Transaction_Transaction level percentage off discount_Single Item_Redeem Gift Card

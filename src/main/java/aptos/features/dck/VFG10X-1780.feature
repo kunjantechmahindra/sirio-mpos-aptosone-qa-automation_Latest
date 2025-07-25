@@ -1,4 +1,4 @@
-@VFG10X-1780 @CashManagement @Regression
+@VFG10X-1780 @CashManagement @Regression @SmokeDCK
 
 Feature: VFG10X-1780 Cash Management _ Till OUT
 

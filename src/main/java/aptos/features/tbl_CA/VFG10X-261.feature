@@ -1,4 +1,4 @@
-@VFG10X-261 @Customer @Regression @SmokeTesting
+@VFG10X-261 @Customer @Regression
 Feature: VFG10X-261 Customer search using phone number
 
   Scenario: Customer search using phone number

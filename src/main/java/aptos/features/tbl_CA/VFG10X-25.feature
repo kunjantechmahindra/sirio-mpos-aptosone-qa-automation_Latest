@@ -1,4 +1,4 @@
-@VFG10X-25 @SaleTransaction @Regression @Card @Diners @SmokeTesting
+@VFG10X-25 @SaleTransaction @Regression @Card @Diners
 
 Feature: VFG10X-25 	Sale Transaction _Multiple Items with Line item & Transactional Discount _ Payment by Diners with PIN_ No customer
 

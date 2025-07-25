@@ -1,4 +1,4 @@
-@VFG10X-1451 @Regression @ReturnTransaction @Card @Master @SmokeDCK
+@VFG10X-1451 @Regression @ReturnTransaction @Card @Master
 Feature: VFG10X-1451 Returns (Without receipt) with discount applied at Transaction level % off - Single Item -
 
   Scenario: Returns (Without receipt) with discount applied at Transaction level % off - Single Item -

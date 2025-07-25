@@ -1,4 +1,4 @@
-@VFG10X-17 @SaleTransaction @Regression @Card @Visa @SmokeTesting
+@VFG10X-17 @SaleTransaction @Regression @Card @Visa
 Feature: VFG10X-17 Sale Transaction _Single Item with Bag Fee_ Void Payment by Reward Card and complete by Cash_ New customer
 
   Scenario: Sale Transaction _Single Item with Bag Fee_ Void Payment by Reward Card and complete by Cash_ New customer

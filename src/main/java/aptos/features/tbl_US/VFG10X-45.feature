@@ -1,4 +1,4 @@
-@VFG10X-45 @SaleTransaction @Regression @SmokeTesting
+@VFG10X-45 @SaleTransaction @Regression
 Feature: VFG10X-45 Sale Transaction _Single Item_ Line Item Level Tax Override and Void Item and add same item _ Functionality not persisting
 
   Scenario: Sale Transaction _Single Item_ Line Item Level Tax Override and Void Item and add same item _ Functionality not persisting

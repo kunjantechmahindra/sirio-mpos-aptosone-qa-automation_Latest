@@ -1,4 +1,4 @@
-@VFG10X-298 @StoreSelling @Regression @SmokeTesting
+@VFG10X-298 @StoreSelling @Regression
 Feature: VFG10X-298 Store Selling Functions _ Product Inquiry _ Search by Style Number
 
   Scenario: Store Selling Functions _ Product Inquiry _ Search by Style Number

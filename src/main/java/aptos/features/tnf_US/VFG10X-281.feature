@@ -1,4 +1,4 @@
-@VFG10X-281 @ReturnTransaction @Regression @Card @Master @GiftCard
+@VFG10X-281 @ReturnTransaction @Regression @Card @Master @GiftCard @SmokeTNF
 Feature: VFG10X-281 Return Transaction _ Return multiple items including one Temp MD item_Employee discount and price override
   applied_ payment 50 % by Mastercard swipe and 50 % Gift Card_Refund to Gift card_Existing customer Assigned_E-Receipt validation
 

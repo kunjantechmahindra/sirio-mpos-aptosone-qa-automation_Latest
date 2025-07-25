@@ -1,4 +1,4 @@
-@VFG10X-18 @SaleTransaction @Regression @GiftCard @Card
+@VFG10X-18 @SaleTransaction @Regression @GiftCard @Card @SmokeTNF
 Feature: VFG10X-18 Sale Transaction _Multiple Items with multiple line item discounts _Payment by New Gift Card_ Existing customer
 
   Scenario: Sale Transaction _Multiple Items with multiple line item discounts _Payment by New Gift Card_ Existing customer

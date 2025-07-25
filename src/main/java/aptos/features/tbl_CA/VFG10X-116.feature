@@ -1,4 +1,4 @@
-@VFG10X-116 @GiftCard @Regression
+@VFG10X-116 @GiftCard @Regression @SmokeTBL
 Feature: VFG10X-116 Gift Card _Top up by manually entering the gift card Number_ Existing Customer
 
   Scenario: Gift Card _Top up by manually entering the gift card Number_ Existing Customer

@@ -1,4 +1,4 @@
-@VFG10X-1627  @ExchangeTransaction @Regression @SmokeDCK
+@VFG10X-1627  @ExchangeTransaction @Regression
 Feature: VFG10X-1627 Exchange transaction with multiple items having Temporary markdown price
 
   Scenario: Exchange transaction with multiple items having Temporary markdown price

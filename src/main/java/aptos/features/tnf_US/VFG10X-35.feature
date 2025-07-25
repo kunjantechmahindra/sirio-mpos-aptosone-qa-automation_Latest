@@ -1,4 +1,4 @@
-@VFG10X-35 @SaleTransaction @Regression @Card @Visa @SmokeTNF
+@VFG10X-35 @SaleTransaction @Regression @Card @Visa
   Feature: VFG10X-35 Sale Transaction _Multiple Items_ Void One Item_ Existing Loyalty Customer
     Scenario: Sale Transaction _Multiple Items_ Void One Item_ Existing Loyalty Customer
 

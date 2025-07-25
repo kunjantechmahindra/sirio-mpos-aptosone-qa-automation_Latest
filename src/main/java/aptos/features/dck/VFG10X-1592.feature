@@ -1,4 +1,4 @@
-@VFG10X-1592 @Regression @ExchangeTransaction @SmokeDCK
+@VFG10X-1592 @Regression @ExchangeTransaction
 
 Feature: VFG10X-1592 DCK - Exchange _Transaction level percentage off discount_Sale transaction should have transaction level percent off discount
 

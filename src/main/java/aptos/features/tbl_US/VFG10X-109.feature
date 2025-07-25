@@ -15,6 +15,7 @@ Feature: VFG10X-109 Customer _First Name field is editable
   #Edit Customer Last Name
     And the sales assistant will update "First Name" in customer details
     And the sales assistant clicks on Update button
+    And the sales assistant validate if void button is enabled
     And then sales assistant clicks on Assign Customer button
     And the sales assistant validate "First name" updated customer details
     And the test data is updated with "First Name" updated details at index 2

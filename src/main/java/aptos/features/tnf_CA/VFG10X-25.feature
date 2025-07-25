@@ -22,7 +22,7 @@ Feature: VFG10X-25 Sale Transaction _Multiple Items with Line item & Transaction
     And the sales assistant selects the product at index 1
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount
-    And the sales assistant enter discount amount as 100
+    And the sales assistant enter discount amount as 5
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Damaged" as reason code
     And the sales assistant clicks on Apply button

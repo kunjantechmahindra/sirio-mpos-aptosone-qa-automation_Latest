@@ -1,19 +1,13 @@
-@VFG10X-283 @ExchangeTransaction @Regression @Card @VisaMaster
+@VFG10X-283 @ExchangeTransaction @Regression @Card @VisaMaster @SmokeTNF
 
-Feature: VFG10X-283 Exchange _Negative Exchange transaction of mixed card payment with %off item _Refund also should go to both cards
+Feature: VFG10X-283 Exchange _Negative Exchange transaction of mixed card payment with Temp MD item _Refund also should go to both cards
 
   Scenario: Exchange _Negative Exchange transaction of mixed card payment with %off item _Refund also should go to both cards
 
   #Login
     Given the sales assistant login to the application with valid username and password
     When the sales assistant clicks on Start Basket button
-    Then the sales assistant add 2 items from "WithOutCoupon-10%" product to the basket without customer
-
-  #validate %off item discount
-    And the sales assistant selects the product at index 1
-    And the sales assistant validate "10% off without coupon" is applied to item
-    And the sales assistant selects the product at index 2
-    And the sales assistant validate "10% off without coupon" is applied to item
+    Then the sales assistant add 2 items from "Temp-MD-WithoutPermPrice" product to the basket without customer
 
   #Partial Payment transaction with multiple cards
       And the sales assistant clicks on Pay button

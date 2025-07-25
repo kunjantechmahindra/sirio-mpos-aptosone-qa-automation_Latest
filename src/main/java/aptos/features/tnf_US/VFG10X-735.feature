@@ -9,7 +9,7 @@ Feature: VFG10X-735 Store Selling Functions _ Validation of customer name  is pr
 
   # Assign customer
     And then sales assistant clicks on Assign Customer button
-    And the sales assistant assign customer details with index 1
+    And the sales assistant assign customer details with index 0
     Then the sales assistant add 1 items from "General" product to the basket
 
   # Payment transaction
@@ -23,5 +23,5 @@ Feature: VFG10X-735 Store Selling Functions _ Validation of customer name  is pr
     And the sales assistant select the printer
 
   # Validate Customer name is printed and logout
-    And the sales assistant validate the customer name of index 1 appears on the printed receipt
+    And the sales assistant validate the customer name of index 0 appears on the printed receipt
     And the sales assistant logout from the application

@@ -1,4 +1,4 @@
-@VFG10X-429 @PromotionsAndDiscounts @Regression @Smoke
+@VFG10X-429 @PromotionsAndDiscounts @Regression @SmokeTBL
 Feature: VFG10X-429 Promotions and Discounts _ Block Item level Discount _User level below 30
 
   Scenario: Promotions and Discounts _ Block Item level Discount _User level below 30

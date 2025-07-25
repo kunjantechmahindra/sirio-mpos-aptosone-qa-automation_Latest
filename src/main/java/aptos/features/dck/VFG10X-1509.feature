@@ -1,4 +1,4 @@
-@VFG10X-1509 @ReturnTransaction @Regression @SmokeDCK @Card @Visa
+@VFG10X-1509 @ReturnTransaction @Regression   @Card @Visa
 Feature: VFG10X-1509 DCK_Return Transaction_Apply Promotion_Without Original Sales Receipt - Blind Return
 
   Scenario: DCK_Return Transaction_Apply Promotion_Without Original Sales Receipt - Blind Return

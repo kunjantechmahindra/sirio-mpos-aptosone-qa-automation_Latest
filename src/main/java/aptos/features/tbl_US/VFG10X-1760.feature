@@ -1,4 +1,4 @@
-@VFG10X-1760 @Regression @DetailedCalculation
+@VFG10X-1760 @Regression @DetailedCalculation @SmokeTBL
 Feature: VFG10X-1760 Promotions & discounts-Sales transaction with 2 for 30$ promo
 
   Scenario: Promotions & discounts-Sales transaction with 2 for 30$ promo
@@ -12,9 +12,9 @@ Feature: VFG10X-1760 Promotions & discounts-Sales transaction with 2 for 30$ pro
    And the sales assistant save sale amount details
    And the sales assistant lands on Basket Page
    And the sales assistant selects the product at index 1
-   And the sales assistant validate "2 For $30 Tees" is applied to item
+   And the sales assistant validate "2 For $30" is applied to item
    And the sales assistant selects the product at index 2
-   And the sales assistant validate "2 For $30 Tees" is applied to item
+   And the sales assistant validate "2 For $30" is applied to item
    And the sales assistant validate two for thirty promo applied
    And the sales assistant validate total transaction amount
 

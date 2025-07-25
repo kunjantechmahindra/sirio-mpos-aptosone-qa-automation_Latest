@@ -1,4 +1,4 @@
-   @VFG10X-965 @ExchangeTransaction @Regression @Card @VisaMaster @SmokeTesting
+   @VFG10X-965 @ExchangeTransaction @Regression @Card @VisaMaster
 Feature: VFG10X-965 Exchange _ Multiple items with 50% payment by Visa Tap, 50% payment by Master Card Chip
 
   Scenario: Exchange _ Multiple items with 50% payment by Visa Tap, 50% payment by Master Card Chip

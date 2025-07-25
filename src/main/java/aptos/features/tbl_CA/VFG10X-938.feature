@@ -1,4 +1,4 @@
-@VFG10X-938 @ReturnTransaction @Regression @SmokeTesting
+@VFG10X-938 @ReturnTransaction @Regression @SmokeTBL
 Feature: VFG10X-938 Return Transaction _Single item with Tax Exempt and Coupon applied_No Customer Assigned
 
   Scenario: Return Transaction _Single item with Tax Exempt and Coupon applied_No Customer Assigned

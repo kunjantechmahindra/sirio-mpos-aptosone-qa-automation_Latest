@@ -1,4 +1,4 @@
-@VFG10X-1457 @SaleTransaction @Regression @Card @Master @SmokeDCK
+@VFG10X-1457 @SaleTransaction @Regression @Card @Master
 
   Feature: VFG10X-1457 DCK - Sales transaction_Employee transaction discount_ Multiple items_Use Master Card
 

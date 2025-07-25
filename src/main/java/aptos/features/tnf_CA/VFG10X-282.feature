@@ -1,4 +1,4 @@
-@VFG10X-282 @Regression @ReturnTransaction @Card @Master @SmokeTNF
+@VFG10X-282 @Regression @ReturnTransaction @Card @Master
 
 Feature: VFG10X-282 Return Transaction _Blind Return of multiple items _ item level discount to one item and add tax override to one item_ Refund to Master card_ No customer assigned
 
@@ -11,11 +11,11 @@ Feature: VFG10X-282 Return Transaction _Blind Return of multiple items _ item le
     #Return transaction
     And the sales assistant clicks on return button
     And the sales assistant select No receipt for blind return
-    And the sales assistant clicks on Skip button
 
     #Add Product
     Then the sales assistant add an items from "General" product for return
     And the sales assistant selects "Damaged/Defective" as reason code
+    And the sales assistant clicks on Skip button
     Then the sales assistant add an items from "General" product for return
     And the sales assistant selects "Changed Mind" as reason code
     And the sales assistant navigate to basket page from return mode page

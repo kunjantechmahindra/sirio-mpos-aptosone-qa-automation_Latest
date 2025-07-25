@@ -1,4 +1,4 @@
-@VFG10X-1613 @ExchangeTransaction @Regression @SmokeDCK
+@VFG10X-1613 @ExchangeTransaction @Regression
 
 Feature: VFG10X-1613 DCK - Exchange transaction of Multiple item, 1st Item with tax exempt, 2nd item with standard tax
 

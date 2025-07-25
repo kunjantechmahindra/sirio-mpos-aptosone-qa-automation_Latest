@@ -1,4 +1,4 @@
-@VFG10X-588 @StoreSelling @Regression @GiftCard
+@VFG10X-588 @StoreSelling @Regression @GiftCard @SmokeTNF
 Feature: VFG10X-588 Store Selling Functions _ Maximum Gift Card Top UP Amount
   Scenario: Store Selling Functions _ Maximum Gift Card Top UP Amount
 
@@ -21,6 +21,7 @@ Feature: VFG10X-588 Store Selling Functions _ Maximum Gift Card Top UP Amount
     And the sales assistant clicks on Pay button
     And the sales assistant clicks on Accept button
     And the sales assistant clicks on Cash button
+    And the sales assistant clicks on Cash option
     And the sales assistant enter the Drawer ID
     And the sales assistant clicks on Print button
     And the sales assistant select the printer

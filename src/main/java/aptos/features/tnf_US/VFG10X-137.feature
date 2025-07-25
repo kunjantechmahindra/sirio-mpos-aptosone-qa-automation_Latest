@@ -1,4 +1,4 @@
-@VFG10X-137 @CashManagement @Regression
+@VFG10X-137 @CashManagement @Regression @SmokeTNF
 Feature: VFG10X-137 Cash Management _PAID OUT_ Reason Code - Supplies
 
   Scenario: Cash Management _PAID OUT_ Reason Code - Supplies

@@ -1,4 +1,4 @@
-@VFG10X-275 @ReturnTransaction @Regression @SmokeTesting
+@VFG10X-275 @ReturnTransaction @Regression
 Feature: VFG10X-275 Return Transaction _Return item with Physical receipt _Refund by Cash _New customer assigned
 
   Scenario: Return Transaction _Return item with Physical receipt _Refund by Cash _New customer assigned

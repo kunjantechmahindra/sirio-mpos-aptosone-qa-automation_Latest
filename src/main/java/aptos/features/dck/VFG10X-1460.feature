@@ -1,4 +1,4 @@
-@VFG10X-1460 @ReturnTransaction @Regression @SmokeDCK @Card
+@VFG10X-1460 @ReturnTransaction @Regression   @Card
 Feature: VFG10X-1460 DCK - Return transaction_Transaction level employee discount_ Multiple item_Use Discover Card
 
   Scenario: DCK - Return transaction_Transaction level employee discount_ Multiple item_Use Discover Card

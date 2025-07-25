@@ -1,4 +1,4 @@
-@VFG10X-28 @SaleTransaction @Regression @Smoke @SmokeTesting
+@VFG10X-28 @SaleTransaction @Regression
 
   Feature: VFG10X-28 Sale Transaction _Normal Item and Temp MD item with Employee discount_ Existing Customer
 
@@ -20,8 +20,8 @@
       And the sales assistant enter "valid" Employee ID
       And the sales assistant clicks on Apply button
       And the sales assistant lands on Basket Page
-#      And the sales assistant selects the product at index 1
-#      And the sales assistant validate "Employee Sale" is applied to item
+      And the sales assistant selects the product at index 1
+      And the sales assistant validate "Employee Sale" is applied to item
 
       #Payment transaction
       And the sales assistant clicks on Pay button

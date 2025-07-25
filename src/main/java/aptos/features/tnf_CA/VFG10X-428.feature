@@ -1,4 +1,4 @@
-@VFG10X-428 @PromotionsAndDiscounts @Regression
+@VFG10X-428 @PromotionsAndDiscounts @Regression @SmokeTNF
   #
 Feature: VFG10X-428 Promotions and Discounts _ Block Transactional level Discount _User level below 30
 

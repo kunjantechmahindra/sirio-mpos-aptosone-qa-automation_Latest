@@ -13,8 +13,8 @@ Feature: VFG10X-29 Sale Transaction _Multiple Items with Employee discount _ No 
     And the sales assistant enter "valid" Employee ID
     And the sales assistant clicks on Apply button
     And the sales assistant lands on Basket Page
-#    And the sales assistant selects the product at index 1
-#    And the sales assistant validate "Employee Sale" is applied to item
+    And the sales assistant selects the product at index 1
+    And the sales assistant validate "Employee Sale" is applied to item
 
     # Payment using cash
     And the sales assistant clicks on Pay button
@@ -32,5 +32,5 @@ Feature: VFG10X-29 Sale Transaction _Multiple Items with Employee discount _ No 
     And the sales assistant login to EJViewer
     And the sales assistant enter the store and transaction detail
     And the sales assistant validate the payment details
-    And the sales assistant validate details "Employee Sale - 50% off" in EJ
+    And the sales assistant validate details "Employee Sale - 35% off" in EJ
     And the sales assistant logout from EJViewer

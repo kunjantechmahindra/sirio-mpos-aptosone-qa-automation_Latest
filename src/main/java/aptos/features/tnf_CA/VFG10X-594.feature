@@ -12,6 +12,6 @@ Feature: VFG10X-594 Store Selling Functions _ Not able to top up gift card for z
     And the sales assistant validates existing gift card button is enabled
     And the sales assistant enters gift card number from index 3
     And the sales assistant enters minimum gift card amount "0.00"
-    And the sales assistant validates the error message for minimum value
+    And the sales assistant validates the Minimum issue amount error message
     And the sales assistant clicks on cancel button
     And the sales assistant logout from the application

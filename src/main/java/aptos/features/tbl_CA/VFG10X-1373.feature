@@ -11,11 +11,11 @@
   #Return transaction
       And the sales assistant clicks on return button
       And the sales assistant select No receipt for blind return
-      And the sales assistant clicks on Skip button
 
   #Add Product for blind return
-      Then the sales assistant add an items from "Temp-MD" product for return
+      Then the sales assistant add an items from "TempMD" product for return
       And the sales assistant selects "DAMAGED/DEFECTIVE" as reason code
+      And the sales assistant clicks on Skip button
       And the sales assistant navigate to basket page from return mode page
       And the sales assistant store the Temp_MD UPC in index 1
 
@@ -36,7 +36,7 @@
   #Get transaction number from information
       And the sales assistant navigate to information page
       And the sales assistant save the transaction number from information page
-      And the sales assistant navigate to basket page
+      And the sales assistant clicks on Basket button from header
       And the sales assistant logout from the application
 
   # EJ Validation

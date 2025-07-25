@@ -1,4 +1,4 @@
-@VFG10X-1159 @TaxManagement @Regression @SmokeTesting
+@VFG10X-1159 @TaxManagement @Regression
 
 Feature: VFG10X-1159 Tax _ Exchange transaction with multiple items with Tax Override, and Tax Exempt, Get E-Receipt
 

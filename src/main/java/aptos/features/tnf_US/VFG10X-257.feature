@@ -11,11 +11,11 @@ Feature: VFG10X-257 Exchange _Positive Blind Exchange _Multiple sale items with 
   #Return transaction
     And the sales assistant clicks on return button
     And the sales assistant select No receipt for blind return
-    And the sales assistant clicks on Skip button
 
   #Add Product
     Then the sales assistant add an items from "General" product for return
     And the sales assistant selects "Damaged/Defective" as reason code
+    And the sales assistant clicks on Skip button
     And the sales assistant navigate to basket page from return mode page
 
   #Add exchange items with 15% item level discount

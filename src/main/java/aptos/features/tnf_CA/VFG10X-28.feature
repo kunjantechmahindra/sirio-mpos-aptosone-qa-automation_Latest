@@ -1,4 +1,4 @@
-@VFG10X-28 @SaleTransaction @Regression @SmokeTNF
+@VFG10X-28 @SaleTransaction @Regression
 
   Feature: VFG10X-28 Sale Transaction _Normal Item and Temp MD item with Employee discount_ Existing Customer
 

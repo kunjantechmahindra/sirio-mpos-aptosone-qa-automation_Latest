@@ -12,11 +12,11 @@ Feature: VFG10X-2184 Exchange _Multiple Items with Transaction discount on sale 
     And the sales assistant clicks on menu button for iPhone basket
     And the sales assistant clicks on return button
     And the sales assistant select No receipt for blind return
-    And the sales assistant clicks on Skip button
 
   #Add Product for blind return
     Then the sales assistant add an items from "General" product for return
     And the sales assistant selects "Damaged/Defective" as reason code
+    And the sales assistant clicks on Skip button
     And the sales assistant navigate to basket page from return mode page
 
   #Create Customer

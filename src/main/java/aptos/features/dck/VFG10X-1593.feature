@@ -1,4 +1,4 @@
-@VFG10X-1593 @ExchangeTransaction @Regression @SmokeDCK
+@VFG10X-1593 @ExchangeTransaction @Regression
 Feature: VFG10X-1593 Exchange with discount applied at item level $ off - Sale and Verified Return Item (Items scanned using return barcode should already have item level $ off discount)
 
   Scenario: Exchange with discount applied at item level $ off - Sale and Verified Return Item (Items scanned using return barcode should already have item level $ off discount)

@@ -1,4 +1,4 @@
-@VFG10X-1602 @ReturnTransaction @Regression @SmokeDCK
+@VFG10X-1602 @ReturnTransaction @Regression
 Feature: VFG10X-1602 Returns - Return with Gift Receipt
 
   Scenario: Returns - Return with Gift Receipt

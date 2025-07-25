@@ -1,4 +1,4 @@
-@VFG10X-284 @ExchangeTransaction  @Regression @GiftCard @Smoke @SmokeTesting
+@VFG10X-284 @ExchangeTransaction  @Regression @GiftCard
 Feature: VFG10X-284 Exchange _Positive Exchange by scanning barcode from e-receipt _Multiple Items with Multiple salesperson _Payment by Gift card
 
   Scenario: Exchange _Positive Exchange by scanning barcode from e-receipt _Multiple Items with Multiple salesperson _Payment by Gift card

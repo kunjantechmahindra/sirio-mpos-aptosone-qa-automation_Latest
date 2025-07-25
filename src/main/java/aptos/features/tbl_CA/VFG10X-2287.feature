@@ -1,4 +1,4 @@
-@VFG10X-2287 @ExchangeTransaction @Regression @GiftCard @Card @Smoke
+@VFG10X-2287 @ExchangeTransaction @Regression @GiftCard @Card
 
 Feature: VFG10X-2287 Exchange _Multiple items with same price _Top Up gift card_ Loyalty Customer Assigned
 

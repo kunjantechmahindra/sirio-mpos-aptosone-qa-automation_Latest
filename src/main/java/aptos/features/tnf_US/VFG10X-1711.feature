@@ -6,19 +6,18 @@ Feature: VFG10X-1711 Promotions and Discounts _ Sale transaction with stacked pr
   #Login and add product
     Given the sales assistant login to the application with valid username and password
     When the sales assistant clicks on Start Basket button
-    Then the sales assistant add 1 items from "Coupon-10%" product to the basket without customer
-    Then the sales assistant add 1 items from "Coupon-20%" product to the basket
+    Then the sales assistant add 2 items from "WithOutCoupon-10%-CantBeCombined" product to the basket without customer
+    And the sales assistant lands on Basket Page
+    And the sales assistant validate price of the item at index 1 after "20% off" discount is applied
+    And the sales assistant validate price of the item at index 2 after "20% off" discount is applied
 
     # Apply coupon
     When the sales assistant clicks on "Coupons" button from basket
-    And  the sales assistant enter coupons code for "Coupon-10%"
+    And  the sales assistant enter coupons code for "CantBeCombined"
     Then the sales assistant lands on Basket Page
-    And the sales assistant validate price of the item at index 1 after "10%" discount is applied
-    And the sales assistant clicks on "Coupons" button from basket
-    And  the sales assistant enter coupons code for "Coupon-20%"
-    Then the sales assistant lands on Basket Page
-    And the sales assistant validate price of the item at index 2 after "20%" discount is applied
-    And the sales assistant validate the promotions "10% off with coupon" and "20% off with coupon" aren't combined
+    And the sales assistant validate price of the item at index 1 after "10% off" discount is applied
+    And the sales assistant validate price of the item at index 2 after "10% off" discount is applied
+    And the sales assistant validate the promotions "20% off" and "10% off" aren't combined validation
     And the sales assistant validate total transaction amount
 
   #Payment transaction

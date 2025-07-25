@@ -1,4 +1,4 @@
-@VFG10X-1364 @Regression @ReturnTransaction @Card @Visa
+@VFG10X-1364 @Regression @ReturnTransaction @Card @Visa @SmokeTNF
 Feature: VFG10X-1364 Return Transaction _Return using return search option _Refund to Same Payment methods _1st item Reason code ECOM - DAMAGED/DEFECTIVE and 2nd Item with Reason Code:ECOM - WRONG SIZE/COLOR
 
   Scenario: Return Transaction _Return using return search option _Refund to Same Payment methods _1st item Reason code ECOM - DAMAGED/DEFECTIVE and 2nd Item with Reason Code:ECOM - WRONG SIZE/COLOR

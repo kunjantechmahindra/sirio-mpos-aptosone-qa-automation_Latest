@@ -12,7 +12,7 @@ Feature: VFG10X-587 Store Selling Functions _ Minimum Gift Card Top UP Amount
     And the sales assistant clicks on existing gift card button
     And the sales assistant enters gift card number from index 0
     And the sales assistant enters gift card amount "0.00"
-    And the sales assistant validates the error message for minimum value
+    And the sales assistant validates the Minimum issue amount error message
     And the sales assistant validate add value is disabled
     And the sales assistant enters valid gift card amount "0.01"
     And the sales assistant clicks on add value button

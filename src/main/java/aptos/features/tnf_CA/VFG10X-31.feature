@@ -17,9 +17,9 @@ Feature: VFG10X-31 Sale Transaction _Single Item with Promo(Percentage Off)_ Pay
     And  the sales assistant enter coupons code for "Coupon-AllItem"
     And the sales assistant lands on Basket Page
     And the sales assistant selects the product at index 1
-    And the sales assistant validate "20% off for all" is applied to item
+    And the sales assistant validate "10% off for all" is applied to item
     And the sales assistant selects the product at index 2
-    And the sales assistant validate "20% off for all" is applied to item
+    And the sales assistant validate "10% off for all" is applied to item
     And the sales assistant lands on Basket Page
 
     #Complete payment by RCM tenders

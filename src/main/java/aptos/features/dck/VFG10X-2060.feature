@@ -1,4 +1,4 @@
-@VFG10X-2060 @StoreSelling @Regression @SmokeDCK
+@VFG10X-2060 @StoreSelling @Regression
 Feature: VFG10X-2060 Store Selling Functions_ Resume Functionality
 
   Scenario: Store Selling Functions_ Resume Functionality

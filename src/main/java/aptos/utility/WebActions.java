@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class WebActions extends TestBase {
+
     public void clickOnElement(WebElement element) {
         try {
             element.click();

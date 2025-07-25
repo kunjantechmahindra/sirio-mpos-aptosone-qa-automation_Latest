@@ -23,12 +23,13 @@ Feature: VFG10X-39 Sale Transaction _Single item with Bag Fee_ Void Bag Fee_ New
     And the sales assistant adds 1 bag to the order
     And the sales assistant validate if bag quantity is "1"
     And the sales assistant clicks on Accept button
-    And the sales assistant navigate to basket page
+    #And the sales assistant navigate to basket page
+    And the sales assistant clicks on Basket button from header
     And the sales assistant clicks on Pay button
     And the sales assistant subtract 1 bag to the order
     And the sales assistant validate if bag quantity is "0"
     And the sales assistant clicks on Accept button
-    And the sales assistant navigate to basket page
+    And the sales assistant clicks on Basket button from header
     Then the sales assistant add 1 items from "General" product to the basket
     And the sales assistant clicks on Pay button
     And the sales assistant clicks on Accept button

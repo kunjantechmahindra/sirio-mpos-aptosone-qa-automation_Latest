@@ -11,6 +11,7 @@ Feature: VFG10X-1883 Create Customer with Mandatory fields + Opt-in to Loyalty  
     And then sales assistant clicks on Assign Customer button
     And the sales assistant clicks on New Customer
     And the sales assistant enter New customer detail
+    And the sales assistant clicks on Privacy Policy
     And the sales assistant clicks on Loyalty Terms
     And the sales assistant clicks on Save button
 

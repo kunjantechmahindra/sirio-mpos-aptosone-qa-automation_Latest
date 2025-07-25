@@ -9,7 +9,7 @@ Feature: VFG10X-1512 Gift Card _ Issue of New Gift Card by typing the incorrect 
 
   #Issue New Gift Card
     And the sales assistant clicks on gift card button
-    And the sales assistant enters gift card number from index 8
+    And the sales assistant enters gift card number from index 9
     And the sales assistant enters gift card amount "50.00"
     And the sales assistant clicks on issue button
     And the sales assistant validates the error message

@@ -1,4 +1,4 @@
-@VFG10X-1603 @ReturnTransaction @Regression @SmokeDCK
+@VFG10X-1603 @ReturnTransaction @Regression
 Feature: VFG10X-1603 Return with Discount - Partial
 
   Scenario: Return with Discount - Partial

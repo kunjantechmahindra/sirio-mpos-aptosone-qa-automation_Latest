@@ -15,6 +15,7 @@ Feature: VFG10X-1681 Return Transaction _ Perform Return of a transaction paid u
   # Payment transaction
     And the sales assistant clicks on Pay button
     And the sales assistant clicks on Accept button
+    And the sales assistant enter extra amount
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant clicks on More button
     And the sales assistant clicks on Membership Reward button

@@ -1,4 +1,4 @@
-@VFG10X-600 @CashManagement @Regression
+@VFG10X-600 @CashManagement @Regression @SmokeTBL
 Feature: VFG10X-600 Cash Management _ Paid OUT _On or Above Security level
 
   Scenario: Cash Management _ Paid OUT _On or Above Security level

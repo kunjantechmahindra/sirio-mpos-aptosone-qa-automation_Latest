@@ -11,11 +11,11 @@ Feature: VFG10X-1547  Promotions and Discounts _Transactional level discount rea
   #Apply transactional level discount
     And the sales assistant clicks on Discount button from basket page
     And the sales assistant select transaction discount button
-    And the sales assistant enter discount amount as 10
+    And the sales assistant enter discount amount as 5
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "MALL DISCOUNT" as reason code
     And the sales assistant clicks on Apply button
-    And sales assistant validates transactional level discount 10 applied
+    And sales assistant validates transactional level discount 5 applied
 
   #Payment transaction
     And the sales assistant clicks on Pay button

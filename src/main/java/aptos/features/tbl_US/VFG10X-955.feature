@@ -1,4 +1,4 @@
-@VFG10X-955 @ExchangeTransaction @Regression @Smoke @SmokeTesting
+@VFG10X-955 @ExchangeTransaction @Regression @SmokeTBL
 Feature: VFG10X-955 Exchange _Single item with Price Override on the exchange transaction
 
   Scenario: Exchange _Single item with Price Override on the exchange transaction

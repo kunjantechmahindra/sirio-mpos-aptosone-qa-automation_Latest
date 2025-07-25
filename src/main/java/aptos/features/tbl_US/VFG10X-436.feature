@@ -1,7 +1,7 @@
-@VFG10X-436 @PriceOverride @Regression
-Feature: Price Override _Sale Transaction with Price override for Multiple items_ Reason code PRICE MATCH & RETURN/EXCHANGE
+@VFG10X-436 @PriceOverride @Regression @SmokeTBL
+Feature: VFG10X-436 Price Override _Sale Transaction with Price override for Multiple items Reason code PRICE MATCH &RETURN/EXCHANGE
 
-  Scenario: Price Override _Sale Transaction with Price override for Multiple items_ Reason code PRICE MATCH & RETURN/EXCHANGE
+  Scenario: Price Override _Sale Transaction with Price override for Multiple items_ Reason code PRICE MATCH &RETURN/EXCHANGE
 
   # Login and add product
     Given the sales assistant login to the application with valid username and password

@@ -1,4 +1,4 @@
-@VFG10X-1157 @TaxManagement @Regression @SmokeTNF
+@VFG10X-1157 @TaxManagement @Regression
 
 Feature: VFG10X-1157 Tax _ Return transaction with multiple items with Tax Override, and Tax Exempt, Get E-Receipt
 
@@ -20,7 +20,7 @@ Feature: VFG10X-1157 Tax _ Return transaction with multiple items with Tax Overr
     And the sales assistant clicks on Apply button
     And the sales assistant lands on Basket Page
     And the sales assistant selects the product at index 1
-    And the sales assistant validate "Tax exempt - GST Tax, PST Tax" is applied to item
+    And the sales assistant validate "Tax exempt" is applied to item
 
   #Apply Tax override
     And the sales assistant selects the product at index 2
@@ -36,6 +36,7 @@ Feature: VFG10X-1157 Tax _ Return transaction with multiple items with Tax Overr
     And the sales assistant clicks on Accept button
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant clicks on Cash button
+    And the sales assistant clicks on Cash option
     And the sales assistant enter the Drawer ID
     And the sales assistant save the payment details for the sales transaction
     And the sales assistant clicks on Print button
@@ -48,7 +49,7 @@ Feature: VFG10X-1157 Tax _ Return transaction with multiple items with Tax Overr
     And the sales assistant selects "RTL - Changed Mind" as reason code
     And the sales assistant lands on Basket Page
     And the sales assistant selects the product at index 1
-    And the sales assistant validate "Tax exempt - GST Tax,PST Tax" is applied to item
+    And the sales assistant validate "Tax exempt" is applied to item
     And the sales assistant lands on Basket Page
     And the sales assistant selects the product at index 2
     And the sales assistant validate "Tax override - 3%" is applied to item

@@ -1,4 +1,4 @@
-@VFG10X-49 @PromotionsAndDiscounts @Regression @SmokeTesting
+@VFG10X-49 @PromotionsAndDiscounts @Regression
 Feature: VFG10X-49 Promotions and Discounts _ Sale transaction with Coupon - 10% with Coupon
 
   Scenario: Promotions and Discounts _ Sale transaction with Coupon - 10% with Coupon

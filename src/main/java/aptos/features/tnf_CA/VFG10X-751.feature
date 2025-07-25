@@ -1,4 +1,4 @@
-@VFG10X-751 @Regression @Card @StoreSelling @Amex
+@VFG10X-751 @Regression @Card @StoreSelling @Amex @SmokeTNF
 Feature: VFG10X-751 Store Selling Functions _Signature prompt validation for all return transactions with or without the original sales receipts
 
   Scenario: Store Selling Functions _Signature prompt validation for all return transactions with or without the original sales receipts
@@ -41,11 +41,11 @@ Feature: VFG10X-751 Store Selling Functions _Signature prompt validation for all
   # Return transaction
     And the sales assistant clicks on return button
     And the sales assistant select No receipt for blind return
-    And the sales assistant clicks on Skip button
 
   # Add Product
     Then the sales assistant add an items from "General" product for return
     And the sales assistant selects "Price Adjustment" as reason code
+    And the sales assistant clicks on Skip button
     Then the sales assistant add an items from "General" product for return
     And the sales assistant selects "Changed Mind" as reason code
     And the sales assistant navigate to basket page from return mode page

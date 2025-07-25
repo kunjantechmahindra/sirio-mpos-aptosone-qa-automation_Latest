@@ -1,4 +1,4 @@
-@VFG10X-1597 @SaleTransaction @Regression @SmokeDCK
+@VFG10X-1597 @SaleTransaction @Regression
 Feature: VFG10X-1597 Sales transaction of Multiple items,1st item with Tax Exempt,2nd item Without Tax Exempt
 
   Scenario: Sales transaction of Multiple items,1st item with Tax Exempt,2nd item Without Tax Exempt

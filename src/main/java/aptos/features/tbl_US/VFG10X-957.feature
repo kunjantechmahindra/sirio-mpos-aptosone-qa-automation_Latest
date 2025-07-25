@@ -1,4 +1,4 @@
-@VFG10X-957 @ExchangeTransaction @Regression @Smoke @SmokeTesting
+@VFG10X-957 @ExchangeTransaction @Regression
 Feature: VFG10X-957 Exchange _Multiple items with Tax Override, and Tax Exempt
 
   Scenario: Exchange _Multiple items with Tax Override, and Tax Exempt

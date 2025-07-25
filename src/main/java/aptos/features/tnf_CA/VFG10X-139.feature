@@ -12,7 +12,7 @@ Feature: VFG10X-139 Cash Management _ Till OUT_ Cash to Safe
     And the sales assistant clicks on "Till operations" for cash management
     And the sales assistant clicks on "Till out" for cash management
     And the sales assistant enter the Drawer ID
-    And the sales assistant clicks on counted amount for till out
+    And the sales assistant clicks on counted amount
     And the sales assistant enters the quantity as 100 on first index
     And the sales assistant assign click on done
     And the sales assistant clicks on proceed button
@@ -27,7 +27,7 @@ Feature: VFG10X-139 Cash Management _ Till OUT_ Cash to Safe
     #Get transaction number from information
     And the sales assistant navigate to information page
     And the sales assistant save the transaction number from information page
-    And the sales assistant navigate to basket page
+    And the sales assistant clicks on Basket button from header
     And the sales assistant logout from the application
 
     #EJ Validation

@@ -24,7 +24,7 @@ Feature: VFG10X-1005 Cash Management _Void Till out Transaction.
     And sales assistant clicks on till out button from variance in amount
     And the sales assistant clicks on till operations back button
     And the sales assistant clicks on store operations back button
-    And the sales assistant navigate to basket page
+    And the sales assistant navigate from store operation to basket page
     And the sales assistant logout from the application
 
 

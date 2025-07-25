@@ -1,4 +1,4 @@
-@VFG10X-1238 @ReturnTransaction @Regression @GiftCard @Card @SmokeTNF
+@VFG10X-1238 @ReturnTransaction @Regression @GiftCard @Card
 Feature: VFG10X-1238 Return transaction_ Return multiple items with Item level discount and Transactional discount and issue New Gift card as refund_Existing Customer assigned
 
   Scenario: Return transaction_ Return multiple items with Item level discount and Transactional discount and issue New Gift card as refund_Existing Customer assigned
@@ -44,6 +44,7 @@ Feature: VFG10X-1238 Return transaction_ Return multiple items with Item level d
     And the sales assistant assign customer details with index 0
 
 #Return transaction
+    And the sales assistant validate if void button is enabled
     And the sales assistant clicks on return button
     And the sales assistant scan the receipt for returning the item
     And the sales assistant selects the return product at index 2
@@ -59,7 +60,7 @@ Feature: VFG10X-1238 Return transaction_ Return multiple items with Item level d
     And the sales assistant clicks on Pay button
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant clicks on gift card button from payment page
-    And the sales assistant enter the gift card number for payment from index 1
+    And the sales assistant enter the gift card number for payment from index 2
     And the sales assistant clicks on issue button from payment page
     And the sales assistant sign for the transaction
     And the sales assistant save the payment details for the sales transaction

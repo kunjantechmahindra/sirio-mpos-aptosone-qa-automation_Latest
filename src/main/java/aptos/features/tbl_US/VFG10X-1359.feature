@@ -1,4 +1,4 @@
-@VFG10X-1359 @PromotionsAndDiscounts @Regression @Smoke @SmokeTesting
+@VFG10X-1359 @PromotionsAndDiscounts @Regression
 Feature: VFG10X-1359 Promotions and Discounts _ Single Item Employee Discount _Item from Authorized group
 
   Scenario: Promotions and Discounts _ Single Item Employee Discount _Item from Authorized group

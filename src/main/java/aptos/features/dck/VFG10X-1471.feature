@@ -1,4 +1,4 @@
-@VFG10X-1471 @ReturnTransaction @Regression @SmokeDCK
+@VFG10X-1471 @ReturnTransaction @Regression
 
   Feature: VFG10X-1471 DCK - Return Transaction_Return Search_Single Item
 

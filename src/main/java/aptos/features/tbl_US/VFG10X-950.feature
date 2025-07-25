@@ -1,4 +1,4 @@
-@VFG10X-950 @ReturnTransaction @Regression @Smoke @SmokeTesting
+@VFG10X-950 @ReturnTransaction @Regression
 Feature: VFG10X-950 Return Transaction _Blind Return with Single Temp MD item without perm price with Price override and employee discount(Item Level) applied during return flow_Refund as Cash
 
   Scenario: Return Transaction _Blind Return with Single Temp MD item without perm price with Price override and employee discount(Item Level) applied during return flow_Refund as Cash
@@ -10,11 +10,11 @@ Feature: VFG10X-950 Return Transaction _Blind Return with Single Temp MD item wi
   #Return transaction
     And the sales assistant clicks on return button
     And the sales assistant select No receipt for blind return
-    And the sales assistant clicks on Skip button
 
     #Add Product
     And the sales assistant enters 1 "General" item UPC manually in the return
     And the sales assistant selects "RTL - CHANGED MIND" as reason code
+    And the sales assistant clicks on Skip button
     And the sales assistant navigate to basket page from return mode page
     And the sales assistant lands on Basket Page
 

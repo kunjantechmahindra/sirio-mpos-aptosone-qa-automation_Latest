@@ -1,4 +1,4 @@
-@VFG10X-1782 @CashManagement @Regression
+@VFG10X-1782 @CashManagement @Regression @SmokeDCK
 
   Feature: VFG10X-1782 Cash Management _ No Sale _ On and Above Security level
 

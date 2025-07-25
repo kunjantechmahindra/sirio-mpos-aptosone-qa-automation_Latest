@@ -41,9 +41,9 @@ Feature: VFG10X-1365 Return Transaction _Refund to Same Payment methods _1st ite
     #Refund to card partially - selecting same card Amex
     And the sales assistant clicks on Pay button
     And the sales assistant save the transaction details of the sales transaction
-    And the sales assistant select amex card for refund first
-    And the sales assistant validate if partial refund was success
     And the sales assistant select amex card for refund second
+    And the sales assistant validate if partial refund was success
+    And the sales assistant select amex card for refund first
     And the sales assistant sign for the transaction
     And the sales assistant save the payment details for the sales transaction
     And the sales assistant clicks on Print button

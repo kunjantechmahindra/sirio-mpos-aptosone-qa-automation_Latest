@@ -1,4 +1,4 @@
-@VFG10X-1594 @ExchangeTransaction @Regression @SmokeDCK
+@VFG10X-1594 @ExchangeTransaction @Regression
 Feature: VFG10X-1594 Exchange _Transaction level dollar off discount_Sale transaction should have transaction level dollar off discount
 
   Scenario: Exchange _Transaction level dollar off discount_Sale transaction should have transaction level dollar off discount

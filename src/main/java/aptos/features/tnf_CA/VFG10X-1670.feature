@@ -25,7 +25,7 @@ Feature: VFG10X-1670 Promotions and Discounts _ Verify that promotion is not get
     And  the sales assistant enter coupons code for "Coupon-AllItem"
     And the sales assistant lands on Basket Page
     And the sales assistant selects the product at index 1
-    And the sales assistant validate "20% off for all" is applied to item
+    And the sales assistant validate "10% off for all" is applied to item
     And the sales assistant lands on Basket Page
     And the sales assistant selects gift card item at index 1
     And sales assistant coupon discount is not applied to gift card

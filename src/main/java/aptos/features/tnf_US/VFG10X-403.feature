@@ -10,11 +10,11 @@ Feature: VFG10X-403 Store Selling Functions _ Return without Receipt Functionali
   #Return transaction
     And the sales assistant clicks on return button
     And the sales assistant select No receipt for blind return
-    And the sales assistant clicks on Skip button
 
   #Add Product
     Then the sales assistant add an items from "General" product for return
     And the sales assistant selects "Damaged" as reason code
+    And the sales assistant clicks on Skip button
     And the sales assistant navigate to basket page from return mode page
 
   #Void Transaction

@@ -1,4 +1,4 @@
-@VFG10X-1618 @TaxManagement @SaleTransaction @Regression @SmokeDCK
+@VFG10X-1618 @TaxManagement @SaleTransaction @Regression
 Feature: VFG10X-1618 Perform Sales transaction with multiple items with Tax Override,and Tax Exempt, Get E-Receipt
 
   Scenario: Perform Sales transaction with multiple items with Tax Override,and Tax Exempt, Get E-Receipt

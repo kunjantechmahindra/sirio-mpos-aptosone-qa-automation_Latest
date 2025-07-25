@@ -1,4 +1,4 @@
-@VFG10X-139 @CashManagement @Regression @TillOut @SmokeTesting
+@VFG10X-139 @CashManagement @Regression @TillOut
 Feature: VFG10X-139 Cash Management _ Till OUT_ Cash to Safe
 
   Scenario: Cash Management _ Till OUT_ Cash to Safe

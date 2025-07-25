@@ -1,4 +1,4 @@
-@VFG10X-1610 @SaleTransaction @Regression @SmokeDCK
+@VFG10X-1610 @SaleTransaction @Regression
 Feature: VFG10X-1610 Sale Transaction with Price Override - 3 Items
 
   Scenario: Sale Transaction with Price Override - 3 Items

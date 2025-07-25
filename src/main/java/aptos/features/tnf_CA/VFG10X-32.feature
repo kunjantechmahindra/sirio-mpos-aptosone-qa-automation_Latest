@@ -1,4 +1,4 @@
-@VFG10X-32 @SaleTransaction @Regression
+@VFG10X-32 @SaleTransaction @Regression @SmokeTNF
 Feature: VFG10X-32 Sale Transaction _Single Item with coupon_ No Customer
 
   Scenario: Sale Transaction _Single Item with coupon_ No Customer

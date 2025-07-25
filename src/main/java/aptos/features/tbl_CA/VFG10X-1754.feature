@@ -1,4 +1,4 @@
-@VFG10X-1754 @PromotionsAndDiscounts @Regression
+@VFG10X-1754 @PromotionsAndDiscounts @Regression @DetailedCalculation
 Feature: VFG10X-1754 Promotions and Discounts _ Sale Transaction with Stacked Promotions _Exclusivity set to "Can be Combined"
 
   Scenario: Promotions and Discounts _ Sale Transaction with Stacked Promotions _Exclusivity set to "Can be Combined"
@@ -16,6 +16,7 @@ Feature: VFG10X-1754 Promotions and Discounts _ Sale Transaction with Stacked Pr
     And  the sales assistant enter coupons code for "Coupon-AllItem"
     And the sales assistant selects the product at index 1
     And the sales assistant validate "10% off for all" is applied to item
+    And the sales assistant validate second promotion got applied to the product
     And the sales assistant lands on Basket Page
 
      #Payment transaction

@@ -1,4 +1,4 @@
-@VFG10X-1799 @Regression @ExchangeTransaction @Card @GiftCard @Master
+@VFG10X-1799 @Regression @ExchangeTransaction @Card @GiftCard @Master @SmokeDCK
 Feature: VFG10X-1799 Exchange _Even Exchange with Temp MD item _ add through the Product enquiry page_emp discount 60% override_ in sales
 
   Scenario: Exchange _Even Exchange with Temp MD item _ add through the Product enquiry page_emp discount 60% override_ in sales

@@ -1,4 +1,4 @@
-@VFG10X-420 @StoreSelling @Regression @GiftCard @Smoke @SmokeTesting
+@VFG10X-420 @StoreSelling @Regression @GiftCard
 Feature: VFG10X-420 Store Selling Functions _Only Gift card to cash option is there for Tender exchange
 
   Scenario: Store Selling Functions _Only Gift card to cash option is there for Tender exchange

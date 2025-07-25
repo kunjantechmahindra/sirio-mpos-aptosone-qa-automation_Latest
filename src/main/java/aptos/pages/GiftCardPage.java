@@ -34,7 +34,8 @@ public class GiftCardPage extends TestBase {
     }
 
     // Page Factory Object Repository.
-    @FindBy(xpath = "//*[@name='Gift card']")
+    //@FindBy(xpath = "//*[@name='Gift card']")
+    @FindBy(xpath = "//XCUIElementTypeOther[@name='Gift card']")
     WebElement giftCardButton;
 
     @FindBy(xpath = "//XCUIElementTypeOther[@name='Payment-Gift Card-button']")
@@ -119,7 +120,8 @@ public class GiftCardPage extends TestBase {
     @FindBy(xpath = "(//XCUIElementTypeOther[@name='Swipe'])[2]")
     WebElement balanceSwipeButton;
 
-    @FindBy(xpath = "//XCUIElementTypeStaticText[@name='INVALID_PIN - WrongPIN']")
+    //@FindBy(xpath = "//XCUIElementTypeStaticText[@name='INVALID_PIN - WrongPIN']")
+    @FindBy(xpath = "//XCUIElementTypeStaticText[@name='Authorization failed']")
     WebElement invalidPinErrorMessage;
 
     @FindBy(xpath = "(//XCUIElementTypeOther[@name='Close'])[2]")
@@ -142,6 +144,9 @@ public class GiftCardPage extends TestBase {
 
     @FindBy(xpath = "(//XCUIElementTypeOther[@name='Swipe'])[2]")
     WebElement tenderExchangeSwipeButton;
+
+    @FindBy(xpath = "//XCUIElementTypeStaticText[@name='Balance inquiry']")
+    WebElement balanceInquiryHeader;
 
     //Actions
     public void clickOnGiftCardButton() {
@@ -298,7 +303,8 @@ public class GiftCardPage extends TestBase {
         mobileActions.waitAndClickOnElement(basketPage.giftCardBalance, 5);
     }
 
-    public void clickOnBalanceSwipeButton() {
+    public void clickOnBalanceSwipeButton(){
+        mobileActions.clickOnElement(balanceInquiryHeader);
         mobileActions.clickOnElement(balanceSwipeButton);
     }
 
@@ -338,7 +344,7 @@ public class GiftCardPage extends TestBase {
         }).start();
     }
 
-    public void clicksBackButtonOnBalanceInquiryPage(){
+    public void clicksBackButtonOnBalanceInquiryPageAfterErrorValidation(){
         String errorMessage = generalUtility.getTextFromElement(balanceInquiryErrorMessgae);
         assertTrue("Test failed: Custom Message is not correctly displayed", errorMessage.contains("Balance inquiry unsuccessful Refusal"));
         mobileActions.clickOnElement(balanceInquiryBackButton);

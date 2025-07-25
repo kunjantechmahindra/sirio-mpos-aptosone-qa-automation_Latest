@@ -1,4 +1,4 @@
-@VFG10X-152 @PromotionsAndDiscounts @Regression @Smoke
+@VFG10X-152 @PromotionsAndDiscounts @Regression
 Feature: VFG10X-152 Promotions and Discounts _ Employee Discount validation with Terminated Employee ID
 
   Scenario: Promotions and Discounts _ Employee Discount validation with Terminated Employee ID

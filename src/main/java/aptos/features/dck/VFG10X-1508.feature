@@ -1,4 +1,4 @@
-@VFG10X-1508 @ReturnTransaction @Regression @SmokeDCK
+@VFG10X-1508 @ReturnTransaction @Regression
 
 Feature: VFG10X-1508 DCK_Return Transaction_Apply Promotion_With Original Sales Receipt- Verified Return
 

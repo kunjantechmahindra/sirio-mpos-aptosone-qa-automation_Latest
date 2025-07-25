@@ -1,4 +1,4 @@
-@VFG10X-1031 @StoreSelling @Regression @SmokeTesting
+@VFG10X-1031 @StoreSelling @Regression
 Feature: VFG10X-1031 Store Selling Functions _Validate receipt reprint times
 
   Scenario: Store Selling Functions _Validate receipt reprint times

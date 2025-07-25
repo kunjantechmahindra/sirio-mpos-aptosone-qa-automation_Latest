@@ -9,7 +9,7 @@ Feature: VFG10X-2047 Return Transaction _ Refund _Sale transaction paid using Re
 
   # Assign customer
     And then sales assistant clicks on Assign Customer button
-    And the sales assistant assign customer details with index 7
+    And the sales assistant assign customer details with index 6
     And the sales assistant saves the loyalty points
     And the sales assistant navigates to basket from page from loyalty page
     Then the sales assistant add 2 items from "HigherPrice" product to the basket

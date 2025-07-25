@@ -1,4 +1,4 @@
-@VFG10X-1410 @PromotionsAndDiscounts @Regression @Smoke
+@VFG10X-1410 @PromotionsAndDiscounts @Regression
 Feature: VFG10X-1410  Promotions and Discounts _ Sale transaction with buy for $XX get $YY discount with coupon
 
   Scenario: Promotions and Discounts _ Sale transaction with buy for $XX get $YY discount with coupon
