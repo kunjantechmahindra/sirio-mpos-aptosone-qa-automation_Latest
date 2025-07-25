@@ -1,5 +1,4 @@
-@VFG10X-609 @PromotionsAndDiscounts @Regression @SmokeTesting  @Rerun
-
+@VFG10X-609 @PromotionsAndDiscounts @Regression @SmokeTesting
 Feature: VFG10X-609 Promotions and Discounts _ Sale Transactions with Multiple Items _13% discount to first item and 06 $ discount to second item
 
   Scenario: Promotions and Discounts _ Sale Transactions with Multiple Items _13% discount to first item and 06 $ discount to second item

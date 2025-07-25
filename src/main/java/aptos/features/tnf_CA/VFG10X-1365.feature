@@ -1,4 +1,4 @@
-@VFG10X-1365 @Regression @ReturnTransaction @Card
+@VFG10X-1365 @Regression @ReturnTransaction
 Feature: VFG10X-1365 Return Transaction _Refund to Same Payment methods _1st item with Reason Code ECOM - CHANGED MIND and 2nd Item with Reason Code ECOM - PRICE ADJUSTMENT
 
   Scenario: Return Transaction _Refund to Same Payment methods _1st item with Reason Code ECOM - CHANGED MIND and 2nd Item with Reason Code ECOM - PRICE ADJUSTMENT

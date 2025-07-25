@@ -16,5 +16,5 @@ Feature: VFG10X-606 Cash Management _ Safe to Till _ Below Security level
     And the sales assistant checks an error message is displayed
     And the sales assistant clicks on till operations back button for below security level
     And the sales assistant clicks on store operations back button
-    And the sales assistant navigate from store operation to basket page
+    And the sales assistant navigate to basket page
     And the sales assistant logout from the application

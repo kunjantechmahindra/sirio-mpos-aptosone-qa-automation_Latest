@@ -17,7 +17,6 @@ Feature: VFG10X-23 Sale Transaction _Multiple Items with Tax Exempt and Coupon A
     And the sales assistant lands on Basket Page
     And the sales assistant selects the product at index 2
     And the sales assistant validate "10% off for all" is applied to item
-    And the sales assistant lands on Basket Page
 
     #Tax exempt
     And the sales assistant selects Tax button from Basket page

@@ -10,14 +10,14 @@ Feature: VFG10X-1705 Exchange _Negative Blind Exchange of single item with bag f
   # Return transaction
     And the sales assistant clicks on return button
     And the sales assistant select No receipt for blind return
+    And the sales assistant clicks on Skip button
 
   # Add Product
     Then the sales assistant add an items from "General" product for return
     And the sales assistant selects "Price Adjustment" as reason code
-    And the sales assistant clicks on Skip button
     And the sales assistant navigate to basket page from return mode page
 
-  # Add exchange item to the basket
+  # Add
     Then the sales assistant add 1 items from "LowerPrice" product to the basket
     And the sales assistant stores the transaction amount details
 

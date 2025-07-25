@@ -186,7 +186,7 @@ public class GiftCardStepDefinition {
     }
 
     @And("the sales assistant clicks on balance swipe button")
-    public void theSalesAssistantClicksOnBalanceSwipeButton(){
+    public void theSalesAssistantClicksOnBalanceSwipeButton() {
         giftCardPage.clickOnBalanceSwipeButton();
     }
 
@@ -205,9 +205,9 @@ public class GiftCardStepDefinition {
         giftCardPage.giftCardBalanceBySwiping(index);
     }
 
-    @And("the sales assistant clicks the back button on balance inquiry page after validating error message")
-    public void theSalesAssistantClicksTheBackButtonOnBalanceInquiryPageAfterValidatingErrorMessage() {
-        giftCardPage.clicksBackButtonOnBalanceInquiryPageAfterErrorValidation();
+    @And("the sales assistant clicks the back button on balance inquiry page")
+    public void theSalesAssistantClicksTheBackButtonOnBalanceInquiryPage() {
+        giftCardPage.clicksBackButtonOnBalanceInquiryPage();
     }
 
     @And("the sales assistant validates Tender Exchange error message")

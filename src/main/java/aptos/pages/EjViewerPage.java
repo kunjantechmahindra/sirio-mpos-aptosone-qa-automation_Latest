@@ -3,13 +3,11 @@ package aptos.pages;
 import aptos.base.TestBase;
 import aptos.utility.GeneralUtility;
 import aptos.utility.TestDataHelper;
-import aptos.utility.WebActions;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -24,15 +22,6 @@ public class EjViewerPage extends TestBase {
 
     BasketPage basketPage = new BasketPage();
     GeneralUtility generalUtility = new GeneralUtility();
-    WebActions webActions = new WebActions();
-
-
-
-//    @FindBy(xpath = "//XCUIElementTypeStaticText[@name='Sign in']")
-//    WebElement signInButton = browserDriver.findElement(By.xpath("//XCUIElementTypeStaticText[@name='Sign in']"));
-//
-//    @FindBy(xpath = "//*[@value='Select retail location']")
-//    WebElement storeNumberTxtField;
 
     // Constructor to initialize the Page Objects
     public EjViewerPage() throws IOException {
@@ -40,17 +29,13 @@ public class EjViewerPage extends TestBase {
     }
 
     public void enterTransactionId() {
-        browserDriver.findElement(By.xpath("(//XCUIElementTypeOther[@name='Aptos ONE EJ Viewer'])[1]/XCUIElementTypeOther[5]/XCUIElementTypeOther[6]/XCUIElementTypeOther/XCUIElementTypeButton")).click();
-        //browserDriver.findElement(By.xpath("(//XCUIElementTypeOther[@name='Aptos ONE EJ Viewer'])[1]/XCUIElementTypeOther[5]/XCUIElementTypeOther[6]/XCUIElementTypeOther/XCUIElementTypeButton")).click();
+        browserDriver.findElement(By.xpath("//*[@name='Aptos ONE EJ Viewer']/XCUIElementTypeOther[5]/XCUIElementTypeOther/XCUIElementTypeOther[6]/XCUIElementTypeOther/XCUIElementTypeButton")).click();
         browserDriver.findElement(By.xpath("//XCUIElementTypeTextField[@value='Enter transaction #']")).sendKeys(saleTransactionID);
-        browserDriver.findElement(By.xpath("//XCUIElementTypeStaticText[@name='Cashier']")).click();
+        browserDriver.findElement(By.xpath("(//*[contains(@name, 'Transaction #')])[1]")).click();
     }
 
     public void enterTheStoreNumber() {
         browserDriver.findElement(By.xpath("//*[@value='Select retail location']")).sendKeys(properties.getProperty("StoreNumber"));
-//        System.out.println("Enter Store Number");
-//        webActions.enterText(storeNumberTxtField,properties.getProperty("StoreNumber"));
-//        System.out.println("Store Number entered successfully");
         if (properties.getProperty("Brand").equals("DCK")) {
             browserDriver.findElement(By.xpath("//*[@name='Dropdown select']/descendant::XCUIElementTypeOther[3]/descendant::XCUIElementTypeOther[1]")).click();
         } else {
@@ -73,20 +58,10 @@ public class EjViewerPage extends TestBase {
         browserDriver.findElement(By.xpath("//*[@name='Reload']")).click();
     }
 
-
-//    public void signInToEjViewer(){
-////        if (isSignInButtonDisplayed()) {
-//            System.out.println("Before Action");
-//            webActions.clickOnElement(signInButton);
-////            browserDriver.findElement(By.xpath("//XCUIElementTypeStaticText[@name='Sign in']")).click();
-//            System.out.println("After Action");
-////        }
-//    }
-
     public void validatePaymentDetail() {
-        WebElement totalAmountEj = browserDriver.findElement(By.xpath("(//*[contains(@label,'" + "$" + totalPaymentSale + "')])"));
-        WebElement taxAmountEj = browserDriver.findElement(By.xpath("(//*[contains(@label,'" + "$" + taxAmountSale + "')])"));
-        WebElement savingsAmountEj = browserDriver.findElement(By.xpath("//*[contains(@label,'" + "$" + discountAmountSale + "')]"));
+        WebElement savingsAmountEj = browserDriver.findElement(By.xpath("(//*[contains(@name,'Savings: ')])"));
+        WebElement taxAmountEj = browserDriver.findElement(By.xpath("(//*[contains(@name,'Tax: ')])"));
+        WebElement totalAmountEj = browserDriver.findElement(By.xpath("(//*[contains(@name,'Total: ')])"));
 
         if ((totalAmountEj.getAttribute("label")).contains(totalPaymentSale)) {
             System.out.println("totalPaymentSale exists in totalAmountEj.");
@@ -132,13 +107,28 @@ public class EjViewerPage extends TestBase {
     }
 
     public void validatesTransactionVoided() {
-        try {
-            WebElement element = browserDriver.findElement(By.xpath("//XCUIElementTypeStaticText[@name='Transaction voided']"));
-            Assert.assertTrue("Transaction voided details not found", element.isEnabled());
-        } catch (NoSuchElementException e) {
-            Assert.fail("Transaction voided details not found");
+        WebElement savingsAmountEj = browserDriver.findElement(By.xpath("(//*[contains(@name,'Savings: ')])"));
+        WebElement taxAmountEj = browserDriver.findElement(By.xpath("(//*[contains(@name,'Tax: ')])"));
+        WebElement totalAmountEj = browserDriver.findElement(By.xpath("(//*[contains(@name,'Total: ')])"));
+        if ((totalAmountEj.getAttribute("label")).contains("0.00")) {
+            System.out.println("Transaction voided");
+        } else {
+            Assert.fail("Not a voided transaction");
+        }
+
+        if ((taxAmountEj.getAttribute("label")).contains("0.00")) {
+            System.out.println("Transaction voided");
+        } else {
+            Assert.fail("Not a voided transaction");
+        }
+
+        if ((savingsAmountEj.getAttribute("label")).contains("0.00")) {
+            System.out.println("Transaction voided");
+        } else {
+            Assert.fail("Not a voided transaction");
         }
     }
+
 
     public void validateReasonCodeID(int reasonCodeID) {
         try {

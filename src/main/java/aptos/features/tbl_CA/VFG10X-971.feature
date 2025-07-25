@@ -1,5 +1,4 @@
-@VFG10X-1049 @PromotionsAndDiscounts @Regression  @Rerun
-
+@VFG10X-1049 @PromotionsAndDiscounts @Regression
 Feature: VFG10X-971 Promotions and Discounts _ Item level Discount _Item discount in a sales transaction where 1st item Apply 71% OFF_Error_Apply 70% OFF,2nd Item 29$ OFF and apply Tax override on 1st item
 
   Scenario: Promotions and Discounts _ Item level Discount _Item discount in a sales transaction where 1st item Apply 71% OFF_Error_Apply 70% OFF,2nd Item 29$ OFF and apply Tax override on 1st item

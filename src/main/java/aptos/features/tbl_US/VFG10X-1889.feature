@@ -29,16 +29,15 @@ Feature: VFG10X-1889 Perform a verified return for the sale transaction payment 
     And the sales assistant clicks on Print button
     And the sales assistant select the printer and save the receipt for return
 
+  # Adding loyalty customer
+    And then sales assistant clicks on Assign Customer button
+    And the sales assistant assign customer details with index 4
+
   # Return transaction
     And the sales assistant clicks on return button
     And the sales assistant scan the receipt for returning the item
     And the sales assistant return all items from the transaction
     And the sales assistant selects "DAMAGED/DEFECTIVE" as reason code
-    And the sales assistant clicks on "Ok" button to assign customer
-
-  # Adding loyalty customer
-    And then sales assistant clicks on Assign Customer button
-    And the sales assistant assign customer details with index 4
 
   # Refund
     And the sales assistant clicks on Pay button

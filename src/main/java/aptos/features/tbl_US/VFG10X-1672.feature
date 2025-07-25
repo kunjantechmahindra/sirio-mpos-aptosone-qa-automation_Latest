@@ -10,12 +10,12 @@ Feature: VFG10X-1672 Gift Card _Unable to apply Item Level , Transactional Level
     #Top Up Gift Card
     And the sales assistant clicks on gift card button
     And the sales assistant validates existing gift card button is enabled
-    And the sales assistant enters gift card number from index 2
+    And the sales assistant enters gift card number from index 4
     And the sales assistant enters gift card amount "50.00"
     And the sales assistant clicks on add value button
     And the sales assistant clicks on Skip button
-    Then the sales assistant validates the Gift Card balance from basket page for index 2
-    Then the sales assistant enter the the pin from index 2
+    Then the sales assistant validates the Gift Card balance from basket page for index 4
+    Then the sales assistant enter the the pin from index 4
     Then the sales assistant saves the Gift Card balance amount
     And the sales assistant closes the Balance Inquiry screen
     And the sales assistant lands on Basket Page
@@ -83,8 +83,8 @@ Feature: VFG10X-1672 Gift Card _Unable to apply Item Level , Transactional Level
     And the sales assistant lands on Basket Page
 
     #Gift card balance enquiry
-    Then the sales assistant validates the Gift Card balance from basket page for index 2
-    Then the sales assistant enter the the pin from index 2
+    Then the sales assistant validates the Gift Card balance from basket page for index 4
+    Then the sales assistant enter the the pin from index 4
     Then the sales assistant saves the Gift Card balance amount
     And the sales assistant closes the Balance Inquiry screen
     And the sales assistant validates the gift card balance after applying discounts

@@ -9,7 +9,7 @@ Feature: VFG10X-586 Store Selling Functions _ Maximum Gift Card Issue Amount
 
   #Issue New Gift Card
     And the sales assistant clicks on gift card button
-    And the sales assistant enters gift card number from index 1
+    And the sales assistant enters gift card number from index 3
     And the sales assistant enters gift card amount "1000.01"
     And the sales assistant validate the displayed error message
     And the sales assistant validate issue button is disabled

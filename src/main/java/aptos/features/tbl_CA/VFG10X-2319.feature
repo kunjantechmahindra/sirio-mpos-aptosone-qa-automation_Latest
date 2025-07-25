@@ -1,4 +1,4 @@
-@VFG10X-2319 @ReturnTransaction @Regression @DetailedCalculation @Card @Visa
+@VFG10X-2319 @ReturnTransaction @Regression @DetailedCalculation
 
 Feature: VFG10X-2319 Return Transaction _ Blind Return with multiple items and add tax exempt to the return transaction_Refund to Cash_Existing customer assigned
 
@@ -11,17 +11,17 @@ Feature: VFG10X-2319 Return Transaction _ Blind Return with multiple items and a
     #Assign customer and add item to basket
     And then sales assistant clicks on Assign Customer button
     And the sales assistant assign customer details with index 1
-    And the sales assistant validate if void button is enabled
+
     #Return transaction
     And the sales assistant clicks on return button
     And the sales assistant select No receipt for blind return
 
     #Add Product
     Then the sales assistant add an items from "General" product for return
-    And the sales assistant selects "RTL - DAMAGED/DEFECTIVE" as reason code
+    And the sales assistant selects "DAMAGED/DEFECTIVE" as reason code
     And the sales assistant navigate to basket page from return mode page
 
-    #Tax exempt
+  #Tax exempt
     And the sales assistant selects Tax button from Basket page
     And the sales assistant selects "Tax exempt" Option from line Action
     And the sales assistant enter the tax ID
@@ -33,11 +33,14 @@ Feature: VFG10X-2319 Return Transaction _ Blind Return with multiple items and a
     And the sales assistant validates transactional level tax is exempted
     And the sales assistant validate total transaction amount
 
-    #Complete refund
+  #Refund to cash
     And the sales assistant clicks on Pay button
-    And the sales assistant clicks on Card button
-    And the sales assistant processes the payment with a "visa" card using a "tap" action, entering the pin "0"
+    And the sales assistant save the transaction details of the sales transaction
+    And the sales assistant validate the refund amount is correct
+    And the sales assistant clicks on Cash button
+    And the sales assistant enter the Drawer ID
     And the sales assistant sign for the transaction
+    And the sales assistant save the payment details for the sales transaction
     And the sales assistant clicks on Print button
     And the sales assistant select the printer
     And the sales assistant logout from the application

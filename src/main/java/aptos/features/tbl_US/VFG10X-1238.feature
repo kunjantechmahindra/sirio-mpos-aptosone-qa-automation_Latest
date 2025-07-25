@@ -38,6 +38,10 @@ Feature: VFG10X-1238 Return transaction_ Return multiple items with Item level d
     And the sales assistant clicks on Print button
     And the sales assistant select the printer and save the receipt for return
 
+  # Assign customer
+    And then sales assistant clicks on Assign Customer button
+    And the sales assistant assign customer details with index 1
+
   # Return transaction
     And the sales assistant clicks on return button
     And the sales assistant scan the receipt for returning the item
@@ -49,10 +53,6 @@ Feature: VFG10X-1238 Return transaction_ Return multiple items with Item level d
     And the sales assistant selects the return product at index 1
     And the sales assistant clicks on Done button
     And the sales assistant selects "RTL - DAMAGED/DEFECTIVE" as reason code
-
-  # Assign customer
-    And then sales assistant clicks on Assign Customer button
-    And the sales assistant assign customer details with index 1
 
   # Refund to gift card
     And the sales assistant clicks on Pay button

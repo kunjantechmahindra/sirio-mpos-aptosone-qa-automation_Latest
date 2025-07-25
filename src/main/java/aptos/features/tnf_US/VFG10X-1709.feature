@@ -11,11 +11,11 @@ Feature: VFG10X-1709 Exchange Transaction_Blind Exchange transaction with Single
   #Return transaction
     And the sales assistant clicks on return button
     And the sales assistant select No receipt for blind return
+    And the sales assistant clicks on Skip button
 
   #Add Product for blind return
     Then the sales assistant add an items from "General" product for return
     And the sales assistant selects "Damaged/Defective" as reason code
-    And the sales assistant clicks on Skip button
     And the sales assistant navigate to basket page from return mode page
 
   #Apply Tax override

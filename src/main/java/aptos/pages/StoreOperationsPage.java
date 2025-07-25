@@ -33,8 +33,7 @@ public class StoreOperationsPage extends TestBase {
     @FindBy(xpath = "//XCUIElementTypeTextField[@value='Amount']")
     WebElement amountText;
 
-//    @FindBy(xpath = "(//XCUIElementTypeOther[contains(@name, 'Reason code')])[last()]")
-    @FindBy(xpath = "(//XCUIElementTypeOther[@name='Reason code'])[2]")
+    @FindBy(xpath = "(//XCUIElementTypeOther[contains(@name, 'Reason code')])[last()]")
     WebElement reasonCode;
 
     @FindBy(xpath = "(//XCUIElementTypeOther[@name='Till operations'])[last()]")
@@ -118,7 +117,7 @@ public class StoreOperationsPage extends TestBase {
     @FindBy(xpath = "(//XCUIElementTypeOther[@name='Paid in'])[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther")
     WebElement backArrowPaidIn;
 
-    @FindBy(xpath = "(//XCUIElementTypeOther[@name='Reason code'])[3]")
+    @FindBy(xpath = "(//XCUIElementTypeOther[@name='Reason code >'])[3]")
     WebElement reasonCodeNoSaleProceed;
 
     @FindBy(xpath = "//*[@name='CONTESTS CUSTOMER ACCOMODATIONS DRAWER/SAFE FUND MAINTENANCE POSTAGE SUPPLIES TEAM MEALS']")
@@ -192,9 +191,6 @@ public class StoreOperationsPage extends TestBase {
 
     @FindBy(xpath = "//XCUIElementTypeStaticText[@name='Tender exchange']")
     WebElement tenderExchangeTitle;
-
-    @FindBy(xpath = "(//XCUIElementTypeOther[@name='Basket'])[3]")
-    WebElement backButtonFromStoreOperationToBasket;
 
     //Actions
     public void clickOnStoreOperationItemsByName(String name) {
@@ -469,9 +465,5 @@ public class StoreOperationsPage extends TestBase {
 
     public void backFromTenderExchangePage() {
         mobileActions.clickOnElement(tenderExchangeBackButton);
-    }
-
-    public void navigateFromStoreOperationToBasketPage(){
-        mobileActions.clickOnElement(backButtonFromStoreOperationToBasket);
     }
 }

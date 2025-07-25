@@ -239,9 +239,9 @@ public class ReturnPageStepDefinition extends TestBase {
         ApiHelper.displayBarcode("barcode", "UPCA", ProductCodeReturn, 3, Integer.valueOf(properties.getProperty("BarcodeScreenStation")));
     }
 
-    @And("the sales assistant validate the returnable period expired message and clicks continue")
-    public void theSalesAssistantValidateTheReturnablePeriodExpiredMessageAndClicksContinue() {
-        returnPage.validateReturnablePeriodExpiredMessageAndClicksContinue();
+    @And("the sales assistant validate the returnable period expired message")
+    public void theSalesAssistantValidateTheReturnablePeriodExpiredMessage() {
+        returnPage.validateReturnablePeriodExpiredMessage();
 
     }
 

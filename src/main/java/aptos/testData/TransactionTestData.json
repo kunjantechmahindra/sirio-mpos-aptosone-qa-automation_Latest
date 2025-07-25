@@ -22,7 +22,7 @@
         "Coupon-AllItem": "21030000",
         "XPLR-pass": "13030001",
         "Coupon-10%": "02041111",
-        "Coupon-SFCC": "20030000",
+        "Coupon-SFCC": "01042222",
         "Buy-for-$XX-get-$YY": "19110000"
       }
     ],
@@ -70,7 +70,7 @@
     ],
     "employeeId": [
       {
-        "valid": "867530",
+        "valid": "900700",
         "sameEmployee": "600400",
         "invalid": "123456",
         "terminated": "454549"
@@ -78,23 +78,23 @@
     ],
     "customers": [
       {
-        "zip": "10871",
-        "firstName": "Patrick",
-        "lastName": "Rempel",
-        "Phone": "9912616525",
+        "firstName": "POS",
+        "lastName": "Automation",
+        "Phone": "9123123123",
         "email": "posautomation@outlook.com"
       },
       {
+
         "zip": "10879",
-        "firstName": "Jacob",
-        "lastName": "Shirley",
-        "Phone": "9987998799",
+        "firstName": "Merrill",
+        "lastName": "Goodwin",
+        "Phone": "9946292470",
         "email": "shirley.jacobs@gmail.com"
       },
       {
         "zip": "10237",
-        "firstName": "Franchesca",
-        "lastName": "Krajcik",
+        "firstName": "Herb",
+        "lastName": "Hermiston",
         "Phone": "9986590969",
         "email": "renijacob@gmail.com"
       },
@@ -136,9 +136,9 @@
   "TBL-CA": {
     "SFCC-SKU": [
       {
-        "Promo-without-coupon-category": "TB0A2J32001",
-        "Promo-with-coupon-category": "TB0A1CPN001",
-        "BOGO-category": " TB0A1CX6A58"
+        "Promo-without-coupon-category": "TB0A1NN7001",
+        "Promo-with-coupon-category": "TB0A1NJF001",
+        "BOGO-category": "TB0A1Q16E02"
       }
     ],
     "coupons": [
@@ -148,7 +148,7 @@
         "Coupon-20%": "17072024",
         "Coupon-AllItem": "01066666",
         "Coupon-10%": "02042222",
-        "Coupon-SFCC": "20241122",
+        "Coupon-SFCC": "01042222",
         "Buy-for-$XX-get-$YY": "02122000"
       }
     ],
@@ -198,16 +198,15 @@
         "email": "valentine.haag@hotmail.com"
       },
       {
-        "zip": "U2X5E6",
-        "firstName": "Pasty",
-        "lastName": "Wyman",
-        "Phone": "9996370254",
+        "firstName": "Halfy",
+        "lastName": "Rath",
+        "Phone": "9100000002",
         "email": "hal.rath@hotmail.com"
       },
       {
         "zip": "X9S7C7",
         "firstName": "Scot",
-        "lastName": "Schumm",
+        "lastName": "Conn",
         "Phone": "9929554289",
         "email": "fransisca.witting@yahoo.com"
       },
@@ -232,7 +231,6 @@
       {
         "AmountOff-10$": "09122000",
         "Spend-50$-get-10$Off": "14050000",
-        "CantBeCombined": "05122001",
         "Coupon-20%": "08082000",
         "Coupon-AllItem": "14053333",
         "XPLR-pass": "28030000",
@@ -299,9 +297,9 @@
         "email": "chrisjhon123@gmail.com"
       },
       {
-        "firstName": "Buster",
-        "lastName": "Kulas",
-        "Phone": "9960544380",
+        "firstName": "Sawayn",
+        "lastName": "Hintz",
+        "Phone": "9946712588",
         "email": "janie.considine@hotmail.com"
       },
       {
@@ -391,10 +389,10 @@
     ],
     "customers": [
       {
-        "zip": "W3J4S0",
-        "firstName": "Pat",
-        "lastName": "Hoeger",
-        "Phone": "9922900577",
+        "zip": "N4Q0X5",
+        "firstName": "Elfriede",
+        "lastName": "Johnson",
+        "Phone": "9999465208",
         "email": "brittany.kling@gmail.com"
       },
       {

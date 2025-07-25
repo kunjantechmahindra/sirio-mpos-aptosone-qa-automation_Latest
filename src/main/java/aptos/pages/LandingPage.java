@@ -35,17 +35,11 @@ public class LandingPage extends TestBase {
     WebElement startBasket;
 
     //    @FindBy(xpath = "(//XCUIElementTypeOther[contains(@name, 'Hi')])[3]//XCUIElementTypeOther[1]//XCUIElementTypeOther[1]//XCUIElementTypeOther")
-
-//    @FindBy(xpath = "(//XCUIElementTypeOther[@name=\"Hi User level 30.\n" +
-//            "\n" +
-//            "Remember to ask every customer for their email address. Start Basket\"])[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther")
-//    you an XPLR Pass member? Sign in to earn points on every purchase or join now for free. Start Basket\"])[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther")
-    //XCUIElementTypeOther[@name="User Hi User.
-
-    @FindBy(xpath = "(//XCUIElementTypeOther[@name=\"User Hi User.\n" +
+    @FindBy(xpath = "(//XCUIElementTypeOther[@name=\"Hi User level 30.\n" +
             "\n" +
-            "Remember to ask every customer for their email address. Horizontal scroll bar, 1 page Vertical scroll bar, 1 page Start Basket Resume Horizontal scroll bar, 1 page Vertical scroll bar, 1 page\"])[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther")
-    WebElement hamburgerButtonFromLandingPage;
+            "Remember to ask every customer for their email address. Start Basket\"])[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther")
+//    you an XPLR Pass member? Sign in to earn points on every purchase or join now for free. Start Basket\"])[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther")
+            WebElement hamburgerButtonFromLandingPage;
 
     @FindBy(xpath = "(//XCUIElementTypeOther[@name=\"Hi Testing Automation.\n" +
             "\n" +
@@ -118,10 +112,8 @@ public class LandingPage extends TestBase {
     @FindBy(xpath = "//XCUIElementTypeOther[@name='Yes']")
     WebElement yesButtonOpenTerminal;
 
-    //@FindBy(xpath = "//XCUIElementTypeOther[@label='Store operations']")
-    @FindBy(xpath = "//XCUIElementTypeOther[@name='Store operations']")
+    @FindBy(xpath = "//XCUIElementTypeOther[@label='Store operations']")
     WebElement storeOperations;
-
     @FindBy(xpath = "//XCUIElementTypeButton[@name='No']")
     WebElement noButtonOpenTerminal;
 
@@ -133,13 +125,6 @@ public class LandingPage extends TestBase {
 
     @FindBy(xpath = "//XCUIElementTypeOther[@name='Search customer']")
     WebElement iPhoneSearchCustomerButton;
-
-    @FindBy(xpath = "//XCUIElementTypeOther[@name='Home']")
-    WebElement homeButton;
-
-    @FindBy(xpath = "//XCUIElementTypeOther[@name='Basket']")
-    WebElement basketButtonHamburger;
-
     //Actions
     public void clickOnStartBasket() {
         mobileActions.clickOnElement(startBasket);
@@ -196,15 +181,13 @@ public class LandingPage extends TestBase {
             assertTrue("Search Customer button is unavailable", isDisplayed);
         }
             else if (properties.getProperty("Brand").equals("TBL")) {
-            boolean isDisplayed = generalUtility.isElementDisplayed((homeButton));
-            assertTrue("home button is unavailable",isDisplayed);
+            boolean isDisplayed = generalUtility.isElementDisplayed(searchCustomerButton);
+            assertTrue("Search Customer button is unavailable", isDisplayed);
         } else if (properties.getProperty("Brand").equals("TNF")) {
             boolean isDisplayed = generalUtility.isElementDisplayed(searchCustomerButton);
             assertTrue("Search Customer button is unavailable", isDisplayed);
         }
-        boolean isDisplayed = generalUtility.isElementDisplayed(searchCustomerButton);
-        assertTrue("Search Customer button is unavailable", isDisplayed);
-        isDisplayed = generalUtility.isElementDisplayed(productInquiryButtton);
+        boolean isDisplayed = generalUtility.isElementDisplayed(productInquiryButtton);
         assertTrue("Product Inquiry button is unavailable", isDisplayed);
         isDisplayed = generalUtility.isElementDisplayed(salesHistoryButton);
         assertTrue("Sales History button is unavailable", isDisplayed);
@@ -214,12 +197,10 @@ public class LandingPage extends TestBase {
         assertTrue("Reprint button is unavailable", isDisplayed);
         isDisplayed = generalUtility.isElementDisplayed(storeOperationButton);
         assertTrue("Store Operations button is unavailable", isDisplayed);
-        w3CActions.scrollHamburgerMenu();
         isDisplayed = generalUtility.isElementDisplayed(informationButton);
         assertTrue("Information button is unavailable", isDisplayed);
         isDisplayed = generalUtility.isElementDisplayed(changePasswordButton);
         assertTrue("Change Password button is unavailable", isDisplayed);
-        w3CActions.scrollHamburgerMenu();
         isDisplayed = generalUtility.isElementDisplayed(preferencesButton);
         assertTrue("Preferences button is unavailable", isDisplayed);
         if (properties.getProperty("DeviceName").contains("iPhone")) {
@@ -250,7 +231,7 @@ public class LandingPage extends TestBase {
     }
 
     public void validateCloseTerminal() throws InterruptedException {
-        mobileActions.clickUsingCoordinates(driver, 39, 49);
+        mobileActions.clickUsingCoordinates(driver, 27, 47);
         mobileActions.waitAndClickOnElement(storeOperations, 3);
         Assert.assertTrue("Close Terminal Functionality is not available", generalUtility.isElementDisplayed(closeTerminalButton));
     }

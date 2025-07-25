@@ -1,4 +1,4 @@
-  @VFG10X-967 @ExchangeTransaction @Card @Regression @Visa @SmokeTesting
+@VFG10X-967 @ExchangeTransaction @Card @Regression @Visa @SmokeTesting
 Feature: VFG10X-967 Exchange _ Negative Exchange transaction of multiple items with payment by Visa Swipe Void Visa pay by Cash on the initial sale transaction
 
   Scenario: Exchange _ Negative Exchange transaction of multiple items with payment by Visa Swipe Void Visa pay by Cash on the initial sale transaction

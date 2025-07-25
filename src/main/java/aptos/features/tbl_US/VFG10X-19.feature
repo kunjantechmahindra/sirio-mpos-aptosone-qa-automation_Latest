@@ -10,7 +10,7 @@ Feature: VFG10X-19 Sale Transaction _Normal item and Gift card item_ Partial Pay
 
   # Issue New Gift Card
     And the sales assistant clicks on gift card button
-    And the sales assistant enters gift card number from index 3
+    And the sales assistant enters gift card number from index 6
     And the sales assistant enters gift card amount "500.00"
     And the sales assistant clicks on issue button
     And the sales assistant lands on Basket Page

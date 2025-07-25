@@ -1,5 +1,5 @@
-@VFG10X-445 @PromotionsAndDiscounts @Regression
-Feature: VFG10X-445 Promotions and Discounts _ Multi Item transaction with 20 % Transactional Level discount
+@VFG10X-455 @PromotionsAndDiscounts @Regression
+Feature: VFG10X-455 Promotions and Discounts _ Multi Item transaction with 20 % Transactional Level discount
 
   Scenario: Promotions and Discounts _ Multi Item transaction with 20 % Transactional Level discount
 

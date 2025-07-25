@@ -21,7 +21,7 @@ Feature: VFG10X-1057 Return transaction_Return multiple items with Coupon with n
     And the sales assistant clicks on Pay button
     And the sales assistant clicks on Accept button
     And the sales assistant save the transaction details of the sales transaction
-    And the sales assistant clicks on Card button
+    And the sales assistant clicks on card for refund
     And the sales assistant processes the payment with a "visa" card using a "tap" action, entering the pin "0"
     And the sales assistant clicks on Print button
     And the sales assistant select the printer and save the receipt for return

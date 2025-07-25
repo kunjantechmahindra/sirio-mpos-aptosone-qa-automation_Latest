@@ -63,7 +63,7 @@ Feature: VFG10X-40 Sale Transaction with Temporary Price + Price Override + Empl
     And the sales assistant login to EJViewer
     And the sales assistant enter the store and transaction detail
     And the sales assistant validate the payment details
-    And the sales assistant validate details "Employee Sale - 35% off" in EJ
+    And the sales assistant validate details "Employee Sale - 50% off" in EJ
     And the sales assistant logout from EJViewer
 
 

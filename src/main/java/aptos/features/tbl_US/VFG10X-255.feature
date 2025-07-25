@@ -23,13 +23,11 @@ Feature: VFG10X-255 Exchange _Multiple items with same price _Issue New gift car
 
   # Assign customer
     And then sales assistant clicks on Assign Customer button
-    And the sales assistant assign customer details with index 1
+    And the sales assistant assign customer details with index 6
     And the sales assistant saves the loyalty points
     And the sales assistant navigates to basket from page from loyalty page
-    And the sales assistant navigate to basket page
 
   # Return transaction
-    And the sales assistant validate if void button is enabled
     And the sales assistant clicks on return button
     And the sales assistant scan the receipt for returning the item
     And the sales assistant return all items from the transaction
@@ -40,7 +38,7 @@ Feature: VFG10X-255 Exchange _Multiple items with same price _Issue New gift car
 
   # Issue New Gift Card
     And the sales assistant clicks on gift card button
-    And the sales assistant enters gift card number from index 1
+    And the sales assistant enters gift card number from index 0
     And the sales assistant enters gift card amount 500
     And the sales assistant clicks on issue button
     And the sales assistant lands on Basket Page

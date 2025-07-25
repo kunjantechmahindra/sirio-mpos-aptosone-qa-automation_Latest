@@ -9,7 +9,7 @@
       When the sales assistant clicks on Start Basket button
       And the sales assistant clicks on gift card button
       And the sales assistant validates existing gift card button is enabled
-      And the sales assistant enters gift card number from index 0
+      And the sales assistant enters gift card number from index 3
       And the sales assistant enters gift card amount "50.00"
       And the sales assistant clicks on add value button
       And the sales assistant clicks on Skip button

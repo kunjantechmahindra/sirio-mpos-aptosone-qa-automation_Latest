@@ -8,15 +8,14 @@ Feature: VFG10X-2300 Gift Card _ Gift Card Balance enquiry typing the Gift Card 
     When the sales assistant clicks on Start Basket button
 
     # Gift card balance enquiry
-    Then the sales assistant validates the Gift Card balance from basket page for index 2
-    Then the sales assistant enter the the pin from index 2
+    Then the sales assistant validates the Gift Card balance from basket page for index 3
     Then the sales assistant saves the Gift Card balance amount for EJ
     And the sales assistant closes the Balance Inquiry screen
 
     # Get transaction number from information
     And the sales assistant navigate to information page
     And the sales assistant save the transaction number from information page
-    And the sales assistant clicks on Basket button from header
+    And the sales assistant navigate to basket page
 
     # Logout from the application
     And the sales assistant logout from the application

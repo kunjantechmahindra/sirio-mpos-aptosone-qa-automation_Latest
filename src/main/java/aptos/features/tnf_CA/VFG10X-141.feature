@@ -12,7 +12,7 @@ Feature: VFG10X-141 Cash Management _ Till to Safe _ On and Above Security level
     And the sales assistant clicks on "Till operations" for cash management
     And the sales assistant clicks on "Till to safe" for cash management
     And the sales assistant enter the Drawer ID
-    And the sales assistant enter the amount for Till to Safe
+    And the sales assistant enter the amount
     And the sales assistant enters the quantity as 100 on first index
     And the sales assistant clicks on proceed button
     And the sales assistant clicks on proceed button

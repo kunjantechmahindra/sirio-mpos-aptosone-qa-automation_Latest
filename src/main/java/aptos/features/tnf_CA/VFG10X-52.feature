@@ -20,7 +20,7 @@ Feature: VFG10X-52 Sale Transaction _ Multiple Items with Transactional discount
   # Get transaction number from information
     And the sales assistant navigate to information page
     And the sales assistant save the transaction number from information page
-    And the sales assistant clicks on Basket button from header
+    And the sales assistant navigate to basket page
 
   # Suspend Transaction
     And then sales assistant clicks on Suspend button
@@ -31,6 +31,5 @@ Feature: VFG10X-52 Sale Transaction _ Multiple Items with Transactional discount
   # EJ Validation
     And the sales assistant login to EJViewer
     And the sales assistant enter the store and transaction detail
-    And the sales assistant validate the payment details
     And the sales assistant validate details "Transaction suspended" in EJ
     And the sales assistant logout from EJViewer

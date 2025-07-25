@@ -11,7 +11,7 @@ Feature: VFG10X-1514 Gift Card _ Gift Card Tender Exchange by swiping the Gift C
     And the sales assistant navigate to store operations page
     And the sales assistant clicks on Tender exchange button
     And the sales assistant clicks on swipe button from Tender Exchange
-    And the sales assistant enter wrong pin number from index 4
+    And the sales assistant enter wrong pin number from index 2
     And the sales assistant validates Tender Exchange error message
     And the sales assistant clicks on back button from Tender Exchange
     And the sales assistant clicks on swipe button from Tender Exchange

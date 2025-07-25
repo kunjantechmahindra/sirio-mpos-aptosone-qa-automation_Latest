@@ -18,7 +18,6 @@ Feature: VFG10X-1747  Sale Transaction_Single item with Payment by Loyalty Rewar
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant enter the amount for cash tender
     And the sales assistant clicks on Cash button
-    And the sales assistant clicks on Cash option
     And the sales assistant clicks on More button
     And the sales assistant clicks on Membership Reward button
     And the sales assistant selects loyalty reward 25

@@ -7,6 +7,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -135,10 +136,6 @@ public class BasketPage extends TestBase {
     @FindBy(xpath = "(//XCUIElementTypeOther[@name='Cancel'])[last()]")
     WebElement cancelButton;
 
-
-    @FindBy(xpath = "(//XCUIElementTypeOther[@name='Proceed'])[2]")
-    WebElement proceedButtonCoupon;
-
     @FindBy(xpath = "//XCUIElementTypeOther[@name='Cancel ']")
     WebElement cancelButtonSuspendPage;
 
@@ -174,13 +171,6 @@ public class BasketPage extends TestBase {
 
     @FindBy(xpath = "(//XCUIElementTypeOther[contains(@name,'Assign')])[last()]")
     WebElement assignButton;
-
-    @FindBy(xpath = "//XCUIElementTypeOther[@name='SalesPersonAssignScreen-salesperson-select']")
-    WebElement assignSalesPerson;
-
-    @FindBy(xpath = " //XCUIElementTypeStaticText[@name='Salesperson']")
-    WebElement salesPersonHeader;
-
 
     @FindBy(xpath = "//XCUIElementTypeButton[@name='Yes']")
     WebElement yesButton;
@@ -218,10 +208,10 @@ public class BasketPage extends TestBase {
     @FindBy(xpath = "//*[@name='Search']")
     WebElement searchKey;
 
-    @FindBy(xpath = "(//XCUIElementTypeOther[@name='Email Phone number Horizontal scroll bar, 1 page Search Skip'])[1]")
+    @FindBy(xpath = "//XCUIElementTypeOther[@name='Email Phone number Search Skip']")
     WebElement customerPromptWindow;
 
-    @FindBy(xpath = "(//XCUIElementTypeOther[@name='New tax rate Apply Cancel Vertical scroll bar, 1 page Horizontal scroll bar, 1 page'])[3]")
+    @FindBy(xpath = "(//XCUIElementTypeOther[@name='New tax rate Apply Cancel'])[3]")
     WebElement taxOverRideRightPanel;
 
     @FindBy(xpath = "//XCUIElementTypeImage")
@@ -414,7 +404,7 @@ public class BasketPage extends TestBase {
     @FindBy(xpath = "//*[@name='Display-selectableItemLine-discount-label']")
     WebElement promotionDescription;
 
-    @FindBy(xpath = "(//XCUIElementTypeOther[@name='Swipe'])[2]")
+    @FindBy(xpath = "(//XCUIElementTypeOther[@name=\"Swipe\"])[2]")
     WebElement swipeButton;
 
     @FindBy(xpath = "//XCUIElementTypeOther[@name='Shipping']")
@@ -422,7 +412,6 @@ public class BasketPage extends TestBase {
 
     @FindBy(xpath = "//XCUIElementTypeOther[contains(@name, 'Shipping')]")
     WebElement shippingDescription;
-
 
     //Actions
     public void clickOnCameraButton() {
@@ -435,7 +424,7 @@ public class BasketPage extends TestBase {
             generalUtility.waitForElementToBeVisible(iPhoneTotalTransaction, 12);
             mobileActions.clickOnElement(iPhoneTotalTransaction);
         } else {
-            generalUtility.waitForElementToBeVisible(totalTransaction, 20);
+            generalUtility.waitForElementToBeVisible(totalTransaction, 12);
             mobileActions.clickOnElement(totalTransaction);
         }
     }
@@ -445,6 +434,7 @@ public class BasketPage extends TestBase {
         if (properties.getProperty("DeviceName").contains("iPhone")) {
             w3CActions.scrollDownWithPercentage(30);
         }
+
         w3CActions.scrollHamburgerMenu();
         mobileActions.waitAndClickOnElement(signOutButton, 7);
  }
@@ -530,9 +520,6 @@ public class BasketPage extends TestBase {
         }
     }
 
-
-    public void isVoidButtonEnabled() {generalUtility.isElementEnabled(voidButton);}
-
     public void suspendFomBasket() {
         mobileActions.clickOnElement(suspendButton);
     }
@@ -561,6 +548,7 @@ public class BasketPage extends TestBase {
         } else {
             generalUtility.isElementDisplayed(resumeSaleHeader);
         }
+//        generalUtility.isElementDisplayed(resumeSaleHeader);
         WebElement transactionToResume = (driver.findElement(By.xpath("(//XCUIElementTypeOther[contains(@name, 'Reference ID: " + referenceIdTestData + "')])[last()]")));
         mobileActions.clickOnElement(transactionToResume);
         mobileActions.clickOnElement(resumeButton);
@@ -577,7 +565,7 @@ public class BasketPage extends TestBase {
         if (properties.getProperty("DeviceName").contains("iPhone")) {
             mobileActions.clickUsingCoordinates(driver, 10, 20);
         } else {
-            mobileActions.clickOnElement(proceedButtonCoupon);
+            mobileActions.clickOnElement(cancelButton);
         }
     }
 
@@ -630,10 +618,7 @@ public class BasketPage extends TestBase {
     public void assignSalesPerson(String salesPersonId) throws InterruptedException {
         mobileActions.enterText(salesPersonTextField, salesPersonId);
         mobileActions.clickHideKeyboard();
-        mobileActions.clickOnElement(assignSalesPerson);
-        boolean isDisplayedHeaderSalesPerson = generalUtility.isElementDisplayed(salesPersonHeader);
-        if (isDisplayedHeaderSalesPerson){
-        mobileActions.clickOnElement(assignSalesPerson);}
+        mobileActions.clickOnElement(assignButton);
     }
 
     public void selectYesForAssignSalesPerson(String yesOrNo) {
@@ -812,8 +797,7 @@ public class BasketPage extends TestBase {
             BigDecimal roundedNumber = new BigDecimal(couponAmount).setScale(2, RoundingMode.HALF_UP);
             assertTrue(percentage + "% coupon applied incorrectly", generalUtility.getTextFromElement(itemDiscountAmount).contains(String.valueOf(roundedNumber)));
         } else {
-            BigDecimal roundedNum = new BigDecimal(couponAmount).setScale(2, RoundingMode.HALF_UP);
-            assertTrue(percentage + "% coupon applied incorrectly", generalUtility.getTextFromElement(itemDiscountAmount).contains(String.valueOf(roundedNum)));
+            assertTrue(percentage + "% coupon applied incorrectly", generalUtility.getTextFromElement(itemDiscountAmount).contains(String.valueOf(couponAmount)));
         }
     }
 
@@ -840,10 +824,10 @@ public class BasketPage extends TestBase {
 
 
     public void giftCardBalanceSwipe(int index) throws IOException, ParseException, InterruptedException {
+        String giftCardNumber = TestDataHelper.getGiftCardDetail(properties.getProperty("BrandRegion"), index, "cardNumber");
         mobileActions.clickOnElement(hamburgerButton);
         Thread.sleep(500); //Delay is to open up the list and select Gift Card Balance
         mobileActions.clickOnElement((giftCardBalance));
-        mobileActions.clickHideKeyboard();
         mobileActions.clickOnElement(swipeButton);
 
         new Thread(() -> {
@@ -889,13 +873,13 @@ public class BasketPage extends TestBase {
     }
 
     public void validateItemDiscount(Integer index, String discount) {
-        WebElement originalPrice = driver.findElement(By.xpath("(//*[@name='Display-selectableItemLine-originalUnitPrice'])[" + index + "]"));
+        WebElement originalPrice = driver.findElement(By.xpath("(//XCUIElementTypeStaticText[@name='Display-selectableItemLine-originalUnitPrice'])[" + index + "]"));
         WebElement discountPrice = driver.findElement(By.xpath("(//*[@name='Display-selectableItemLine'])[" + index + "]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeStaticText"));
         double itemPrice = Double.parseDouble(generalUtility.getTextFromElement(originalPrice).replaceAll("[\\$()]", "").trim());
         double itemDiscount = Double.parseDouble(generalUtility.getTextFromElement(discountPrice).replaceAll("[\\$()ME]", "").trim());
 
         //ConvertDiscount
-        int discountValue = Integer.parseInt(discount.replaceAll("[\\$%off]", "").trim());
+        int discountValue = Integer.parseInt(discount.replaceAll("[\\$%]", "").trim());
 
         //Calculation
         if (discount.contains("%")) {
@@ -996,10 +980,7 @@ public class BasketPage extends TestBase {
     public void assignSalesPersonToTransaction(String salesPersonId) throws InterruptedException {
         mobileActions.enterText(salesPersonTextField, salesPersonId);
         mobileActions.clickHideKeyboard();
-        mobileActions.clickOnElement(assignSalesPerson);
-        boolean isDisplayedHeaderSalesPerson = generalUtility.isElementDisplayed(salesPersonHeader);
-        if (isDisplayedHeaderSalesPerson){
-            mobileActions.clickOnElement(assignSalesPerson);}
+        mobileActions.clickOnElement(assignButton);
         if (properties.getProperty("Brand").equals("TBL") || properties.getProperty("Brand").equals("TNF") && properties.getProperty("DeviceName").contains("iPad")) {
             Thread.sleep(5000);        //This is to make sure that the Skip button in the next page is getting clicked
             customerPage.clickOnSkipButton();
@@ -1277,18 +1258,6 @@ public class BasketPage extends TestBase {
 
         clickOnCancelButton();    //navigate back to basket
     }
-    public void validateDoNotCombinedPromotionsNew(String promo1, String promo2) {
-
-        //Validation of first item
-        WebElement item1 = driver.findElement(By.xpath("(//*[@name='Display-selectableItemLine-itemIdKeyType'])[1]"));
-        mobileActions.clickOnElement(item1);
-        String item1Description = generalUtility.getTextFromElement(itemDescription);
-        assertTrue("Expected discount is applied:" + promo2, item1Description.contains(promo2));
-        assertFalse("Unexpected discount is not applied" + promo1, item1Description.contains(promo1));
-
-        clickOnCancelButton();    //navigate back to basket
-
-    }
 
 
     public void validatesAnErrorMessageItemNotFound() {
@@ -1310,13 +1279,10 @@ public class BasketPage extends TestBase {
 
     public void validateTempMDDiscount() {
         double discount = Double.parseDouble(generalUtility.getTextFromElement(discountLabel).replaceAll("[\\$()]", "").trim());
-        double discountDisplayed = Double.parseDouble(String.valueOf(discount));
         double calculatedDiscount = productOriginalPrice - productTempMDPrice;
-        System.out.println(discountDisplayed);
         System.out.println(calculatedDiscount);
         double roundedAmount = Math.round(calculatedDiscount * 100.0) / 100.0;
-        //assertEquals(discount, roundedAmount, 0);
-        assertEquals(discount, roundedAmount, 0.01);
+        assertEquals(discount, roundedAmount, 0);
     }
 
     public void scrollBasketScreen() throws InterruptedException {
@@ -1360,23 +1326,12 @@ public class BasketPage extends TestBase {
             double subtotal = Double.parseDouble(generalUtility.getTextFromElement(subtotalLabel).replaceAll("[\\$()]", "").trim());
             Assert.assertTrue("Stacked Promotion calculation mismatch", Double.parseDouble(discountPrice) == subtotal);
         } else {
-//            double discountAfterFirstPromotionGotApplied = Double.parseDouble(firstItemExtendedPrice) * 0.10;
-//            double priceAfterFirstPromoGotApplied = Double.parseDouble(firstItemExtendedPrice) - discountAfterFirstPromotionGotApplied;
-//            double discountAfterSecondPromotionApplied = priceAfterFirstPromoGotApplied * 0.10;
-//            double priceAfterSecondPromoGotApplied = priceAfterFirstPromoGotApplied - discountAfterSecondPromotionApplied;
-//            double subtotal = Double.parseDouble(generalUtility.getTextFromElement(subtotalLabel).replaceAll("[\\$()]", "").trim());
-
-            BigDecimal originalPrice = new BigDecimal(firstItemExtendedPrice);
-            BigDecimal discountAfterFirstPromotionGotApplied = originalPrice.multiply(BigDecimal.valueOf(0.10));
-            BigDecimal priceAfterFirstPromoGotApplied = originalPrice.subtract(discountAfterFirstPromotionGotApplied);
-            BigDecimal secondDiscount = priceAfterFirstPromoGotApplied.multiply(BigDecimal.valueOf(0.10));
-            BigDecimal priceAfterSecondPromo = priceAfterFirstPromoGotApplied.subtract(secondDiscount);
-            priceAfterSecondPromo = priceAfterSecondPromo.setScale(2, RoundingMode.HALF_UP);
-            String subtotalText = generalUtility.getTextFromElement(subtotalLabel).replaceAll("[\\$()]", "").trim();
-            BigDecimal subtotal = new BigDecimal(subtotalText);
-            //Assert.assertTrue("Stacked Promotion calculation mismatch", priceAfterSecondPromoGotApplied == subtotal);
-            System.out.println(subtotal);
-            Assert.assertTrue("Stacked Promotion calculation mismatch", priceAfterSecondPromo.equals(subtotal));
+            double discountAfterFirstPromotionGotApplied = Double.parseDouble(firstItemExtendedPrice) * 0.10;
+            double priceAfterFirstPromoGotApplied = Double.parseDouble(firstItemExtendedPrice) - discountAfterFirstPromotionGotApplied;
+            double discountAfterSecondPromotionApplied = priceAfterFirstPromoGotApplied * 0.10;
+            double priceAfterSecondPromoGotApplied = priceAfterFirstPromoGotApplied - discountAfterSecondPromotionApplied;
+            double subtotal = Double.parseDouble(generalUtility.getTextFromElement(subtotalLabel).replaceAll("[\\$()]", "").trim());
+            Assert.assertTrue("Stacked Promotion calculation mismatch", priceAfterSecondPromoGotApplied == subtotal);
         }
     }
 
@@ -1567,6 +1522,5 @@ public class BasketPage extends TestBase {
     public void selectShippingItem() {
         mobileActions.clickOnElement(shippingItem);
     }
-
 }
 

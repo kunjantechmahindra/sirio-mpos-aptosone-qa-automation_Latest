@@ -12,7 +12,7 @@ Feature: VFG10X-36 Sale Transaction _Single Item_ Suspend and Resume_ No Custome
     And then sales assistant clicks on Suspend button
     And the sales assistant enter the reference ID
     And the sales assistant clicks on Resume button
-    And the sales assistant clicks on Basket button from header
+    And the sales assistant navigate to basket page
     And the sales assistant clicks on Resume button
     And the sales assistant select the transaction to be resumed
     And the sales assistant proceed without selecting the customer

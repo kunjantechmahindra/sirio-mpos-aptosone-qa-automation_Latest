@@ -14,10 +14,10 @@ Feature: VFG10X-112 Customer _Email Id field is not editable
 
   #Validate email is editable
     And the sales assistant validate if email is not editable
-    And the sales assistant clicks on the back button from edit customer screen
+    And the sales assistant discard the changes from edit customer screen
 
   #Void and Logout from the application
     And the sales assistant navigate to basket page from Search customer page
-    #And the sales assistant void the transaction from basket with reason code "Cashier Error"
+    And the sales assistant void the transaction from basket with reason code "Cashier Error"
     And the sales assistant logout from the application
 

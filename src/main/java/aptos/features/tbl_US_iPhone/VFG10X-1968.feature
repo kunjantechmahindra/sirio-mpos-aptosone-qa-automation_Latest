@@ -22,3 +22,5 @@ Feature: VFG10X-1968 Gift Card _ Issue of New Gift Card by swiping the gift card
     And the sales assistant clicks on Print button
     And the sales assistant select the printer
     And the sales assistant logout from the application
+
+

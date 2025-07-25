@@ -1,4 +1,4 @@
-@VFG10X-255 @ReturnTransaction @Regression @Card @GiftCard @Loyalty
+@VFG10X-255 @ReturnTransaction @Regression @Card @GiftCard
 Feature: VFG10X-255 Exchange _Multiple items with same price _Issue New gift card_ Loyalty Customer Assigned_Loyalty points validation
 
   Scenario: Exchange _Multiple items with same price _Issue New gift card_ Loyalty Customer Assigned_Loyalty points validation
@@ -27,7 +27,6 @@ Feature: VFG10X-255 Exchange _Multiple items with same price _Issue New gift car
     And the sales assistant assign customer details with index 1
     And the sales assistant saves the loyalty points
     And the sales assistant navigates to basket from page from loyalty page
-    And the sales assistant navigate to basket page
 
   # Return transaction
     And the sales assistant clicks on return button

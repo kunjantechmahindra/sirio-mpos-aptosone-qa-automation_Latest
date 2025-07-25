@@ -1,4 +1,4 @@
-@VFG10X-1684 @ReturnTransaction @Regression @GiftCard
+@VFG10X-1684 @ReturnTransaction @Regression
 
 Feature: VFG10X-1684 Sale Transaction_Single Item with Multiple Reward Cards (One Full and One Partial) and Gift card_ Void One reward card and add again
 
@@ -42,7 +42,7 @@ Feature: VFG10X-1684 Sale Transaction_Single Item with Multiple Reward Cards (On
     And the sales assistant voids the partial payment
     And the sales assistant enters half of the total amount in the payment section
     And the sales assistant clicks on gift card button from payment page
-    And the sales assistant enter the gift card number for payment from index 1
+    And the sales assistant enter the gift card number for payment from index 3
     And the sales assistant clicks on redeem button
     And the sales assistant enter the the pin from index 1
     And the sales assistant validate the partial payment by gift card

@@ -6,7 +6,7 @@ Feature: VFG10X-253 Return Transaction _ Receipt Return with Different reason co
   #Login and add item to basket
     Given the sales assistant login to the application with valid username and password
     When the sales assistant clicks on Start Basket button
-    Then the sales assistant add 2 items from "LowerPrice" product to the basket without customer
+    Then the sales assistant add 2 items from "General" product to the basket without customer
 
   #Complete Payment
     And the sales assistant clicks on Pay button

@@ -11,7 +11,7 @@ Feature: VFG10X-1742  Return of sales transaction with promo (done in previous v
   #Return transaction
     And the sales assistant clicks on return button
     And the sales assistant clicks on return search button
-    And the sales assistant enters store number "400528" terminal "79" and transaction number "1878"
+    And the sales assistant enters store number "400528" terminal "42" and transaction number "4076"
     And the sales assistant return all items from the transaction
     And the sales assistant selects "RTL - Changed Mind" as reason code
 

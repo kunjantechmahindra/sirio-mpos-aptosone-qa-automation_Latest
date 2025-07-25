@@ -10,7 +10,7 @@ Feature: VFG10X-1745  Return Transaction_Price Overridden Sale transaction from 
   # Return transaction
     And the sales assistant clicks on return button
     And the sales assistant clicks on return search button
-    And  the sales assistant enters store number "200252" terminal "78" and transaction number "4242"
+    And  the sales assistant enters store number "200252" terminal "40" and transaction number "11424"
     And the sales assistant return all items from the transaction
     And the sales assistant selects "RTL - CHANGED MIND" as reason code
 

@@ -28,15 +28,13 @@ Feature: VFG10X-975 Return Transaction_Return single item with 50% payment by Vi
     And the sales assistant select the printer and save the receipt for return
 
     #Return transaction
-
     And the sales assistant clicks on return button
     And the sales assistant clicks on customer search button
     And the sales assistant search a customer using email at index 0
-#    And the sales assistant assign customer on the return customer search
+    And the sales assistant assign customer on the return customer search
     And the sales assistant select the transaction to be returned
     And the sales assistant return all items from the transaction
-    And the sales assistant selects "RTL - Changed Mind" as reason code
-    And the sales assistant clicks on "Ok" button to assign customer
+    And the sales assistant selects "Changed Mind" as reason code
 
     #Refund to card partially
     And the sales assistant clicks on Pay button

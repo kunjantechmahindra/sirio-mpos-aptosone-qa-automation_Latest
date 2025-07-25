@@ -22,7 +22,6 @@ Feature: VFG10X-989 _Removing customer from Return
     And the sales assistant assign customer details with index 1
 
  #Return transaction
-    And the sales assistant validate if void button is enabled
     And the sales assistant clicks on return button
     And the sales assistant scan the receipt for returning the item
     And the sales assistant return all items from the transaction

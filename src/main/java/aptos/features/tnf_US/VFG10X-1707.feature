@@ -10,11 +10,11 @@ Feature: VFG10X-1707 Exchange _Positive Blind Exchange transaction with multiple
     #Return transaction
     And the sales assistant clicks on return button
     And the sales assistant select No receipt for blind return
+    And the sales assistant clicks on Skip button
 
     #Add Product
     Then the sales assistant add an items from "LowerPrice" product for return
     And the sales assistant selects "Damaged/Defective" as reason code
-    And the sales assistant clicks on Skip button
     Then the sales assistant add an items from "LowerPrice" product for return
     And the sales assistant selects "Changed Mind" as reason code
     And the sales assistant navigate to basket page from return mode page
@@ -25,7 +25,7 @@ Feature: VFG10X-1707 Exchange _Positive Blind Exchange transaction with multiple
     #validate promo
     And the sales assistant lands on Basket Page
     And the sales assistant selects the product at index 3
-    And the sales assistant validate "10% off without coupon" is applied to item
+    And the sales assistant validate "10% off without coupon no combine" is applied to item
 
     #Payment transaction
     And the sales assistant clicks on Pay button

@@ -18,7 +18,7 @@ Feature: VFG10X-129 Store Selling Functions_ Availability of Receipt slip for No
     #Get transaction number from information
     And the sales assistant navigate to information page
     And the sales assistant save the transaction number from information page
-    And the sales assistant clicks on Basket button from header
+    And the sales assistant navigate to basket page
     And the sales assistant logout from the application
 
   #EJ Validation

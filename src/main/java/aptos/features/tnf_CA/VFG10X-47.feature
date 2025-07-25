@@ -11,7 +11,7 @@ Feature: VFG10X-47 Sale Transaction _Single Item_ Void Transaction
   # Get transaction number from information
     And the sales assistant navigate to information page
     And the sales assistant save the transaction number from information page
-    And the sales assistant clicks on Basket button from header
+    And the sales assistant navigate to basket page
 
   # Void Transaction
     And the sales assistant void the transaction from basket with reason code "Promo Error"

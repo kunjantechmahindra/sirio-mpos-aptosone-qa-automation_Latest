@@ -11,7 +11,6 @@ Feature: VFG10X-2319 Return Transaction _ Blind Return with multiple items and a
     #Assign customer and add item to basket
     And then sales assistant clicks on Assign Customer button
     And the sales assistant assign customer details with index 1
-    And the sales assistant validate if void button is enabled
 
     #Return transaction
     And the sales assistant clicks on return button

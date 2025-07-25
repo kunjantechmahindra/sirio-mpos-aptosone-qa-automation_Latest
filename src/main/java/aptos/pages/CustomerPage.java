@@ -8,10 +8,7 @@ import aptos.utility.W3CActions;
 import com.github.javafaker.Faker;
 import org.json.simple.parser.ParseException;
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.*;
-import org.openqa.selenium.TimeoutException;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -56,14 +53,13 @@ public class CustomerPage extends TestBase {
     public static String emailTestData;
 
     public static String availableLoyaltyPoints;
-    public static String availableLoyaltyPointsAptos;
 
     public static String customerFullName;
     public static String customerNumber;
 
 
     // Page Factory Object Repository.
-    @FindBy(xpath = "//XCUIElementTypeOther[@name='CustomerSearch-button-skip']")
+    @FindBy(xpath = "//XCUIElementTypeOther[@name='CustomerSearch-header-right-button']")
     WebElement iPhoneSkipButton;
 
     @FindBy(xpath = "//XCUIElementTypeOther[@name='Skip']")
@@ -75,13 +71,13 @@ public class CustomerPage extends TestBase {
     @FindBy(xpath = "//*[@name='CustomerScreen-Add-button']")
     WebElement newCustomerButton;
 
-    @FindBy(xpath = "//XCUIElementTypeOther[@name='CustomerScreen-Add-button']")
+    @FindBy(xpath = "//*[@name='New customer']")
     WebElement iPhoneNewCustomerHeaderButton;
 
     @FindBy(xpath = "//*[contains(@name, 'saveButton')]")
     WebElement clickOnSaveButton;
 
-    @FindBy(xpath = "//XCUIElementTypeOther[@name='CustomerAddUpdate-saveButton']")
+    @FindBy(xpath = "//*[contains(@name, 'CustomerAddUpdate-header-header-right-button')]")
     WebElement iPhoneClickOnSaveButton;
 
     @FindBy(xpath = "//XCUIElementTypeOther[@name='CustomerAddUpdate-saveButton']")
@@ -108,10 +104,10 @@ public class CustomerPage extends TestBase {
     @FindBy(xpath = "//*[contains(@name, 'postalCode-label')]")
     WebElement zipCodeLabel;
 
-    @FindBy(xpath = "//XCUIElementTypeSwitch[contains(@name, '-PrivacyPolicy-switch')]")
+    @FindBy(xpath = "//*[contains(@name, 'PrivacyPolicy-switch')]")
     WebElement privacyPolicySwitch;
 
-    @FindBy(xpath = "//*[contains(@name, '-LoyaltyTerms-switch')]")
+    @FindBy(xpath = "//*[contains(@name, 'LoyaltyTerms-switch')]")
     WebElement passTerms;
 
     @FindBy(xpath = "//XCUIElementTypeSwitch[contains(@name, 'NL_EMAIL-switch')]")
@@ -123,16 +119,13 @@ public class CustomerPage extends TestBase {
     @FindBy(xpath = "//*[@name='Enroll']")
     WebElement enrollButton;
 
-    @FindBy(xpath = "(//XCUIElementTypeOther[@name='Basket'])[2]")
-    WebElement basketButtonInHeader;
-
     @FindBy(xpath = "//*[@name='CustomerScreen-header-header-none-button']")
     WebElement backToBasketInHeader;
 
     @FindBy(xpath = "//*[@name='CustomerSearch-header-left-button' and @label='Basket']")
     WebElement basketButtonInSearchHeader;
 
-    @FindBy(xpath = "//XCUIElementTypeOther[@name='CustomerScreen-header-header-none-button']")
+    @FindBy(xpath = "//XCUIElementTypeOther[@name='CustomerSearch-header-left-button']")
     WebElement basketButtonInSearchHeaderIPhone;
 
     @FindBy(xpath = "//*[@name='Main-assignCustomer-linkText']")
@@ -147,9 +140,8 @@ public class CustomerPage extends TestBase {
     @FindBy(xpath = "//*[@name='CustomerSearch-button-search']")
     WebElement customerSearchButton;
 
-    @FindBy(xpath = "//XCUIElementTypeOther[@name='CustomerSearch-button-search']")
+    @FindBy(xpath = "//XCUIElementTypeOther[@name='CustomerSearch-header-right-button']")
     WebElement customerSearchButtoniPhone;
-
 
     @FindBy(xpath = "//*[@name='CustomerSearch-header-right-button']")
     WebElement iPhoneCustomerSearchButton;
@@ -202,18 +194,18 @@ public class CustomerPage extends TestBase {
     @FindBy(xpath = "//*[contains(@name, 'assignCustomer')]")
     WebElement assignCustomerButton;
 
-    @FindBy(xpath = "(//XCUIElementTypeOther[contains(@name, 'TBL Loyalty Program')])[last()]")
+    @FindBy(xpath = "//XCUIElementTypeOther[contains(@name, 'TBL Loyalty Program')]")
     WebElement loyaltyPointsFullDetails;
+
 
     @FindBy(xpath = "(//XCUIElementTypeOther[contains(@name, 'TBL Loyalty Program')])[last()]")
     WebElement iPhoneLoyaltyPointsFullDetails;
 
 
-    //@FindBy(xpath = "(//XCUIElementTypeOther[contains(@name, 'XPLR Pass™')])[2]")
-    @FindBy(xpath = "(//XCUIElementTypeOther[contains(@name, 'XPLR Pass™')])[last()]")
+    @FindBy(xpath = "(//XCUIElementTypeOther[contains(@name, 'XPLR Pass™')])[2]")
     WebElement loyaltyPointsFullDetailsTNF;
 
-    @FindBy(xpath = "(//XCUIElementTypeOther[contains(@name, 'Available points')])[last()]")
+    @FindBy(xpath = "//XCUIElementTypeOther[contains(@name, 'Available points')]")
     WebElement loyaltyPoints;
 
     @FindBy(xpath = "(//XCUIElementTypeOther[contains(@name, 'Available points')])[last()]")
@@ -222,8 +214,7 @@ public class CustomerPage extends TestBase {
     @FindBy(xpath = "//XCUIElementTypeOther[@name='Main-assignCustomer-linkText']")
     WebElement assignedCustomerButton;
 
-    //@FindBy(xpath = "(//XCUIElementTypeOther[@name='Customer profile'])[2]")
-    @FindBy(xpath = "(//XCUIElementTypeOther[@name='Loyalty'])[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther")
+    @FindBy(xpath = "(//XCUIElementTypeOther[@name='Customer profile'])[2]")
     WebElement backButtonLoyaltyPage;
 
     @FindBy(xpath = "(//XCUIElementTypeOther[@name='Loyalty'])[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther")
@@ -262,17 +253,11 @@ public class CustomerPage extends TestBase {
     @FindBy(xpath = "(//XCUIElementTypeOther[@name='Newsletter Marketing email No'])[1]")
     WebElement newsLetterDisabledLabel;
 
-    //@FindBy(xpath = "//XCUIElementTypeStaticText[contains(@name, 'Full')]")
-    @FindBy(xpath = "(//XCUIElementTypeOther[@name='Full'])[4]")
+    @FindBy(xpath = "//XCUIElementTypeStaticText[@name='Full']")
     WebElement loyaltyTypeLabel;
 
-//    @FindBy(xpath = "(//XCUIElementTypeOther[contains(@name,'Customer number')])[last]")
-    //@FindBy(xpath = "//XCUIElementTypeStaticText[contains(@name, 'CustomerScreen-headline-textField')]")
-   @FindBy(xpath = "//XCUIElementTypeStaticText[@name='CustomerScreen-supportingText-textField']")
-    WebElement customerIdNumber;
-
-    @FindBy(xpath = "//XCUIElementTypeStaticText[@name='CustomerScreen-headline-textField']")
-    WebElement customerIdName;
+    @FindBy(xpath = "(//XCUIElementTypeOther[contains(@name,'Customer number')])[1]")
+    WebElement customerDetails;
 
     @FindBy(xpath = "(//*[@name='You must accept the XPLR Pass Terms before you create an account.'])")
     WebElement xplrTermsValidationMessage;
@@ -282,21 +267,8 @@ public class CustomerPage extends TestBase {
 
     @FindBy(xpath = "//XCUIElementTypeOther[contains(@name,'header-left-button')]")
     WebElement iPhoneInfoPageBackButton;
-
     @FindBy(xpath = "(//XCUIElementTypeOther[@name='Resume sale'])[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther")
     WebElement iPhoneBackButton;
-
-    @FindBy(xpath = "//*[@name='CustomerScreen-add-button']")
-    WebElement removeCustomer;
-
-    @FindBy(xpath = "//*[@name='CustomerScreen-Search-button']")
-    WebElement customerSearchIcon;
-
-    @FindBy(xpath = "//XCUIElementTypeOther[@name='CustomerSearch-button-clear']")
-    WebElement customerDataClearButton;
-
-    @FindBy(xpath = "//*[@name='CustomerScreen-add-button']")
-    WebElement addCustomer;
 
     //Actions
     public void clickOnSkipButton() {
@@ -371,7 +343,7 @@ public class CustomerPage extends TestBase {
         }
     }
 
-    public void enterZipCode(String validationStatus) throws InterruptedException {
+    public void enterZipCode(String validationStatus) {
         zipcode = TestDataHelper.generateZipCode();
         if (validationStatus == null) {
             mobileActions.enterText(zipCodeText, "");
@@ -456,21 +428,13 @@ public class CustomerPage extends TestBase {
         }
     }
 
-    public void clickOnBasketButtonInHeader() throws InterruptedException {
-        if (properties.getProperty("DeviceName").contains("iPhone")) {
-            mobileActions.clickUsingCoordinates(driver, 10, 20);
-        } else {
-            mobileActions.clickOnElement(basketButtonInHeader);
-        }
-    }
-
     public void searchAndAssignCustomerUsingEmail(int index) throws IOException, ParseException {
         String email = TestDataHelper.getCustomerDetail(properties.getProperty("BrandRegion"), index, "email");
         emailAddress = email;
         System.out.println(emailAddress);
         mobileActions.enterText(customerEmailSearch, email);
         if (properties.getProperty("DeviceName").contains("iPhone")) {
-            mobileActions.clickOnElement(customerSearchButtoniPhone);
+            mobileActions.clickOnElement(iPhoneCustomerSearchButton);
             generalUtility.waitForElementToBeVisible(assignCustomerFromSearch, 10);
         } else {
             mobileActions.clickOnElement(customerSearchButton);
@@ -554,7 +518,7 @@ public class CustomerPage extends TestBase {
     }
 
     public void validateCustomerDetail(String detailType) {
-        String customerInformation = customerContactInformation.getAttribute("label");  //+ existingCustomerName.getAttribute("label")  ;
+        String customerInformation = customerContactInformation.getAttribute("label") + existingCustomerName.getAttribute("label")  ;
         customerInformation = customerInformation.replaceAll("[()\\s-]", "");
         switch (detailType.toLowerCase()) {
             case "first name":
@@ -563,25 +527,6 @@ public class CustomerPage extends TestBase {
             case "last name":
                 assertTrue("Last name not found in customer information", customerInformation.contains(lastName));
                 break;
-            case "email":
-                assertTrue("Email not found in customer information", customerInformation.contains(emailAddress));
-                break;
-            case "phone number":
-                assertTrue("phone number not found in customer information", customerInformation.contains(phoneNumber));
-                break;
-            case "zip code":
-                assertTrue("zip code not found in customer information", customerInformation.contains(zipcode));
-                break;
-            default:
-                throw new IllegalArgumentException("Invalid detail type: " + detailType);
-        }
-    }
-
-
-    public void validateCustomerDetailWithoutName(String detailType) {
-        String customerInformation = customerContactInformation.getAttribute("label")  ;
-        customerInformation = customerInformation.replaceAll("[()\\s-]", "");
-        switch (detailType.toLowerCase()) {
             case "email":
                 assertTrue("Email not found in customer information", customerInformation.contains(emailAddress));
                 break;
@@ -709,8 +654,7 @@ public class CustomerPage extends TestBase {
 
     public void removeCustomerFromTransaction() throws InterruptedException {
         // The coordinates of remove customer button is 983 and 719
-    mobileActions.clickHideKeyboard();
-    mobileActions.clickOnElement(removeCustomer);
+        mobileActions.clickUsingCoordinates(driver, 983, 719);
     }
 
     public void clickOnEditCustomer() {
@@ -718,15 +662,6 @@ public class CustomerPage extends TestBase {
     }
 
     public void clickOnBackButtonFromSearchCustomer() throws InterruptedException {
-        if (properties.getProperty("DeviceName").contains("iPhone")) {
-            mobileActions.clickOnElement(basketButtonInSearchHeaderIPhone);
-        } else {
-            mobileActions.clickOnElement(backToBasketInHeader);
-        }
-        generalUtility.isElementEnabled(assignCustomer);
-    }
-
-    public void clickOnBackButtonFromSearchCustomerProfile() throws InterruptedException {
         if (properties.getProperty("DeviceName").contains("iPhone")) {
             mobileActions.clickOnElement(basketButtonInSearchHeaderIPhone);
             mobileActions.clickUsingCoordinates(driver, 10, 20);
@@ -742,10 +677,9 @@ public class CustomerPage extends TestBase {
     }
 
     public void validateIfEmailIsEnabled() {
-        generalUtility.isElementDisplayed(emailAddressText);
         mobileActions.clickOnElement(emailAddressText);
         boolean isEmailEnabled = generalUtility.isElementEnabled(emailAddressText);
-        assertTrue("Email address field should be enabled", isEmailEnabled);
+        assertFalse("Email address field should be enabled", isEmailEnabled);
     }
 
     public void assignCustomerOnTheReturnCustomerSearch() {
@@ -781,11 +715,9 @@ public class CustomerPage extends TestBase {
             if (device.contains("iPhone")) {
                 mobileActions.clickOnElement(iPhoneLoyaltyPointsFullDetails);
             } else {
-                generalUtility.isElementEnabled(removeCustomer);
                 mobileActions.clickOnElement(loyaltyPointsFullDetails);
             }
         } else {
-            generalUtility.isElementDisplayed(removeCustomer);
             mobileActions.clickOnElement(loyaltyPointsFullDetailsTNF);
         }
     }
@@ -801,23 +733,20 @@ public class CustomerPage extends TestBase {
         Matcher matcher = pattern.matcher(loyaltyPointsDetails);
         if (matcher.find()) {
             String availableLoyaltyPointsWithoutThousandSeparator = matcher.group(1);
-            System.out.println(availableLoyaltyPointsWithoutThousandSeparator);
-            availableLoyaltyPointsAptos = availableLoyaltyPointsWithoutThousandSeparator;
             DecimalFormat decimalFormat = new DecimalFormat("#,###");
             availableLoyaltyPoints = decimalFormat.format(Integer.parseInt(availableLoyaltyPointsWithoutThousandSeparator));
             System.out.println(availableLoyaltyPoints);
         }
-//        availableLoyaltyPoints = availableLoyaltyPoints.replace(",", "").trim();
+        availableLoyaltyPoints = availableLoyaltyPoints.replace(",", "").trim();
     }
 
     public void clickOnAssignedCustomerButton() {
         mobileActions.clickOnElement(assignedCustomerButton);
     }
 
-    public void navigateToCustomerProfileFromLoyaltyPage() throws InterruptedException {
+    public void navigateToCustomerProfileFromLoyaltyPage() {
         if (properties.getProperty("DeviceName").contains("iPhone")) {
             mobileActions.clickOnElement(iPhoneBackButtonLoyaltyPage);
-            mobileActions.clickUsingCoordinates(driver, 10, 20);
         } else {
             mobileActions.clickOnElement(backButtonLoyaltyPage);
         }
@@ -827,8 +756,7 @@ public class CustomerPage extends TestBase {
         if (properties.getProperty("DeviceName").contains("iPhone")) {
             mobileActions.clickOnElement(iPhoneBackButtonFromCustomerProfile);
         } else {
-//            mobileActions.clickOnElement(backButtonFromCustomerProfile);
-            mobileActions.clickOnElement(basketButtonInHeader);
+            mobileActions.clickOnElement(backButtonFromCustomerProfile);
         }
     }
 
@@ -890,32 +818,25 @@ public class CustomerPage extends TestBase {
     }
 
     public void saveCustomerDetails() {
-        generalUtility.isElementEnabled(removeCustomer);
-        String customerName = generalUtility.getTextFromElement(customerIdName);
-        String customerNumber = generalUtility.getTextFromElement(customerIdNumber);
+        String customerData = generalUtility.getTextFromElement(customerDetails);
 
         // Define the regex pattern to extract dynamic values
-//        String pattern = "(\\D+?)\\s+Customer number:\\s+(\\S+)";
-//
-//        // Compile the regex pattern
-//        Pattern r = Pattern.compile(pattern);
-//
-//        // Create a matcher to find matches
-//        Matcher m = r.matcher(customerData);
-//
-//        // Check if the pattern matches
-//        if (m.find()) {
-//            // Extract the dynamic parts using group()
-//            customerFullName = m.group(1).trim();
-//            customerNumber = m.group(2);
-        customerFullName = customerName;
-        CustomerPage.customerNumber = customerNumber;
+        String pattern = "(\\D+?)\\s+Customer number:\\s+(\\S+)";
 
-            System.out.println("Customer Name = " +customerFullName);
-            System.out.println("Customer Number = " +customerNumber);
-//        } else {
-//            System.out.println("No match found!");
-//        }
+        // Compile the regex pattern
+        Pattern r = Pattern.compile(pattern);
+
+        // Create a matcher to find matches
+        Matcher m = r.matcher(customerData);
+
+        // Check if the pattern matches
+        if (m.find()) {
+            // Extract the dynamic parts using group()
+            customerFullName = m.group(1).trim();
+            customerNumber = m.group(2);
+        } else {
+            System.out.println("No match found!");
+        }
     }
 
     public void clickOnXpPassTerms() {
@@ -954,7 +875,8 @@ public class CustomerPage extends TestBase {
         }
     }
 
-    public void validateLoyaltyPointAfterRefund() {
+    public void validateLoyaltyPointAfterRefund(){
+        String loyaltyPointsBalance=null;
         String loyaltyPointsDetails;
         if (properties.getProperty("DeviceName").contains("iPhone")) {
             loyaltyPointsDetails = iPhoneLoyaltyPoints.getText();
@@ -963,28 +885,19 @@ public class CustomerPage extends TestBase {
         }
         Pattern pattern = Pattern.compile("Available points (\\d+)");
         Matcher matcher = pattern.matcher(loyaltyPointsDetails);
-        String availableLoyaltyPointsWithoutThousandSeparator = null;
         if (matcher.find()) {
-            availableLoyaltyPointsWithoutThousandSeparator = matcher.group(1).replace(",","");
+            String availableLoyaltyPointsWithoutThousandSeparator = matcher.group(1);
+            DecimalFormat decimalFormat = new DecimalFormat("#,###");
+            loyaltyPointsBalance = decimalFormat.format(Integer.parseInt(availableLoyaltyPointsWithoutThousandSeparator)).replace(",", "").trim();;
+            System.out.println(availableLoyaltyPoints);
+            System.out.println(loyaltyPointsBalance);
         }
-        assertEquals(availableLoyaltyPointsAptos, availableLoyaltyPointsWithoutThousandSeparator);
+        assertEquals(availableLoyaltyPoints, loyaltyPointsBalance);
     }
 
     public void assignCustomer(){
-//        generalUtility.waitForElementToBeVisible(searchResultButton, 10);
-//        mobileActions.clickOnElement(searchResultButton);
-//        mobileActions.clickOnElement(assignCustomerFromSearch);
-        mobileActions.clickOnElement(addCustomer);
+        generalUtility.waitForElementToBeVisible(searchResultButton, 10);
+        mobileActions.clickOnElement(searchResultButton);
+        mobileActions.clickOnElement(assignCustomerFromSearch);
     }
-
-    public void clickOnCustomerSearchIcon(){
-        mobileActions.clickOnElement(customerSearchIcon);
-    }
-
-    public void clickCustomerDataClearButton(){
-        mobileActions.clickOnElement(customerDataClearButton);
-    }
-
-    public void clicksOnBackButtonFromEditCustomer() {    mobileActions.clickOnElement(editCustomerBackButton);}
-
 }

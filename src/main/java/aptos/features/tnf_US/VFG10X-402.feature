@@ -1,7 +1,6 @@
 @VFG10X-402 @ReturnTransaction @Regression @StoreSelling
 Feature: VFG10X-402 Store Selling Functions _ Return with Receipt Functionality Validation
 
-
   Scenario: Store Selling Functions _ Return with Receipt Functionality Validation
 
    #Login and add item to basket

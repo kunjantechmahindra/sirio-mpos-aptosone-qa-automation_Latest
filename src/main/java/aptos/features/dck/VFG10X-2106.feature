@@ -12,7 +12,7 @@ Feature: VFG10X-2106 Validate transaction receipt footer - Outlet - Last day of 
 #retrieve date of transaction from Aptos
   And the sales assistant navigate to information page
   And the sales save the transaction date and address
-    And the sales assistant clicks on Basket button from header
+  And the sales assistant navigate to basket page
 
 #Payment transaction
   And the sales assistant clicks on Pay button

@@ -24,10 +24,10 @@ Feature: VFG10X-1401 Store Selling Functions _Validation of if store-copy receip
     And the sales assistant return all items from the transaction
     And the sales assistant selects "RTL - Changed Mind" as reason code
 
-    #Get store details from information page
+       #Get store details from information page
     And the sales assistant navigate to information page
     And the sales assistant save the store details from information page
-    And the sales assistant clicks on Basket button from header
+    And the sales assistant navigate to basket page
 
     #Refund by cash
     And the sales assistant clicks on Pay button

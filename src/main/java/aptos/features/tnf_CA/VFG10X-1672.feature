@@ -75,7 +75,6 @@ Feature: VFG10X-1672 Gift Card _Unable to apply Item Level , Transactional Level
     And the sales assistant clicks on Pay button
     And the sales assistant clicks on Accept button
     And the sales assistant clicks on Cash button
-    And the sales assistant clicks on Cash option
     And the sales assistant enter the Drawer ID
     And the sales assistant clicks on Print button
     And the sales assistant select the printer

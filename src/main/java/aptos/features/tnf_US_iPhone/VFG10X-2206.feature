@@ -44,10 +44,10 @@ Feature: VFG10X-2206 Exchange _Price Override on the return item _Return using C
     And the sales assistant clicks on return button
     And the sales assistant clicks on customer search button
     And the sales assistant search a customer using email at index 7
+    And the sales assistant assign customer on the return customer search
     And the sales assistant select the transaction to be returned
     And the sales assistant return all items from the transaction
     And the sales assistant selects "RTL - Changed Mind" as reason code
-    And the sales assistant assign the original sale customer to the return transaction
 
     #Add Product
     And the sales assistant lands on Basket Page

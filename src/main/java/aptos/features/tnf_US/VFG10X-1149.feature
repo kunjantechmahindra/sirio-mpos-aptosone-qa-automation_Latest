@@ -56,7 +56,7 @@ Feature: VFG10X-1149 Exchange Transaction_Even Exchange with Single item with Em
   # Get transaction number from information
     And the sales assistant navigate to information page
     And the sales assistant save the transaction number from information page
-    And the sales assistant clicks on Basket button from header
+    And the sales assistant navigate to basket page
 
   # Complete payment
     And the sales assistant clicks on Pay button
