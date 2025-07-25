@@ -1,4 +1,4 @@
-@VFG10X-430 @PromotionsAndDiscounts @Regression @Smoke
+@VFG10X-430 @PromotionsAndDiscounts @Regression
 Feature: VFG10X-430 Promotions and Discounts _ Allow Item level Discount _User level 40 and discount equal to 70%
 
   Scenario: Promotions and Discounts _ Allow Item level Discount _User level 40 and discount equal to 70%

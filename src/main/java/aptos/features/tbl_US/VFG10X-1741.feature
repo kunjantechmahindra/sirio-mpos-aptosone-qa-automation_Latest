@@ -11,7 +11,7 @@ Feature: VFG10X-1741 Validation of e-receipt header and footer
   #Retrieve date of transaction from Aptos
     And the sales assistant navigate to information page
     And the sales save the transaction date and address
-    And the sales assistant navigate to basket page
+    And the sales assistant clicks on Basket button from header
 
   #Payment transaction
     And the sales assistant clicks on Pay button

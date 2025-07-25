@@ -10,11 +10,11 @@ Feature: VFG10X-1303 Return Transaction _ Blind Return with single item and add 
     #Return transaction
     And the sales assistant clicks on return button
     And the sales assistant select No receipt for blind return
-    And the sales assistant clicks on Skip button
 
     #Add Product
     Then the sales assistant add an items from "General" product for return
     And the sales assistant selects "Damaged/Defective" as reason code
+    And the sales assistant clicks on Skip button
     And the sales assistant navigate to basket page from return mode page
 
     #Apply Tax exempt
@@ -33,8 +33,8 @@ Feature: VFG10X-1303 Return Transaction _ Blind Return with single item and add 
     #Add a customer
     And then sales assistant clicks on Assign Customer button
     And the sales assistant search a customer using email at index 0
-    And the sales assistant clicks on search results back button from customer profile
-    And then sales assistant clicks on Assign Customer button
+#    And the sales assistant clicks on search results back button from customer profile
+    And the sales assistant assign the customer
 
     #Refund transaction
     And the sales assistant clicks on Pay button

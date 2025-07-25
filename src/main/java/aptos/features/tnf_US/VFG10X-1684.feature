@@ -10,7 +10,7 @@
 
       #Assign customer and add product
       And then sales assistant clicks on Assign Customer button
-      And the sales assistant assign customer details with index 3
+      And the sales assistant assign customer details with index 1
       Then the sales assistant add 3 items from "HigherPrice" product to the basket
 
       # Payment transaction
@@ -34,9 +34,9 @@
       And the sales assistant clicks on back button from membership rewards
       And the sales assistant enters the amount to be paid using gift card
       And the sales assistant clicks on gift card button from payment page
-      And the sales assistant enter the gift card number for payment from index 3
+      And the sales assistant enter the gift card number for payment from index 1
       And the sales assistant clicks on redeem button
-      And the sales assistant enter the the pin from index 3
+      And the sales assistant enter the the pin from index 1
       And the sales assistant validate the partial payment by gift card
       And the sales assistant clicks on More button
       And the sales assistant clicks on Membership Reward button

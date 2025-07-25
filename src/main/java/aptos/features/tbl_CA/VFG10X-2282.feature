@@ -1,5 +1,4 @@
-@VFG10X-2282 @SaleTransaction @Regression @GiftCard
-
+@VFG10X-2282 @SaleTransaction @Regression @GiftCard @SmokeTBL
 Feature: VFG10X-2282 Gift Card_Issue New GC by manually entering GC number
 
   Scenario: Gift Card_Issue New GC by manually entering GC number
@@ -10,7 +9,7 @@ Feature: VFG10X-2282 Gift Card_Issue New GC by manually entering GC number
 
   # Issue New Gift Card
     And the sales assistant clicks on gift card button
-    And the sales assistant enters gift card number from index 1
+    And the sales assistant enters gift card number from index 2
     And the sales assistant enters gift card amount "500.00"
     And the sales assistant clicks on issue button
     And the sales assistant clicks on Skip button
@@ -31,4 +30,5 @@ Feature: VFG10X-2282 Gift Card_Issue New GC by manually entering GC number
     And the sales assistant login to EJViewer
     And the sales assistant enter the store and transaction detail
     And the sales assistant validate the payment details
+    And the sales assistant validate details "GIFT_CARD_ISSUE" in EJ
     And the sales assistant logout from EJViewer

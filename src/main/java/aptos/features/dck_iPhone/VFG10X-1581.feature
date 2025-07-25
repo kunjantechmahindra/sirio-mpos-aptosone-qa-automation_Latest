@@ -1,4 +1,4 @@
-@VFG10X-1581 @ExchangeTransaction @Regression @Smoke
+@VFG10X-1581 @ExchangeTransaction @Regression
 Feature: VFG10X-1581 DCK - iPhone - Exchange transaction with uneven exchange and customer owes money
 
   Scenario: DCK - iPhone - Exchange transaction with uneven exchange and customer owes money

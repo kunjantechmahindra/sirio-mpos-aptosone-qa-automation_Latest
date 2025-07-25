@@ -1,4 +1,4 @@
-@VFG10X-747 @StoreSelling @Regression @Card @VisaMaster @Smoke
+@VFG10X-747 @StoreSelling @Regression @Card @VisaMaster
 Feature: VFG10X-747 Store Selling Functions _Void transaction after Multiple tender authorization
 
   Scenario: Store Selling Functions _Void transaction after Multiple tender authorization

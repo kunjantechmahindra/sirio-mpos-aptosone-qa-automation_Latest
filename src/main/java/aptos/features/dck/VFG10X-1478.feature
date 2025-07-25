@@ -1,4 +1,4 @@
-@VFG10X-1478 @CashManagement @Regression @SmokeDCK
+@VFG10X-1478 @CashManagement @Regression
 
 Feature: VFG10X-1478 DCK - Cash Management_Till Audit_No Reason code for Dickies
 

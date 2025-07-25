@@ -1,4 +1,4 @@
-@VFG10X-898 @PriceOverride @Regression @SmokeTesting
+@VFG10X-898 @PriceOverride @Regression
 
 Feature: VFG10X-898 Price Override _Suspend and Resume_Sales transaction with price override with Reason Code: RETURN/EXCHANGE for TBL
 
@@ -21,7 +21,7 @@ Feature: VFG10X-898 Price Override _Suspend and Resume_Sales transaction with pr
     And then sales assistant clicks on Suspend button
     And the sales assistant enter the reference ID
     And the sales assistant clicks on Resume button
-    And the sales assistant navigate to basket page
+    And the sales assistant clicks on Basket button from header
     And the sales assistant clicks on Resume button
     And the sales assistant select the transaction to be resumed
     And the sales assistant proceed without selecting the customer

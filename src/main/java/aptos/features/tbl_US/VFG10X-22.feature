@@ -1,4 +1,4 @@
-@VFG10X-22 @SaleTransaction @Regression @SmokeTesting
+@VFG10X-22 @SaleTransaction @Regression
 Feature: VFG10X-22 Sale Transaction _Multiple Items with Tax Override_ Pay using Cash for TBL
 
   Scenario: Sale Transaction _Multiple Items with Tax Override_ Pay using Cash for TBL

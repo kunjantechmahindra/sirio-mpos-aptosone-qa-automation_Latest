@@ -1,4 +1,4 @@
-@VFG10X-1792 @SaleTransaction @Regression
+@VFG10X-1792 @SaleTransaction @Regression @SmokeDCK
 Feature: VFG10X-1792 Sale Transaction _ Multiple Item_ Void Transaction
 
   Scenario: Sale Transaction _ Multiple Item_ Void Transaction

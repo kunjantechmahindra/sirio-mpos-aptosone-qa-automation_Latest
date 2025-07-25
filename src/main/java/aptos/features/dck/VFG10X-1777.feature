@@ -1,4 +1,4 @@
-@VFG10X-1777 @StoreSelling @Regression
+@VFG10X-1777 @StoreSelling @Regression @SmokeDCK
 Feature: VFG10X-1777 Store Selling Functions _ Product Enquiry _ Search by scanning different type of UPC
 
   Scenario: Store Selling Functions _ Product Enquiry _ Search by scanning different type of UPC

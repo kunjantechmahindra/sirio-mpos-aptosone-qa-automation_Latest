@@ -1,4 +1,4 @@
-@VFG10X-1458 @SaleTransaction @Regression @Card @Visa @SmokeDCK
+@VFG10X-1458 @SaleTransaction @Regression @Card @Visa
 
   Feature: VFG10X-1458 DCK: Sales transaction_Employee transaction discount_ Single item_Use Visa Card
 

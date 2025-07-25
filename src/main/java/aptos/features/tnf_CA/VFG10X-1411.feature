@@ -1,4 +1,4 @@
-@VFG10X-1411 @PromotionsAndDiscounts @Regression @SmokeTNF
+@VFG10X-1411 @PromotionsAndDiscounts @Regression
 
 Feature: VFG10X-1411 Promotions and Discounts _ Sale transaction with TempMD item and Promotion(with coupon) on same line item and apply manual transactional discount
 

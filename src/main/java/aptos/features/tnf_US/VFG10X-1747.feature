@@ -1,4 +1,4 @@
-@VFG10X-1747 @SaleTransaction @Regression @SmokeTNF
+@VFG10X-1747 @SaleTransaction @Regression
 Feature: VFG10X-1747 Sale transaction - Split payment - use cash option first and then apply rewards - User is stuck at payment screen and cannot proceed.
 
   Scenario: Sale transaction (Only iPad Issue) - Split payment - use cash option first and then apply rewards - User is stuck at payment screen and cannot proceed.
@@ -26,7 +26,6 @@ Feature: VFG10X-1747 Sale transaction - Split payment - use cash option first an
     And the sales assistant clicks on Print button
     And the sales assistant select the printer
     And the sales assistant logout from the application
-   # And the sales assistant terminate the application
 
   # Login
     Given the sales assistant login to the application with valid username and password

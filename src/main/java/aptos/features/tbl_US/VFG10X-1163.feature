@@ -1,4 +1,4 @@
-@VFG10X-1163 @TaxManagement @Regression
+@VFG10X-1163 @TaxManagement @Regression @SmokeTBL
 
 Feature: VFG10X-1163 Tax _ Exchange transaction of Multiple item, 1st Item with tax exempt and voided, 2nd item with standard tax
 

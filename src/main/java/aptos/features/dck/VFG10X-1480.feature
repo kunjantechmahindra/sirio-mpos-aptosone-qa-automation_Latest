@@ -1,4 +1,4 @@
-@VFG10X-1480 @CashManagement @Regression @SmokeDCK
+@VFG10X-1480 @CashManagement @Regression
 
   Feature: VFG10X-1480 DCK - Cash Management_Till to Safe_Dickies
 

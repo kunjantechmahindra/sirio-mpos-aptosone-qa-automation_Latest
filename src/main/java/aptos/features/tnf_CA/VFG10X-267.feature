@@ -1,4 +1,4 @@
-@VFG10X-267 @TaxManagement @Regression @SmokeTNF
+@VFG10X-267 @TaxManagement @Regression
 
 Feature: VFG10X-267 Tax _ Return Transaction with three items_ Tax Exempt applied to all items
 

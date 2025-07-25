@@ -1,4 +1,4 @@
-@VFG10X-955 @ExchangeTransaction @Regression @SmokeTesting
+@VFG10X-955 @ExchangeTransaction @Regression @SmokeTBL
 Feature: VFG10X-955 Exchange _Single item with Price Override on the exchange transaction
 
   Scenario: Exchange _Single item with Price Override on the exchange transaction
@@ -33,7 +33,7 @@ Feature: VFG10X-955 Exchange _Single item with Price Override on the exchange tr
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "PRICE MATCH" as reason code
     And the sales assistant clicks on Apply button
-    And the sales assistant clicks on Skip button
+#    And the sales assistant clicks on Skip button
     #verify the skip button occurrence
 
   #Refund to cash

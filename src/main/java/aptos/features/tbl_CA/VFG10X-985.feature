@@ -38,11 +38,11 @@ Feature: VFG10X-985 Store Selling Functions _Signature prompt for all return tra
     And the sales assistant lands on Basket Page
     And the sales assistant clicks on return button
     And the sales assistant select No receipt for blind return
-    And the sales assistant clicks on Skip button
 
    #Add Product
     Then the sales assistant add an items from "General" product for return
     And the sales assistant selects "CHANGED MIND" as reason code
+    And the sales assistant clicks on Skip button
     And the sales assistant navigate to basket page from return mode page
 
   #Refund transaction

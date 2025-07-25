@@ -1,4 +1,4 @@
-@VFG10X-2127 @Regression @Card @StoreSelling @Amex @Smoke @SmokeTesting
+@VFG10X-2127 @Regression @Card @StoreSelling @Amex
 Feature: VFG10X-2127 Store Selling Functions _Signature prompt validation for all return transactions with or without the original sales receipts
 
   Scenario: Store Selling Functions _Signature prompt validation for all return transactions with or without the original sales receipts

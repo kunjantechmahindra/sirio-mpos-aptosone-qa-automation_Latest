@@ -1,4 +1,4 @@
-@VFG10X-279 @ReturnTransaction @Regression @Card @Diners @SmokeTNF
+@VFG10X-279 @ReturnTransaction @Regression @Card @Diners
 
 Feature: VFG10X-279 Return Transaction _Sale of Single item with Promo _Refund to Diners card _Existing Customer
 

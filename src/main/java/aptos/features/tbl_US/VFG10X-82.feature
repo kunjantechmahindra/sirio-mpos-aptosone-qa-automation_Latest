@@ -1,4 +1,4 @@
-@VFG10X-82 @Regression @StoreSelling @Smoke @SmokeTesting
+@VFG10X-82 @Regression @StoreSelling
 Feature: VFG10X-82 Store Selling Functions_ Transactional Level Sales person Assignment
 
   Scenario: Store Selling Functions_ Transactional Level Sales person Assignment

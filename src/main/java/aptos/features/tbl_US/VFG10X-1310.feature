@@ -1,4 +1,4 @@
-@VFG10X-1310 @ExchangeTransaction @Regression @Smoke @SmokeTesting
+@VFG10X-1310 @ExchangeTransaction @Regression @SmokeTBL
 Feature: VFG10X-1310 Exchange _Negative Exchange by hand typing the transaction barcode with Single item with Coupon on exchange transaction_Refund to Cash
 
   Scenario: Exchange _Negative Exchange by hand typing the transaction barcode with Single item with Coupon on exchange transaction_Refund to Cash

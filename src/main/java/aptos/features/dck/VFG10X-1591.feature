@@ -1,4 +1,4 @@
-@VFG10X-1591 @ExchangeTransaction @Regression @SmokeDCK
+@VFG10X-1591 @ExchangeTransaction @Regression
 Feature: VFG10X-1591 Exchange Transaction_Item level percentage off discount_Sale transaction should have transaction level percent off discount
 
   Scenario: Exchange Transaction_Item level percentage off discount_Sale transaction should have transaction level percent off discount

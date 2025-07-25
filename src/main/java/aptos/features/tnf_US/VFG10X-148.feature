@@ -9,7 +9,7 @@ Feature: VFG10X-148 Gift Card _ Issue of New Gift Card and Suspend
 
   #Issue New Gift Card and validates suspend button is disabled
     And the sales assistant clicks on gift card button
-    And the sales assistant enters gift card number from index 5
+    And the sales assistant enters gift card number from index 6
     And the sales assistant enters gift card amount "50.00"
     And the sales assistant clicks on issue button
     And the sales assistant clicks on Skip button

@@ -1,4 +1,4 @@
-@VFG10X-1506 @SaleTransaction @Regression @SmokeDCK
+@VFG10X-1506 @SaleTransaction @Regression
 Feature: VFG10X-1506 DCK_Sales Transaction_item level $ off_Multiple items_Apply employee discount and Tax Override
 
   Scenario: DCK_Sales Transaction_item level $ off_Multiple items_Apply employee discount and Tax Override

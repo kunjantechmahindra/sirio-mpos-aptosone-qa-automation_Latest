@@ -1,4 +1,4 @@
-@VFG10X-149 @GiftCard @Regression @Card @Smoke
+@VFG10X-149 @GiftCard @Regression @Card
 Feature: VFG10X-149 Gift Card _Top Up Gift card and Suspend
 
   Scenario: Gift Card _Top Up Gift card and Suspend

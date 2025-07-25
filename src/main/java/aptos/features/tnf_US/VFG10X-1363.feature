@@ -47,7 +47,7 @@ Feature: VFG10X-1363 Return Transaction _Multiple items with Tax exempt and coup
     And the sales assistant scan the receipt for returning the item
     And the sales assistant return all items from the transaction
     And the sales assistant selects "RTL - Changed Mind" as reason code
-    And the sales assistant assign the original sale customer to the return transaction
+    And the sales assistant clicks on "Ok" button to assign customer
     And the sales assistant lands on Basket Page
     And the sales assistant validates transactional level tax is exempted
 

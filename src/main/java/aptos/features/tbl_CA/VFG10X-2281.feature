@@ -1,4 +1,4 @@
-@VFG10X-2281 @Regression @GiftCard @SmokeTNF
+@VFG10X-2281 @Regression @GiftCard
 Feature: VFG10X-2281 Gift Card_Issue New GC by swiping_Existing Customer
 
   Scenario: Gift Card_Issue New GC by swiping_Existing Customer

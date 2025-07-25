@@ -1,5 +1,4 @@
 @VFG10X-1741 @StoreSelling @Regression
-
 Feature: VFG10X-1741 Validation of e-receipt header and footer
 
   Scenario: Validation of e-receipt header and footer
@@ -12,7 +11,8 @@ Feature: VFG10X-1741 Validation of e-receipt header and footer
   #Retrieve date of transaction from Aptos
     And the sales assistant navigate to information page
     And the sales save the transaction date and address
-    And the sales assistant navigate to basket page
+    And the sales assistant clicks on Basket button from header
+    #And the sales assistant navigate to basket page
 
   #Payment transaction
     And the sales assistant clicks on Pay button

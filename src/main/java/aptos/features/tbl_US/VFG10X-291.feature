@@ -1,4 +1,4 @@
-@VFG10X-291 @ExchangeTransaction @Regression @Smoke
+@VFG10X-291 @ExchangeTransaction @Regression
 Feature: VFG10X-291 Exchange _Single item with Bag fee _Cash with change due
   Scenario: Exchange _Single item with Bag fee _Cash with change due
 

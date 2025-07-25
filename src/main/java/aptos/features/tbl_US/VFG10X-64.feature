@@ -1,4 +1,4 @@
-@VFG10X-64 @SaleTransaction @Regression @Card @Visa @SmokeTesting
+@VFG10X-64 @SaleTransaction @Regression @Card @Visa @SmokeTBL
 Feature: VFG10X-64 Sale Transaction _Multiple Payments of Same credit card _Visa tap and Visa Insert
 
   Scenario: Sale Transaction _Multiple Payments of Same credit card _Visa tap and Visa Insert

@@ -1,4 +1,4 @@
-@VFG10X-86 @StoreSelling @Regression @Smoke @SmokeTesting
+@VFG10X-86 @StoreSelling @Regression
 Feature: VFG10X-86 Store Selling Functions_ Bag Fee Screen Validations
 
   Scenario: Store Selling Functions_ Bag Fee Screen Validations

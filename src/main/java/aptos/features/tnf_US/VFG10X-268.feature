@@ -1,4 +1,4 @@
-@VFG10X-268 @TaxManagement @Regression
+@VFG10X-268 @TaxManagement @Regression @SmokeTNF
 
 Feature: VFG10X-268 Tax _ Sales Transaction with Multiple Items _Tax Exempt and Tax Override _ Validate E Receipt
 

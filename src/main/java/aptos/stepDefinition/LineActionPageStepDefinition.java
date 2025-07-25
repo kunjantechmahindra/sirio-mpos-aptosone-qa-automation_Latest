@@ -55,7 +55,7 @@ public class LineActionPageStepDefinition extends TestBase {
     }
 
     @And("the sales assistant enter the tax ID")
-    public void theSalesAssistantEnterTheTaxID() {
+    public void theSalesAssistantEnterTheTaxID() throws InterruptedException {
         lineActionPage.enterTaxID();
     }
 
@@ -119,8 +119,8 @@ public class LineActionPageStepDefinition extends TestBase {
         lineActionPage.isGiftReceiptAtItemLevelEnable();
     }
 
-    @And("the sales assistant validates void item button is enable")
-    public void theSalesAssistantValidatesVoidItemButtonIsEnable() {
+    @And("the sales assistant validates and click void item button if enable")
+    public void theSalesAssistantValidatesAndClickVoidItemButtonIfEnable() {
         lineActionPage.isVoidItemButtonEnabled();
     }
 

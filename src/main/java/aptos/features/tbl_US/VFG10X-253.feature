@@ -1,4 +1,4 @@
-@VFG10X-253 @ReturnTransaction @Regression @Card @Discover @SmokeTesting
+@VFG10X-253 @ReturnTransaction @Regression @Card @Discover
 Feature: VFG10X-253 Return Transaction _ Receipt Return with Different reason codes _DAMAGED/DEFECTIVE and WRONG SIZE/COLOR
 
   Scenario: Return Transaction _ Receipt Return with Different reason codes _DAMAGED/DEFECTIVE and WRONG SIZE/COLOR

@@ -1,4 +1,4 @@
-@VFG10X-1369 @ReturnTransaction @Regression @SmokeTesting
+@VFG10X-1369 @ReturnTransaction @Regression
 Feature: VFG10X-1369 Return Transaction _Refund by cash _with price override and second item with employee discount with Return Reason Code: ECOM - WRONG SIZE/COLOR
 
   Scenario: Return Transaction _Refund by cash _with price override and second item with employee discount with Return Reason Code: ECOM - WRONG SIZE/COLOR

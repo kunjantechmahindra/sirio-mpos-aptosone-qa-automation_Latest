@@ -1,4 +1,4 @@
-@VFG10X-1794 @ReturnTransaction @Regression
+@VFG10X-1794 @ReturnTransaction @Regression @SmokeDCK
 Feature: VFG10X-1794 Return Transaction _Verified Return_Sale with Multiple items with Tax exempt and Multiple Quantity
 
   Scenario: Return Transaction _Verified Return_Sale with Multiple items with Tax exempt and Multiple Quantity

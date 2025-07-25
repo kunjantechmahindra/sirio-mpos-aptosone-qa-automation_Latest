@@ -1,4 +1,4 @@
-@VFG10X-1704 @ReturnTransaction @Regression @DetailedCalculation @SmokeTNF
+@VFG10X-1704 @ReturnTransaction @Regression @DetailedCalculation
 
 Feature: VFG10X-1704 Exchange Transaction_Exchange multi-items, Sale 1st item with Price-Override and Return 2nd item with 15 %Tax-Override with Receipt
 

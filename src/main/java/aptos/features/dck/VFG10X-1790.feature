@@ -1,4 +1,4 @@
-@VFG10X-1790 @SaleTransaction @Regression
+@VFG10X-1790 @SaleTransaction @Regression @SmokeDCK
 Feature: VFG10X-1790 Sale Transaction _Single Item_ Employee discount 50% OFF(Default)_ Payment by Cash with change due
 
   Scenario: Sale Transaction _Single Item_ Employee discount 50% OFF(Default)_ Payment by Cash with change due

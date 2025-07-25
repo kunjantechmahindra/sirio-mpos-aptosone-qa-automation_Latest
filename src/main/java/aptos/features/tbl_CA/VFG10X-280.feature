@@ -1,4 +1,4 @@
-@VFG10X-280 @ReturnTransaction @Regression @SmokeTesting
+@VFG10X-280 @ReturnTransaction @Regression
 Feature: VFG10X-280 Return Transaction _Sale of multiple items with multiple employees assigned and item and transactional discount Existing Customer Assigned
 
   Scenario: Return Transaction _Sale of multiple items with multiple employees assigned and item and transactional discount Existing Customer Assigned

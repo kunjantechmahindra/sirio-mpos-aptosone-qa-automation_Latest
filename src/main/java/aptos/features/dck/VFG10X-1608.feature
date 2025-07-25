@@ -1,4 +1,4 @@
-@VFG10X-1608 @ExchangeTransaction @Regression @SmokeDCK
+@VFG10X-1608 @ExchangeTransaction @Regression
 Feature: VFG10X-1608 Exchange - Create Uneven exchange - customer owes money
 
   Scenario: Exchange - Create Uneven exchange - customer owes money

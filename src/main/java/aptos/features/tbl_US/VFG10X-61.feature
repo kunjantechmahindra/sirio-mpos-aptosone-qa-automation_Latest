@@ -1,4 +1,4 @@
-@VFG10X-61 @SaleTransaction @Regression @Card @Visa
+@VFG10X-61 @SaleTransaction @Regression @Card @Visa @SmokeTBL
 Feature: VFG10X-61 Sale Transaction _Single Items_ Payment by Card & Cash without change
 
   Scenario: Sale Transaction _Single Items_ Payment by Card & Cash without change

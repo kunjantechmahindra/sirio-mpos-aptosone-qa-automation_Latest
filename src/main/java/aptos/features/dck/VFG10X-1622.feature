@@ -1,4 +1,4 @@
-@VFG10X-1622  @ExchangeTransaction @Regression @SmokeDCK
+@VFG10X-1622  @ExchangeTransaction @Regression
 Feature: VFG10X-1622 Exchange transaction with multiple items with Tax Override and Tax Exempt
 
   Scenario: Exchange transaction with multiple items with Tax Override and Tax Exempt

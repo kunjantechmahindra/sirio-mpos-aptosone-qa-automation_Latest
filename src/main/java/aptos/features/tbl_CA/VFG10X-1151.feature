@@ -1,4 +1,4 @@
-@VFG10X-1151 @ExchangeTransaction @Regression @SmokeTesting
+@VFG10X-1151 @ExchangeTransaction @Regression @SmokeTBL
 
 Feature: VFG10X-1151 Exchange Transaction_Exchange single-item, Sale item with tax exempt  and return item with promo with receipt
 

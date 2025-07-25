@@ -33,7 +33,7 @@ Feature: VFG10X-1693 Sale Transaction _Multiple Items with Temporary Price + Pri
     And the sales assistant enter "valid" Employee ID
     And the sales assistant clicks on Apply button
     And the sales assistant lands on Basket Page
-    And the sales assistant validate employee discount applied 50 percentage
+    And the sales assistant validate employee discount applied 35 percentage
     And the sales assistant validate total transaction amount
 
     #Payment by cash

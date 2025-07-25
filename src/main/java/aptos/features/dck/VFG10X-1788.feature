@@ -1,4 +1,4 @@
-@VFG10X-1788 @PromotionsAndDiscounts @Regression
+@VFG10X-1788 @PromotionsAndDiscounts @Regression @SmokeDCK
 Feature: VFG10X-1788 Promotions and Discounts _Sale with Multiple Line Items_BOGO 50% OFF
 
   Scenario: Promotions and Discounts _Sale with Multiple Line Items_BOGO 50% OFF

@@ -1,4 +1,4 @@
-@VFG10X-1583 @ExchangeTransaction @Regression @Smoke
+@VFG10X-1583 @ExchangeTransaction @Regression
 Feature: VFG10X-1583 DCK - iPhone - Verify Product Inquiry by Scanning UPC
 
   Scenario: DCK - iPhone - Verify Product Inquiry by Scanning UPC

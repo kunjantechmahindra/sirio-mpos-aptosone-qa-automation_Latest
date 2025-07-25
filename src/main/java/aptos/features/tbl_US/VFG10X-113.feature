@@ -1,4 +1,4 @@
-@VFG10X-113 @Customer @Regression @SmokeTesting
+@VFG10X-113 @Customer @Regression
 Feature: VFG10X-113 Customer _Creation of New Customer Profile
 
   Scenario: Customer _Creation of New Customer Profile
@@ -15,6 +15,7 @@ Feature: VFG10X-113 Customer _Creation of New Customer Profile
     And the sales assistant clicks on Newsletter
     And the sales assistant clicks on Save button
     And the sales assistant clicks on "No" to loyalty program
+    And the sales assistant validate if void button is enabled
     And then sales assistant clicks on Assign Customer button
     And the sales assistant validate all details for the newly created customer
     And the sales assistant navigate to basket page

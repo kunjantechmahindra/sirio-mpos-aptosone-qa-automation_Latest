@@ -1,4 +1,4 @@
-@VFG10X-262 @Customer @Regression @SmokeTesting
+@VFG10X-262 @Customer @Regression @SmokeTBL
 Feature: VFG10X-262 Customer _Search using Email Id
 
   Scenario: Customer _Search using Email Id

@@ -1,4 +1,4 @@
-@VFG10X-1298 @ReturnTransaction @Regression @GiftCard @Card @VisaMaster
+@VFG10X-1298 @ReturnTransaction @Regression @Card @VisaMaster
 Feature: VFG10X-1298 Return Transaction _Return single item with bag fee Void bag fee and Complete Transaction_Refund two different credit cards_No Customer Assigned
 
   Scenario: Return Transaction _Return single item with bag fee Void bag fee and Complete Transaction_Refund two different credit cards_No Customer Assigned

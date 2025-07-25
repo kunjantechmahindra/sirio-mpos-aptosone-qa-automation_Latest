@@ -1,4 +1,4 @@
-@SmokeTestR
+
 Feature: Customer Sales Transaction with Card
 
   Scenario: Sales Transaction with Cash

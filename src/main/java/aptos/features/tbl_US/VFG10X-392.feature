@@ -36,7 +36,6 @@ Feature: VFG10X-392 Store Selling Functions _ Item Discount validation after Pri
     And the sales assistant enter the Drawer ID
     And the sales assistant clicks on Email button
     And the sales assistant enter the email
-    And the sales assistant select the printer
     And the sales assistant logout from the application
 
 

@@ -1,4 +1,4 @@
-@VFG10X-393 @StoreSelling @Regression
+@VFG10X-393 @StoreSelling @Regression @SmokeTBL
 Feature: VFG10X-393 Store Selling Functions _ Maximum Limit of Price Override
 
   Scenario: Store Selling Functions _ Maximum Limit of Price Override

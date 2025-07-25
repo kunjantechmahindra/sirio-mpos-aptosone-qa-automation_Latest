@@ -1,4 +1,4 @@
-@VFG10X-1795 @ReturnTransaction @Regression
+@VFG10X-1795 @ReturnTransaction @Regression @SmokeDCK
 Feature: VFG10X-1795 Return Transaction _Verified Return of multiple items _ item level manual discount to one item and add tax override to one item_ Refund to Master card
 
   Scenario: Return Transaction _Verified Return of multiple items _ item level manual discount to one item and add tax override to one item_ Refund to Master card

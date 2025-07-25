@@ -1,4 +1,4 @@
-@VFG10X-113 @Customer @Regression @SmokeTesting
+@VFG10X-113 @Customer @Regression
 Feature: VFG10X-113 Customer _Creation of New Customer Profile
 
   Scenario: Customer _Creation of New Customer Profile

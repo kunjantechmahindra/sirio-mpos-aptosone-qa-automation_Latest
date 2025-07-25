@@ -28,7 +28,7 @@ Feature: VFG10X-1401 Store Selling Functions _Validation of if store-copy receip
     #Get store details from information page
     And the sales assistant navigate to information page
     And the sales assistant save the store details from information page
-    And the sales assistant navigate to basket page
+    And the sales assistant clicks on Basket button from header
 
     #Refund by cash
     And the sales assistant clicks on Pay button

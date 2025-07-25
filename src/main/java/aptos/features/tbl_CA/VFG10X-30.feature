@@ -1,4 +1,4 @@
-@VFG10X-30 @SaleTransaction @Regression @SmokeTesting
+@VFG10X-30 @SaleTransaction @Regression
 Feature: VFG10X-30 Sale Transaction _Multiple Items with Promo (Amount off)_ No customer
 
   Scenario: Sale Transaction _Multiple Items with Promo (Amount off)_ No customer

@@ -1,4 +1,4 @@
-@VFG10X-27 @SaleTransaction @Regression @GiftCard @SmokeTNF
+@VFG10X-27 @SaleTransaction @Regression @GiftCard
 Feature: VFG10X-27 Sale Transaction _Single Item with Line item Discount _Payment by multiple Gift Cards
 
   Scenario: Sale Transaction _Single Item with Line item Discount _Payment by multiple Gift Cards

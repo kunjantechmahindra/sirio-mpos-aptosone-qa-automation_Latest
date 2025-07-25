@@ -1,4 +1,4 @@
-@VFG10X-124 @Regression @ExchangeTransaction @Card @Visa @SmokeTesting
+@VFG10X-124 @Regression @ExchangeTransaction @Card @Visa
 
 Feature: VFG10X-124 Exchange _Blind Exchange _Single item with Tax override _Refund as card_No Customer
   Scenario: Exchange _Blind Exchange _Single item with Tax override _Refund as card_No Customer
@@ -10,11 +10,11 @@ Feature: VFG10X-124 Exchange _Blind Exchange _Single item with Tax override _Ref
     #Return transaction
     And the sales assistant clicks on return button
     And the sales assistant select No receipt for blind return
-    And the sales assistant clicks on Skip button
 
     #Add Product
     Then the sales assistant add an items from "HigherPrice" product for return
     And the sales assistant selects "DAMAGED/DEFECTIVE" as reason code
+    And the sales assistant clicks on Skip button
     And the sales assistant navigate to basket page from return mode page
 
     #Add exchange items

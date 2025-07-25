@@ -1,4 +1,4 @@
-@VFG10X-53 @SaleTransaction @Regression @SmokeTNF
+@VFG10X-53 @SaleTransaction @Regression
 Feature: VFG10X-53 Sale Transaction _Multiple Items with Price Override_ BOGO Promotion_ Payment by Cash
 
   Scenario: Sale Transaction _Multiple Items with Price Override_ BOGO Promotion_ Payment by Cash

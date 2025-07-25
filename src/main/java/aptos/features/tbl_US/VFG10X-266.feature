@@ -1,4 +1,4 @@
-@VFG10X-266 @TaxManagement @Regression @SmokeTesting
+@VFG10X-266 @TaxManagement @Regression
 
 Feature: VFG10X-266 Tax _ Sales Transaction with Multiple Items _One item with Tax exempt and One without Tax exempt
 

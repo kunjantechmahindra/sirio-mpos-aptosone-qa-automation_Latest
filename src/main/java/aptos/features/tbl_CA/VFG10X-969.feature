@@ -1,4 +1,4 @@
-@VFG10X-969 @ExchangeTransaction @Regression @Card @Visa @SmokeTesting
+@VFG10X-969 @ExchangeTransaction @Regression @Card @Visa
 Feature: VFG10X-969 Exchange _ Blind Negative Exchange transaction with multiple items with bag fee Void bag fee _Refund to card_ Existing Customer Assigned
 
   Scenario: Exchange _ Blind Negative Exchange transaction with multiple items with bag fee Void bag fee _Refund to card_ Existing Customer Assigned
@@ -10,7 +10,7 @@ Feature: VFG10X-969 Exchange _ Blind Negative Exchange transaction with multiple
     #Return transaction
     And the sales assistant clicks on return button
     And the sales assistant select No receipt for blind return
-    And the sales assistant clicks on Skip button
+#    And the sales assistant clicks on Skip button
 
     #Assign customer
     And then sales assistant clicks on Assign Customer button

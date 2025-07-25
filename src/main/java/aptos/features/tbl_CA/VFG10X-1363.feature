@@ -1,4 +1,4 @@
-@VFG10X-1363 @ReturnTransaction @Regression @SmokeTesting
+@VFG10X-1363 @ReturnTransaction @Regression
 
 Feature: VFG10X-1363 Return Transaction _Multiple items with Tax exempt and coupon applied _Existing customer Assigned
 

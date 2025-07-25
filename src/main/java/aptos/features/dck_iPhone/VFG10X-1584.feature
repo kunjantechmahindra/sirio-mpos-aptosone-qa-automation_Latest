@@ -1,4 +1,4 @@
-@VFG10X-1584 @SaleTransaction @Regression @Smoke
+@VFG10X-1584 @SaleTransaction @Regression
 Feature: VFG10X-1584 DCK - iPhone - Sales transaction with SFCC promotion for multiple line items
 
   Scenario: DCK - iPhone - Sales transaction with SFCC promotion for multiple line items

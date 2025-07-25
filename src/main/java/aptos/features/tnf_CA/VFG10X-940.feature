@@ -27,6 +27,7 @@ Feature: VFG10X-940 Return Transaction _Multiple Temp MD items without perm pric
     #Refund transaction
     And the sales assistant clicks on Pay button
     And the sales assistant clicks on Cash button
+    And the sales assistant clicks on Cash option
     And the sales assistant enter the Drawer ID
     And the sales assistant sign for the transaction
     And the sales assistant clicks on Print button

@@ -1,4 +1,4 @@
-@VFG10X-1781 @CashManagement @Regression
+@VFG10X-1781 @CashManagement @Regression @SmokeDCK
 
 Feature: VFG10X-1781 Cash Management _ Till IN
 

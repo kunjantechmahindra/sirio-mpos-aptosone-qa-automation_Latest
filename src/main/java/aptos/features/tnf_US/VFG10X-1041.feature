@@ -22,7 +22,7 @@ Feature: VFG10X-1041 Return transaction_ Return with single Temp MD item with Ta
     And the sales assistant validate "Tax override - 8%" is applied to item
     And the sales assistant lands on Basket Page
 
-  # Partial Payment transaction with multiple cards
+  #Payment transaction
     And the sales assistant clicks on Pay button
     And the sales assistant clicks on Accept button
     And the sales assistant save the transaction details of the sales transaction

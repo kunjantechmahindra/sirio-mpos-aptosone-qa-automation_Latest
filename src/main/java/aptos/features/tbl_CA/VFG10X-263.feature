@@ -1,4 +1,4 @@
-@VFG10X-263 @PromotionsAndDiscounts @Regression @SmokeTesting
+@VFG10X-263 @PromotionsAndDiscounts @Regression
 
 Feature: VFG10X-263 Promotions and Discounts _ Employee Discount validation _ Employee A apply the discount for Employee B
 

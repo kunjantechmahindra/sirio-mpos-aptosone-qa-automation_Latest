@@ -1,4 +1,4 @@
-@VFG10X-2006 @StoreSelling @Regression @Card @Discover @SmokeDCK
+@VFG10X-2006 @StoreSelling @Regression @Card @Discover
 Feature: VFG10X-2006 Store Selling Functions _Price Override _ Price Override by more than $10
 
   Scenario: Store Selling Functions _Price Override _ Price Override by more than $10

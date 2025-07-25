@@ -1,4 +1,4 @@
-@VFG10X-1580 @ExchangeTransaction @Regression @Smoke
+@VFG10X-1580 @ExchangeTransaction @Regression
 Feature: VFG10X-1580 DCK - iPhone - Exchange transaction with even exchange
 
   Scenario: DCK - iPhone - Exchange transaction with even exchange

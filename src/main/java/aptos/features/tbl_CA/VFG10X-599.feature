@@ -1,4 +1,4 @@
-@VFG10X-599 @CashManagement @Regression
+@VFG10X-599 @CashManagement @Regression @SmokeTBL
 Feature: VFG10X-599 Cash Management _ Paid IN _Below Security level
 
   Scenario: Cash Management _ Paid IN _Below Security level

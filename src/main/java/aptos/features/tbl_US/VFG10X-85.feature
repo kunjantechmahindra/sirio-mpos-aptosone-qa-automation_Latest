@@ -1,4 +1,4 @@
-@VFG10X-85 @SaleTransaction @Regression
+@VFG10X-85 @SaleTransaction @Regression @SmokeTBL
 
 Feature: VFG10X-85 Store Selling Functions_ Non Merchandise Option
   Scenario: Store Selling Functions_ Non Merchandise Option

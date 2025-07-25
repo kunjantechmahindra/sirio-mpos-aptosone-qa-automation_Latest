@@ -1,4 +1,4 @@
-@VFG10X-1760 @Regression @DetailedCalculation
+@VFG10X-1760 @Regression @DetailedCalculation @SmokeTBL
 Feature: VFG10X-1760 Promotions & discounts-Sales transaction with 2 for 30$ promo
 
   Scenario: Promotions & discounts-Sales transaction with 2 for 30$ promo

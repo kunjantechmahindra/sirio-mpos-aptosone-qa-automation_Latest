@@ -1,4 +1,4 @@
-@VFG10X-20 @SaleTransaction @Regression @Card @Discover
+@VFG10X-20 @SaleTransaction @Regression @Card @Discover @SmokeTBL
 
 Feature: VFG10X-20 	Sale Transaction _Single Item with Price Override_ Pay using Discover Card
 

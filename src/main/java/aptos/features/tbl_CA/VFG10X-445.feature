@@ -1,4 +1,4 @@
-@VFG10X-455 @PromotionsAndDiscounts @Regression
+@VFG10X-455 @PromotionsAndDiscounts @Regression @SmokeTBL
 Feature: VFG10X-455 Promotions and Discounts _ Multi Item transaction with 20 % Transactional Level discount
 
   Scenario: Promotions and Discounts _ Multi Item transaction with 20 % Transactional Level discount

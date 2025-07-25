@@ -1,4 +1,4 @@
-@VFG10X-1469 @ProductInquiry @Regression @SmokeDCK
+@VFG10X-1469 @ProductInquiry @Regression
 
 Feature: VFG10X-1469 DCK - Verify Product Inquiry by Scanning UPC
 

@@ -1,4 +1,4 @@
-@VFG10X-93 @StoreSelling @Regression @SmokeTesting
+@VFG10X-93 @StoreSelling @Regression
 Feature: VFG10X-93 Store Selling Functions _Gift card Quick Choice Options
 
   Scenario: Store Selling Functions _Gift card Quick Choice Options

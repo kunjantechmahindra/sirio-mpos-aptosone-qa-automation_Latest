@@ -1,4 +1,4 @@
-@VFG10X-1406 @PromotionsAndDiscounts @Regression
+@VFG10X-1406 @PromotionsAndDiscounts @Regression @SmokeTNF
 Feature: VFG10X-1406 Promotions and Discounts _ Sale transaction with promotion BUY 'n' for $XX with out coupon
 
   Scenario: Promotions and Discounts _ Sale transaction with promotion BUY 'n' for $XX with out coupon

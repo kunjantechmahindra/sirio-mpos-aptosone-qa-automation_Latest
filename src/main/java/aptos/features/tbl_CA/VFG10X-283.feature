@@ -1,4 +1,4 @@
-@VFG10X-283 @ExchangeTransaction @Regression @Card @VisaMaster @SmokeTesting
+@VFG10X-283 @ExchangeTransaction @Regression @Card @VisaMaster
 
 Feature: VFG10X-283 Exchange _Negative Exchange transaction of mixed card payment with %off item _Refund also should go to both cards
 

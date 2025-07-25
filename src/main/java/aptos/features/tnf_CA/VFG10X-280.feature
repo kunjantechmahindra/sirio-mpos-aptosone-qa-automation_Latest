@@ -32,7 +32,7 @@ Feature: VFG10X-280 Return Transaction _Sale of multiple items with multiple emp
     #Assign sale person
     And the sales assistant selects the product at index 2
     And the sales assistant selects "Salesperson" Option from line Action
-    And the sales assistant add salesperson "800500" to the transaction item
+    And the sales assistant add salesperson "800300" to the transaction item
     Then the sales assistant selects "Yes" from the salesperson popup box
     And the sales assistant lands on Basket Page
     And the sales assistant selects the product at index 1

@@ -1,7 +1,7 @@
 @VFG10X-1683 @ReturnTransaction @Regression
-Feature: VFG10X-1683 Multiband - Create a return transaction with more than 20 distinct line items (Include a Temp MD item, Employee disc item, FP item)
+Feature: VFG10X-1683 Multiband - Create a return transaction with more than 20 distinct line items - Include a Temp MD item, Employee disc item, FP item
 
-  Scenario: Multiband - Create a return transaction with more than 20 distinct line items (Include a Temp MD item, Employee disc item, FP item)
+  Scenario: Multiband - Create a return transaction with more than 20 distinct line items - Include a Temp MD item, Employee disc item, FP item
 
   # Login and add item to basket
     Given the sales assistant login to the application with valid username and password

@@ -1,4 +1,4 @@
-@VFG10X-1463 @Regression @GiftCard @Card @SmokeDCK
+@VFG10X-1463 @Regression @GiftCard @Card
 Feature: VFG10X-1463 Gift Card - Sale transaction - payment using gift card (Redeem)
 
   Scenario: Gift Card - Sale transaction - payment using gift card (Redeem)

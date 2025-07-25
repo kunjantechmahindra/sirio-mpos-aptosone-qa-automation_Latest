@@ -1,4 +1,4 @@
-@VFG10X-1600 @ReturnTransaction @Regression @SmokeDCK
+@VFG10X-1600 @ReturnTransaction @Regression
 Feature: VFG10X-1600 Return Transaction for multiple items with and without Tax exempt
 
   Scenario: Return Transaction for multiple items with and without Tax exempt

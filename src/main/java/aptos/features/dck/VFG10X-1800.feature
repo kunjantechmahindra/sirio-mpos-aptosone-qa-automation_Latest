@@ -1,4 +1,4 @@
-@VFG10X-1800 @ExchangeTransaction @Regression
+@VFG10X-1800 @ExchangeTransaction @Regression @SmokeDCK
 Feature: VFG10X-1800 Exchange _Positive Exchange by scanning barcode from e-receipt _Regular Price Items_Sales _Payment by Cash
 
   Scenario: Exchange _Positive Exchange by scanning barcode from e-receipt _Regular Price Items_Sales _Payment by Cash

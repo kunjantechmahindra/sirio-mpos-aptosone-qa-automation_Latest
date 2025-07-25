@@ -1,4 +1,4 @@
-@VFG10X-436 @PriceOverride @Regression
+@VFG10X-436 @PriceOverride @Regression @SmokeTNF
 
 Feature: Price Override _Sale Transaction with Price override for Multiple items_ Reason code Customer Adjustment & Damaged
 

@@ -1,4 +1,4 @@
-@VFG10X-40 @SaleTransaction @Regression
+@VFG10X-40 @SaleTransaction @Regression @SmokeTNF
 Feature: VFG10X-40 Sale Transaction with Temporary Price + Price Override + Employee Discount+Promo+Tax exempt
 
   Scenario: Sale Transaction with Temporary Price + Price Override + Employee Discount+Promo+Tax exempt
@@ -53,6 +53,7 @@ Feature: VFG10X-40 Sale Transaction with Temporary Price + Price Override + Empl
     And the sales assistant clicks on Accept button
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant clicks on Cash button
+    And the sales assistant clicks on Cash option
     And the sales assistant enter the Drawer ID
     And the sales assistant save the payment details for the sales transaction
     And the sales assistant clicks on Email button
@@ -63,7 +64,7 @@ Feature: VFG10X-40 Sale Transaction with Temporary Price + Price Override + Empl
     And the sales assistant login to EJViewer
     And the sales assistant enter the store and transaction detail
     And the sales assistant validate the payment details
-    And the sales assistant validate details "Employee Sale - 50% off" in EJ
+    And the sales assistant validate details "Employee Sale - 60% off" in EJ
     And the sales assistant logout from EJViewer
 
 

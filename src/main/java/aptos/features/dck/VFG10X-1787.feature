@@ -1,4 +1,4 @@
-@VFG10X-1787 @Regression @GiftCard
+@VFG10X-1787 @Regression @GiftCard @SmokeDCK
 Feature: VFG10X-1787 Gift Card _Legacy_TopUP_Manually entering Gift card number
 
   Scenario: Gift Card _Legacy_TopUP_Manually entering Gift card number

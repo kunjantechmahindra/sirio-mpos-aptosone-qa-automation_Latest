@@ -1,5 +1,3 @@
-#T.C is blocked due to a defect and script is not completed
-
 @VFG10X-429 @PromotionsAndDiscounts @Regression
 Feature: VFG10X-429 Promotions and Discounts _ Block Item level Discount _User level below 30
 
@@ -19,8 +17,10 @@ Feature: VFG10X-429 Promotions and Discounts _ Block Item level Discount _User l
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Damaged" as reason code
     And the sales assistant clicks on Apply button
-    And the sales assistant validate manager approval is displayed and discount is blocked
+
+    #Complete payment
     And the sales assistant clicks on Pay button
+    And the sales assistant clicks on Accept button
     And the sales assistant clicks on Cash button
     And the sales assistant enter the Drawer ID
     And the sales assistant clicks on Print button

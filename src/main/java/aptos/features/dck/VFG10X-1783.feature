@@ -1,4 +1,4 @@
-@VFG10X-1783 @Regression @GiftCard
+@VFG10X-1783 @Regression @GiftCard @SmokeDCK
 Feature: VFG10X-1783 Gift Card _Top up by manually entering the gift card Number
 
   Scenario: Gift Card _Top up by manually entering the gift card Number

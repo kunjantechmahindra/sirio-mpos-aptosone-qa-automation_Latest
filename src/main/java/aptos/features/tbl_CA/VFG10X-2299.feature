@@ -1,4 +1,4 @@
-@VFG10X-2299 @SaleTransaction @Regression @GiftCard @Card @Smoke @SmokeTesting
+@VFG10X-2299 @SaleTransaction @Regression @GiftCard @Card
 Feature: VFG10X-2299 Gift Card _ New Gift Card issue by typing the Gift Card number
 
   Scenario: Gift Card _ New Gift Card issue by typing the Gift Card number

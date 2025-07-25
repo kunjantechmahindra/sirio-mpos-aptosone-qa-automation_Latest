@@ -1,4 +1,4 @@
-@VFG10X-1582 @SaleTransaction @Regression @Smoke
+@VFG10X-1582 @SaleTransaction @Regression
 Feature: VFG10X-1582 DCK - iPhone - Sales transaction with Price Override for multiple items
 
   Scenario: DCK - iPhone - Sales transaction with Price Override for multiple items

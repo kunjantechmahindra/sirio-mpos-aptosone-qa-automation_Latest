@@ -1,4 +1,4 @@
-@VFG10X-2019 @StoreSelling @Regression @SmokeDCK
+@VFG10X-2019 @StoreSelling @Regression
 
   Feature: VFG10X-2019 Store Selling Functions _ Product Enquiry _ Search by manually entering the UPC
 

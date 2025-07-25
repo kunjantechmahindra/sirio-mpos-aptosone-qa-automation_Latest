@@ -1,4 +1,4 @@
-@VFG10X-38 @SaleTransaction @Regression
+@VFG10X-38 @SaleTransaction @Regression @SmokeTNF
 Feature: VFG10X-38 Sale Transaction _Multiple Items with Bag Fee_ Payment by Cash_ No customer
 
   Scenario: Sale Transaction _Multiple Items with Bag Fee_ Payment by Cash_ No customer

@@ -1,4 +1,4 @@
-@VFG10X-114 @Customer @Regression
+@VFG10X-114 @Customer @Regression @SmokeTBL
 Feature: VFG10X-114 Customer _Create customer with incorrect phone number
 
   Scenario: Customer _Create customer with incorrect phone number

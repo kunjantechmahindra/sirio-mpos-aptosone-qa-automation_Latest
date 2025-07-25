@@ -7,9 +7,8 @@ Feature: VFG10X-1696 Return Transaction _ Receipt Return with Temp-MD item havin
   #Login
     Given the sales assistant login to the application with valid username and password
     When the sales assistant clicks on Start Basket button
-    #Then the sales assistant add 1 items from "Temp-MD" product to the basket without customer
 
-    # Add Temp MD product to basket
+    #Add Temp MD product to basket
     And the sales assistant navigate to product inquiry page
     And the sales assistant search product by UPC number from "Temp-MD"
     And the sales assistant save the original and temporary price
@@ -18,7 +17,6 @@ Feature: VFG10X-1696 Return Transaction _ Receipt Return with Temp-MD item havin
     And the sales assistant clicks on Skip button
     And the sales assistant lands on Basket Page
     And the sales assistant validate temporary markdown discount
-
 
     # Apply coupon
     When the sales assistant clicks on "Coupons" button from basket

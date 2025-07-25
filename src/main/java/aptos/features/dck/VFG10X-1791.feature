@@ -1,4 +1,4 @@
-@VFG10X-1791 @SaleTransaction @Regression
+@VFG10X-1791 @SaleTransaction @Regression @SmokeDCK
 Feature: VFG10X-1791 Sale Transaction _Multiple Item_ transaction level Employee discount with override _Pay with Cash and Card
 
   Scenario: Sale Transaction _Multiple Item_ transaction level Employee discount with override _Pay with Cash and Card

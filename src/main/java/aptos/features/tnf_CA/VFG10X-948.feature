@@ -28,7 +28,7 @@ Feature: VFG10X-948 Return Transaction _Single item and Void Transaction
   # Get transaction number from information
     And the sales assistant navigate to information page
     And the sales assistant save the transaction number from information page
-    And the sales assistant navigate to basket page
+    And the sales assistant clicks on Basket button from header
 
   # Void Transaction
     And the sales assistant void the transaction from basket with reason code "Customer Changed Mind"

@@ -1,4 +1,4 @@
-@VFG10X-1449 @SaleTransaction @Regression @SmokeDCK
+@VFG10X-1449 @SaleTransaction @Regression
 Feature: VFG10X-1449 Sales transaction_Transaction level dollar off discount_ Multiple items
 
   Scenario: Promotions and Discounts _Transaction level Discount_In a Sale transaction with 2 items, Apply 30$ OFF

@@ -1,4 +1,4 @@
-@VFG10X-1362 @ReturnTransaction @Regression @Smoke @SmokeTesting
+@VFG10X-1362 @ReturnTransaction @Regression
 Feature: VFG10X-1362 Return transaction_Return multiple items with Line Item level  Employee Discount _Existing Customer Assigned
 
   Scenario: Return transaction_Return multiple items with Line Item level  Employee Discount _Existing Customer Assigned

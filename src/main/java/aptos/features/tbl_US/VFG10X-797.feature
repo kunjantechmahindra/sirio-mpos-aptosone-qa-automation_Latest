@@ -1,4 +1,4 @@
-@VFG10X-797 @CashManagement @Regression
+@VFG10X-797 @CashManagement @Regression @SmokeTBL
 Feature: VFG10X-797 Cash Management _PAID IN_ Reason Code - Postage for TBL
 
   Scenario: Cash Management _PAID IN_ Reason Code - Postage

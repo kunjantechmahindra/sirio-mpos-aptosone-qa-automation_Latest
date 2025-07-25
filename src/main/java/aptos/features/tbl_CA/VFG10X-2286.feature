@@ -1,4 +1,4 @@
-@VFG10X-2286 @ExchangeTransaction @Regression @GiftCard @Card @Smoke @SmokeTesting
+@VFG10X-2286 @ExchangeTransaction @Regression @GiftCard @Card
 Feature: VFG10X-2286 Exchange _Multiple items with same price _Issue New gift card_ Loyalty Customer Assigned_Loyalty points validation
 
   Scenario: Exchange _Multiple items with same price _Issue New gift card_ Loyalty Customer Assigned_Loyalty points validation

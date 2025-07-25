@@ -1,4 +1,4 @@
-@VFG10X-2303 @ReturnTransaction @Regression @GiftCard @SmokeTesting
+@VFG10X-2303 @ReturnTransaction @Regression @GiftCard @SmokeTBL
 Feature: VFG10X-2303 Return Transaction _Single item with tax override with payment by Gift Card _Refund to Gift card _No Customers
 
   Scenario: Return Transaction _Single item with tax override with payment by Gift Card _Refund to Gift card _No Customers

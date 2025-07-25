@@ -13,6 +13,6 @@ Feature: VFG10X-597 Cash Management _ No Sale _ Below Security level
     And the sales assistant enter the Drawer ID
     And the sales assistant checks an error message is displayed
     And the sales assistant clicks on back button from no sale
-    And the sales assistant navigate to basket page
+    And the sales assistant navigate from store operation to basket page
     And the sales assistant logout from the application
 

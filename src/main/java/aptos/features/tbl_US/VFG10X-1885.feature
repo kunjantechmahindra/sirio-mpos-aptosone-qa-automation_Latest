@@ -9,7 +9,7 @@ Feature: VFG10X-1885 Perform a receipted return of a sale transaction using the 
 
   # Assign customer
     And then sales assistant clicks on Assign Customer button
-    And the sales assistant assign customer details with index 7
+    And the sales assistant assign customer details with index 6
     Then the sales assistant add 2 items from "HigherPrice" product to the basket
 
   # Payment transaction
@@ -52,9 +52,9 @@ Feature: VFG10X-1885 Perform a receipted return of a sale transaction using the 
     And then sales assistant clicks on Assign Customer button
     And the sales assistant search recently assigned customer
     And the sales assistant save the customer details
-    And the sales assistant saves the loyalty points
+    And The sales assistant ensures loyalty points are saved before logging out.
     And the sales assistant navigates to basket from page from loyalty page
-    And the sales assistant void the transaction from basket with reason code "Cashier Error"
+    #And the sales assistant void the transaction from basket with reason code "Cashier Error"
     And the sales assistant logout from the application
 
   # Cheetah Validation

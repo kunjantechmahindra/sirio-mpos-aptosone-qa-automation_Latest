@@ -1,4 +1,4 @@
-@VFG10X-1607 @ExchangeTransaction @Regression @SmokeDCK
+@VFG10X-1607 @ExchangeTransaction @Regression
 Feature: VFG10X-1607 DCK-Exchange - Even exchange
 
   Scenario: DCK-Exchange - Even exchange

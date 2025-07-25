@@ -1,4 +1,4 @@
-@VFG10X-1616 @SaleTransaction @Regression @SmokeDCK
+@VFG10X-1616 @SaleTransaction @Regression
 Feature: VFG10X-1616 Sale Transaction with tax-exempt at transaction level
 
   Scenario: Sale Transaction with tax-exempt at transaction level

@@ -1,4 +1,4 @@
-@VFG10X-963 @ExchangeTransaction @Regression @Smoke @SmokeTesting
+@VFG10X-963 @ExchangeTransaction @Regression
 Feature: VFG10X-963 Exchange _Even Exchange transaction with Single item with Employee Discount on both Sale and Return
 
   Scenario: Exchange _Even Exchange transaction with Single item with Employee Discount on both Sale and Return

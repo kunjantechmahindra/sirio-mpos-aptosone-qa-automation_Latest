@@ -1,4 +1,4 @@
-@CEFValidation @Regression @SmokeTesting
+@CEFValidation @Regression
 Feature: CEF Validation
 
   Scenario: CEF Validation

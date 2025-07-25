@@ -1,4 +1,4 @@
-@VFG10X-296 @StoreSelling @Regression @Smoke @SmokeTesting
+@VFG10X-296 @StoreSelling @Regression @SmokeTBL
 Feature: VFG10X-296 Store Selling Functions _ Product Enquiry _ Search by scanning different type of UPC
 
   Scenario: Store Selling Functions _ Product Enquiry _ Search by scanning different type of UPC

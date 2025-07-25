@@ -1,4 +1,4 @@
-@VFG10X-104 @StoreSelling @Regression @SmokeTesting
+@VFG10X-104 @StoreSelling @Regression
 Feature: VFG10X-104 Store Selling Function _No Sale Option
 
   Scenario: Store Selling Function _No Sale Option

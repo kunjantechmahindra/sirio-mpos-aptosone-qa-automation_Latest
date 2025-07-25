@@ -1,4 +1,4 @@
-@VFG10X-1720 @Customer @Regression @SmokeTesting
+@VFG10X-1720 @Customer @Regression
 Feature: VFG10X-1720 Customer search using email and phone number
 
   Scenario: Customer search using email and phone number

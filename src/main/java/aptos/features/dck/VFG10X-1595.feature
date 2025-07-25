@@ -1,4 +1,4 @@
-@VFG10X-1595  @SaleTransaction @Regression @SmokeDCK
+@VFG10X-1595  @SaleTransaction @Regression
 Feature: VFG10X-1595 Sale Transaction with Mono Tax Exempt Item
 
   Scenario: Sale Transaction with Mono Tax Exempt Item

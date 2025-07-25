@@ -1,4 +1,4 @@
-@VFG10X-1452 @ReturnTransaction @Card @Regression @VisaDebit @SmokeDCK
+@VFG10X-1452 @ReturnTransaction @Card @Regression @VisaDebit
 Feature: VFG10X-1452 Return Transaction_Transaction level percentage off discount_Multiple Item_Debit card
 
   Scenario: Return Transaction_Transaction level percentage off discount_Multiple Item_Debit card

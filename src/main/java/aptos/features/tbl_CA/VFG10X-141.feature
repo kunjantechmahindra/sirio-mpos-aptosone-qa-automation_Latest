@@ -1,4 +1,4 @@
-@VFG10X-141 @CashManagement @Regression @SmokeTesting
+@VFG10X-141 @CashManagement @Regression
 Feature: VFG10X-141 Cash Management _ Till to Safe _ On and Above Security level
 
   Scenario: Cash Management _ Till to Safe _ On and Above Security level

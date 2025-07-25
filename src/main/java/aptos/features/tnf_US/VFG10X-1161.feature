@@ -1,4 +1,4 @@
-@VFG10X-1161 @TaxManagement @Regression
+@VFG10X-1161 @TaxManagement @Regression @SmokeTNF
 
 Feature: VFG10X-1161 Tax _ Return transaction of Multiple items,1st item with Tax Exempt,2nd item Without Tax Exempt
 

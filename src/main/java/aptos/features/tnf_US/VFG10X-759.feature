@@ -1,4 +1,4 @@
-@VFG10X-759 @Regression @GiftCard @SmokeTNF
+@VFG10X-759 @Regression @GiftCard
 Feature: VFG10X-759 Gift Card _ Gift Card Top up by swiping and with no customer assigned
 
   Scenario: Gift Card _ Gift Card Top up by swiping and with no customer assigned

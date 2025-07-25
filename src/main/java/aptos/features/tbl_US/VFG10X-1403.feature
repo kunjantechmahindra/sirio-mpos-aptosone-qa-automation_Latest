@@ -1,4 +1,4 @@
-@VFG10X-1403 @StoreSelling @Regression @Smoke @SmokeTesting
+@VFG10X-1403 @StoreSelling @Regression
 
 Feature: VFG10X-1403 Validate transaction receipt footer -Full Price - Last day of Refund and Thank you msg
 
@@ -12,7 +12,7 @@ Feature: VFG10X-1403 Validate transaction receipt footer -Full Price - Last day 
      #retrieve date of transaction from Aptos
     And the sales assistant navigate to information page
     And the sales save the transaction date and address
-    And the sales assistant navigate to basket page
+    And the sales assistant clicks on Basket button from header
 
     #Payment transaction
     And the sales assistant clicks on Pay button

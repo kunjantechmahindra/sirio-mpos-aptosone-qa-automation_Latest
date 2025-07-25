@@ -1,4 +1,4 @@
-@VFG10X-78 @StoreSelling @Regression @Smoke @SmokeTesting
+@VFG10X-78 @StoreSelling @Regression
 Feature: VFG10X-78 Store Selling Functions_ Custom Message Validation_ Full Price store
 
   Scenario: Store Selling Functions_ Custom Message Validation_ Full Price store

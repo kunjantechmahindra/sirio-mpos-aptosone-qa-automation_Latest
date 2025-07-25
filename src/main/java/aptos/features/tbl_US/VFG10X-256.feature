@@ -1,4 +1,4 @@
-@VFG10X-256 @ExchangeTransaction @Regression @GiftCard @Card @Smoke
+@VFG10X-256 @ExchangeTransaction @Regression @GiftCard @Card
 Feature: VFG10X-256 Exchange _Multiple items with same price _Top Up gift card_ Loyalty Customer Assigned
 
   Scenario: Exchange _Multiple items with same price _Top Up gift card_ Loyalty Customer Assigned
@@ -21,9 +21,10 @@ Feature: VFG10X-256 Exchange _Multiple items with same price _Top Up gift card_ 
 
   # Assign customer
     And then sales assistant clicks on Assign Customer button
-    And the sales assistant assign customer details with index 7
+    And the sales assistant assign customer details with index 1
 
   # Return transaction
+    And the sales assistant validate if void button is enabled
     And the sales assistant clicks on return button
     And the sales assistant scan the receipt for returning the item
     And the sales assistant return all items from the transaction
@@ -35,7 +36,7 @@ Feature: VFG10X-256 Exchange _Multiple items with same price _Top Up gift card_ 
   # Top up gift card
     And the sales assistant clicks on gift card button
     And the sales assistant validates existing gift card button is enabled
-    And the sales assistant enters gift card number from index 2
+    And the sales assistant enters gift card number from index 1
     And the sales assistant enters gift card amount "50.00"
     And the sales assistant clicks on add value button
     And the sales assistant enter the the pin from index 2

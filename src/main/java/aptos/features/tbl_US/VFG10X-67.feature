@@ -1,4 +1,4 @@
-@VFG10X-67 @SaleTransaction @Regression @Card @DiscoverAndDebit @SmokeTesting
+@VFG10X-67 @SaleTransaction @Regression @Card @DiscoverAndDebit
 Feature: VFG10X-67 Sale Transaction _Multiple Payments of Multiple credit card _Visa debit Insert and Discover Tap
 
   Scenario: Sale Transaction _Multiple Payments of Multiple credit card _Visa debit Insert and Discover Tap

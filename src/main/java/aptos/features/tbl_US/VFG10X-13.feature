@@ -1,4 +1,4 @@
-@VFG10X-13 @SaleTransaction @Regression @Card @Master @SmokeTesting
+@VFG10X-13 @SaleTransaction @Regression @Card @Master
 Feature: VFG10X-13 Sale Transaction _Single Item with Bag Fee_ Void Payment by Credit Card and complete by Cash_ Existing customer
 
   Scenario: Sale Transaction _Single Item with Bag Fee_ Void Payment by Credit Card and complete by Cash_ Existing customer

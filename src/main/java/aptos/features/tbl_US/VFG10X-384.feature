@@ -1,4 +1,4 @@
-@VFG10X-384 @StoreSelling @Regression
+@VFG10X-384 @StoreSelling @Regression @SmokeTBL
   Feature: VFG10X-384 Store Selling Functions _ Allow Cashier to be defaulted as Salesperson
 
     Scenario: tore Selling Functions _ Allow Cashier to be defaulted as Salesperson

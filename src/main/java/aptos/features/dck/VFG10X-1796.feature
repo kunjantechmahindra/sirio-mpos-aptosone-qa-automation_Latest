@@ -1,4 +1,4 @@
-@VFG10X-1796 @Regression @Card @GiftCard @Master
+@VFG10X-1796 @Regression @Card @GiftCard @Master @SmokeDCK
 Feature: VFG10X-1796 Return Transaction _ Return multiple items including one Temp MD item_Employee discount _ payment 50 % by Mastercard swipe and 50 % Gift Card_Refund to Gift card
 
   Scenario: Return Transaction _ Return multiple items including one Temp MD item_Employee discount _ payment 50 % by Mastercard swipe and 50 % Gift Card_Refund to Gift card

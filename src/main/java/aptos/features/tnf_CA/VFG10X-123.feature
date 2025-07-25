@@ -1,4 +1,4 @@
-@VFG10X-123 @ExchangeTransaction @Regression
+@VFG10X-123 @ExchangeTransaction @Regression @SmokeTNF
 Feature: VFG10X-123 Exchange _Positive Exchange _Through Return search by manually entering the details
 
   Scenario: Exchange _Positive Exchange _Through Return search by manually entering the details

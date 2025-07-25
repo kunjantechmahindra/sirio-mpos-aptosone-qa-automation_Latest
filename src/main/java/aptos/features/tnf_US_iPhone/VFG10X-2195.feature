@@ -7,7 +7,7 @@ Feature: VFG10X-2195 Customer _Customer creation with incorrect Email Id format
     Given the sales assistant login to the application with valid username and password
     When the sales assistant clicks on Start Basket button
 
-  #Create Customer with email as null
+  #Create Customer with incorrect email
     And then sales assistant clicks on Assign Customer button
     And the sales assistant clicks on New Customer
     And the sales assistant enter customer detail with "email" as "invalid"

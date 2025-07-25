@@ -1,4 +1,4 @@
-@VFG10X-596 @CashManagement @Regression @SmokeTNF
+@VFG10X-596 @CashManagement @Regression
 Feature: VFG10X-596 Cash Management _ No Sale _Reason Code Validation
 
   Scenario: Cash Management _ No Sale _Reason Code Validation

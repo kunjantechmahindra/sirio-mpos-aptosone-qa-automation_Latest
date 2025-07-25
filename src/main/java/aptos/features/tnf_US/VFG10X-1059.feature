@@ -25,12 +25,12 @@ Feature: VFG10X-1059 Return transaction_ Return single item Suspend transaction 
     And the sales assistant return all items from the transaction
     And the sales assistant selects "RTL - Changed Mind" as reason code
 
- #Suspend and Resume Transaction
+    #Suspend and Resume Transaction
     And then sales assistant clicks on Suspend button
     And the sales assistant enter the reference ID
     And the sales assistant select the printer
     And the sales assistant clicks on Resume button
-    And the sales assistant navigate to basket page
+    And the sales assistant clicks on Basket button from header
     And the sales assistant clicks on Resume button
     And the sales assistant select the transaction to be resumed
     And the sales assistant proceed without selecting the customer

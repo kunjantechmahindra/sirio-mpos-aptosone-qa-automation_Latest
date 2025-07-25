@@ -1,4 +1,4 @@
-@VFG10X-153 @Regression @GiftCard @SmokeTNF
+@VFG10X-153 @Regression @GiftCard
 Feature: VFG10X-153 Gift Card _ Issue of New Gift Card by swiping the gift card_ Payment by Credit card
 
   Scenario: Gift Card _ Issue of New Gift Card by swiping the gift card_ Payment by Credit card

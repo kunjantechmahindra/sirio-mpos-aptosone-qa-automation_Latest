@@ -1,4 +1,4 @@
-@VFG10X-2061 @StoreSelling @Regression @SmokeDCK
+@VFG10X-2061 @StoreSelling @Regression
 Feature: VFG10X-2061 Store Selling Functions _ Validation of the Suspend functionality - User should not be able to skip reference
 
   Scenario: Store Selling Functions _ Validation of the Suspend functionality - User should not be able to skip reference

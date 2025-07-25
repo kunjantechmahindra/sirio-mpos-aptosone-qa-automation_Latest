@@ -1,4 +1,4 @@
-@VFG10X-1590 @SaleTransaction @Regression @SmokeDCK
+@VFG10X-1590 @SaleTransaction @Regression
 Feature: VFG10X-1590 DCK - Sales transaction_Suspend and Resume mono item Transaction_Apply Tax
 
   Scenario: DCK - Sales transaction_Suspend and Resume mono item Transaction_Apply Tax

@@ -10,11 +10,11 @@ Feature: VFG10X-1756 Exchange _Negative Blind Exchange of single item with bag f
   # Return transaction
     And the sales assistant clicks on return button
     And the sales assistant select No receipt for blind return
-    And the sales assistant clicks on Skip button
 
   # Add Product
     Then the sales assistant add an items from "HigherPrice" product for return
     And the sales assistant selects "PRICE ADJUSTMENT" as reason code
+    And the sales assistant clicks on Skip button
     And the sales assistant navigate to basket page from return mode page
 
   # Add
@@ -33,7 +33,7 @@ Feature: VFG10X-1756 Exchange _Negative Blind Exchange of single item with bag f
   # Payment transaction
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant clicks on gift card button from payment page
-    And the sales assistant enter the gift card number for payment from index 3
+    And the sales assistant enter the gift card number for payment from index 0
     And the sales assistant clicks on issue button from payment page
     And the sales assistant sign for the transaction
     And the sales assistant save the payment details for the sales transaction

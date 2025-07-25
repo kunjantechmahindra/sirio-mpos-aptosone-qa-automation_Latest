@@ -1,4 +1,4 @@
-@VFG10X-1468 @SaleTransaction @Regression @Card @Visa @SmokeDCK
+@VFG10X-1468 @SaleTransaction @Regression @Card @Visa
 Feature: VFG10X-1468 Create a sale transaction with an SFCC promotion - B1G1 50% Off - Multiple line items
 
   Scenario: Create a sale transaction with an SFCC promotion - B1G1 50% Off - Multiple line items

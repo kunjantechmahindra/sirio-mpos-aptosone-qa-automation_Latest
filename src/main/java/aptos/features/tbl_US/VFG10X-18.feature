@@ -1,4 +1,4 @@
-@VFG10X-18 @SaleTransaction @Regression @GiftCard @Card @SmokeTesting
+@VFG10X-18 @SaleTransaction @Regression @GiftCard @Card
 Feature: VFG10X-18 Sale Transaction _Multiple Items with multiple line item discounts _Payment by New Gift Card_ Existing customer
 
   Scenario: Sale Transaction _Multiple Items with multiple line item discounts _Payment by New Gift Card_ Existing customer
@@ -67,7 +67,7 @@ Feature: VFG10X-18 Sale Transaction _Multiple Items with multiple line item disc
     And the sales assistant clicks on gift card button from payment page
     And the sales assistant enter the gift card number for payment from index 0
     And the sales assistant clicks on redeem button
-    And the sales assistant enter the the pin from index 4
+    And the sales assistant enter the the pin from index 0
     And the sales assistant save the payment details for the sales transaction
     And the sales assistant clicks on Print button
     And the sales assistant select the printer

@@ -1,4 +1,4 @@
-@VFG10X-1623  @SaleTransaction @Regression @SmokeDCK
+@VFG10X-1623  @SaleTransaction @Regression
 Feature: VFG10X-1623 Sale transaction with multiple items having Temporary markdown price
 
   Scenario: Sale transaction with multiple items having Temporary markdown price

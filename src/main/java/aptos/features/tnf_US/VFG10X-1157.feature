@@ -1,4 +1,4 @@
-@VFG10X-1157 @TaxManagement @Regression @SmokeTNF
+@VFG10X-1157 @TaxManagement @Regression
 
 Feature: VFG10X-1157 Tax _ Return transaction with multiple items with Tax Override, and Tax Exempt, Get E-Receipt
 

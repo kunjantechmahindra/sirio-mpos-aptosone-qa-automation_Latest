@@ -1,4 +1,4 @@
-@VFG10X-27 @SaleTransaction @Regression @GiftCard @SmokeTesting
+@VFG10X-27 @SaleTransaction @Regression @GiftCard
 Feature: VFG10X-27 Sale Transaction _Single Item with Line item Discount _Payment by multiple Gift Cards
 
   Scenario: Sale Transaction _Single Item with Line item Discount _Payment by multiple Gift Cards
@@ -32,9 +32,9 @@ Feature: VFG10X-27 Sale Transaction _Single Item with Line item Discount _Paymen
     And the sales assistant enter the the pin from index 0
     And the sales assistant validate the partial payment by gift card
     And the sales assistant clicks on gift card button from payment page
-    And the sales assistant enter the gift card number for payment from index 1
+    And the sales assistant enter the gift card number for payment from index 3
     And the sales assistant clicks on redeem button
-    And the sales assistant enter the the pin from index 1
+    And the sales assistant enter the the pin from index 3
     And the sales assistant save the payment details for the sales transaction
     And the sales assistant clicks on Print button
     And the sales assistant select the printer

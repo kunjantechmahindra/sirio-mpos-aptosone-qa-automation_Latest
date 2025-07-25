@@ -22,6 +22,7 @@ public class CEFPage extends TestBase {
     }
 
     public void signInToCEF() {
+        System.out.println(properties.getProperty("CEFPageUsername"));
         browserDriver.findElement(By.xpath("//XCUIElementTypeStaticText[@name='Username']/following-sibling::XCUIElementTypeTextField\n")).sendKeys(properties.getProperty("CEFPageUsername"));
         browserDriver.findElement(By.xpath("//XCUIElementTypeStaticText[@name='Password']/following-sibling::XCUIElementTypeSecureTextField\n")).sendKeys(properties.getProperty("CEFPassword"));
         browserDriver.findElement(By.xpath("//XCUIElementTypeButton[@name='Login']")).click();

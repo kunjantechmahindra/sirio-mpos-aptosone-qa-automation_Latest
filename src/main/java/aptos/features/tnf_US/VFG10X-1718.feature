@@ -1,4 +1,4 @@
-@VFG10X-1718 @SaleTransaction @Regression @DetailedCalculation @GiftCard @SmokeTNF
+@VFG10X-1718 @returnTransaction @Regression @DetailedCalculation @GiftCard
 Feature: VFG10X-1718 Return transaction _Return single Temp MD item payment by Visa Debit insert
 
   Scenario: Return transaction _Return single Temp MD item payment by Visa Debit insert

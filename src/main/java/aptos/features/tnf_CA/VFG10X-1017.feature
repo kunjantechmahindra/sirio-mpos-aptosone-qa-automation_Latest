@@ -38,6 +38,7 @@ Feature: VFG10X-1017 Promotions and Discounts _ Return  transaction with multipl
     And the sales assistant clicks on Accept button
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant clicks on Cash button
+    And the sales assistant clicks on Cash option
     And the sales assistant enter the Drawer ID
     And the sales assistant clicks on Print button
     And the sales assistant select the printer and save the receipt for return

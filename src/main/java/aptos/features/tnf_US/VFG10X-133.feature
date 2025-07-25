@@ -1,4 +1,4 @@
-@VFG10X-133 @CashManagement @Regression
+@VFG10X-133 @CashManagement @Regression @SmokeTNF
 Feature: VFG10X-133 Cash Management _ No Sale _ On and Above Security level
 
   Scenario: Cash Management _ No Sale _ On and Above Security level

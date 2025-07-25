@@ -1,4 +1,4 @@
-@VFG10X-946 @ReturnTransaction @Regression
+@VFG10X-946 @ReturnTransaction @Regression @SmokeTBL
 Feature: VFG10X-946 Return Transaction _Multiple items with Void One Item and Complete Transaction_Refund as Cash
 
   Scenario: Return Transaction _Multiple items with Void One Item and Complete Transaction_Refund as Cash

@@ -1,4 +1,4 @@
-@VFG10X-1459 @ReturnTransaction @Regression @SmokeDCK @Card
+@VFG10X-1459 @ReturnTransaction @Regression   @Card
 Feature: VFG10X-1459 DCK - Return transaction_Transaction level employee discount_ Single item_Use Amex Card
 
   Scenario: DCK - Return transaction_Transaction level employee discount_ Single item_Use Amex Card

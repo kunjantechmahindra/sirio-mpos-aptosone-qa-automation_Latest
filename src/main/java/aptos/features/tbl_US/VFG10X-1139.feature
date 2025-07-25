@@ -1,4 +1,4 @@
-@VFG10X-1139 @Regression @ExchangeTransaction @Card @Master
+@VFG10X-1139 @Regression @ExchangeTransaction @Card @Master @SmokeTBL
 Feature: VFG10X-1139 Return Transaction_ Blind Return with Single item with Price override and employee discount applied during return_Refund as Card_Existing customer assigned
 
   Scenario: Return Transaction_ Blind Return with Single item with Price override and employee discount applied during return_Refund as Card_Existing customer assigned

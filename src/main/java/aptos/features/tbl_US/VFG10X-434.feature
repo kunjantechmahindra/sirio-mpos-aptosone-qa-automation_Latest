@@ -1,4 +1,4 @@
-@VFG10X-434 @PriceOverride @Regression @SmokeTesting
+@VFG10X-434 @PriceOverride @Regression @SmokeTBL
 Feature: VFG10X-434 Price Override _Return of Sale Transaction with Price override for Multiple items_ Reason code PRICE MATCH and INCORRECT PRICE
 
   Scenario: Price Override _Return of Sale Transaction with Price override for Multiple items_ Reason code PRICE MATCH and INCORRECT PRICE

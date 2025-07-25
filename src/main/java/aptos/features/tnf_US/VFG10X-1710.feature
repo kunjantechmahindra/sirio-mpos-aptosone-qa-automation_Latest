@@ -11,14 +11,15 @@ Feature: VFG10X-1710 Exchange Transaction_Even Blind Exchange transaction_ singl
   #Return transaction
     And the sales assistant clicks on return button
     And the sales assistant select No receipt for blind return
-    And the sales assistant clicks on Skip button
 
   #Add Product for blind return
     Then the sales assistant add an items from "Temp-MD" product for return
     And the sales assistant selects "Damaged/Defective" as reason code
+    And the sales assistant clicks on Skip button
     And the sales assistant navigate to basket page from return mode page
     And the sales assistant store the Temp_MD UPC in index 1
 
+  #Validate the Temp MD price
     And the sales assistant navigate to product inquiry page
     And the sales assistant search the saved TempMD item
     And the sales assistant save the original and temporary price

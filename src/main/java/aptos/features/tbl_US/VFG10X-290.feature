@@ -1,4 +1,4 @@
-@VFG10X-290 @ExchangeTransaction @Regression @Smoke @SmokeTesting
+@VFG10X-290 @ExchangeTransaction @Regression
 Feature: VFG10X-290 Exchange _Single item _Suspend and Resume
 
   Scenario: Exchange _Single item _Suspend and Resume
@@ -34,7 +34,7 @@ Feature: VFG10X-290 Exchange _Single item _Suspend and Resume
     And then sales assistant clicks on Suspend button
     And the sales assistant enter the reference ID
     And the sales assistant clicks on Resume button
-    And the sales assistant navigate to basket page
+    And the sales assistant clicks on Basket button from header
     And the sales assistant clicks on Resume button
     And the sales assistant select the transaction to be resumed
     And the sales assistant proceed without selecting the customer

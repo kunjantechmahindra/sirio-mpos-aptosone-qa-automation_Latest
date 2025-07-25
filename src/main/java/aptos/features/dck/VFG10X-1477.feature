@@ -1,4 +1,4 @@
-@VFG10X-1477 @CashManagement @Regression @TillOut @SmokeDCK
+@VFG10X-1477 @CashManagement @Regression @TillOut
 
   Feature: VFG10X-1477 DCK - Cash Management_TILL OUT_No Reason code for Dickies
 

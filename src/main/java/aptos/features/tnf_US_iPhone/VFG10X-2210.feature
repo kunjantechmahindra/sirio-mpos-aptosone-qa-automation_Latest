@@ -33,7 +33,7 @@ Feature: VFG10X-2210 Exchange _Multiple items with same price _Issue New gift ca
     And the sales assistant clicks on return button
     And the sales assistant scan the receipt for returning the item
     And the sales assistant return all items from the transaction
-    And the sales assistant selects "RTL - CHANGED MIND" as reason code
+    And the sales assistant selects "RTL - Changed Mind" as reason code
     And the sales assistant lands on Basket Page
     And the sales assistant add same items to the basket
     And the sales assistant add same items to the basket
@@ -41,7 +41,7 @@ Feature: VFG10X-2210 Exchange _Multiple items with same price _Issue New gift ca
   # Issue New Gift Card
     And the sales assistant clicks on menu button for iPhone basket
     And the sales assistant clicks on gift card button
-    And the sales assistant enters gift card number from index 2
+    And the sales assistant enters gift card number from index 1
     And the sales assistant enters gift card amount 50
     And the sales assistant clicks on issue button
     And the sales assistant lands on Basket Page

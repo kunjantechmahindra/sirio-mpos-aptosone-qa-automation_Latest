@@ -11,9 +11,10 @@ Feature: VFG10X-1887 Create a Customer with Mandatory fields + Opt-in to Privacy
     And then sales assistant clicks on Assign Customer button
     And the sales assistant clicks on New Customer
     And the sales assistant enter mandatory customer details
-    And the sales assistant clicks on Privacy Policy
     And the sales assistant clicks on Newsletter
+    And the sales assistant clicks on Privacy Policy
     And the sales assistant clicks on Save button
+    And the sales assistant validate if void button is enabled
     And then sales assistant clicks on Assign Customer button
     And the sales assistant validate "zip code" and "email" for the newly created customer
     And the sales assistant navigate to basket page

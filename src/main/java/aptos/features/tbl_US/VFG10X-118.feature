@@ -1,4 +1,4 @@
-@VFG10X-118 @Regression @GiftCard @Smoke
+@VFG10X-118 @Regression @GiftCard
 Feature: VFG10X-118 Gift Card _Top Up Gift card and Void
 
   Scenario: Gift Card _Top Up Gift card and Void

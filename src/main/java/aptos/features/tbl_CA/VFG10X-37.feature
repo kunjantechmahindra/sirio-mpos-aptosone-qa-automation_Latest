@@ -1,4 +1,4 @@
-@VFG10X-37 @SaleTransaction @Regression @SmokeTesting
+@VFG10X-37 @SaleTransaction @Regression
 Feature: VFG10X-37 Sale Transaction _ Single Item_ Void Transaction _No Customer
 
   Scenario: Sale Transaction _ Single Item_ Void Transaction _No Customer

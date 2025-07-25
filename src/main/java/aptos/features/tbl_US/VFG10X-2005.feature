@@ -1,4 +1,4 @@
-@VFG10X-2005 @SaleTransaction @Regression @Card @VisaDebit @Smoke
+@VFG10X-2005 @SaleTransaction @Regression @Card @VisaDebit
 Feature: VFG10X-2005 Sale Transaction _Multiple Item _Pay with Card
 
   Scenario: Sale Transaction _Multiple Item _Pay with Card
