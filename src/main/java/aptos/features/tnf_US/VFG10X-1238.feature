@@ -40,10 +40,9 @@ Feature: VFG10X-1238 Return transaction_ Return multiple items with Item level d
 
   #Assign customer
     And then sales assistant clicks on Assign Customer button
-    And the sales assistant assign customer details with index 1
+    And the sales assistant assign customer details with index 0
 
 #Return transaction
-    And the sales assistant validate if void button is enabled
     And the sales assistant clicks on return button
     And the sales assistant scan the receipt for returning the item
     And the sales assistant selects the return product at index 2

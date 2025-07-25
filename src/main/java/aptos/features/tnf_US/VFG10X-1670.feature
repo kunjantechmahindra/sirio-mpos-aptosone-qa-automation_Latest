@@ -8,7 +8,7 @@ Feature: VFG10X-1670 Promotions and Discounts _ Verify that promotion is not get
     Given the sales assistant login to the application with valid username and password
     When the sales assistant clicks on Start Basket button
 
-  #Topup existing Gift Card
+  #Issue New Gift Card
     And the sales assistant clicks on gift card button
     And the sales assistant clicks on existing gift card button
     And the sales assistant enters gift card number from index 0

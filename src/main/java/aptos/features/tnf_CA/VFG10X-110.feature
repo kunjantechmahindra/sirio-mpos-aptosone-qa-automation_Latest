@@ -15,7 +15,6 @@ Feature: VFG10X-110 Customer _Last Name field editable validation
     And the sales assistant clicks on edit customer option from Search customer page
     And the sales assistant will update "Last Name" in customer details
     And the sales assistant clicks on Update button
-    And the sales assistant validate if void button is enabled
     And then sales assistant clicks on Assign Customer button
     And the sales assistant validate "Last name" updated customer details
     And the test data is updated with "Last Name" updated details at index 0

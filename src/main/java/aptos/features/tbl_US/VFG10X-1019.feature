@@ -19,9 +19,9 @@ Feature: VFG10X-1019 Promotions and Discounts _Return  transaction with multiple
     And the sales assistant validate "10% off for all" is applied to item
     And the sales assistant lands on Basket Page
     And the sales assistant selects the product at index 1
-    And the sales assistant validate "2 For $30" is applied to item
+    And the sales assistant validate "2 For $30 Tees" is applied to item
     And the sales assistant selects the product at index 2
-    And the sales assistant validate "2 For $30" is applied to item
+    And the sales assistant validate "2 For $30 Tees" is applied to item
     And the sales assistant lands on Basket Page
 
   #Transactional level Percentage off 30%

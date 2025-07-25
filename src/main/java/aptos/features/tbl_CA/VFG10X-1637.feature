@@ -8,12 +8,12 @@ Feature: VFG10X-1637 SFCC_ Update a TBL BOGO promotion
     And the sales assistant login to SFCC application
     And the sales assistant selects "TBL POS" as site
     And the sales assistant selects campaigns from merchant tools
-    And the sales assistant enter the promotion ID "08082023"
+    And the sales assistant enter the promotion ID "010420242"
     And the sales assistant select start date "10-Dec-2024"
-    And the sales assistant select end date "30-Dec-2025"
+    And the sales assistant select end date "30-Jan-2025"
     And sales assistant clicks on apply button in campaign page
     And sales assistant selects promotions from merchant tools
-    And sales assistant enter the promotion ID "08082023" for promotions
+    And sales assistant enter the promotion ID "010420242" for promotions
     And sales assistant update the UPC's for the promotion
     And sales assistant select the SKU for "BOGO-category"
     And sales assistant clicks on Apply button in promotion page

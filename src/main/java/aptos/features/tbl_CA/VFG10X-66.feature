@@ -3,12 +3,12 @@ Feature: VFG10X-66 Sale Transaction  _Multiple Payments of Multiple credit card 
 
   Scenario: Sale Transaction  _Multiple Payments of Multiple credit card _FDiners Tap or Insert and Discover Tap
 
-  # Login and add item to basket
+    # Login and add item to basket
     Given the sales assistant login to the application with valid username and password
     When the sales assistant clicks on Start Basket button
     Then the sales assistant add 1 items from "LowerPrice" product to the basket without customer
 
-  # Partial Payment transaction with card and card
+    # Partial Payment transaction with card and card
     And the sales assistant clicks on Pay button
     And the sales assistant clicks on Accept button
     And the sales assistant save the transaction details of the sales transaction
@@ -25,7 +25,7 @@ Feature: VFG10X-66 Sale Transaction  _Multiple Payments of Multiple credit card 
     And the sales assistant select the printer
     And the sales assistant logout from the application
 
-  # EJ Validation
+    # EJ Validation
     And the sales assistant login to EJViewer
     And the sales assistant enter the store and transaction detail
     And the sales assistant validate the payment details

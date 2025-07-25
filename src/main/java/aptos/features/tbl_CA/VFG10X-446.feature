@@ -1,5 +1,4 @@
-@VFG10X-446 @PromotionsAndDiscounts @Regression  @Rerun
-
+@VFG10X-446 @PromotionsAndDiscounts @Regression
 Feature: VFG10X-446 Promotions and Discounts _ Multi Item transaction with 20 $ Transactional Level discount
 
   Scenario: Promotions and Discounts _ Multi Item transaction with 20 $ Transactional Level discount

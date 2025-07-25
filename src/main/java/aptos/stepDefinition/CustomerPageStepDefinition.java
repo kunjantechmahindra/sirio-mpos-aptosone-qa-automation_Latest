@@ -5,7 +5,6 @@ import aptos.pages.BasketPage;
 import aptos.pages.CustomerPage;
 import aptos.utility.GeneralUtility;
 import aptos.utility.MobileActions;
-import aptos.utility.W3CActions;
 import io.cucumber.java.en.And;
 import org.json.simple.parser.ParseException;
 
@@ -23,28 +22,22 @@ public class CustomerPageStepDefinition extends TestBase {
 
     @And("the sales assistant clicks on New Customer")
     public void theSalesAssistantClicksOnNewCustomer() throws InterruptedException {
-        if(properties.getProperty("Brand").equals("TBL")){
-            mobileActions.clickHideKeyboard();
-            customerPage.clickOnNewCustomerButton();
-        }
-        else{
-            customerPage.clickOnNewCustomerButton();
-        }
+        mobileActions.clickHideKeyboard();
+        customerPage.clickOnNewCustomerButton();
     }
 
     @And("the sales assistant enter New customer detail")
-    public void theSalesAssistantEnterNewCustomerDetail() throws InterruptedException {
+    public void theSalesAssistantEnterNewCustomerDetail() {
         customerPage.enterCustomerLastName("valid");
         customerPage.enterCustomerFirstName("valid");
         customerPage.enterCustomerEmail("valid");
         customerPage.enterCustomerPhoneNumber("valid");
         customerPage.enterZipCode("valid");
-        mobileActions.clickHideKeyboard();
     }
 
 
     @And("the sales assistant enter mandatory customer details")
-    public void theSalesAssistantEnterMandatoryCustomerDetails() throws InterruptedException {
+    public void theSalesAssistantEnterMandatoryCustomerDetails() {
         customerPage.enterCustomerEmail("valid");
         customerPage.enterZipCode("valid");
     }
@@ -84,9 +77,8 @@ public class CustomerPageStepDefinition extends TestBase {
     }
 
     @And("the sales assistant assign customer details with index {int}")
-    public void theSalesAssistantSearchCustomerDetailsWithIndex(int index) throws IOException, ParseException, InterruptedException {
+    public void theSalesAssistantSearchCustomerDetailsWithIndex(int index) throws IOException, ParseException {
         customerPage.searchAndAssignCustomerUsingEmail(index);
-        Thread.sleep(3000);
     }
 
     @And("the sales assistant search a customer using email at index {int}")
@@ -103,17 +95,11 @@ public class CustomerPageStepDefinition extends TestBase {
     public void theSalesAssistantClicksOnEditCustomerOptionFromSearchCustomerPage() throws InterruptedException {
         customerPage.navigateToSearchCustomer(); // this is not applicable for new version in iPad. Need to check for iPhone
         customerPage.clickOnEditCustomer();
-        mobileActions.clickHideKeyboard();
     }
 
     @And("the sales assistant navigate to basket page")
     public void theSalesAssistantNavigateToBasketPage() throws InterruptedException {
         customerPage.clickOnBasketButtonFromHeader();
-    }
-
-    @And("the sales assistant clicks on Basket button from header")
-    public void theSalesAssistantToBasketPage() throws InterruptedException {
-        customerPage.clickOnBasketButtonInHeader();
     }
 
     @And("the sales assistant will update {string} in customer details")
@@ -207,7 +193,7 @@ public class CustomerPageStepDefinition extends TestBase {
     @And("the sales assistant navigate to basket page from customer profile")
     public void theSalesAssistantNavigateToBasketPageFromCustomerProfile() throws InterruptedException {
         customerPage.navigateToSearchCustomer();
-        customerPage.clickOnBackButtonFromSearchCustomerProfile();
+        customerPage.clickOnBackButtonFromSearchCustomer();
     }
 
     @And("the sales assistant search a customer with Phone Number at index {int}")
@@ -219,11 +205,11 @@ public class CustomerPageStepDefinition extends TestBase {
     @And("the sales assistant search a customer with Phone Number and email at index {int}")
     public void theSalesAssistantSearchACustomerWithPhoneNumberAndEmailAtIndex(int index) throws IOException, ParseException {
         customerPage.searchCustomerUsingEmailAndPhoneNumber(index);
-//        customerPage.clickOnCustomerSearchButton();
+        customerPage.clickOnCustomerSearchButton();
     }
 
     @And("the sales assistant enter customer detail with {string} as {string}")
-    public void theSalesAssistantEnterCustomerDetailWithAs(String field, String validity) throws InterruptedException {
+    public void theSalesAssistantEnterCustomerDetailWithAs(String field, String validity) {
         String invalidValue = "invalid";
         String fieldLower = field.toLowerCase();
         String validityLower = validity.toLowerCase();
@@ -354,17 +340,16 @@ public class CustomerPageStepDefinition extends TestBase {
     }
 
     @And("the sales assistant saves the loyalty points")
-    public void theSalesAssistantSavesTheLoyaltyPoints() throws InterruptedException {
+    public void theSalesAssistantSavesTheLoyaltyPoints() {
         customerPage.clickOnAssignedCustomerButton();
-        mobileActions.clickHideKeyboard();
         customerPage.clickOnLoyaltyPointsDetails();
         customerPage.getLoyaltyPoints();
     }
 
     @And("the sales assistant navigates to basket from page from loyalty page")
-    public void theSalesAssistantNavigatesToBasketFromPageFromLoyaltyPage() throws InterruptedException {
+    public void theSalesAssistantNavigatesToBasketFromPageFromLoyaltyPage() {
         customerPage.navigateToCustomerProfileFromLoyaltyPage();
-//        customerPage.navigateToBasketFromCustomerProfile();
+        customerPage.navigateToBasketFromCustomerProfile();
     }
 
     @And("the sales assistant clicks on Loyalty Terms")
@@ -390,12 +375,11 @@ public class CustomerPageStepDefinition extends TestBase {
     }
 
     @And("the sales assistant validate all attributes are enabled")
-    public void theSalesAssistantValidateAllAttributesAreEnabled() throws InterruptedException {
-        mobileActions.clickHideKeyboard();
+    public void theSalesAssistantValidateAllAttributesAreEnabled() {
         customerPage.privacyAttributeValidation("Yes");
         customerPage.newsLetterAttributeValidation("Yes");
         if (!properties.getProperty("BrandRegion").equals("TBL-CA")) {
-            customerPage.loyaltyAttributeValidation("No");
+            customerPage.loyaltyAttributeValidation("Yes");
         }
 
     }
@@ -411,10 +395,8 @@ public class CustomerPageStepDefinition extends TestBase {
     }
 
     @And("the sales assistant validate loyalty type")
-    public void theSalesAssistantValidateLoyaltyType() throws InterruptedException {
-        Thread.sleep(2000);
+    public void theSalesAssistantValidateLoyaltyType() {
         customerPage.clickOnAssignedCustomerButton();
-        mobileActions.clickHideKeyboard();
         customerPage.clickOnLoyaltyPointsDetails();
         customerPage.validateLoyaltyType();
     }
@@ -422,10 +404,9 @@ public class CustomerPageStepDefinition extends TestBase {
     @And("the sales assistant save the customer details")
     public void theSalesAssistantSaveTheCustomerDetails() throws InterruptedException {
         customerPage.saveCustomerDetails();
-//        mobileActions.clickOnElement(removeCustomer);
-//        customerPage.clicksOnSearchResultBackButton();
-//        customerPage.navigateToSearchCustomer();
-//        basketPage.clickOnAssignCustomerButton();
+        //customerPage.clicksOnSearchResultBackButton();
+        customerPage.navigateToSearchCustomer();
+        basketPage.clickOnAssignCustomerButton();
     }
 
     @And("the sales assistant search a customer with new Phone Number and email")
@@ -434,7 +415,7 @@ public class CustomerPageStepDefinition extends TestBase {
     }
 
     @And("the sales assistant enter New customer detail without email and phone number")
-    public void theSalesAssistantEnterNewCustomerDetailWithoutEmailAndPhoneNumber() throws InterruptedException {
+    public void theSalesAssistantEnterNewCustomerDetailWithoutEmailAndPhoneNumber() {
         customerPage.enterCustomerLastName("valid");
         customerPage.enterCustomerFirstName("valid");
         customerPage.enterZipCode("valid");
@@ -457,7 +438,7 @@ public class CustomerPageStepDefinition extends TestBase {
     }
 
     @And("the sales assistant enter New customer details without email")
-    public void theSalesAssistantEnterNewCustomerDetailsWithoutEmail() throws InterruptedException {
+    public void theSalesAssistantEnterNewCustomerDetailsWithoutEmail() {
         customerPage.enterCustomerLastName("valid");
         customerPage.enterCustomerFirstName("valid");
         customerPage.enterZipCode("valid");
@@ -470,7 +451,7 @@ public class CustomerPageStepDefinition extends TestBase {
     }
 
     @And("the sales assistant enter New customer details without phone number")
-    public void theSalesAssistantEnterNewCustomerDetailsWithoutPhoneNumber() throws InterruptedException {
+    public void theSalesAssistantEnterNewCustomerDetailsWithoutPhoneNumber() {
         customerPage.enterCustomerLastName("valid");
         customerPage.enterCustomerFirstName("valid");
         customerPage.enterZipCode("valid");
@@ -478,9 +459,8 @@ public class CustomerPageStepDefinition extends TestBase {
     }
 
     @And("the sales assistant validate loyalty points after refund")
-    public void theSalesAssistantValidateLoyaltyPointsAfterRefund() throws InterruptedException {
+    public void theSalesAssistantValidateLoyaltyPointsAfterRefund() {
         customerPage.clickOnAssignedCustomerButton();
-        mobileActions.clickHideKeyboard();
         customerPage.clickOnLoyaltyPointsDetails();
         customerPage.validateLoyaltyPointAfterRefund();
     }
@@ -494,22 +474,5 @@ public class CustomerPageStepDefinition extends TestBase {
     @And("the sales assistant clicks on New Customer without hiding the keyboard")
     public void theSalesAssistantClicksOnNewCustomerWithoutHidingTheKeyboard() {
         customerPage.clickOnNewCustomerButton();
-    }
-
-    @And("the sales assistant clicks on customer search button icon")
-    public void theSalesAssistantClicksOnCustomerSearchButtonIcon() {
-        customerPage.clickOnCustomerSearchIcon();
-        customerPage.clickCustomerDataClearButton();
-    }
-
-    @And("the sales assistant assign the customer")
-    public void theSalesAssistantAssignTheCustomer() throws InterruptedException {
-        customerPage.assignCustomer();
-        Thread.sleep(3000);
-    }
-
-    @And("the sales assistant clicks on the back button from edit customer screen")
-    public void theSalesAssistantClicksOnTheBackButtonFromEditCustomerScreen() {
-        customerPage.clicksOnBackButtonFromEditCustomer();
     }
 }

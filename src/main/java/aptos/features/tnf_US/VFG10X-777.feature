@@ -9,7 +9,6 @@ Feature: VFG10X-777 Gift Card _ Sale transaction using Gift card with Zero balan
 
     # Gift card balance enquiry (for zero balance gift card)
     Then the sales assistant validates the Gift Card balance from basket page for index 0
-    Then the sales assistant enter the the pin from index 0
     Then the sales assistant saves the Gift Card balance amount
     Then the sales assistant validates the Gift Card balance is "0.00"
     And the sales assistant closes the Balance Inquiry screen

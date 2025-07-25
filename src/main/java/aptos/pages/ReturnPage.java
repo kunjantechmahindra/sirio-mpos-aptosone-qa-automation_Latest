@@ -431,7 +431,7 @@ public class ReturnPage extends TestBase {
         mobileActions.clickOnElement(searchButton);
     }
 
-    public void validateReturnablePeriodExpiredMessageAndClicksContinue() {
+    public void validateReturnablePeriodExpiredMessage() {
         Assert.assertTrue("No Error popup message came", generalUtility.isElementDisplayed(returnablePeriodExpirePopUp));
         mobileActions.clickOnElement(continueButton);
     }

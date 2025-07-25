@@ -1,3 +1,5 @@
+#T.C is blocked due to a defect and script is not completed
+
 @VFG10X-428 @PromotionsAndDiscounts @Regression
 Feature: VFG10X-428 Promotions and Discounts _ Block Transactional level Discount _User level below 30
 
@@ -17,10 +19,8 @@ Feature: VFG10X-428 Promotions and Discounts _ Block Transactional level Discoun
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Damaged" as reason code
     And the sales assistant clicks on Apply button
-
-  #Complete Payment
+    And the sales assistant checks an error message is displayed and clicks on cancel button from discount page
     And the sales assistant clicks on Pay button
-    And the sales assistant clicks on Accept button
     And the sales assistant clicks on Cash button
     And the sales assistant enter the Drawer ID
     And the sales assistant clicks on Print button

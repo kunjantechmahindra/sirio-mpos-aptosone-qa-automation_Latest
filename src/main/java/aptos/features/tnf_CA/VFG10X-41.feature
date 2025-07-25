@@ -19,7 +19,6 @@ Feature: VFG10X-41 Sale Transaction _Single item with Terminated Employee ID for
     And the sales assistant clicks on Pay button
     And the sales assistant clicks on Accept button
     And the sales assistant clicks on Cash button
-    And the sales assistant clicks on Cash option
     And the sales assistant enter the Drawer ID
     And the sales assistant clicks on Print button
     And the sales assistant select the printer

@@ -6,26 +6,7 @@ Feature: VFG10X-1737 Return Transaction _ Multiple Temp MD items _Price override
 #Login and add item to basket
     Given the sales assistant login to the application with valid username and password
     When the sales assistant clicks on Start Basket button
-
-    #Add First Temp MD product to basket
-    And the sales assistant navigate to product inquiry page
-    And the sales assistant search product by UPC number from "Temp-MD"
-    And the sales assistant save the original and temporary price
-    And the sales assistant add item to the basket
-    And the sales assistant clicks on basket button
-    And the sales assistant clicks on Skip button
-    And the sales assistant lands on Basket Page
-    And the sales assistant validate temporary markdown discount
-
-     #Add Second Temp MD product to basket
-    And the sales assistant navigate to product inquiry page
-    And the sales assistant search product by UPC number from "Temp-MD"
-    And the sales assistant save the original and temporary price
-    And the sales assistant add item to the basket
-    And the sales assistant clicks on basket button
-    And the sales assistant clicks on Skip button
-    And the sales assistant lands on Basket Page
-    And the sales assistant validate temporary markdown discount
+    Then the sales assistant add 2 items from "Temp-MD" product to the basket without customer
 
 #Price override for first product(price greater than Temp-MD item)
     And the sales assistant save sale amount details

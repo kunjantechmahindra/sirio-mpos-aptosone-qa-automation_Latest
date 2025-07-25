@@ -9,7 +9,7 @@ Feature: VFG10X-755 Gift Card _ New Gift Card issue by typing the Gift Card numb
 
   # Issue New Gift Card
     And the sales assistant clicks on gift card button
-    And the sales assistant enters gift card number from index 7
+    And the sales assistant enters gift card number from index 1
     And the sales assistant enters gift card amount "500.00"
     And the sales assistant clicks on issue button
     And the sales assistant clicks on Skip button

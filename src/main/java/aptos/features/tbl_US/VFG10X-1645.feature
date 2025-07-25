@@ -13,8 +13,8 @@ Feature: VFG10X-1645 SFCC_Update in BOGO Promotion validation in Aptos ONE
 
   #Validate promotion is applied to the product
    And the sales assistant selects the product at index 1
-   And the sales assistant validate "BOGOF" is applied to item
+   And the sales assistant validate "Buy one get one" is applied to item
    And the sales assistant selects the product at index 2
-   And the sales assistant validate "BOGOF" is applied to item
+   And the sales assistant validate "Buy one get one" is applied to item
    And the sales assistant void the transaction from basket with reason code "Cashier Error"
    And the sales assistant logout from the application

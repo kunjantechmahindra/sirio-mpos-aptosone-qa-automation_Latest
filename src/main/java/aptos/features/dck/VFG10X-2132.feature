@@ -10,7 +10,7 @@ Feature: VFG10X-2132 Store Selling Functions_ Item Level Void
 
   # Validates item level void button is enabled
     And the sales assistant selects the product at index 1
-    And the sales assistant validates and click void item button if enable
+    And the sales assistant validates void item button is enable
     And the sales assistant clicks on confirm button
     And the sales assistant void the transaction from basket with reason code "Cashier Error"
     And the sales assistant logout from the application

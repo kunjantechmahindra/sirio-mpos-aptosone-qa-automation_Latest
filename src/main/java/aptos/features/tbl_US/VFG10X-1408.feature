@@ -8,7 +8,7 @@ Feature: VFG10X-1408 Gift Card _ Validate that PIN Entering is not required whil
     When the sales assistant clicks on Start Basket button
     And the sales assistant clicks on gift card button
     And the sales assistant validates existing gift card button is enabled
-    And the sales assistant enters gift card number from index 7
+    And the sales assistant enters gift card number from index 2
     And the sales assistant enters gift card amount "50.00"
     And the sales assistant clicks on add value button
     And the sales assistant clicks on Skip button

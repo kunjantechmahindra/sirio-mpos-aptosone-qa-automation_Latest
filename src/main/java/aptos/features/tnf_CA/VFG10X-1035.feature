@@ -35,11 +35,11 @@ Feature: VFG10X-1035 Return Transaction _Non verified return single Temp MD item
     And the sales assistant lands on Basket Page
     And the sales assistant clicks on return button
     And the sales assistant select No receipt for blind return
+    And the sales assistant clicks on Skip button
 
   #Add Product
     Then the sales assistant add an items from "Temp-MD" product for return
     And the sales assistant selects "Damaged/Defective" as reason code
-    And the sales assistant clicks on Skip button
     And the sales assistant navigate to basket page from return mode page
 
   #Discount is not displayed

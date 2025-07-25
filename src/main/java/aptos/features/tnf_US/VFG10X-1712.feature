@@ -7,6 +7,7 @@ Feature: VFG10X-1712 Promotions and Discounts _ Sale transaction with Temporary 
   #Login
     Given the sales assistant login to the application with valid username and password
     When the sales assistant clicks on Start Basket button
+    #Then the sales assistant add 1 items from "Temp-MD" product to the basket without customer
 
     # Add Temp MD product to basket
     And the sales assistant navigate to product inquiry page

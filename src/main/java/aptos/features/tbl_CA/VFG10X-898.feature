@@ -22,7 +22,7 @@ Feature: VFG10X-898 Price Override _Suspend and Resume_Sales transaction with pr
     And the sales assistant enter the reference ID
     And the sales assistant select the printer
     And the sales assistant clicks on Resume button
-    And the sales assistant clicks on Basket button from header
+    And the sales assistant navigate to basket page
     And the sales assistant clicks on Resume button
     And the sales assistant select the transaction to be resumed
     And the sales assistant proceed without selecting the customer

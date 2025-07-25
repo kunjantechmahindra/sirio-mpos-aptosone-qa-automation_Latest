@@ -11,11 +11,11 @@ Feature: VFG10X-127 Sale and Return in same transaction
     #Return transaction
     And the sales assistant clicks on return button
     And the sales assistant select No receipt for blind return
+    And the sales assistant clicks on Skip button
 
     #Add Product
     Then the sales assistant add an items from "General" product for return
     And the sales assistant selects "RTL - Changed Mind" as reason code
-    And the sales assistant clicks on Skip button
     And the sales assistant navigate to basket page from return mode page
 
     #Add Product

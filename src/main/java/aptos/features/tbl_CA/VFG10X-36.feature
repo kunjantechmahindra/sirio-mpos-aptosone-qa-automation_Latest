@@ -3,22 +3,22 @@ Feature: VFG10X-36 Sale Transaction _Single Item_ Suspend and Resume_ No Custome
 
   Scenario: Sale Transaction _Single Item_ Suspend and Resume_ No Customer
 
-  # Login and add item to basket
+  #Login and add item to basket
     Given the sales assistant login to the application with valid username and password
     When the sales assistant clicks on Start Basket button
     Then the sales assistant add 1 items from "General" product to the basket without customer
 
-  # Suspend and Resume Transaction
+  #Suspend and Resume Transaction
     And then sales assistant clicks on Suspend button
     And the sales assistant enter the reference ID
     And the sales assistant select the printer
     And the sales assistant clicks on Resume button
-    And the sales assistant clicks on Basket button from header
+    And the sales assistant navigate to basket page
     And the sales assistant clicks on Resume button
     And the sales assistant select the transaction to be resumed
     And the sales assistant proceed without selecting the customer
 
-  # Payment transaction
+   # Payment transaction
     And the sales assistant clicks on Pay button
     And the sales assistant clicks on Accept button
     And the sales assistant save the transaction details of the sales transaction
@@ -29,7 +29,7 @@ Feature: VFG10X-36 Sale Transaction _Single Item_ Suspend and Resume_ No Custome
     And the sales assistant select the printer
     And the sales assistant logout from the application
 
-  # EJ Validation
+    # EJ Validation
     And the sales assistant login to EJViewer
     And the sales assistant enter the store and transaction detail
     And the sales assistant validate the payment details

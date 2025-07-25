@@ -27,9 +27,9 @@ Feature: VFG10X-27 Sale Transaction _Single Item with Line item Discount _Paymen
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant enters half of the total amount in the payment section
     And the sales assistant clicks on gift card button from payment page
-    And the sales assistant enter the gift card number for payment from index 9
+    And the sales assistant enter the gift card number for payment from index 3
     And the sales assistant clicks on redeem button
-    And the sales assistant enter the the pin from index 9
+    And the sales assistant enter the the pin from index 3
     And the sales assistant validate the partial payment by gift card
     And the sales assistant clicks on gift card button from payment page
     And the sales assistant enter the gift card number for payment from index 0

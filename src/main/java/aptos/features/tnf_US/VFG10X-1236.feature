@@ -41,7 +41,7 @@ Feature: VFG10X-1236 Return transaction_ Return single item with Item level disc
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant clicks on gift card button from payment page
     And the sales assistant clicks on existing gift card button
-    And the sales assistant enter the gift card number for payment from index 9
+    And the sales assistant enter the gift card number for payment from index 1
     And the sales assistant clicks on add value button from payment page
     And the sales assistant sign for the transaction
     And the sales assistant save the payment details for the sales transaction

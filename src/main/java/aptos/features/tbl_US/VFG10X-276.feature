@@ -24,9 +24,9 @@ Feature: VFG10X-276 Return Transaction _Single item with tax override with payme
     And the sales assistant clicks on Accept button
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant clicks on gift card button from payment page
-    And the sales assistant enter the gift card number for payment from index 2
+    And the sales assistant enter the gift card number for payment from index 4
     And the sales assistant clicks on redeem button
-    And the sales assistant enter the the pin from index 2
+    And the sales assistant enter the the pin from index 4
     And the sales assistant save the payment details for the sales transaction
     And the sales assistant clicks on Print button
     And the sales assistant select the printer and save the receipt for return
@@ -42,7 +42,7 @@ Feature: VFG10X-276 Return Transaction _Single item with tax override with payme
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant clicks on gift card button from payment page
     And the sales assistant clicks on existing gift card button
-    And the sales assistant enter the gift card number for payment from index 2
+    And the sales assistant enter the gift card number for payment from index 4
     And the sales assistant clicks on add value button from payment page
     And the sales assistant sign for the transaction
     And the sales assistant save the payment details for the sales transaction

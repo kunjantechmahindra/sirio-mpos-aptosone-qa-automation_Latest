@@ -8,7 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.sql.SQLOutput;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -68,7 +67,7 @@ public class EmailValidation extends TestBase {
     }
 
     public void validateTransactionIdInEreceipt() {
-        Assert.assertTrue("Details from aptos '" + saleTransactionID + "' does not exist.", emailContent.contains(saleTransactionID));
+        Assert.assertTrue("Details from aptos '" + totalPaymentSale + "' does not exist.", emailContent.contains(totalPaymentSale));
     }
 
 
@@ -132,8 +131,6 @@ public class EmailValidation extends TestBase {
         if (properties.getProperty("Brand").equals("DCK")) {
             Assert.assertTrue("UPC " + itemUPC + " does not printed in the Receipt", emailContent.contains(itemUPC));
         } else
-            ProductCode = itemUPC;
-        System.out.println("ProductCode: "+ ProductCode);
             Assert.assertTrue("UPC " + ProductCode + " does not printed in the Receipt", emailContent.contains(ProductCode));
 
     }

@@ -34,7 +34,7 @@ Feature: VFG10X-953 Exchange _Single item with bag fee on initial sale transacti
     Then the sales assistant add 1 items from "EvenExchange" product to the basket
     And the sales assistant navigate to information page
     And the sales assistant save the transaction number from information page
-    And the sales assistant clicks on Basket button from header
+    And the sales assistant navigate to basket page
 
   # Refund transaction
     And the sales assistant clicks on Pay button

@@ -894,14 +894,4 @@ public class BasketPageStepDefinition extends TestBase {
     public void theSalesAssistantValidatePermToTempSavingsAreNotShownInTheDiscountSectionInDiscountSummary() {
         basketPage.validatesPromoNotApplied();
     }
-
-    @And("the sales assistant validate if void button is enabled")
-    public void theSalesAssistantValidateIfVoidButtonIsDisplayed() {
-        basketPage.isVoidButtonEnabled();
-    }
-
-    @And("the sales assistant validate the promotions {string} and {string} aren't combined validation")
-    public void theSalesAssistantValidateThePromotionsAndArenTCombinedValidation(String promo1, String promo2) {
-        basketPage.validateDoNotCombinedPromotionsNew(promo1,promo2);
-    }
 }

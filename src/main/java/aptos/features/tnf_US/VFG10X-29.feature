@@ -29,5 +29,5 @@ Feature: VFG10X-29 Sale Transaction _Multiple Items with Employee discount _ No 
     And the sales assistant login to EJViewer
     And the sales assistant enter the store and transaction detail
     And the sales assistant validate the payment details
-    And the sales assistant validate details "Employee Sale - 50% off" in EJ
+    And the sales assistant validate details "Employee Sale - 60% off" in EJ
     And the sales assistant logout from EJViewer

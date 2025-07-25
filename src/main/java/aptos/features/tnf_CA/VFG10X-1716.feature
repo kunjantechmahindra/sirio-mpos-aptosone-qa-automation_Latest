@@ -1,4 +1,4 @@
-@VFG10X-1716 @SaleTransaction @Regression @DetailedCalculation
+@VFG10X-1716 @SaleTransaction @Regression
 Feature: VFG10X-1716 Sale Transaction _Payment with USD (Exact Amount)_Canadian Store
 
   Scenario: Sale Transaction _Payment with USD (Exact Amount)_Canadian Store
@@ -21,4 +21,3 @@ Feature: VFG10X-1716 Sale Transaction _Payment with USD (Exact Amount)_Canadian 
     And the sales assistant save the payment details for the sales transaction
     And the sales assistant clicks on Print button
     And the sales assistant select the printer and save the receipt for return
-    And the sales assistant logout from the application

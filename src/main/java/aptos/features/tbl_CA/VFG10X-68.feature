@@ -27,7 +27,7 @@ Feature: VFG10X-68 Sale Transaction _Single Item_ Card decline and payment compl
     And the sales assistant select the printer
     And the sales assistant logout from the application
 
-  # EJ Validation
+    # EJ Validation
     And the sales assistant login to EJViewer
     And the sales assistant enter the store and transaction detail
     And the sales assistant validate the payment details

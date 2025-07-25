@@ -68,8 +68,6 @@ public class CheetahValidation extends TestBase {
         WebDriverWait wait = new WebDriverWait(macDriver, Duration.ofSeconds(10));
         WebElement currentPoints = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div//h2[contains(@id, 'balance')]")));
         String points = currentPoints.getText();
-        System.out.println("points from cheetah " +points);
-        System.out.println("points from aptos " +availableLoyaltyPoints );
         Assert.assertTrue("Test Failed: Incorrect Loyalty Point", points.contains(availableLoyaltyPoints));
 
 

@@ -10,6 +10,7 @@ Feature: VFG10X-969 Exchange _ Blind Negative Exchange transaction with multiple
   # Return transaction
     And the sales assistant clicks on return button
     And the sales assistant select No receipt for blind return
+    And the sales assistant clicks on Skip button
 
   # Assign customer
     And then sales assistant clicks on Assign Customer button

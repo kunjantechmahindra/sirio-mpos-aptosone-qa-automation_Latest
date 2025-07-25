@@ -1,4 +1,4 @@
-@VFG10X-1682 @ReturnTransaction @Regression @Card
+@VFG10X-1682 @ReturnTransaction @Regression
 
 Feature: VFG10X-1682 Return Transaction _ Perform Return of a transaction paid using Reward(Part of available) and Card
 

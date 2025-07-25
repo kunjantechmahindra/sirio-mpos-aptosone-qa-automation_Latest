@@ -1,15 +1,14 @@
 @VFG10X-2301 @GiftCard @Regression @StoreSelling
-Feature: VFG10X-2301 Gift Card _ Sale transaction using Gift card with Zero balance
+Feature: VFG10X-2301 Sale Transaction _Single Item with Line item Discount _Payment by multiple Gift Cards
 
-  Scenario: Gift Card _ Sale transaction using Gift card with Zero balance
+  Scenario: Sale Transaction _Single Item with Line item Discount _Payment by multiple Gift Cards
 
   # Login and add products
     Given the sales assistant login to the application with valid username and password
     When the sales assistant clicks on Start Basket button
 
     # Gift card balance enquiry (for zero balance gift card)
-    Then the sales assistant validates the Gift Card balance from basket page for index 2
-    Then the sales assistant enter the the pin from index 2
+    Then the sales assistant validates the Gift Card balance from basket page for index 3
     Then the sales assistant saves the Gift Card balance amount
     Then the sales assistant validates the Gift Card balance is "0.00"
     And the sales assistant closes the Balance Inquiry screen
@@ -22,9 +21,9 @@ Feature: VFG10X-2301 Gift Card _ Sale transaction using Gift card with Zero bala
     And the sales assistant clicks on Accept button
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant clicks on gift card button from payment page
-    And the sales assistant enter the gift card number for payment from index 2
+    And the sales assistant enter the gift card number for payment from index 3
     And the sales assistant clicks on redeem button
-    And the sales assistant enter the the pin from index 2
+    And the sales assistant enter the the pin from index 3
     And the sales assistant validates the payment decline error message
     And the sales assistant clicks on Close button from payment page
     And the sales assistant void the transaction from payment with reason code "Promo Error"

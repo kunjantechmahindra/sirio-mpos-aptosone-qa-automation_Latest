@@ -37,7 +37,7 @@ Feature: VFG10X-965 Exchange _ Multiple items with 50% payment by Visa Tap, 50% 
     And the sales assistant processes the payment with a "visa" card using a "tap" action, entering the pin "0"
     And the sales assistant validate if partial payment was success
     And the sales assistant clicks on Card button
-    And the sales assistant processes the payment with a "master" card using a "insert" action, entering the pin "0"
+    And the sales assistant processes the payment with a "master" card using a "tap" action, entering the pin "0"
     And the sales assistant sign for the transaction
     And the sales assistant save the payment details for the sales transaction
     And the sales assistant clicks on Print button

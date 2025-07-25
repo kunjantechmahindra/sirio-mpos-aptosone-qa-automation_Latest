@@ -12,7 +12,7 @@ Feature: VFG10X-2156 Return Transaction _Perform a verified return of a sale tra
 
     #Add Sale Details
     And the sales assistant enters store number "300106" terminal "75" and transaction number "1812"
-    And the sales assistant validate the returnable period expired message and clicks continue
+    And the sales assistant validate the returnable period expired message
     And sales assistant give manager approval
     And the sales assistant return all items from the transaction
     And sales assistant give manager approval

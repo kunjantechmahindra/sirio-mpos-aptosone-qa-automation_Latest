@@ -47,7 +47,7 @@ public class LineActionPage extends TestBase {
     @FindBy(xpath = "(//XCUIElementTypeOther[@name='Discount' and @label='Discount'])[last()]")
     WebElement transactionDiscount;
 
-    @FindBy(xpath = "(//XCUIElementTypeOther[@name='Reason code'])[last()]")
+    @FindBy(xpath = "(//XCUIElementTypeOther[@name='Reason code >'])[2]")
     WebElement reasonCodeButtonTaxExempt;
 
     @FindBy(xpath = "//XCUIElementTypeButton[@name='Confirm']")
@@ -194,10 +194,9 @@ public class LineActionPage extends TestBase {
         mobileActions.clickOnElement(confirmButton);
     }
 
-    public void enterTaxID() throws InterruptedException {
+    public void enterTaxID() {
         taxIdTestData = TestDataHelper.generateReferenceTD();
         mobileActions.enterText(taxIDText, taxIdTestData);
-        mobileActions.clickHideKeyboard();
     }
 
     public void enterTaxExemptReasonCode() {

@@ -10,11 +10,11 @@ Feature: VFG10X-942 Exchange Transaction_Blind Exchange transaction with Single 
   # Return transaction
     And the sales assistant clicks on return button
     And the sales assistant select No receipt for blind return
+    And the sales assistant clicks on Skip button
 
   # Add Product
     Then the sales assistant add an items from "UniqueProduct" product for return
     And the sales assistant selects "Damaged/Defective" as reason code
-    And the sales assistant clicks on Skip button
     And the sales assistant navigate to basket page from return mode page
     And the sales assistant selects the product at index 1
     And the sales assistant selects "Tax" Option from line Action
@@ -29,7 +29,7 @@ Feature: VFG10X-942 Exchange Transaction_Blind Exchange transaction with Single 
   # Assign customer
     And then sales assistant clicks on Assign Customer button
     And the sales assistant assign customer details with index 1
-    #And the sales assistant saves the loyalty points
+    #And the sales assista  nt saves the loyalty points
     #And the sales assistant navigates to basket from page from loyalty page
 
   # Payment by cash

@@ -1,4 +1,4 @@
-@VFG10X-1005 @CashManagement @Regression @TillOut
+@VFG10X-1005 @CashManagement @Regression
 Feature: VFG10X-1005 Cash Management _Void Till out Transaction.
 
   Scenario: Cash Management _Void Till out Transaction.
@@ -12,7 +12,7 @@ Feature: VFG10X-1005 Cash Management _Void Till out Transaction.
     And the sales assistant clicks on "Till operations" for cash management
     And the sales assistant clicks on "Till out" for cash management
     And the sales assistant enter the Drawer ID
-    And the sales assistant clicks on counted amount
+    And the sales assistant clicks on counted amount for till out
     And the sales assistant enters the quantity as 100 on first index
     And the sales assistant assign click on done
     And the sales assistant clicks on proceed button
@@ -24,5 +24,7 @@ Feature: VFG10X-1005 Cash Management _Void Till out Transaction.
     And sales assistant clicks on till out button from variance in amount
     And the sales assistant clicks on till operations back button
     And the sales assistant clicks on store operations back button
-    And the sales assistant navigate from store operation to basket page
+    And the sales assistant navigate to basket page
     And the sales assistant logout from the application
+
+

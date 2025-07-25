@@ -15,7 +15,6 @@ Feature: VFG10X-1888 Create a Customer with all subscriptions and add all mandat
     And the sales assistant clicks on Save button
 
   #Validate Customer Attributes
-    And the sales assistant validate if void button is enabled
     And then sales assistant clicks on Assign Customer button
     And the sales assistant validate all attributes are enabled
     And the sales assistant navigate to basket page

@@ -3,13 +3,13 @@ Feature: VFG10X-586 Store Selling Functions _ Maximum Gift Card Issue Amount
 
   Scenario: Store Selling Functions _ Maximum Gift Card Issue Amount
 
-  # Login and add product
+  #Login and add product
     Given the sales assistant login to the application with valid username and password
     When the sales assistant clicks on Start Basket button
 
-  # Issue New Gift Card
+  #Issue New Gift Card
     And the sales assistant clicks on gift card button
-    And the sales assistant enters gift card number from index 3
+    And the sales assistant enters gift card number from index 6
     And the sales assistant enters gift card amount "1000.01"
     And the sales assistant validate the displayed error message
     And the sales assistant validate issue button is disabled
@@ -17,7 +17,7 @@ Feature: VFG10X-586 Store Selling Functions _ Maximum Gift Card Issue Amount
     And the sales assistant clicks on issue button
     And the sales assistant clicks on Skip button
 
-  # Payment transaction
+  #Payment transaction
     And the sales assistant clicks on Pay button
     And the sales assistant clicks on Accept button
     And the sales assistant clicks on Cash button
@@ -25,3 +25,5 @@ Feature: VFG10X-586 Store Selling Functions _ Maximum Gift Card Issue Amount
     And the sales assistant clicks on Print button
     And the sales assistant select the printer
     And the sales assistant logout from the application
+
+

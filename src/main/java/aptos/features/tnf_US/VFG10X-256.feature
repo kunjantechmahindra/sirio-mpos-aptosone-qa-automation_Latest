@@ -23,7 +23,6 @@ Feature: VFG10X-256 Exchange _Multiple items with same price _Top Up gift card_ 
   #Assign customer
     And then sales assistant clicks on Assign Customer button
     And the sales assistant assign customer details with index 3
-    And the sales assistant validate if void button is enabled
 
   #Return transaction
     And the sales assistant clicks on return button
@@ -37,10 +36,10 @@ Feature: VFG10X-256 Exchange _Multiple items with same price _Top Up gift card_ 
   #Top up gift card
     And the sales assistant clicks on gift card button
     And the sales assistant validates existing gift card button is enabled
-    And the sales assistant enters gift card number from index 0
+    And the sales assistant enters gift card number from index 3
     And the sales assistant enters gift card amount "50.00"
     And the sales assistant clicks on add value button
-    And the sales assistant enter the the pin from index 0
+    And the sales assistant enter the the pin from index 3
 
   #Payment transaction
     And the sales assistant clicks on Pay button

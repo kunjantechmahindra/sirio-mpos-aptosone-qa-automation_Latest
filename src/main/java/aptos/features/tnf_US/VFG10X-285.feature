@@ -28,17 +28,17 @@ Feature: VFG10X-285 Even Exchange with multiple items _Use customer search for r
     And the sales assistant clicks on return button
     And the sales assistant clicks on customer search button
     And the sales assistant search a customer using email at index 1
+    And the sales assistant assign customer on the return customer search
     And the sales assistant select the transaction to be returned
     And the sales assistant return all items from the transaction
     And the sales assistant selects "RTL - Changed Mind" as reason code
-    And the sales assistant assign the original sale customer to the return transaction
 
   # Add Product
     And the sales assistant lands on Basket Page
     Then the sales assistant add 2 items from "EvenExchange" product to the basket
     And the sales assistant navigate to information page
     And the sales assistant save the transaction number from information page
-    And the sales assistant clicks on Basket button from header
+    And the sales assistant navigate to basket page
 
   # Refund transaction
     And the sales assistant clicks on Pay button

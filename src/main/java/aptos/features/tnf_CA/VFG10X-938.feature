@@ -12,14 +12,16 @@ Feature: VFG10X-938 Return Transaction _Single item with Tax Exempt and Coupon a
 
     #Apply coupon
     When the sales assistant clicks on "Coupons" button from basket
-    And the sales assistant enter coupons code for "Coupon-AllItem"
+    And  the sales assistant enter coupons code for "Coupon-AllItem"
     And the sales assistant lands on Basket Page
     And the sales assistant selects the product at index 1
-    And the sales assistant validate "10% off for all" is applied to item
+    And the sales assistant validate "20% off for all" is applied to item
 
     #Tax exempt
-
-    And the sales assistant selects Tax button from Basket page
+#    When the sales assistant clicks on "Tax" button from basket
+#    And the sales assistant selects Tax button from Basket page
+    And the sales assistant selects the product at index 1
+    And the sales assistant selects "Tax" Option from line Action
     And the sales assistant selects "Tax exempt" Option from line Action
     And the sales assistant enter the tax ID
     And the sales assistant clicks on Select a reason code button on tax exempt page

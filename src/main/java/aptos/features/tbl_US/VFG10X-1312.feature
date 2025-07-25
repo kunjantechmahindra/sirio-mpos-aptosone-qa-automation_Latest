@@ -10,11 +10,11 @@ Feature: VFG10X-1312 Exchange _Negative Blind Exchange of single item with bag f
     #Return transaction
     And the sales assistant clicks on return button
     And the sales assistant select No receipt for blind return
+    And the sales assistant clicks on Skip button
 
     #Add Product
     Then the sales assistant add an items from "General" product for return
     And the sales assistant selects "DAMAGED/DEFECTIVE" as reason code
-    And the sales assistant clicks on Skip button
     And the sales assistant navigate to basket page from return mode page
     Then the sales assistant add 1 items from "LowerPrice" product to the basket
 
@@ -34,7 +34,7 @@ Feature: VFG10X-1312 Exchange _Negative Blind Exchange of single item with bag f
     #Get transaction number from information
     And the sales assistant navigate to information page
     And the sales assistant save the transaction number from information page
-    And the sales assistant clicks on Basket button from header
+    And the sales assistant navigate to basket page
     And the sales assistant logout from the application
 
     #EJ Validation

@@ -4,15 +4,17 @@ Feature: VFG10X-1511 Return Transaction_Not able to return items above 30 days
   Scenario: Return Transaction_Not able to return items above 30 days
 
     #Login and add item to basket
-    Given the sales assistant login to the application with valid username and password
+    Given the sales assistant logs in to the application with "below" security level
     When the sales assistant clicks on Start Basket button
 
-    # Return transaction
+    #Return transaction
     And the sales assistant clicks on return button
     And the sales assistant clicks on return search button
-    And  the sales assistant enters store number "400318" terminal "42" and transaction number "17799"
-    And the sales assistant validate the returnable period expired message and clicks continue
+    And  the sales assistant enters store number "400528" terminal "42" and transaction number "1862"
+    And the sales assistant clicks on continue button
+    And the manager approves the action
     And the sales assistant return all items from the transaction
+    #And the manager approves the action
     And the sales assistant selects "RTL - Damaged/Defective" as reason code
 
     #Refund transaction

@@ -48,7 +48,6 @@ public class PaymentPageStepDefinition extends TestBase {
     @And("the sales assistant select the printer")
     public void theSalesAssistantSelectThePrinter() throws InterruptedException {
         paymentPage.selectPrinterByEnteringName();
-        Thread.sleep(5000);
     }
 
     @And("the sales assistant select the printer and save the receipt for return")
