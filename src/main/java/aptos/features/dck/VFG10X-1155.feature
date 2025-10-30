@@ -1,5 +1,5 @@
 @VFG10X-1155 @TaxManagement @Regression @Card @Visa
-Feature: VFG10X-1155 Tax _ Sale Mono Temp MD item with tax exempt, suspended and resumed_Existing Customer
+Feature: VFG10X-1155 Tax _ Sale Mono Temp MD item with tax exempt, suspended and resumed_Existing Customers
 
   Scenario: Tax _ Sale Mono Temp MD item with tax exempt, suspended and resumed_Existing Customer
 
