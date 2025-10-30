@@ -39,7 +39,7 @@ public class DiscountPage extends TestBase {
     @FindBy(xpath = "//XCUIElementTypeOther[@name='Percent']")
     WebElement discountPercentageButton;
 
-    @FindBy(xpath = "//XCUIElementTypeTextField[@value='Discount percentage']")
+    @FindBy(xpath = "//XCUIElementTypeTextField[@value='0%']")
     WebElement discountPercentageText;
 
     @FindBy(xpath = "//XCUIElementTypeStaticText[@name='Exceeds allowed value']")
@@ -75,6 +75,9 @@ public class DiscountPage extends TestBase {
     @FindBy(xpath = "(//XCUIElementTypeOther[@name='Close'])[2]")
     WebElement errorMessageCloseButton;
 
+    @FindBy(xpath = "//XCUIElementTypeOther[@name='Amount']")
+    WebElement discountAmountButton;
+
     //Actions
     public void clickOnTransactionDiscount() {
         mobileActions.clickOnElement(transactionDiscount);
@@ -83,6 +86,11 @@ public class DiscountPage extends TestBase {
     public void clickOnPercentageButton() throws InterruptedException {
         mobileActions.iPhoneHideKeyboard();
         mobileActions.clickOnElement(discountPercentageButton);
+    }
+
+    public void clickOnAmountButton() throws InterruptedException {
+        mobileActions.iPhoneHideKeyboard();
+        mobileActions.clickOnElement(discountAmountButton);
     }
 
     public void enterTransactionDiscountAmount(String amount) {

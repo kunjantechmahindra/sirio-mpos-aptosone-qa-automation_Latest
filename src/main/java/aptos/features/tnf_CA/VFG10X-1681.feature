@@ -9,7 +9,7 @@ Feature: VFG10X-1681 Return Transaction _ Refund to Gift Card_Sale transaction p
 
   # Assign customer and add product
     And then sales assistant clicks on Assign Customer button
-    And the sales assistant assign customer details with index 9
+    And the sales assistant assign customer details with index 1
     Then the sales assistant add 1 items from "General" product to the basket
 
   # Payment transaction

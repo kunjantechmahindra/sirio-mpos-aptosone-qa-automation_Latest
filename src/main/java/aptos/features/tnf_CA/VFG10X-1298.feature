@@ -20,11 +20,11 @@ Feature: VFG10X-1298 Return Transaction _Return single item with bag fee Void ba
     #Partial payment transaction
     And the sales assistant enters half of the total amount in the payment section
     And the sales assistant clicks on Card button
-    And the sales assistant processes the payment with a "visa" card using a "tap" action, entering the pin "0"
+    And the sales assistant processes the payment with a "diners" card using a "tap" action, entering the pin "0"
     And the sales assistant validate if partial payment was success
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant clicks on Card button
-    And the sales assistant processes the payment with a "master" card using a "tap" action, entering the pin "0"
+    And the sales assistant processes the payment with a "discover" card using a "tap" action, entering the pin "0"
     And the sales assistant save the payment details for the sales transaction
     And the sales assistant clicks on Print button
     And the sales assistant select the printer and save the receipt for return
@@ -37,9 +37,9 @@ Feature: VFG10X-1298 Return Transaction _Return single item with bag fee Void ba
 
     #Refund to card partially
     And the sales assistant clicks on Pay button
-    And the sales assistant select "master" card for refund
+    And the sales assistant select "diners" card for refund
     And the sales assistant validate if partial refund was success
-    And the sales assistant select "visa" card for refund
+    And the sales assistant select "discover" card for refund
     And the sales assistant sign for the transaction
     And the sales assistant clicks on Print button
     And the sales assistant select the printer

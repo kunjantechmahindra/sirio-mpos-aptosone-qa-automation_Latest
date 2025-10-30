@@ -672,6 +672,7 @@ public class PaymentPage extends TestBase {
             if (properties.getProperty("BrandRegion").equals("TNF-CA")) {
 //                mobileActions.clickUsingCoordinates(driver, 891, 604);
                 mobileActions.clickUsingCoordinates(driver, 891, 631);
+                mobileActions.clickOnElement(okButton);
             } else if (properties.getProperty("BrandRegion").equals("DCK")) {
                 mobileActions.clickUsingCoordinates(driver, 889, 542);
             } else {

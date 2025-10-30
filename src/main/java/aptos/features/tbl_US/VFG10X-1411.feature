@@ -27,7 +27,6 @@ Feature: VFG10X-1411 Promotions and Discounts _ Sale transaction with %off item 
   # Apply transactional level discount
     And the sales assistant clicks on Discount button from basket page
     And the sales assistant select transaction discount button
-    And the sales assistant clicks on percentage button
     And the sales assistant enter discount percentage as 6
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "E-MAIL" as reason code

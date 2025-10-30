@@ -17,6 +17,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.time.LocalTime;
 
 import static aptos.stepDefinition.PaymentPageStepDefinition.*;
 
@@ -47,14 +48,21 @@ public class EjViewerPage extends TestBase {
     }
 
     public void enterTheStoreNumber() {
+        System.out.println("before "+LocalTime.now());
         browserDriver.findElement(By.xpath("//*[@value='Select retail location']")).sendKeys(properties.getProperty("StoreNumber"));
+        System.out.println("After" +LocalTime.now());
 //        System.out.println("Enter Store Number");
 //        webActions.enterText(storeNumberTxtField,properties.getProperty("StoreNumber"));
 //        System.out.println("Store Number entered successfully");
         if (properties.getProperty("Brand").equals("DCK")) {
             browserDriver.findElement(By.xpath("//*[@name='Dropdown select']/descendant::XCUIElementTypeOther[3]/descendant::XCUIElementTypeOther[1]")).click();
         } else {
+            System.out.println("before click " +LocalTime.now());
+//
             browserDriver.findElement(By.xpath("//*[@name='Dropdown select']/descendant::XCUIElementTypeOther[3]")).click();
+
+            System.out.println("After click " +LocalTime.now());
+//
         }
         browserDriver.findElement(By.xpath("(//*[@name='Store'])")).click();
     }
@@ -161,7 +169,7 @@ public class EjViewerPage extends TestBase {
     public boolean isSignInButtonDisplayed() {
         try {
             browserDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
-            WebDriverWait wait = new WebDriverWait(browserDriver, Duration.ofSeconds(12));
+            WebDriverWait wait = new WebDriverWait(browserDriver, Duration.ofSeconds(15));
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@name='Sign in']")));
             return true;
         } catch (TimeoutException e) {

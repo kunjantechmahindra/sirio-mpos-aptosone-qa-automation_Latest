@@ -1,5 +1,4 @@
 @VFG10X-1669 @PromotionsAndDiscounts @Regression @GiftCard @Card
-
 Feature: VFG10X-1669 Promotions and Discounts _ Verify that promotion is not getting applied to New GC issued
 
   Scenario: Promotions and Discounts _ Verify that promotion is not getting applied to New GC issued
@@ -10,7 +9,7 @@ Feature: VFG10X-1669 Promotions and Discounts _ Verify that promotion is not get
 
   #Issue New Gift Card
     And the sales assistant clicks on gift card button
-    And the sales assistant enters gift card number from index 5
+    And the sales assistant enters gift card number from index 9
     And the sales assistant enters gift card amount "50.00"
     And the sales assistant clicks on issue button
     And the sales assistant clicks on Skip button
@@ -37,6 +36,3 @@ Feature: VFG10X-1669 Promotions and Discounts _ Verify that promotion is not get
     And the sales assistant clicks on Print button
     And the sales assistant select the printer
     And the sales assistant logout from the application
-
-
-

@@ -27,7 +27,7 @@ Feature: VFG10X-590 Store Selling Functions _ Return of items from Multiple stor
   # Return from another store (completed using cash)
     And the sales assistant clicks on return button
     And the sales assistant clicks on return search button
-    And the sales assistant enters store number "200178" terminal "42" and transaction number "6461"
+    And the sales assistant enters store number "200252" terminal "80" and transaction number "768"
     And the sales assistant return all items from the transaction
     And the sales assistant selects "RTL - CHANGED MIND" as reason code
     And the sales assistant lands on Basket Page

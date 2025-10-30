@@ -12,7 +12,6 @@ Feature: VFG10X-971 Promotions and Discounts _ Item level Discount _Item discoun
     And the sales assistant selects the product at index 1
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount button
-    And the sales assistant clicks on percentage button
     And the sales assistant enter discount percentage as 71
     And the sales assistant validate error message for exceeding discount threshold value
     And the sales assistant reenter discount percentage as 70
@@ -28,6 +27,7 @@ Feature: VFG10X-971 Promotions and Discounts _ Item level Discount _Item discoun
     And the sales assistant selects the product at index 2
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount
+    And the sales assistant clicks on amount button
     And the sales assistant enter discount amount as 29
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "DAMAGED/DEFECT" as reason code

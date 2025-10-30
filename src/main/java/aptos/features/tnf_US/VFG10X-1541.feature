@@ -14,6 +14,7 @@ Feature: VFG10X-1541 Promotions and Discounts _a sales transaction with multiple
     And the sales assistant selects the product at index 1
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount button
+    And the sales assistant clicks on amount button
     And the sales assistant enter discount amount as 10
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Customer Accomodation" as reason code
@@ -24,6 +25,7 @@ Feature: VFG10X-1541 Promotions and Discounts _a sales transaction with multiple
     And the sales assistant selects the product at index 2
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount button
+    And the sales assistant clicks on amount button
     And the sales assistant enter discount amount as 10
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Damaged" as reason code
@@ -34,6 +36,7 @@ Feature: VFG10X-1541 Promotions and Discounts _a sales transaction with multiple
     And the sales assistant selects the product at index 3
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount button
+    And the sales assistant clicks on amount button
     And the sales assistant enter discount amount as 10
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "In Store Promo" as reason code
@@ -44,6 +47,7 @@ Feature: VFG10X-1541 Promotions and Discounts _a sales transaction with multiple
     And the sales assistant selects the product at index 4
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount button
+    And the sales assistant clicks on amount button
     And the sales assistant enter discount amount as 10
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Mall Coupon" as reason code
@@ -53,6 +57,7 @@ Feature: VFG10X-1541 Promotions and Discounts _a sales transaction with multiple
     And the sales assistant selects the product at index 5
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount button
+    And the sales assistant clicks on amount button
     And the sales assistant enter discount amount as 10
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Other" as reason code
@@ -62,6 +67,7 @@ Feature: VFG10X-1541 Promotions and Discounts _a sales transaction with multiple
     And the sales assistant selects the product at index 6
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount button
+    And the sales assistant clicks on amount button
     And the sales assistant enter discount amount as 10
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Post Card Promo" as reason code
@@ -71,6 +77,7 @@ Feature: VFG10X-1541 Promotions and Discounts _a sales transaction with multiple
     And the sales assistant selects the product at index 7
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount button
+    And the sales assistant clicks on amount button
     And the sales assistant enter discount amount as 10
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Price Match" as reason code

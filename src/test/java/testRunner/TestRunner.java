@@ -7,10 +7,11 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(
-        features = "src/main/java/aptos/features/tbl_CA",
+        features = "src/main/java/aptos/features/tbl_US",
         glue = {"aptos/stepDefinition","hooks"},
         monochrome = true,
-        tags = "@Customer and not(@VFG10X-108 or @VFG10X-109 or @VFG10X-110 or @VFG10X-112 or @VFG10X-114 or @VFG10X-1720 or @VFG10X-113)",
+        tags = "@VFG10X-1157 or @VFG10X-1155 or @VFG10X-2265",
+                //" and not (@PrerequisiteRequired or @SmokeTNF or @Card or @Visa or @GiftCard)",
         plugin = {"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"}
 )
 

@@ -1,5 +1,4 @@
 @VFG10X-1019 @PromotionsAndDiscounts @Regression
-
 Feature: VFG10X-1019 Promotions and Discounts _Return  transaction with multiple promotions and Manual discount applied
 
   Scenario: Promotions and Discounts _Return  transaction with multiple promotions and Manual discount applied

@@ -12,7 +12,6 @@ Feature: VFG10X-27 Sale Transaction _Single Item with Line item Discount _Paymen
     And the sales assistant selects the product at index 1
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount
-    And the sales assistant clicks on percentage button
     And the sales assistant enter discount percentage as 15
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "DAMAGED/DEFECT" as reason code
@@ -27,9 +26,9 @@ Feature: VFG10X-27 Sale Transaction _Single Item with Line item Discount _Paymen
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant enters half of the total amount in the payment section
     And the sales assistant clicks on gift card button from payment page
-    And the sales assistant enter the gift card number for payment from index 0
+    And the sales assistant enter the gift card number for payment from index 2
     And the sales assistant clicks on redeem button
-    And the sales assistant enter the the pin from index 0
+    And the sales assistant enter the the pin from index 2
     And the sales assistant validate the partial payment by gift card
     And the sales assistant clicks on gift card button from payment page
     And the sales assistant enter the gift card number for payment from index 3

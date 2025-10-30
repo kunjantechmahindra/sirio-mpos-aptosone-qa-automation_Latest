@@ -22,8 +22,3 @@ Feature: VFG10X-1552 Sale Transaction _void sale transaction with reason code as
     And the sales assistant enter the store and transaction detail
     And the sales assistant validate if reason code "Cashier Error" is displayed
     And the sales assistant logout from EJViewer
-
-
-
-
-

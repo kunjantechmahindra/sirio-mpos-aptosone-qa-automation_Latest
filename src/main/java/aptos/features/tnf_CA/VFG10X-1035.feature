@@ -1,5 +1,4 @@
 @VFG10X-1035 @ReturnTransaction @Card @Regression @Master
-
 Feature: VFG10X-1035 Return Transaction _Non verified return single Temp MD item with refund to Cash
 
   Scenario: Return Transaction _Non verified return single Temp MD item with refund to Cash
@@ -55,9 +54,3 @@ Feature: VFG10X-1035 Return Transaction _Non verified return single Temp MD item
     And the sales assistant clicks on Print button
     And the sales assistant select the printer
     And the sales assistant logout from the application
-
-
-
-
-
-

@@ -13,7 +13,7 @@ Feature: VFG10X-1153 Exchange Transaction_Positive Exchange of multiple items wi
     And the sales assistant selects the product at index 2
     And the sales assistant selects "Salesperson" Option from line Action
     And the sales assistant add salesperson "800500" to the transaction item
-    Then the sales assistant selects "Yes" from the salesperson popup box
+#    Then the sales assistant selects "Yes" from the salesperson popup box
     And the sales assistant lands on Basket Page
     And the sales assistant selects the product at index 1
     And the sales assistant selects "Salesperson" Option from line Action
@@ -26,6 +26,7 @@ Feature: VFG10X-1153 Exchange Transaction_Positive Exchange of multiple items wi
     And the sales assistant clicks on Accept button
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant clicks on Cash button
+    And the sales assistant clicks on Cash option
     And the sales assistant enter the Drawer ID
     And the sales assistant clicks on Print button
     And the sales assistant select the printer and save the receipt for return
@@ -45,6 +46,7 @@ Feature: VFG10X-1153 Exchange Transaction_Positive Exchange of multiple items wi
     And the sales assistant clicks on Accept button
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant clicks on Cash button
+    And the sales assistant clicks on Cash option
     And the sales assistant enter the Drawer ID
     And the sales assistant sign for the transaction
     And the sales assistant save the payment details for the sales transaction

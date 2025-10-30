@@ -31,6 +31,7 @@ Feature: VFG10X-287 Exchange _Multiple Items with Transaction discount on sale i
     Then the sales assistant add 2 items from "General" product to the basket
     And the sales assistant clicks on Discount button from basket page
     And the sales assistant select transaction discount
+    And the sales assistant clicks on amount button
     And the sales assistant enter discount amount as 10
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "E-MAIL" as reason code

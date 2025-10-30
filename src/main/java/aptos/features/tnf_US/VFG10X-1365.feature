@@ -3,7 +3,7 @@ Feature: VFG10X-1365 Return Transaction _Refund to Same Payment methods _1st ite
 
   Scenario: Return Transaction _Refund to Same Payment methods _1st item with Reason Code ECOM - CHANGED MIND and 2nd Item with Reason Code ECOM - PRICE ADJUSTMENT
 
-  #Login and add item to basket
+    #Login and add item to basket
     Given the sales assistant login to the application with valid username and password
     When the sales assistant clicks on Start Basket button
 

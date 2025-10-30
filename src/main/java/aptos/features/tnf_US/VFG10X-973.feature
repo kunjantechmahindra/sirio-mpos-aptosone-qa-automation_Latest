@@ -11,11 +11,12 @@ Feature: VFG10X-973 Exchange_Negative Blind Exchange transaction with multiple i
     #Return transaction
     And the sales assistant clicks on return button
     And the sales assistant select No receipt for blind return
-    And the sales assistant clicks on Skip button
+    #And the sales assistant clicks on Skip button
 
     #Add Product
     Then the sales assistant add an items from "HigherPrice" product for return
     And the sales assistant selects "Damaged/Defective" as reason code
+    And the sales assistant clicks on Skip button
     Then the sales assistant add an items from "HigherPrice" product for return
     And the sales assistant selects "Changed Mind" as reason code
     And the sales assistant navigate to basket page from return mode page
@@ -27,7 +28,7 @@ Feature: VFG10X-973 Exchange_Negative Blind Exchange transaction with multiple i
     And the sales assistant selects the product at index 3
     And the sales assistant selects "Salesperson" Option from line Action
     And the sales assistant add salesperson "800200" to the transaction item
-    Then the sales assistant selects "Yes" from the salesperson popup box
+   # Then the sales assistant selects "Yes" from the salesperson popup box
     And the sales assistant lands on Basket Page
     And the sales assistant selects the product at index 4
     And the sales assistant selects "Salesperson" Option from line Action

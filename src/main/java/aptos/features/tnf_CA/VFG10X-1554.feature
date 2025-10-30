@@ -17,11 +17,8 @@ Feature: VFG10X-1554 Sale Transaction _void sale transaction with reason code as
     And the sales assistant void the transaction from basket with reason code "Promo Error"
     And the sales assistant logout from the application
 
-#EJ Validation
+  #EJ Validation
     And the sales assistant login to EJViewer
     And the sales assistant enter the store and transaction detail
     And the sales assistant validate if reason code "Promo Error" is displayed
     And the sales assistant logout from EJViewer
-
-
-

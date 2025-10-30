@@ -93,7 +93,10 @@ public class BasketPage extends TestBase {
     @FindBy(xpath = "(//*[contains(@name, 'Transaction number:')])")
     WebElement transactionNumber;
 
-    @FindBy(xpath = "//*[contains(@name, 'assignCustomer')]")
+//    @FindBy(xpath = "//*[contains(@name, 'assignCustomer')]")
+//    @FindBy(xpath = "//XCUIElementTypeOther[@name='Main-assignCustomer-linkText']")
+//XCUIElementTypeOther[@name="Main-assignCustomer-linkText"]
+        @FindBy(xpath = "//XCUIElementTypeStaticText[@name='Main-assignCustomer-linkText']")
     WebElement assignCustomerButton;
 
     @FindBy(xpath = "//*[contains(@name, 'discounts-actionButton')]")
@@ -178,7 +181,8 @@ public class BasketPage extends TestBase {
     @FindBy(xpath = "//XCUIElementTypeOther[@name='SalesPersonAssignScreen-salesperson-select']")
     WebElement assignSalesPerson;
 
-    @FindBy(xpath = " //XCUIElementTypeStaticText[@name='Salesperson']")
+//    @FindBy(xpath = " //XCUIElementTypeStaticText[@name='Salesperson']")
+    @FindBy(xpath = " //XCUIElementTypeStaticText[contains(@label, 'Salesperson')]")
     WebElement salesPersonHeader;
 
 
@@ -218,7 +222,7 @@ public class BasketPage extends TestBase {
     @FindBy(xpath = "//*[@name='Search']")
     WebElement searchKey;
 
-    @FindBy(xpath = "(//XCUIElementTypeOther[@name='Email Phone number Horizontal scroll bar, 1 page Search Skip'])[1]")
+    @FindBy(xpath = "//XCUIElementTypeStaticText[@name='CustomerScreen-header-header-title']")
     WebElement customerPromptWindow;
 
     @FindBy(xpath = "(//XCUIElementTypeOther[@name='New tax rate Apply Cancel Vertical scroll bar, 1 page Horizontal scroll bar, 1 page'])[3]")
@@ -423,6 +427,9 @@ public class BasketPage extends TestBase {
     @FindBy(xpath = "//XCUIElementTypeOther[contains(@name, 'Shipping')]")
     WebElement shippingDescription;
 
+    @FindBy(xpath = "//XCUIElementTypeStaticText[@name='No data Found']")
+    WebElement noDataFoundError;
+
 
     //Actions
     public void clickOnCameraButton() {
@@ -472,8 +479,9 @@ public class BasketPage extends TestBase {
         System.out.println(storeAddress);
     }
 
-    public void clickOnAssignCustomerButton() {
+    public void clickOnAssignCustomerButton() throws InterruptedException {
         mobileActions.clickOnElement(assignCustomerButton);
+        Thread.sleep(2000);
     }
 
     public void isAssignCustomerDisplayed() {
@@ -634,15 +642,6 @@ public class BasketPage extends TestBase {
         boolean isDisplayedHeaderSalesPerson = generalUtility.isElementDisplayed(salesPersonHeader);
         if (isDisplayedHeaderSalesPerson){
         mobileActions.clickOnElement(assignSalesPerson);}
-    }
-
-    public void selectYesForAssignSalesPerson(String yesOrNo) {
-//        mobileActions.clickOnElement(yesButton);
-//        WebElement messageBox = driver.findElement(By.xpath("//XCUIElementTypeButton[@name='" + yesOrNo + "'"));
-//        mobileActions.clickOnElement(messageBox);
-        System.out.println("before yes");
-        mobileActions.clickOnElement(driver.findElement(By.xpath(String.format("//XCUIElementTypeButton[@name='%s']", yesOrNo))));
-        System.out.println("After YEs");
         String brand = properties.getProperty("Brand");
         String device = properties.getProperty("DeviceName");
         if (device.contains("iPad") && (brand.equals("TBL") || brand.equals("TNF"))) {
@@ -653,6 +652,26 @@ public class BasketPage extends TestBase {
                 skipCount++;
             }
         }
+
+        }
+
+    public void selectYesForAssignSalesPerson(String yesOrNo) throws InterruptedException {
+//        mobileActions.clickOnElement(yesButton);
+//        WebElement messageBox = driver.findElement(By.xpath("//XCUIElementTypeButton[@name='" + yesOrNo + "'"));
+//        mobileActions.clickOnElement(messageBox);
+//        System.out.println("before yes");
+        mobileActions.clickOnElement(driver.findElement(By.xpath(String.format("//XCUIElementTypeButton[@name='%s']", yesOrNo))));
+//        System.out.println("After YEs");
+//        String brand = properties.getProperty("Brand");
+//        String device = properties.getProperty("DeviceName");
+//        if (device.contains("iPad") && (brand.equals("TBL") || brand.equals("TNF"))) {
+//            if (skipCount == 0) {
+//                System.out.println("clickskip");
+//                customerPage.clickOnSkipButton();
+//                mobileActions.clickOnElement(cancelButton);
+//                skipCount++;
+//            }
+//        }
     }
 
     public void validateDetailNotGettingApplied(String details) {
@@ -720,7 +739,7 @@ public class BasketPage extends TestBase {
         generalUtility.isElementEnabled(product);
     }
 
-    public void isCustomerPromptDisplayed() {
+    public void isCustomerPromptDisplayed() throws InterruptedException {
         generalUtility.isElementDisplayed(customerPromptWindow);
     }
 
@@ -1086,15 +1105,19 @@ public class BasketPage extends TestBase {
     public void assignTerminatedSalesPerson(String salesPersonId) throws InterruptedException {
         mobileActions.enterText(salesPersonTextField, salesPersonId);
         mobileActions.clickHideKeyboard();
-        mobileActions.clickOnElement(assignButton);
+//        mobileActions.clickOnElement(assignButton);
     }
 
     public void validateInvalidSalespersonError() throws InterruptedException {
-        generalUtility.isElementDisplayed(invalidSalespersonError);
-        mobileActions.clickOnElement(closeButton);
-        customerPage.clickOnSkipButton();    //skip from salesperson page
-        Thread.sleep(2000);            //This is to wait for the customer prompt window
-        customerPage.clickOnSkipButton();   //skip the customer prompt
+        generalUtility.isElementDisplayed(noDataFoundError);
+        customerPage.clickOnSkipButton();
+        customerPage.clickOnSkipButton();
+
+//        generalUtility.isElementDisplayed(invalidSalespersonError);
+//        mobileActions.clickOnElement(closeButton);
+//        customerPage.clickOnSkipButton();    //skip from salesperson page
+//        Thread.sleep(2000);            //This is to wait for the customer prompt window
+//        customerPage.clickOnSkipButton();   //skip the customer prompt
     }
 
     public void validateInvalidEmployeeErrorPopUpMessage() {
@@ -1457,8 +1480,9 @@ public class BasketPage extends TestBase {
         System.out.println(roundedTaxExchange);
         double totalSummary = taxInExchange + originalPriceAfterDiscount;
         double exchangePrice = Double.parseDouble(totalPaymentSale) - totalSummary;
+        double roundedExchangePrice = Math.round(exchangePrice * 100.0) / 100.0;
         double totalRefundAmount = Double.parseDouble(generalUtility.getTextFromElement(totalTransaction).replaceAll("[\\$()]", "").trim());
-        assertEquals("Refund amount mismatch in exchange", exchangePrice, totalRefundAmount, 0.0);
+        assertEquals("Refund amount mismatch in exchange", roundedExchangePrice, totalRefundAmount, 0.0);
     }
 
     public void storePromoPrice() {
@@ -1567,6 +1591,7 @@ public class BasketPage extends TestBase {
     public void selectShippingItem() {
         mobileActions.clickOnElement(shippingItem);
     }
+
 
 }
 

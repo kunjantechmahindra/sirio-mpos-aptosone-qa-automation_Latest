@@ -14,6 +14,6 @@ Feature: VFG10X-1407 Gift Card _Sales of new gift card and Void transaction
     And the sales assistant clicks on issue button
     And the sales assistant clicks on Skip button
     And the sales assistant void the transaction with gift card item with reason "Cashier Error"
-    And the sales assistant enter the the pin from index 7
+#    And the sales assistant enter the the pin from index 7
     And the sales assistant select the printer
     And the sales assistant logout from the application

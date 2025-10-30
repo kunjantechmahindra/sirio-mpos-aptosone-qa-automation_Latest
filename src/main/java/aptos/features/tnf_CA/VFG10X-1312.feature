@@ -25,7 +25,7 @@ Feature: VFG10X-1312 Exchange _Negative Blind Exchange of single item with bag f
 
     #Issue New Gift Card
     And the sales assistant clicks on gift card button from Refund
-    And the sales assistant enters gift card number from index 2
+    And the sales assistant enters gift card number from index 1
     And the sales assistant clicks on issue button from payment
     And the sales assistant sign for the transaction
     And the sales assistant clicks on Print button

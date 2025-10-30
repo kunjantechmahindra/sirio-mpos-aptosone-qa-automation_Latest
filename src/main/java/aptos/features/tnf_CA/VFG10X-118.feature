@@ -10,7 +10,7 @@ Feature: VFG10X-118 Gift Card _Top Up Gift card and Void
   #Top-Up Gift Card
     And the sales assistant clicks on gift card button
     And the sales assistant clicks on existing gift card button
-    And the sales assistant enters gift card number from index 1
+    And the sales assistant enters gift card number from index 2
     And the sales assistant enters gift card amount "100.00"
     And the sales assistant clicks on add value button
     And the sales assistant clicks on Skip button

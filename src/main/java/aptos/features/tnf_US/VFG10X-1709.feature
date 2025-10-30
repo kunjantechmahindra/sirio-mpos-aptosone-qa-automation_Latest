@@ -47,6 +47,3 @@ Feature: VFG10X-1709 Exchange Transaction_Blind Exchange transaction with Single
     And the sales assistant save the payment details for the sales transaction
     And the sales assistant clicks on Print button
     And the sales assistant select the printer
-
-
-

@@ -10,12 +10,13 @@ Feature: VFG10X-767 Gift Card _ Gift Card tender Exchange by swiping the Gift Ca
     # Tender exchange
     And the sales assistant navigate to store operations page
     And the sales assistant clicks on Tender exchange button
-    And the sales assistant enters gift card number from index 3
+    And the sales assistant clicks on swipe button from Tender Exchange
+#    And the sales assistant enters gift card number from index 1
     And the sales assistant clicks on continue button to exchange
-    And the sales assistant enter the the pin from index 3
-    And the sales assistant clicks on Cash for Exchange
-    And the sales assistant enter the the pin from index 3
+    And the sales assistant enter the the pin from index 2
     And the sales assistant enter the Drawer ID
+    And the sales assistant clicks on Cash for Exchange
+    And the sales assistant enter the the pin from index 2
     And the sales assistant clicks on Print button
     And the sales assistant select the printer
     And the sales assistant logout from the application

@@ -39,7 +39,6 @@ Feature: VFG10X-124 Exchange _Blind Exchange _Single item with Tax override _Ref
     And the sales assistant select the printer
     And the sales assistant logout from the application
 
-
   #EJ Validation
     And the sales assistant login to EJViewer
     And the sales assistant enter the store and transaction detail

@@ -12,7 +12,6 @@ Feature: VFG10X-1358 Exchange _Negative Exchange with multiple items _Sale an it
     And the sales assistant selects the product at index 1
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount
-    And the sales assistant clicks on percentage button
     And the sales assistant enter discount percentage as 10
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Damaged" as reason code
@@ -22,7 +21,6 @@ Feature: VFG10X-1358 Exchange _Negative Exchange with multiple items _Sale an it
     And the sales assistant selects the product at index 2
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount
-    And the sales assistant clicks on percentage button
     And the sales assistant enter discount percentage as 10
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Damaged" as reason code

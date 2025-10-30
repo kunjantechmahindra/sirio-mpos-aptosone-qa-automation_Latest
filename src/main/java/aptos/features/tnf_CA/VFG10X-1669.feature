@@ -10,7 +10,7 @@ Feature: VFG10X-1669 Promotions and Discounts _ Verify that promotion is not get
 
   #Issue New Gift Card
     And the sales assistant clicks on gift card button
-    And the sales assistant enters gift card number from index 1
+    And the sales assistant enters gift card number from index 3
     And the sales assistant enters gift card amount "50.00"
     And the sales assistant clicks on issue button
     And the sales assistant clicks on Skip button

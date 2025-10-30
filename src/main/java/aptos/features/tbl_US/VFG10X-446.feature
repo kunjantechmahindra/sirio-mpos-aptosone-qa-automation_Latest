@@ -11,6 +11,7 @@ Feature: VFG10X-446 Promotions and Discounts _ Multi Item transaction with 20 $ 
   # Add transaction level discount
     And the sales assistant clicks on Discount button from basket page
     And the sales assistant select transaction discount button
+    And the sales assistant clicks on amount button
     And the sales assistant enter discount amount as 20
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "BOUNCEBACK" as reason code

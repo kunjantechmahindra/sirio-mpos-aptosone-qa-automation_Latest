@@ -12,7 +12,7 @@ Feature: VFG10X-384 Store Selling Functions _ Allow Cashier to be defaulted as S
     And the sales assistant selects the product at index 1
     And the sales assistant selects "Salesperson" Option from line Action
     And the sales assistant add salesperson "800500" to the transaction item
-    Then the sales assistant selects "Yes" from the salesperson popup box
+#    Then the sales assistant selects "Yes" from the salesperson popup box
     And the sales assistant selects the product at index 2
     And the sales assistant selects "Salesperson" Option from line Action
     And the sales assistant add salesperson "800500" to the transaction item

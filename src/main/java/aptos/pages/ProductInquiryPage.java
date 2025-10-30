@@ -29,7 +29,7 @@ public class ProductInquiryPage extends TestBase {
     @FindBy(xpath = "//XCUIElementTypeOther[@name='MainScreen-header-none-button']")
     WebElement hamburgerButtoniphone;
 
-    @FindBy(xpath = "//XCUIElementTypeOther[@label='Product inquiry']")
+    @FindBy(xpath = "//XCUIElementTypeOther[@name='Product inquiry']")
     WebElement productInquiryButton;
 
     @FindBy(xpath = "//*[@name='ProductInquiryScreen-searchValue-textInput']")
@@ -99,6 +99,7 @@ public class ProductInquiryPage extends TestBase {
         if (properties.getProperty("DeviceName").contains("iPhone")) {
             mobileActions.clickOnElement(hamburgerButtoniphone);
         } else {
+            generalUtility.isElementEnabled(hamburgerButton);
             mobileActions.clickOnElement(hamburgerButton);
         }
         generalUtility.isElementEnabled(productInquiryButton);

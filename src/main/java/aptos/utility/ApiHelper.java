@@ -148,7 +148,7 @@ public class ApiHelper extends TestBase {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(apiUrl))
-                .timeout(Duration.ofSeconds(10)) // Adjust timeout as necessary
+                .timeout(Duration.ofSeconds(12)) // Adjust timeout as necessary
                 .header("Content-Type", "application/json")
                 .POST(HttpRequest.BodyPublishers.ofString(jsonBody))
                 .build();

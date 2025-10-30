@@ -10,7 +10,7 @@ Feature: VFG10X-1746 Return Transaction _ Return a Sale Transaction created on o
   #Return transaction
     And the sales assistant clicks on return button
     And the sales assistant clicks on return search button
-    And  the sales assistant enters store number "400528" terminal "40" and transaction number "1746"
+    And  the sales assistant enters store number "400528" terminal "81" and transaction number "2454"
     And the sales assistant return all items from the transaction
     And the sales assistant selects "RTL - Damaged/Defective" as reason code
 

@@ -8,7 +8,7 @@ Feature: VFG10X-763 Gift Card _ Gift Card Balance enquiry typing the Gift Card n
     When the sales assistant clicks on Start Basket button
 
     #Gift card balance enquiry
-    Then the sales assistant validates the Gift Card balance from basket page for index 3
+    Then the sales assistant validates the Gift Card balance from basket page for index 2
     Then the sales assistant saves the Gift Card balance amount for EJ
     And the sales assistant closes the Balance Inquiry screen
 

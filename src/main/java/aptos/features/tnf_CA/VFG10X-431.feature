@@ -11,8 +11,7 @@ Feature: VFG10X-431 Promotions and Discounts _ Allow Transaction level Discount 
     #Discount at transaction level
     And the sales assistant clicks on Discount button from basket page
     And the sales assistant select transaction discount button
-    And the sales assistant clicks on percentage button
-#    And the sales assistant enter discount percentage as 101
+#   And the sales assistant enter discount percentage as 101
 #    And the sales assistant validates the Maximum issue amount error message
     And the sales assistant enter discount percentage as 100
     And the sales assistant clicks on Select a reason code button

@@ -70,7 +70,7 @@ public class LineActionPageStepDefinition extends TestBase {
     }
 
     @And("the sales assistant clicks on amount button for tax override")
-    public void theSalesAssistantClicksOnAmountButton() {
+    public void theSalesAssistantClicksOnAmountButtonForTaxOverride() {
         lineActionPage.clickOnTaxOverrideAmount();
     }
 
@@ -236,4 +236,5 @@ public class LineActionPageStepDefinition extends TestBase {
         lineActionPage.verifyReturnPriceOfTempMD();
         basketPage.clickOnCancelButton();
     }
+
 }

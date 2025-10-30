@@ -86,11 +86,11 @@ public class CustomerPageStepDefinition extends TestBase {
     @And("the sales assistant assign customer details with index {int}")
     public void theSalesAssistantSearchCustomerDetailsWithIndex(int index) throws IOException, ParseException, InterruptedException {
         customerPage.searchAndAssignCustomerUsingEmail(index);
-        Thread.sleep(3000);
+        Thread.sleep(6000);
     }
 
     @And("the sales assistant search a customer using email at index {int}")
-    public void theSalesAssistantSearchACustomerDetailsAtIndex(int index) throws IOException, ParseException {
+    public void theSalesAssistantSearchACustomerDetailsAtIndex(int index) throws IOException, ParseException, InterruptedException {
         customerPage.searchCustomerUsingEmail(index);
     }
 
@@ -101,14 +101,14 @@ public class CustomerPageStepDefinition extends TestBase {
 
     @And("the sales assistant clicks on edit customer option from Search customer page")
     public void theSalesAssistantClicksOnEditCustomerOptionFromSearchCustomerPage() throws InterruptedException {
-        customerPage.navigateToSearchCustomer(); // this is not applicable for new version in iPad. Need to check for iPhone
+//        customerPage.navigateToSearchCustomer();  // this is not applicable for new version in iPad. Need to check for iPhone
         customerPage.clickOnEditCustomer();
-        mobileActions.clickHideKeyboard();
+//        mobileActions.clickHideKeyboard();
     }
 
     @And("the sales assistant navigate to basket page")
     public void theSalesAssistantNavigateToBasketPage() throws InterruptedException {
-        customerPage.clickOnBasketButtonFromHeader();
+       customerPage.clickOnBasketButtonFromHeader();
     }
 
     @And("the sales assistant clicks on Basket button from header")
@@ -163,8 +163,13 @@ public class CustomerPageStepDefinition extends TestBase {
     }
 
     @And("the sales assistant discard the changes from edit customer screen")
-    public void theSalesAssistantDiscardTheChangesFromEditCustomerScreen() {
+    public void theSalesAssistantDiscardTheChangesFromEditCustomerScreen() throws InterruptedException {
         customerPage.clickOnBackButtonFromEditCustomer();
+    }
+
+    @And("the sales assistant navigates from edit customer screen")
+    public void theSalesAssistantNavigatesFromEditCustomerScreen() throws InterruptedException {
+        customerPage.clickBackButton();
     }
 
     @And("the sales assistant navigate to basket page from Search customer page")
@@ -173,19 +178,19 @@ public class CustomerPageStepDefinition extends TestBase {
     }
 
     @And("the sales assistant proceed without selecting the customer")
-    public void theSalesAssistantProceedWithoutSelectingTheCustomer() {
+    public void theSalesAssistantProceedWithoutSelectingTheCustomer() throws InterruptedException {
         customerPage.clickOnSkipButton();
     }
 
     @And("the sales assistant search a customer with email and Phone Number at index {int}")
-    public void theSalesAssistantSearchACustomerWithEmailAndPhoneNumberAtIndex(int index) throws IOException, ParseException {
+    public void theSalesAssistantSearchACustomerWithEmailAndPhoneNumberAtIndex(int index) throws IOException, ParseException, InterruptedException {
         customerPage.enterEmailInSearch(index);
         customerPage.enterPhoneNumberInSearch(index);
         customerPage.clickOnCustomerSearchButton();
     }
 
     @And("the sales assistant search a customer with {string} email and {string} Phone Number at index {int}")
-    public void theSalesAssistantSearchACustomerWithEmailAndPhoneNumberAtIndex(String emailValidity, String phoneValidity, int index) throws IOException, ParseException {
+    public void theSalesAssistantSearchACustomerWithEmailAndPhoneNumberAtIndex(String emailValidity, String phoneValidity, int index) throws IOException, ParseException, InterruptedException {
         int invalidData = index - 1;
         if (emailValidity.equals("valid") && phoneValidity.equals("valid")) {
             customerPage.enterEmailInSearch(index);
@@ -211,7 +216,7 @@ public class CustomerPageStepDefinition extends TestBase {
     }
 
     @And("the sales assistant search a customer with Phone Number at index {int}")
-    public void theSalesAssistantSearchACustomerWithPhoneNumberAtIndex(int index) throws IOException, ParseException {
+    public void theSalesAssistantSearchACustomerWithPhoneNumberAtIndex(int index) throws IOException, ParseException, InterruptedException {
         customerPage.enterPhoneNumberInSearch(index);
         customerPage.clickOnCustomerSearchButton();
     }
@@ -406,7 +411,7 @@ public class CustomerPageStepDefinition extends TestBase {
     }
 
     @And("the sales assistant search recently assigned customer")
-    public void theSalesAssistantSearchRecentlyAssignedCustomer() {
+    public void theSalesAssistantSearchRecentlyAssignedCustomer() throws InterruptedException {
         customerPage.searchRecentlyCreatedCustomer();
     }
 
@@ -429,7 +434,7 @@ public class CustomerPageStepDefinition extends TestBase {
     }
 
     @And("the sales assistant search a customer with new Phone Number and email")
-    public void theSalesAssistantSearchACustomerWithNewPhoneNumberAndEmail() {
+    public void theSalesAssistantSearchACustomerWithNewPhoneNumberAndEmail() throws InterruptedException {
         customerPage.searchCustomerWithNewEmailAndPhone();
     }
 
@@ -486,7 +491,7 @@ public class CustomerPageStepDefinition extends TestBase {
     }
 
     @And("the sales assistant assign recently assigned customer")
-    public void theSalesAssistantAssignRecentlyAssignedCustomer() {
+    public void theSalesAssistantAssignRecentlyAssignedCustomer() throws InterruptedException {
         customerPage.searchRecentlyCreatedCustomer();
         customerPage.assignCustomer();
     }

@@ -12,7 +12,6 @@ Feature: VFG10X-1023 Promotions and Discounts _Transaction level Discount_In a S
     And the sales assistant clicks on Discount button from basket page
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount button
-    And the sales assistant clicks on percentage button
     And the sales assistant enter discount percentage as 30
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "E-MAIL" as reason code
