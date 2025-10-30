@@ -1,6 +1,6 @@
-@VFG10X-1746 @ReturnTransaction @Regression @OfflineSale
+@VFG10X-1746 @ReturnTransaction @Regression @OfflineSale @PrerequisiteRequired
 Feature: VFG10X-1746 Return Transaction _ Return a Sale Transaction created on offline mode
-  #Make sale is offline mode
+  #Make sale in offline mode
 
   Scenario: Return Transaction _ Return a Sale Transaction created on offline mode
 

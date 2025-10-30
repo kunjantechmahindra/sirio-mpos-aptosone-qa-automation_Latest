@@ -17,6 +17,3 @@ Feature: VFG10X-310 Customer Search using non existing phone number and email an
     And the sales assistant clicks on Save button
     And the sales assistant void the transaction from basket with reason code "Cashier Error"
     And the sales assistant logout from the application
-
-
-

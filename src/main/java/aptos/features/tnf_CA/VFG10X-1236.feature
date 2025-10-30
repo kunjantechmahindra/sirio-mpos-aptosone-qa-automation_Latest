@@ -12,6 +12,7 @@ Feature: VFG10X-1236 Return transaction_ Return single item with Item level disc
     And the sales assistant selects the product at index 1
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount
+    And the sales assistant clicks on amount button
     And the sales assistant enter discount amount as 50
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Damaged" as reason code
@@ -41,7 +42,7 @@ Feature: VFG10X-1236 Return transaction_ Return single item with Item level disc
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant clicks on gift card button from payment page
     And the sales assistant clicks on existing gift card button
-    And the sales assistant enter the gift card number for payment from index 1
+    And the sales assistant enter the gift card number for payment from index 3
     And the sales assistant clicks on add value button from payment page
     And the sales assistant sign for the transaction
     And the sales assistant save the payment details for the sales transaction
@@ -55,4 +56,3 @@ Feature: VFG10X-1236 Return transaction_ Return single item with Item level disc
     And the sales assistant validate the payment details
     And the sales assistant validate details "RTL - Damaged/Defective" in EJ
     And the sales assistant logout from EJViewer
-

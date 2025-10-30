@@ -17,6 +17,7 @@ Feature: VFG10X-735 Store Selling Functions _ Validation of customer name  is pr
     And the sales assistant clicks on Accept button
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant clicks on Cash button
+    And the sales assistant clicks on Cash option
     And the sales assistant enter the Drawer ID
     And the sales assistant save the payment details for the sales transaction
     And the sales assistant clicks on Print button

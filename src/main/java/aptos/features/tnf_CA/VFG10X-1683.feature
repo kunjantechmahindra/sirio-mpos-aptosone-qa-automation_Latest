@@ -23,6 +23,7 @@ Feature: VFG10X-1683 Multiband - Create a return transaction with more than 20 d
     And the sales assistant clicks on Accept button
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant clicks on Cash button
+    And the sales assistant clicks on Cash option
     And the sales assistant enter the Drawer ID
     And the sales assistant save the payment details for the sales transaction
     And the sales assistant clicks on Print button

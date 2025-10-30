@@ -13,10 +13,8 @@ Feature: VFG10X-68 Sale Transaction _Single Item_ Card decline and payment compl
     And the sales assistant clicks on Accept button
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant clicks on Card button
-    #And the sales assistant processes the payment with a "discover" card using a "insert" action, entering the pin "0"
 
-    # Need to write script for clicking decline button in PED using Robotic Action
-
+    #Payment Decline
     And the sales assistant clicks on Close button from payment page
     And the sales assistant enter extra amount
     And the sales assistant clicks on Cash button

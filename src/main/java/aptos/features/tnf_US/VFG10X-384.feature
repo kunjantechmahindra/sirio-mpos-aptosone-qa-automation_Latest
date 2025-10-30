@@ -21,9 +21,3 @@
       #Void Transaction
       And the sales assistant void the transaction from basket with reason code "Promo Error"
       And the sales assistant logout from the application
-
-
-
-
-
-

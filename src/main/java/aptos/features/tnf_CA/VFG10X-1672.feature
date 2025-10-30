@@ -10,12 +10,12 @@ Feature: VFG10X-1672 Gift Card _Unable to apply Item Level , Transactional Level
     #Top Up Gift Card
     And the sales assistant clicks on gift card button
     And the sales assistant validates existing gift card button is enabled
-    And the sales assistant enters gift card number from index 1
+    And the sales assistant enters gift card number from index 2
     And the sales assistant enters gift card amount "50.00"
     And the sales assistant clicks on add value button
     And the sales assistant clicks on Skip button
-    Then the sales assistant validates the Gift Card balance from basket page for index 1
-    Then the sales assistant enter the the pin from index 1
+    Then the sales assistant validates the Gift Card balance from basket page for index 2
+    Then the sales assistant enter the the pin from index 2
     Then the sales assistant saves the Gift Card balance amount
     And the sales assistant closes the Balance Inquiry screen
     And the sales assistant lands on Basket Page
@@ -27,6 +27,7 @@ Feature: VFG10X-1672 Gift Card _Unable to apply Item Level , Transactional Level
     And the sales assistant selects gift card item at index 1
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount
+    And the sales assistant clicks on amount button
     And the sales assistant enter discount amount as 10
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Damaged" as reason code
@@ -37,6 +38,7 @@ Feature: VFG10X-1672 Gift Card _Unable to apply Item Level , Transactional Level
     And the sales assistant selects the product at index 1
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount
+    And the sales assistant clicks on amount button
     And the sales assistant enter discount amount as 10
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Damaged" as reason code
@@ -48,6 +50,7 @@ Feature: VFG10X-1672 Gift Card _Unable to apply Item Level , Transactional Level
     #Apply transactional level discount
     And the sales assistant clicks on Discount button from basket page
     And the sales assistant select transaction discount
+    And the sales assistant clicks on amount button
     And the sales assistant enter discount amount as 10
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Other" as reason code
@@ -82,8 +85,8 @@ Feature: VFG10X-1672 Gift Card _Unable to apply Item Level , Transactional Level
     And the sales assistant lands on Basket Page
 
     #Gift card balance enquiry
-    Then the sales assistant validates the Gift Card balance from basket page for index 1
-    Then the sales assistant enter the the pin from index 1
+    Then the sales assistant validates the Gift Card balance from basket page for index 2
+    Then the sales assistant enter the the pin from index 2
     Then the sales assistant saves the Gift Card balance amount
     And the sales assistant closes the Balance Inquiry screen
     And the sales assistant validates the gift card balance after applying discounts

@@ -23,7 +23,7 @@ Feature: VFG10X-254 Return Transaction _ Receipt less Return with Different reas
     And the sales assistant clicks on Pay button
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant clicks on card for refund
-    And the sales assistant processes the payment with a "discover" card using a "insert" action, entering the pin "0"
+    And the sales assistant processes the payment with a "amex" card using a "insert" action, entering the pin "0"
     And the sales assistant sign for the transaction
     And the sales assistant save the payment details for the sales transaction
     And the sales assistant clicks on Print button

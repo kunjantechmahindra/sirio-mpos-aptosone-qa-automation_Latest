@@ -1,5 +1,4 @@
 @VFG10X-1522 @Regression @StoreSelling
-
 Feature: VFG10X-1522 Store Selling Functions _ gift receipt will be printed for each individual line item when option to print at item level is selected
 
   Scenario: Store Selling Functions _ gift receipt will be printed for each individual line item when option to print at item level is selected

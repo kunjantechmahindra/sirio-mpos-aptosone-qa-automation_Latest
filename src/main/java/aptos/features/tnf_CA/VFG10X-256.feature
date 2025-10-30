@@ -1,5 +1,4 @@
 @VFG10X-256 @ExchangeTransaction @Regression @GiftCard @Card
-
 Feature: VFG10X-256 Exchange _Multiple items with same price _Top Up gift card_ Loyalty Customer Assigned
 
   Scenario: Exchange _Multiple items with same price _Top Up gift card_ Loyalty Customer Assigned
@@ -23,7 +22,7 @@ Feature: VFG10X-256 Exchange _Multiple items with same price _Top Up gift card_ 
 
   #Assign customer
     And then sales assistant clicks on Assign Customer button
-    And the sales assistant assign customer details with index 0
+    And the sales assistant assign customer details with index 1
 
   #Return transaction
     And the sales assistant clicks on return button

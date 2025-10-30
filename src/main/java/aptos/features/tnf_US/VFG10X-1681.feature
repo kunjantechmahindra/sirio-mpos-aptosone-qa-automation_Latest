@@ -1,4 +1,4 @@
-@VFG10X-1681 @ReturnTransaction @Regression
+@VFG10X-1681 @ReturnTransaction @Regression @GiftCard
 Feature: VFG10X-1681 Return Transaction _ Perform Return of a transaction paid using Reward and Cash with change due
 
   Scenario: Return Transaction _ Perform Return of a transaction paid using Reward and Cash with change due
@@ -9,7 +9,7 @@ Feature: VFG10X-1681 Return Transaction _ Perform Return of a transaction paid u
 
   # Assign customer and add product
     And then sales assistant clicks on Assign Customer button
-    And the sales assistant assign customer details with index 3
+    And the sales assistant assign customer details with index 2
     Then the sales assistant add 2 items from "General" product to the basket
 
   # Payment transaction

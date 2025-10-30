@@ -20,7 +20,7 @@ Feature: VFG10X-283 Exchange _Negative Exchange transaction of mixed card paymen
       And the sales assistant save the transaction details of the sales transaction
       And the sales assistant enters half of the total amount in the payment section
       And the sales assistant clicks on Card button
-      And the sales assistant processes the payment with a "visa" card using a "tap" action, entering the pin "0"
+      And the sales assistant processes the payment with a "debit" card using a "tap" action, entering the pin "0"
       And the sales assistant validate if partial payment was success
       And the sales assistant save the transaction details of the sales transaction
       And the sales assistant clicks on Card button

@@ -14,6 +14,7 @@ Feature: VFG10X-280 Return Transaction _Sale of multiple items with multiple emp
     And the sales assistant selects the product at index 1
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount
+    And the sales assistant clicks on amount button
     And the sales assistant enter discount amount as 10
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Mall Coupon" as reason code
@@ -23,7 +24,6 @@ Feature: VFG10X-280 Return Transaction _Sale of multiple items with multiple emp
     #Discount at transaction level
     And the sales assistant clicks on Discount button from basket page
     And the sales assistant select transaction discount button
-    And the sales assistant clicks on percentage button
     And the sales assistant enter discount percentage as 6
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Nurse" as reason code
@@ -33,7 +33,7 @@ Feature: VFG10X-280 Return Transaction _Sale of multiple items with multiple emp
     And the sales assistant selects the product at index 2
     And the sales assistant selects "Salesperson" Option from line Action
     And the sales assistant add salesperson "800500" to the transaction item
-    Then the sales assistant selects "Yes" from the salesperson popup box
+#    Then the sales assistant selects "Yes" from the salesperson popup box
     And the sales assistant lands on Basket Page
     And the sales assistant selects the product at index 1
     And the sales assistant selects "Salesperson" Option from line Action

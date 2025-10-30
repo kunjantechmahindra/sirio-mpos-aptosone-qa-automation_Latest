@@ -10,7 +10,7 @@ Feature: VFG10X-1718 Return transaction _Return single Temp MD item payment by V
   # Add Temp MD product to basket
     And the sales assistant navigate to product inquiry page
     And the sales assistant search product by UPC number from "Temp-MD"
-#    And the sales assistant save the original and temporary price
+    And the sales assistant save the original and temporary price
     And the sales assistant add item to the basket
     And the sales assistant clicks on basket button
     And the sales assistant clicks on Skip button

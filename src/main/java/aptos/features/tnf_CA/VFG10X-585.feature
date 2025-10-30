@@ -9,7 +9,7 @@ Feature: VFG10X-585 Store Selling Functions _ Minimum Gift Card Issue Amount
 
   # Issue New Gift Card
     And the sales assistant clicks on gift card button
-    And the sales assistant enters gift card number from index 4
+    And the sales assistant enters gift card number from index 1
     And the sales assistant enters gift card amount "9.99"
     And the sales assistant validates the Minimum issue amount error message
     And the sales assistant validate issue button is disabled
@@ -21,6 +21,7 @@ Feature: VFG10X-585 Store Selling Functions _ Minimum Gift Card Issue Amount
     And the sales assistant clicks on Pay button
     And the sales assistant clicks on Accept button
     And the sales assistant clicks on Cash button
+    And the sales assistant clicks on Cash option
     And the sales assistant enter the Drawer ID
     And the sales assistant clicks on Print button
     And the sales assistant select the printer

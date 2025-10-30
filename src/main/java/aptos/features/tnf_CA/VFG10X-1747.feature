@@ -1,4 +1,4 @@
-@VFG10X-1747 @SaleTransaction @Regression  x
+@VFG10X-1747 @SaleTransaction @Regression
 Feature: VFG10X-1747  Sale Transaction_Single item with Payment by Loyalty Reward (Partial) + Cash (Check the earlier used one's balance) - Only on iPad
 
   Scenario:  Sale Transaction_Single item with Payment by Loyalty Reward (Partial) + Cash (Check the earlier used one's balance) - Only on iPad

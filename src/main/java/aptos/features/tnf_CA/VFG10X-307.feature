@@ -10,4 +10,3 @@ Feature: VFG10X-302 Store Selling Functions _ Color of Login Page _ Outlet Store
     And the sales assistant validate the color of basket page
     And the sales assistant logout from the application
     And the sales assistant validate the color of login page
-

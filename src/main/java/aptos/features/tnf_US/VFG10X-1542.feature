@@ -11,6 +11,7 @@ Feature: VFG10X-1542  Promotions and Discounts _Transactional level discount rea
   #Apply transactional level discount
     And the sales assistant clicks on Discount button from basket page
     And the sales assistant select transaction discount button
+    And the sales assistant clicks on amount button
     And the sales assistant enter discount amount as 10
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Post Card Promo" as reason code

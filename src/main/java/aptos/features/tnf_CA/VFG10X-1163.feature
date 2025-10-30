@@ -35,6 +35,7 @@ Feature: VFG10X-1163 Tax _ Exchange transaction of Multiple item, 1st Item with 
     And the sales assistant enter the tax ID
     And the sales assistant clicks on Select a reason code button on tax exempt page
     And the sales assistant clicks on reason code as tax exempt
+    And the sales assistant clicks on GST & PST Exemption
     And the sales assistant clicks on Apply button
     #Intermittently we are getting a customer assignment page,use skip button for cancel customer assignment
     #And the sales assistant clicks on Skip button

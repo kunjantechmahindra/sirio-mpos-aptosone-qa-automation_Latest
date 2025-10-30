@@ -10,7 +10,7 @@ Feature: VFG10X-1511 Return Transaction_Not able to return items above 30 days
     # Return transaction
     And the sales assistant clicks on return button
     And the sales assistant clicks on return search button
-    And  the sales assistant enters store number "400318" terminal "42" and transaction number "17799"
+    And  the sales assistant enters store number "400317" terminal "26" and transaction number "36"
     And the sales assistant validate the returnable period expired message and clicks continue
     And the sales assistant return all items from the transaction
     And the sales assistant selects "RTL - Damaged/Defective" as reason code
@@ -25,5 +25,3 @@ Feature: VFG10X-1511 Return Transaction_Not able to return items above 30 days
     And the sales assistant clicks on Print button
     And the sales assistant select the printer
     And the sales assistant logout from the application
-
-

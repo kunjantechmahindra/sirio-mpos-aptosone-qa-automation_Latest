@@ -15,6 +15,7 @@ Feature: VFG10X-12 Sale Transaction _Multiple Items with Line item & Transaction
     And the sales assistant selects the product at index 1
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount
+    And the sales assistant clicks on amount button
     And the sales assistant enter discount amount as 5
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Damaged" as reason code
@@ -24,7 +25,6 @@ Feature: VFG10X-12 Sale Transaction _Multiple Items with Line item & Transaction
   # Discount at transaction level
     And the sales assistant clicks on Discount button from basket page
     And the sales assistant select transaction discount button
-    And the sales assistant clicks on percentage button
     And the sales assistant enter discount percentage as 6
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "In Store Promo" as reason code

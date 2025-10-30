@@ -1,5 +1,4 @@
 @VFG10X-1741 @StoreSelling @Regression
-
 Feature: VFG10X-1741 Validation of e-receipt header and footer
 
   Scenario: Validation of e-receipt header and footer

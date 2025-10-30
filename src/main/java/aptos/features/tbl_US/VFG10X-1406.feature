@@ -6,7 +6,7 @@ Feature: VFG10X-1406 Promotions and Discounts _ Sale transaction with promotion 
     #Login and add items
     Given the sales assistant login to the application with valid username and password
     When the sales assistant clicks on Start Basket button
-    Then the sales assistant add 2 items from "2-for-30$Tees" product to the basket without customer
+    Then the sales assistant add 2 items from "2-for-30$" product to the basket without customer
 
     #validate promotion
     And the sales assistant lands on Basket Page

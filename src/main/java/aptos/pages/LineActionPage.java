@@ -119,10 +119,8 @@ public class LineActionPage extends TestBase {
     @FindBy(xpath = "(//XCUIElementTypeOther[@name='Tax exempt Cancel'])[5]")
     WebElement taxOverRideButtonNotExist;
 
-
     @FindBy(xpath = "//XCUIElementTypeStaticText[@name='Display-selectableItemLine-originalUnitPrice']")
     WebElement itemOriginalPrice;
-
 
     @FindBy(xpath = "(//XCUIElementTypeOther[@name='GST & PST'])[last()]")
     WebElement taxExemptionsGSTPST;
@@ -144,6 +142,9 @@ public class LineActionPage extends TestBase {
 
     @FindBy(xpath = "//XCUIElementTypeStaticText[@name='Display-selectableItemLine-itemExtendedAmount']")
     WebElement itemPriceInReturn;
+
+    @FindBy(xpath = "//XCUIElementTypeOther[@name='Amount']")
+    WebElement amountButton;
 
     //Actions
     public void clickOnLineActionItem(String option) {

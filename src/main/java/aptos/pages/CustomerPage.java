@@ -145,6 +145,7 @@ public class CustomerPage extends TestBase {
     WebElement customerPhoneSearch;
 
     @FindBy(xpath = "//*[@name='CustomerSearch-button-search']")
+//    @FindBy(xpath = "//*[@name='Search']")
     WebElement customerSearchButton;
 
     @FindBy(xpath = "//XCUIElementTypeOther[@name='CustomerSearch-button-search']")
@@ -164,6 +165,7 @@ public class CustomerPage extends TestBase {
     WebElement assignCustomerFromSearch;
 
     @FindBy(xpath = "(//XCUIElementTypeOther[contains(@name, '@')])")
+//    @FindBy(xpath = "//XCUIElementTypeOther[@name='Main-assignCustomer-linkText']")
     WebElement customerContactInformation;
 
     @FindBy(xpath = "(//*[contains(@name, 'CustomerScreen-headline-textField')])")
@@ -266,9 +268,9 @@ public class CustomerPage extends TestBase {
     @FindBy(xpath = "(//XCUIElementTypeOther[@name='Full'])[4]")
     WebElement loyaltyTypeLabel;
 
-//    @FindBy(xpath = "(//XCUIElementTypeOther[contains(@name,'Customer number')])[last]")
+    //    @FindBy(xpath = "(//XCUIElementTypeOther[contains(@name,'Customer number')])[last]")
     //@FindBy(xpath = "//XCUIElementTypeStaticText[contains(@name, 'CustomerScreen-headline-textField')]")
-   @FindBy(xpath = "//XCUIElementTypeStaticText[@name='CustomerScreen-supportingText-textField']")
+    @FindBy(xpath = "//XCUIElementTypeStaticText[@name='CustomerScreen-supportingText-textField']")
     WebElement customerIdNumber;
 
     @FindBy(xpath = "//XCUIElementTypeStaticText[@name='CustomerScreen-headline-textField']")
@@ -299,10 +301,11 @@ public class CustomerPage extends TestBase {
     WebElement addCustomer;
 
     //Actions
-    public void clickOnSkipButton() {
+    public void clickOnSkipButton() throws InterruptedException {
         if ((properties.getProperty("DeviceName").contains("iPhone"))) {
             mobileActions.clickOnElement(iPhoneSkipButton);
         } else {
+            mobileActions.clickHideKeyboard();
             mobileActions.clickOnElement(skipButton);
         }
     }
@@ -388,7 +391,8 @@ public class CustomerPage extends TestBase {
         updatedLastName = faker.name().lastName();
         for (int i = 0; i < 10; i++) {
             lastNameText.sendKeys(Keys.BACK_SPACE);
-        }mobileActions.clearAndEnterText(lastNameText, updatedLastName);
+        }
+        mobileActions.clearAndEnterText(lastNameText, updatedLastName);
     }
 
     public void verifyIfNoResultFound() {
@@ -399,6 +403,7 @@ public class CustomerPage extends TestBase {
         updatedFirstName = faker.name().firstName();
         for (int i = 0; i < 10; i++) {
             firstNameText.sendKeys(Keys.BACK_SPACE);
+//            firstNameText.sendKeys((Keys.CLEAR));
         }
         mobileActions.clearAndEnterText(firstNameText, updatedFirstName);
     }
@@ -438,6 +443,7 @@ public class CustomerPage extends TestBase {
     public void clickOnUpdateButton() throws InterruptedException {
         mobileActions.clickHideKeyboard();
         mobileActions.clickOnElement(clickOnUpdateButton);
+        Thread.sleep(2000);
     }
 
     public void clickOnNoButtonInPopUp() {
@@ -451,6 +457,8 @@ public class CustomerPage extends TestBase {
     public void clickOnBasketButtonFromHeader() throws InterruptedException {
         if (properties.getProperty("DeviceName").contains("iPhone")) {
             mobileActions.clickUsingCoordinates(driver, 10, 20);
+        } else if (generalUtility.isElementDisplayed(basketButtonInHeader)) {
+            mobileActions.clickOnElement(basketButtonInHeader);
         } else {
             mobileActions.clickOnElement(backToBasketInHeader);
         }
@@ -464,7 +472,7 @@ public class CustomerPage extends TestBase {
         }
     }
 
-    public void searchAndAssignCustomerUsingEmail(int index) throws IOException, ParseException {
+    public void searchAndAssignCustomerUsingEmail(int index) throws IOException, ParseException, InterruptedException {
         String email = TestDataHelper.getCustomerDetail(properties.getProperty("BrandRegion"), index, "email");
         emailAddress = email;
         System.out.println(emailAddress);
@@ -473,20 +481,23 @@ public class CustomerPage extends TestBase {
             mobileActions.clickOnElement(customerSearchButtoniPhone);
             generalUtility.waitForElementToBeVisible(assignCustomerFromSearch, 10);
         } else {
+            mobileActions.clickHideKeyboard();
             mobileActions.clickOnElement(customerSearchButton);
-           generalUtility.waitForElementToBeVisible(assignCustomerFromSearch, 10);
+            generalUtility.waitForElementToBeVisible(assignCustomerFromSearch, 10);
 //            mobileActions.clickOnElement(searchResultButton);
         }
         mobileActions.clickOnElement(assignCustomerFromSearch);
     }
 
-    public void searchCustomerUsingEmail(int index) throws IOException, ParseException {
+    public void searchCustomerUsingEmail(int index) throws IOException, ParseException, InterruptedException {
         String email = TestDataHelper.getCustomerDetail(properties.getProperty("BrandRegion"), index, "email");
         mobileActions.enterText(customerEmailSearch, email);
+        mobileActions.clickHideKeyboard();
         if (properties.getProperty("DeviceName").contains("iPhone")) {
             mobileActions.clickOnElement(customerSearchButtoniPhone);
         } else {
             mobileActions.clickOnElement(customerSearchButton);
+            Thread.sleep(4000);
         }
     }
 
@@ -498,19 +509,22 @@ public class CustomerPage extends TestBase {
         mobileActions.clickOnElement(customerSearchButton);
     }
 
-    public void searchCustomerWithNewEmailAndPhone() {
+    public void searchCustomerWithNewEmailAndPhone() throws InterruptedException {
         String phone = TestDataHelper.generatePhoneNumber();
         String email = faker.internet().emailAddress();
         mobileActions.enterText(customerEmailSearch, email);
         mobileActions.enterText(customerPhoneSearch, phone);
+        mobileActions.clickHideKeyboard();
         mobileActions.clickOnElement(customerSearchButton);
+        Thread.sleep(3000);
     }
 
 
-    public void clickOnCustomerSearchButton() {
+    public void clickOnCustomerSearchButton() throws InterruptedException {
         if (properties.getProperty("DeviceName").contains("iPhone")) {
             mobileActions.clickOnElement(customerSearchButtoniPhone);
         } else {
+            mobileActions.clickHideKeyboard();
             mobileActions.clickOnElement(customerSearchButton);
         }
     }
@@ -531,7 +545,8 @@ public class CustomerPage extends TestBase {
         lastNameTestData = TestDataHelper.getCustomerDetail(properties.getProperty("BrandRegion"), index, "lastName");
         emailTestData = TestDataHelper.getCustomerDetail(properties.getProperty("BrandRegion"), index, "email");
         Thread.sleep(5000);
-        String customerInformation = customerContactInformation.getAttribute("label") + existingCustomerName.getAttribute("label")  ;
+        String customerInformation = customerContactInformation.getAttribute("label") + existingCustomerName.getAttribute("label");
+        System.out.println(customerInformation);
 
         boolean containsFirstName = customerInformation.contains(firstNameTestData);
         boolean containsLastName = customerInformation.contains(lastNameTestData);
@@ -543,7 +558,7 @@ public class CustomerPage extends TestBase {
     }
 
     public void validateNewCustomerDetails() {
-        String customerInformation = customerContactInformation.getAttribute("label") + existingCustomerName.getAttribute("label")  ;
+        String customerInformation = customerContactInformation.getAttribute("label") + existingCustomerName.getAttribute("label");
         boolean containsFirstName = customerInformation.contains(firstName);
         boolean containsLastName = customerInformation.contains(lastName);
         boolean containsEmail = customerInformation.contains(emailAddress);
@@ -579,7 +594,7 @@ public class CustomerPage extends TestBase {
 
 
     public void validateCustomerDetailWithoutName(String detailType) {
-        String customerInformation = customerContactInformation.getAttribute("label")  ;
+        String customerInformation = customerContactInformation.getAttribute("label");
         customerInformation = customerInformation.replaceAll("[()\\s-]", "");
         switch (detailType.toLowerCase()) {
             case "email":
@@ -597,7 +612,7 @@ public class CustomerPage extends TestBase {
     }
 
     public void validateUpdatedCustomerDetails(String field) throws IOException, ParseException {
-        String customerInformation = cleanCustomerInformation(customerContactInformation.getText() + existingCustomerName.getAttribute("label") );
+        String customerInformation = cleanCustomerInformation(customerContactInformation.getText() + existingCustomerName.getAttribute("label"));
         switch (field.toLowerCase()) {
             case "all":
                 validateFirstName(customerInformation);
@@ -709,8 +724,8 @@ public class CustomerPage extends TestBase {
 
     public void removeCustomerFromTransaction() throws InterruptedException {
         // The coordinates of remove customer button is 983 and 719
-    mobileActions.clickHideKeyboard();
-    mobileActions.clickOnElement(removeCustomer);
+        mobileActions.clickHideKeyboard();
+        mobileActions.clickOnElement(removeCustomer);
     }
 
     public void clickOnEditCustomer() {
@@ -736,9 +751,17 @@ public class CustomerPage extends TestBase {
         generalUtility.isElementEnabled(assignCustomer);
     }
 
-    public void clickOnBackButtonFromEditCustomer() {
+    public void clickOnBackButtonFromEditCustomer() throws InterruptedException {
         mobileActions.clickOnElement(editCustomerBackButton);
-        mobileActions.clickOnElement(okButton);
+        if (generalUtility.isElementDisplayed(okButton)) {
+            mobileActions.clickOnElement(okButton);
+        }
+        Thread.sleep(2000);
+    }
+
+    public void clickBackButton() throws InterruptedException {
+        mobileActions.clickOnElement(editCustomerBackButton);
+        Thread.sleep(2000);
     }
 
     public void validateIfEmailIsEnabled() {
@@ -874,8 +897,9 @@ public class CustomerPage extends TestBase {
         mobileActions.clickOnElement(newsLetterButton);
     }
 
-    public void searchRecentlyCreatedCustomer() {
+    public void searchRecentlyCreatedCustomer() throws InterruptedException {
         mobileActions.enterText(customerEmailSearch, emailAddress);
+        mobileActions.clickHideKeyboard();
         mobileActions.clickOnElement(customerSearchButton);
     }
 
@@ -911,8 +935,8 @@ public class CustomerPage extends TestBase {
         customerFullName = customerName;
         CustomerPage.customerNumber = customerNumber;
 
-            System.out.println("Customer Name = " +customerFullName);
-            System.out.println("Customer Number = " +customerNumber);
+        System.out.println("Customer Name = " + customerFullName);
+        System.out.println("Customer Number = " + customerNumber);
 //        } else {
 //            System.out.println("No match found!");
 //        }
@@ -965,26 +989,28 @@ public class CustomerPage extends TestBase {
         Matcher matcher = pattern.matcher(loyaltyPointsDetails);
         String availableLoyaltyPointsWithoutThousandSeparator = null;
         if (matcher.find()) {
-            availableLoyaltyPointsWithoutThousandSeparator = matcher.group(1).replace(",","");
+            availableLoyaltyPointsWithoutThousandSeparator = matcher.group(1).replace(",", "");
         }
         assertEquals(availableLoyaltyPointsAptos, availableLoyaltyPointsWithoutThousandSeparator);
     }
 
-    public void assignCustomer(){
+    public void assignCustomer() {
 //        generalUtility.waitForElementToBeVisible(searchResultButton, 10);
 //        mobileActions.clickOnElement(searchResultButton);
 //        mobileActions.clickOnElement(assignCustomerFromSearch);
         mobileActions.clickOnElement(addCustomer);
     }
 
-    public void clickOnCustomerSearchIcon(){
+    public void clickOnCustomerSearchIcon() {
         mobileActions.clickOnElement(customerSearchIcon);
     }
 
-    public void clickCustomerDataClearButton(){
+    public void clickCustomerDataClearButton() {
         mobileActions.clickOnElement(customerDataClearButton);
     }
 
-    public void clicksOnBackButtonFromEditCustomer() {    mobileActions.clickOnElement(editCustomerBackButton);}
+    public void clicksOnBackButtonFromEditCustomer() {
+        mobileActions.clickOnElement(editCustomerBackButton);
+    }
 
 }

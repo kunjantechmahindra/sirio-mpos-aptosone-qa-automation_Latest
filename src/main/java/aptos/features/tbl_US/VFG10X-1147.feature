@@ -38,7 +38,6 @@ Feature: VFG10X-1147 Exchange Transaction_Exchange single item with Item level D
     And the sales assistant selects the product at index 2
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount
-    And the sales assistant clicks on percentage button
     And the sales assistant enter discount percentage as 6
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "DAMAGED/DEFECT" as reason code

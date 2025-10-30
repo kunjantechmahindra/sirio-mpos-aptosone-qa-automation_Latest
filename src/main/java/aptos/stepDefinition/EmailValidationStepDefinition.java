@@ -14,7 +14,7 @@ public class EmailValidationStepDefinition extends TestBase {
     }
 
     @Given("the sales assistant launch the browser and navigate to YOP mail")
-    public void theSalesAssistantLaunchTheBrowserAndNavigateToYOPMail() {
+    public void theSalesAssistantLaunchTheBrowserAndNavigateToYOPMail() throws InterruptedException {
         launchChromeInMac();
         launchUrlInChromeMac("https://yopmail.com/en/");
         emailValidation.enterEmailId(properties.getProperty("E-receiptEmail"));

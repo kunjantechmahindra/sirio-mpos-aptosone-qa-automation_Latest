@@ -88,4 +88,9 @@ public class DiscountPageStepDefinition extends TestBase {
         discountPage.closeErrorPopup();
 
     }
+
+    @And("the sales assistant clicks on amount button")
+    public void theSalesAssistantClicksOnAmountButton() throws InterruptedException {
+        discountPage.clickOnAmountButton();
+    }
 }

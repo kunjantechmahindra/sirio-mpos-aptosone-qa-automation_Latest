@@ -46,10 +46,11 @@ Feature: VFG10X-957 Exchange _Multiple items with Tax Override, and Tax Exempt
     And the sales assistant enter the tax ID
     And the sales assistant clicks on Select a reason code button on tax exempt page
     And the sales assistant clicks on reason code as tax exempt
+    And the sales assistant clicks on GST & PST Exemption
     And the sales assistant clicks on Apply button
     And the sales assistant lands on Basket Page
     And the sales assistant selects the product at index 4
-    And the sales assistant validate "Tax exempt - HST Tax" is applied to item
+    And the sales assistant validate "Tax exempt" is applied to item
 
     #Payment transaction
     And the sales assistant clicks on Pay button

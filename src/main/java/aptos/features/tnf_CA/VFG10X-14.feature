@@ -8,7 +8,7 @@ Feature: VFG10X-14 Sale Transaction _Single Item with existing customer _Void Gi
     When the sales assistant clicks on Start Basket button
 
   # Gift card balance enquiry
-    Then the sales assistant validates the Gift Card balance from basket page for index 1
+    Then the sales assistant validates the Gift Card balance from basket page for index 3
     Then the sales assistant saves the Gift Card balance amount
     And the sales assistant closes the Balance Inquiry screen
 
@@ -23,9 +23,9 @@ Feature: VFG10X-14 Sale Transaction _Single Item with existing customer _Void Gi
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant enters half of the total amount in the payment section
     And the sales assistant clicks on gift card button from payment page
-    And the sales assistant enter the gift card number for payment from index 1
+    And the sales assistant enter the gift card number for payment from index 3
     And the sales assistant clicks on redeem button
-    And the sales assistant enter the the pin from index 1
+    And the sales assistant enter the the pin from index 3
     And the sales assistant validate the partial payment by gift card
 
   # Payment Void
@@ -39,7 +39,7 @@ Feature: VFG10X-14 Sale Transaction _Single Item with existing customer _Void Gi
     And the sales assistant select the printer
 
   # Gift card balance check after void and logout
-    Then the sales assistant validates the Gift Card balance from basket page for index 1
+    Then the sales assistant validates the Gift Card balance from basket page for index 3
     Then the sales assistant validates the Gift Card balance amount after void
     And the sales assistant closes the Balance Inquiry screen
     And the sales assistant logout from the application

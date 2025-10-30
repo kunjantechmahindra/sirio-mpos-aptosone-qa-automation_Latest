@@ -14,7 +14,7 @@ Feature: VFG10X-2011 Return Transaction _ Refund _Sale transaction paid using Re
     And the sales assistant validate if void button is enabled
     And the sales assistant saves the loyalty points
     And the sales assistant navigates to basket from page from loyalty page
-    And the sales assistant navigate to basket page
+#    And the sales assistant navigate to basket page
     Then the sales assistant add 2 items from "HigherPrice" product to the basket
 
   # Payment transaction

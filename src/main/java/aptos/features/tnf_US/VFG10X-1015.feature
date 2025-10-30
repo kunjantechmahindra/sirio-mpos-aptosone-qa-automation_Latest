@@ -12,6 +12,7 @@ Feature: VFG10X-1015 Promotions and Discounts _ Item level Discount_In a Sale tr
     And the sales assistant selects the product at index 1
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount button
+    And the sales assistant clicks on amount button
     And the sales assistant enter discount amount as 15
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Damaged" as reason code
@@ -24,6 +25,7 @@ Feature: VFG10X-1015 Promotions and Discounts _ Item level Discount_In a Sale tr
     And the sales assistant selects the product at index 2
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount button
+    And the sales assistant clicks on amount button
     And the sales assistant enter discount amount as 15
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Damaged" as reason code

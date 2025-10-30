@@ -37,10 +37,10 @@ Feature: VFG10X-256 Exchange _Multiple items with same price _Top Up gift card_ 
   #Top up gift card
     And the sales assistant clicks on gift card button
     And the sales assistant validates existing gift card button is enabled
-    And the sales assistant enters gift card number from index 0
+    And the sales assistant enters gift card number from index 7
     And the sales assistant enters gift card amount "50.00"
     And the sales assistant clicks on add value button
-    And the sales assistant enter the the pin from index 0
+#    And the sales assistant enter the the pin from index 0
 
   #Payment transaction
     And the sales assistant clicks on Pay button

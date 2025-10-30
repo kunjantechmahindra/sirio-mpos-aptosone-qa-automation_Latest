@@ -10,10 +10,10 @@ Feature: VFG10X-1513 Gift Card _ Gift Card Balance enquiry by  swiping the Gift 
     #Gift card balance enquiry
     And the sales assistant navigate to gift card balance inquiry page
     And the sales assistant clicks on balance swipe button
-    And the sales assistant enter wrong pin number from index 4
+    And the sales assistant enter wrong pin number from index 1
     And the sales assistant clicks the back button on balance inquiry page after validating error message
     And the sales assistant clicks on balance swipe button
-    And the sales assistant enter the the pin from index 3
+    And the sales assistant enter the the pin from index 1
     And the sales assistant closes the Balance Inquiry screen
 
     # Logout from the application

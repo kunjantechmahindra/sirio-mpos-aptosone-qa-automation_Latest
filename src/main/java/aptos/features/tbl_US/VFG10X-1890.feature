@@ -19,7 +19,7 @@ Feature: VFG10X-1890 Perform Blind return and verify Cash option is disabled for
 
      #Assign customer
     And then sales assistant clicks on Assign Customer button
-    And the sales assistant assign customer details with index 4
+    And the sales assistant assign customer details with index 0
 
     #Payment transaction
     And the sales assistant clicks on Pay button

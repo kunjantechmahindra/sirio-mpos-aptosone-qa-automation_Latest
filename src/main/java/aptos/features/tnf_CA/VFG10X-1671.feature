@@ -9,7 +9,7 @@ Feature: VFG10X-1671 Gift Card _Unable to apply Item Level & Transactional Level
 
     #Issue New Gift Card
     And the sales assistant clicks on gift card button
-    And the sales assistant enters gift card number from index 2
+    And the sales assistant enters gift card number from index 3
     And the sales assistant enters gift card amount "50.00"
     And the sales assistant clicks on issue button
     And the sales assistant clicks on Skip button
@@ -22,6 +22,7 @@ Feature: VFG10X-1671 Gift Card _Unable to apply Item Level & Transactional Level
     And the sales assistant selects gift card item at index 1
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount
+    And the sales assistant clicks on amount button
     And the sales assistant enter discount amount as 10
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Damaged" as reason code
@@ -33,6 +34,7 @@ Feature: VFG10X-1671 Gift Card _Unable to apply Item Level & Transactional Level
     And the sales assistant selects the product at index 1
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount
+    And the sales assistant clicks on amount button
     And the sales assistant enter discount amount as 10
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Damaged" as reason code
@@ -44,6 +46,7 @@ Feature: VFG10X-1671 Gift Card _Unable to apply Item Level & Transactional Level
     #Apply transactional level discount
     And the sales assistant clicks on Discount button from basket page
     And the sales assistant select transaction discount
+    And the sales assistant clicks on amount button
     And the sales assistant enter discount amount as 10
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Damaged" as reason code

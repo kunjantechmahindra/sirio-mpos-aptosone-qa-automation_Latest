@@ -16,6 +16,7 @@ Feature: VFG10X-267 Tax _ Return Transaction with three items_ Tax Exempt applie
     And the sales assistant enter the tax ID
     And the sales assistant clicks on Select a reason code button on tax exempt page
     And the sales assistant clicks on reason code as tax exempt
+    And the sales assistant clicks on GST & PST Exemption
     And the sales assistant clicks on Apply button
     And the sales assistant lands on Basket Page
     And the sales assistant validates transactional level tax is exempted

@@ -18,6 +18,7 @@ Feature: VFG10X-1310 Exchange _Negative Exchange by hand typing the transaction 
     And the sales assistant save the payment details for the sales transaction
     And the sales assistant clicks on Email button
     And the sales assistant enter the email
+    And the sales assistant lands on Basket Page
 
   # Save barcode from E-receipt
     Given the sales assistant launch the browser and navigate to YOP mail
@@ -46,7 +47,7 @@ Feature: VFG10X-1310 Exchange _Negative Exchange by hand typing the transaction 
     And the sales assistant clicks on Accept button
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant clicks on Cash button
-    And the sales assistant clicks on Cash option
+#    And the sales assistant clicks on Cash option
     And the sales assistant enter the Drawer ID
     And the sales assistant sign for the transaction
     And the sales assistant save the payment details for the sales transaction

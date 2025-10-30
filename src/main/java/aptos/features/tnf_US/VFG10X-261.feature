@@ -13,7 +13,3 @@ Feature: VFG10X-261 Customer search using phone number
     And the sales assistant validate the customer details at index 0
     And the sales assistant navigate to basket page from customer profile
     And the sales assistant logout from the application
-
-
-
-

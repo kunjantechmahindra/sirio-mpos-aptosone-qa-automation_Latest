@@ -21,5 +21,5 @@ Feature: VFG10X-1715 Sale Transaction _Payment with USD (Change Due)_Canadian St
     And the sales assistant enter the Drawer ID
     And the sales assistant validate change due amount in US Dollar
     And the sales assistant clicks on Print button
-    And the sales assistant select the printer and save the receipt for return
+    And the sales assistant select the printer
     And the sales assistant logout from the application

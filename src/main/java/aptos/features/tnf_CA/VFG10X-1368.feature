@@ -12,7 +12,6 @@ Feature: VFG10X-1368 Return Transaction _Refund to different Payment methods _ 1
     And the sales assistant selects the product at index 1
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount
-    And the sales assistant clicks on percentage button
     And the sales assistant enter discount percentage as 24
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Damaged" as reason code
@@ -22,6 +21,7 @@ Feature: VFG10X-1368 Return Transaction _Refund to different Payment methods _ 1
     And the sales assistant selects the product at index 2
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount
+    And the sales assistant clicks on amount button
     And the sales assistant enter discount amount as 30
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Damaged" as reason code

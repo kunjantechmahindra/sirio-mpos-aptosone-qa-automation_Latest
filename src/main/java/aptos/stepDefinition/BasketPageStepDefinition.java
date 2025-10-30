@@ -40,7 +40,7 @@ public class BasketPageStepDefinition extends TestBase {
     }
 
     @And("the sales assistant clicks on Skip button")
-    public void theSalesAssistantClicksOnSkipButton() {
+    public void theSalesAssistantClicksOnSkipButton() throws InterruptedException {
         customerPage.clickOnSkipButton();
     }
 
@@ -67,7 +67,7 @@ public class BasketPageStepDefinition extends TestBase {
     }
 
     @Then("the sales assistant add {int} items from {string} product to the basket without customer")
-    public void theSalesAssistantAddIntItemsFromStringProductToTheBasketWithCustomer(int itemCount, String productType) throws IOException, ParseException {
+    public void theSalesAssistantAddIntItemsFromStringProductToTheBasketWithCustomer(int itemCount, String productType) throws IOException, ParseException, InterruptedException {
         int SkipCount = 0;
         if (itemCount > 0) {
             for (int i = 0; i < itemCount; i++) {
@@ -86,7 +86,7 @@ public class BasketPageStepDefinition extends TestBase {
     }
 
     @And("then sales assistant clicks on Assign Customer button")
-    public void thenSalesAssistantClicksOnAssignCustomerButton() {
+    public void thenSalesAssistantClicksOnAssignCustomerButton() throws InterruptedException {
         basketPage.clickOnAssignCustomerButton();
     }
 
@@ -333,7 +333,7 @@ public class BasketPageStepDefinition extends TestBase {
     }
 
     @And("the sales assistant validate the customer prompt window")
-    public void theSalesAssistantValidateTheCustomerPromptWindow() {
+    public void theSalesAssistantValidateTheCustomerPromptWindow() throws InterruptedException {
         basketPage.isCustomerPromptDisplayed();
     }
 
@@ -790,7 +790,7 @@ public class BasketPageStepDefinition extends TestBase {
     }
 
     @Then("the sales assistant selects {string} from the salesperson popup box")
-    public void theSalesAssistantSelectsFromTheSalespersonPopupBox(String yesOrNo) {
+    public void theSalesAssistantSelectsFromTheSalespersonPopupBox(String yesOrNo) throws InterruptedException {
         basketPage.selectYesForAssignSalesPerson(yesOrNo);
     }
 

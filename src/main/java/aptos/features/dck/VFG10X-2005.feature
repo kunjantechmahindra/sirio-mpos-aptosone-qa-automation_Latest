@@ -28,6 +28,6 @@ Feature: VFG10X-2005 Sale Transaction _Multiple Item _Pay with Card
     And the sales assistant enter the store and transaction detail
     And the sales assistant validate the payment details
     #And the sales assistant clicks on Payment auth details
-    #And the sales assistant validate details "visadebit" in EJ
+    #And the sales assistant validate details "visa" in EJ
     #And the sales assistant validate details "GOODS_SERVICES" in EJ
     And the sales assistant logout from EJViewer

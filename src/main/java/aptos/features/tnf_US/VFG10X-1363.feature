@@ -67,5 +67,3 @@ Feature: VFG10X-1363 Return Transaction _Multiple items with Tax exempt and coup
     Given the sales assistant launch the browser and navigate to YOP mail
     And the sales assistant validate the payment details on e-receipt
     And the sales assistant closes the browser window.
-
-

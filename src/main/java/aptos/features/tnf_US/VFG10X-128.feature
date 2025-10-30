@@ -13,7 +13,7 @@ Feature: VFG10X-128 Original Tender Option Availability for Refund
     And the sales assistant clicks on Accept button
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant clicks on Card button
-    And the sales assistant processes the payment with a "visa" card using a "tap" action, entering the pin "0"
+    And the sales assistant processes the payment with a "amex" card using a "tap" action, entering the pin "0"
     And the sales assistant clicks on Print button
     And the sales assistant select the printer and save the receipt for return
 

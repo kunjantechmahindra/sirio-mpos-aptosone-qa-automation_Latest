@@ -12,7 +12,6 @@ Feature: VFG10X-1697 Return Transaction _Refund to different Payment methods _ 1
     And the sales assistant selects the product at index 1
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount
-    And the sales assistant clicks on percentage button
     And the sales assistant enter discount percentage as 24
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Damaged" as reason code
@@ -25,6 +24,7 @@ Feature: VFG10X-1697 Return Transaction _Refund to different Payment methods _ 1
     And the sales assistant selects the product at index 2
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount
+    And the sales assistant clicks on amount button
     And the sales assistant enter discount amount as 30
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Damaged" as reason code
@@ -43,7 +43,7 @@ Feature: VFG10X-1697 Return Transaction _Refund to different Payment methods _ 1
     And the sales assistant validate if partial payment was success
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant clicks on Card button
-    And the sales assistant processes the payment with a "visa" card using a "tap" action, entering the pin "0"
+    And the sales assistant processes the payment with a "master" card using a "tap" action, entering the pin "0"
     And the sales assistant clicks on Print button
     And the sales assistant select the printer and save the receipt for return
 
@@ -57,7 +57,7 @@ Feature: VFG10X-1697 Return Transaction _Refund to different Payment methods _ 1
     And the sales assistant clicks on Pay button
     And the sales assistant select "visa debit" card for refund
     And the sales assistant validate if partial refund was success
-    And the sales assistant select "visa" card for refund
+    And the sales assistant select "master" card for refund
     And the sales assistant sign for the transaction
     And the sales assistant clicks on Print button
     And the sales assistant select the printer

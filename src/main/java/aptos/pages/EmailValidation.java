@@ -33,6 +33,7 @@ public class EmailValidation extends TestBase {
 
     //Actions
     public void clickOnLoginButton() {
+        System.out.println("check");
         macDriver.findElement(By.xpath("//button[@title='Check Inbox @yopmail.com']")).click();
     }
 
@@ -40,8 +41,9 @@ public class EmailValidation extends TestBase {
         macDriver.findElement(By.xpath("//input[@name='login']")).sendKeys(email);
     }
 
-    public void getEmailData() {
+    public void getEmailData() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(macDriver, Duration.ofSeconds(15));
+        Thread.sleep(3000);
         WebElement iframe = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ifmail")));
         macDriver.switchTo().frame(iframe);
         WebElement mailElement = macDriver.findElement(By.xpath("//*[@id='mail']"));
@@ -114,12 +116,14 @@ public class EmailValidation extends TestBase {
     public void validateEReceiptFooterLastDayOfReturn() {
         Assert.assertTrue("E-receipt don't have last day of return", emailContent.contains("Last Day for Return is:"));
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+        System.out.println("formatter: "+ formatter);
         // Parse the extracted date string into a LocalDate object
         LocalDate inputDate = LocalDate.parse(extractedDate, formatter);
         // Add 30 days to the input date
         LocalDate dateAfter30Days = inputDate.plusDays(30);
         //Convert to string
         String lastDayOfReturn = dateAfter30Days.format(formatter);
+        System.out.println("Last Day for Return: "+lastDayOfReturn);
         Assert.assertTrue("Last day of return date mismatch", emailContent.contains(lastDayOfReturn));
     }
 

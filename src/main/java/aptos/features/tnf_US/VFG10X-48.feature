@@ -10,7 +10,6 @@ Feature: VFG10X-48 Sale Transaction _Multiple Item with manual transactional dis
     #Add transaction level discount
     And the sales assistant clicks on Discount button from basket page
     And the sales assistant select transaction discount button
-    And the sales assistant clicks on percentage button
     And the sales assistant enter discount percentage as 6
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Damaged" as reason code

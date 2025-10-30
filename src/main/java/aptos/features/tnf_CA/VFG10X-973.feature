@@ -26,7 +26,7 @@ Feature: VFG10X-973 Exchange_Negative Blind Exchange transaction with multiple i
     And the sales assistant selects the product at index 3
     And the sales assistant selects "Salesperson" Option from line Action
     And the sales assistant add salesperson "800500" to the transaction item
-    Then the sales assistant selects "Yes" from the salesperson popup box
+#    Then the sales assistant selects "Yes" from the salesperson popup box
     And the sales assistant lands on Basket Page
     And the sales assistant selects the product at index 4
     And the sales assistant selects "Salesperson" Option from line Action

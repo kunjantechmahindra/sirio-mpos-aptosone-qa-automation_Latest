@@ -12,7 +12,6 @@ Feature: VFG10X-432 Promotions and Discounts _ Block Item level Discount _Discou
     And the sales assistant selects the product at index 1
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount
-    And the sales assistant clicks on percentage button
     And the sales assistant enter discount percentage as 71
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "DAMAGED/DEFECT" as reason code

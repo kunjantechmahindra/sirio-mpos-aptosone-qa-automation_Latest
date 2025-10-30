@@ -12,6 +12,7 @@ Feature: VFG10X-1021 Promotions and Discounts _Transaction level Discount_In a S
     And the sales assistant clicks on Discount button from basket page
     And the sales assistant selects "Discounts" Option from line Action
     And the sales assistant select transaction discount button
+    And the sales assistant clicks on amount button
     And the sales assistant enter discount amount as 30
     And the sales assistant clicks on Select a reason code button
     And the sales assistant selects "Damaged" as reason code
