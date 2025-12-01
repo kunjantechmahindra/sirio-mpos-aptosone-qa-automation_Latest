@@ -14,6 +14,7 @@ import java.util.Random;
 
 public class TestDataHelper extends TestBase {
 
+
     /**
      * @param brand
      * @param productType
@@ -277,5 +278,28 @@ public class TestDataHelper extends TestBase {
             System.out.println("Brand not found: " + brand);
         }
         return null; // Return null if brand or SKU name is invalid
+    }
+    public static String getAddress(String brand, int index,String detailType) throws IOException, ParseException {
+        JSONParser jsonParser = new JSONParser();
+        FileReader reader = new FileReader("src/main/java/aptos/testData/TransactionTestData.json");
+        Object obj = jsonParser.parse(reader);
+        JSONObject jsonData = (JSONObject) obj;
+
+        // Accessing the specified brand
+        JSONObject brandData = (JSONObject) jsonData.get(brand);
+        if (brandData != null) {
+            // Accessing the customers array
+            JSONArray address = (JSONArray) brandData.get("Address");
+            if (address != null && index >= 0 && index < address.size()) {
+                JSONObject add = (JSONObject) address.get(index);
+                // Return the requested detail
+                return (String) add.get(detailType); // detailType can be "Address1", "Address2", "City",  "state" or "zipcode"
+            } else {
+                System.out.println("Invalid index or no addresses found.");
+            }
+        } else {
+            System.out.println("Brand not found: " + brand);
+        }
+        return null; // Return null if brand or index is invalid
     }
 }

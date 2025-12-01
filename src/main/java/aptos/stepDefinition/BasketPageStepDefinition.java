@@ -5,6 +5,7 @@ import aptos.pages.*;
 import aptos.utility.ApiHelper;
 import aptos.utility.TestDataHelper;
 import aptos.utility.W3CActions;
+import io.cucumber.java.PendingException;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.json.simple.parser.ParseException;
@@ -904,4 +905,26 @@ public class BasketPageStepDefinition extends TestBase {
     public void theSalesAssistantValidateThePromotionsAndArenTCombinedValidation(String promo1, String promo2) {
         basketPage.validateDoNotCombinedPromotionsNew(promo1,promo2);
     }
+
+
+    @And("the sales assistant enters Delivery {string} at index {int} for assigned customer")
+        public void theSalesAssistantEntersDeliveryAddressForAssignedCustomer(String Address, int index) throws InterruptedException, IOException, ParseException {
+            basketPage.enterassignedCustomerAddress(index);
+        }
+
+    @And("the sales assistant selects {string} Delivery option")
+    public void theSalesAssistantSelectsDeliveryOption(String deliveryOption) {
+    switch (deliveryOption.toLowerCase()) {
+        case "standard":
+            basketPage.clickonstandardshipping();
+            break;
+        case "2day":
+            basketPage.clickontwodayshipping();
+            break;
+        case "nextday":
+            basketPage.clickonnextdayshipping();
+        default:
+            throw new IllegalArgumentException("Invalid field: " + deliveryOption);
+    }
+}
 }

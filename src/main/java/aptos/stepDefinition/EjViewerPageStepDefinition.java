@@ -3,6 +3,7 @@ package aptos.stepDefinition;
 import aptos.base.TestBase;
 import aptos.pages.EjViewerPage;
 import aptos.utility.TestDataHelper;
+import io.cucumber.java.PendingException;
 import io.cucumber.java.en.And;
 import org.json.simple.parser.ParseException;
 
@@ -75,5 +76,11 @@ public class EjViewerPageStepDefinition extends TestBase {
         String couponCode = TestDataHelper.getCouponCode(properties.getProperty("BrandRegion"), couponName);
         System.out.println(couponCode);
         ejViewerPage.validateDetails(couponCode);
+    }
+
+    @And("the sales assistant save the APTnumber from EJ")
+    public void theSalesAssistantSaveTheAPTnumberFromEJ() {
+        // Write code here that turns the phrase above into concrete actions
+        ejViewerPage.saveAPTnumber();
     }
 }

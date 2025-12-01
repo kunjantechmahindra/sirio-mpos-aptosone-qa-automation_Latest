@@ -191,4 +191,9 @@ public class EjViewerPage extends TestBase {
             browserDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Long.parseLong(properties.getProperty("OriginalImplicitWait"))));
         }
     }
+
+    public void saveAPTnumber() {
+            String aptNumber=browserDriver.findElement(By.xpath("//XCUIElementTypeStaticText[contains(@name, 'APT')][1]")).getText();
+            System.out.println("APT Number is : "+aptNumber);
+    }
 }

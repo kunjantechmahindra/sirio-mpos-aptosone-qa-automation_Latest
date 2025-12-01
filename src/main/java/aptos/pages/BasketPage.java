@@ -5,6 +5,7 @@ import aptos.utility.*;
 import org.json.simple.parser.ParseException;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -429,6 +430,42 @@ public class BasketPage extends TestBase {
 
     @FindBy(xpath = "//XCUIElementTypeStaticText[@name='No data Found']")
     WebElement noDataFoundError;
+
+    @FindBy(xpath="//XCUIElementTypeTextField[@name='OrderDeliveryAddress-address1-textInput']")
+    WebElement address1;
+
+    @FindBy(xpath="//XCUIElementTypeTextField[@name='OrderDeliveryAddress-address2-textInput']")
+    WebElement address2;
+
+    @FindBy(xpath="//XCUIElementTypeTextField[@name='OrderDeliveryAddress-city-textInput']")
+    WebElement city;
+
+    @FindBy(xpath="//XCUIElementTypeOther[@name='OrderDeliveryAddress-stateOrProvince-option']")
+    WebElement state;
+
+    @FindBy(xpath="//XCUIElementTypeTextField[@value='Search']")
+    WebElement stateSearch;
+
+    @FindBy(xpath="//XCUIElementTypeOther[@name='ReasonCodeListScreen-reasonCode-select']")
+    WebElement searchedState;
+
+    @FindBy(xpath="//XCUIElementTypeTextField[@name='OrderDeliveryAddress-postalCode-textInput']")
+    WebElement zipcode;
+
+    @FindBy(xpath="//XCUIElementTypeOther[@name='OrderDeliveryAddress-header-right-button']")
+    WebElement continueButton;
+
+    @FindBy(xpath="(//XCUIElementTypeOther[@name='$0.00 Standard'])[2]")
+    WebElement standardShipping;
+
+    @FindBy(xpath="(//XCUIElementTypeOther[@name='$17.95 2-Day'])[2]")
+    WebElement twodayShipping;
+
+    @FindBy(xpath="(//XCUIElementTypeOther[@name='$24.95 Overnight'])[2]")
+    WebElement nextdayShipping;
+
+    @FindBy(xpath="(//XCUIElementTypeOther[@name='Continue'])[2]")
+    WebElement continueButtonDeliveryOption;
 
 
     //Actions
@@ -1593,5 +1630,63 @@ public class BasketPage extends TestBase {
     }
 
 
+    public void enterassignedCustomerAddress(int index) throws InterruptedException, IOException, ParseException {
+        String Address1 = TestDataHelper.getAddress(properties.getProperty("BrandRegion"),index,"address1");
+        String Address2 = TestDataHelper.getAddress(properties.getProperty("BrandRegion"),index,"address2");
+        String City = TestDataHelper.getAddress(properties.getProperty("BrandRegion"),index,"city");
+        String State = TestDataHelper.getAddress(properties.getProperty("BrandRegion"),index,"state");
+        String Zip = TestDataHelper.getAddress(properties.getProperty("BrandRegion"),index,"zipcode");
+        if (properties.getProperty("Brand").equals("TNF")) {
+            for (int i = 0; i < 20; i++) {
+                address1.sendKeys(Keys.BACK_SPACE);
+            }
+            mobileActions.enterText(address1,Address1);
+            mobileActions.enterText(address2,Address2);
+            mobileActions.clickHideKeyboard();
+            for (int i = 0; i < 15; i++) {
+                city.sendKeys(Keys.BACK_SPACE);
+            }
+            mobileActions.enterText(city,City);
+            mobileActions.clickOnElement(state);
+            mobileActions.enterText(stateSearch,State);
+            mobileActions.clickHideKeyboard();
+            mobileActions.clickOnElement(searchedState);
+            for (int i = 0; i < 6; i++) {
+                zipcode.sendKeys(Keys.BACK_SPACE);
+            }
+            mobileActions.clearAndEnterText(zipcode,Zip);
+            mobileActions.clickOnElement(continueButton);
+        }
+        else
+        {
+            mobileActions.enterText(address1,Address1);
+            mobileActions.enterText(address2,Address2);
+            mobileActions.enterText(city,City);
+            mobileActions.clickOnElement(state);
+            mobileActions.enterText(stateSearch,State);
+            mobileActions.clickHideKeyboard();
+            mobileActions.clickOnElement(searchedState);
+            for (int i = 0; i < 6; i++) {
+                zipcode.sendKeys(Keys.BACK_SPACE);
+            }
+            mobileActions.clearAndEnterText(zipcode,Zip);
+            mobileActions.clickOnElement(continueButton);
+        }
+
+    }
+
+    public void clickonstandardshipping() {
+        mobileActions.clickOnElement(standardShipping);
+        mobileActions.clickOnElement(continueButtonDeliveryOption);
+    }
+    public void clickontwodayshipping() {
+        mobileActions.clickOnElement(twodayShipping);
+        mobileActions.clickOnElement(continueButtonDeliveryOption);
+    }
+
+    public void clickonnextdayshipping() {
+        mobileActions.clickOnElement(nextdayShipping);
+        mobileActions.clickOnElement(continueButtonDeliveryOption);
+    }
 }
 

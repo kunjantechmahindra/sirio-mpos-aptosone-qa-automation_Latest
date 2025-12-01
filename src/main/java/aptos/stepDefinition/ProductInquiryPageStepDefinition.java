@@ -5,7 +5,9 @@ import aptos.pages.BasketPage;
 import aptos.pages.CustomerPage;
 import aptos.pages.ProductInquiryPage;
 import aptos.utility.TestDataHelper;
+import io.cucumber.java.PendingException;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import org.json.simple.parser.ParseException;
 
 import java.io.IOException;
@@ -19,6 +21,7 @@ public class ProductInquiryPageStepDefinition extends TestBase {
     BasketPage basketPage = new BasketPage();
     CustomerPage customerPage = new CustomerPage();
     public static String itemUPC;
+    public static String ProductC;
 
     public ProductInquiryPageStepDefinition() throws IOException {
     }
@@ -130,5 +133,20 @@ public class ProductInquiryPageStepDefinition extends TestBase {
     @And("the sales assistant verify tempMd is displayed")
     public void theSalesAssistantVerifyTempMdIsDisplayed() {
         productInquiryPage.verifyTempMd();
+    }
+
+    @Then("the sales assistant add {int} items from {string} product by UPC Number")
+    public void theSalesAssistantAddItemsFromProductByUPCNumber(int itemCount, String productType) throws InterruptedException, IOException, ParseException {
+        int SkipCount = 0;
+        if (itemCount > 0) {
+            for (int i = 0; i < itemCount; i++) {
+                Thread.sleep(5000);
+                ProductC = testDataHelper.readRandomGenericUPSC(properties.getProperty("BrandRegion"), productType);
+                productInquiryPage.searchProductBySKU("00" + ProductC);
+                Thread.sleep(5000);
+                productInquiryPage.clickOnDeliverItButton();
+                productInquiryPage.clickOnProductDetailBackButton();
+            }
+        }
     }
 }

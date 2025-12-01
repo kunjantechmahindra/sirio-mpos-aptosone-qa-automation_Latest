@@ -95,6 +95,9 @@ public class ProductInquiryPage extends TestBase {
     @FindBy(xpath = "//XCUIElementTypeOther[contains(@name, '$') and (@name, '$')]")
     WebElement tempPermPrice;
 
+    @FindBy(xpath="//XCUIElementTypeOther[@name='ProductInquiryDetail-shipToCustomer-button']")
+    WebElement deliverItButton;
+
     public void navigateToProductInquiryPage() {
         if (properties.getProperty("DeviceName").contains("iPhone")) {
             mobileActions.clickOnElement(hamburgerButtoniphone);
@@ -226,6 +229,14 @@ public class ProductInquiryPage extends TestBase {
     public void verifyTempMd() {
         generalUtility.isElementEnabled(itemTempMDPrice);
         assertTrue("Temp MD is not displayed", itemTempMDPrice.isEnabled());
+    }
+
+    public void clickOnDeliverItButton() {
+        while (!generalUtility.isElementDisplayed(deliverItButton)) {
+            w3CActions.scrollDown();
+        }
+        generalUtility.waitForElementToBeVisible(deliverItButton, 80);
+        mobileActions.clickOnElement(deliverItButton);
     }
 }
 
