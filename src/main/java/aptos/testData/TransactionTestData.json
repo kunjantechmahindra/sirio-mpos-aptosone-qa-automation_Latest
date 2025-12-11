@@ -132,6 +132,29 @@
         "email": "clare.nolan@yahoo.com"
       }
     ],
+    "Address":[
+      {
+        "address1": "143 E",
+        "address2": "19th st",
+        "city": "Minneapolis",
+        "state": "Minnesota",
+        "zipcode": "56381"
+      },
+      {
+        "address1": "789 Pine Avenue",
+        "address2": "Apt 4B",
+        "city": "Springfield",
+        "state": "New York",
+        "zipcode": "62701"
+      },
+      {
+        "address1": "320 S",
+        "address2": "Lincoln St",
+        "city": "Burlington",
+        "state": "Colorado",
+        "zipcode": "80807"
+      }
+    ],
     "OMNI": [
       "194116687856",
       "194116685081"
@@ -348,6 +371,29 @@
         "lastName": "Testing",
         "Phone": "2345678765",
         "email": "tnf_pp3_nora_sit01@yopmail.com"
+      }
+    ],
+    "Address":[
+      {
+        "address1": "143 E",
+        "address2": "19th st",
+        "city": "Minneapolis",
+        "state": "Minnesota",
+        "zipcode": "56381"
+      },
+      {
+        "address1": "789 Pine Avenue",
+        "address2": "Apt 4B",
+        "city": "Springfield",
+        "state": "New York",
+        "zipcode": "62701"
+      },
+      {
+        "address1": "320 S",
+        "address2": "Lincoln St",
+        "city": "Burlington",
+        "state": "Colorado",
+        "zipcode": "80807"
       }
     ],
     "OMNI": [

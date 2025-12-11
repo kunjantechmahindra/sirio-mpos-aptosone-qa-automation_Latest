@@ -909,6 +909,7 @@ public class BasketPageStepDefinition extends TestBase {
 
     @And("the sales assistant enters Delivery {string} at index {int} for assigned customer")
         public void theSalesAssistantEntersDeliveryAddressForAssignedCustomer(String Address, int index) throws InterruptedException, IOException, ParseException {
+            Thread.sleep(5000);
             basketPage.enterassignedCustomerAddress(index);
         }
 

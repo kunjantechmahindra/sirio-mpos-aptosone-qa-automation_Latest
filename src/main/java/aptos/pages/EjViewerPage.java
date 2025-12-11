@@ -78,7 +78,7 @@ public class EjViewerPage extends TestBase {
         browserDriver.findElement(By.xpath("//*[@name='Username or email']")).sendKeys(properties.getProperty("EJViewerUsername"));
         browserDriver.findElement(By.xpath("//*[@name='Password']")).sendKeys(properties.getProperty("EJViewerPassword"));
         browserDriver.findElement(By.xpath("//*[@name='Sign In']")).click();
-        browserDriver.findElement(By.xpath("//*[@name='Reload']")).click();
+        //browserDriver.findElement(By.xpath("//*[@name='Reload']")).click();
     }
 
 

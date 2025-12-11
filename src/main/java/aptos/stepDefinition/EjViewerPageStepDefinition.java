@@ -21,12 +21,15 @@ public class EjViewerPageStepDefinition extends TestBase {
     public void theSalesAssistantLoginToEJViewer() throws MalformedURLException, InterruptedException {
         TestBase.initializeAppiumDriverForSafari();
         TestBase.launchUrl(properties.getProperty("EJViewerURL"));
+        Thread.sleep(5000);
         ejViewerPage.signInToEjViewer();
     }
 
     @And("the sales assistant enter the store and transaction detail")
     public void theSalesAssistantEnterTheStoreAndTransactionDetail() throws InterruptedException {
+        Thread.sleep(3000);
         ejViewerPage.enterTheStoreNumber();
+        Thread.sleep(2000);
         ejViewerPage.enterTransactionId();
     }
 

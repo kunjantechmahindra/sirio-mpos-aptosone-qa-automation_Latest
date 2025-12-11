@@ -1,4 +1,4 @@
-@VFG10X-297 @Omni @Regression
+@VFG10X-2346 @Omni @Regression
 Feature: Complete a Delivery Transaction with Multiple Items Price Override Payment completed with Only Rewards
 
   Scenario: Complete a Delivery Transaction with Multiple Items Price Override Payment completed with Only Rewards
@@ -17,7 +17,7 @@ Feature: Complete a Delivery Transaction with Multiple Items Price Override Paym
     Then the sales assistant add 2 items from "OMNI" product by UPC Number
     And the sales assistant clicks on back button from product inquiry search page
 
-    # Price override
+     # Price override
     And the sales assistant selects the product at index 1
     And the sales assistant selects "Override price" Option from line Action
     And the sales assistant enter price as 10

@@ -15,7 +15,8 @@ public class LandingPageStepDefinition extends TestBase {
     }
 
     @Then("the sales assistant clicks on Start Basket button")
-    public void theSalesAssistantClicksOnStartBasketButton() {
+    public void theSalesAssistantClicksOnStartBasketButton() throws InterruptedException {
+        Thread.sleep(3000);
         landingPage.clickOnStartBasket();
     }
 

@@ -18,7 +18,8 @@ public class ApiHelper extends TestBase {
     public static String physicalReceiptData;
 
     public void roboticAction(String actionValue, String subActionValue, String positionValue, String pinValue, Integer stationValue) {
-        String apiUrl = "http://172.16.70.22:8500/robot-action";
+        //String apiUrl = "http://172.16.70.22:8500/robot-action";
+        String apiUrl = "http://10.53.192.103:8500/barcode";
         HttpURLConnection connection = null;
 
         try {
@@ -65,7 +66,8 @@ public class ApiHelper extends TestBase {
     }
 
     public void enterPin(String stationValue, String pinValue, String optionValue) {
-        String apiUrl = "http://172.16.70.22:8500/enter-pin";
+        //string apiUrl = "http://172.16.70.22:8500/enter-pin";
+        String apiUrl = "http://10.53.192.103:8500/enter-pin";
         HttpURLConnection connection = null;
 
         try {
@@ -112,8 +114,8 @@ public class ApiHelper extends TestBase {
     }
 
     public static void displayBarcode(String actionValue, String code, String dataUPCA, Integer delay, Integer stationValue) {
-        String apiUrl = "http://172.16.70.22:8500/barcode";
-
+        //String apiUrl = "http://172.16.70.22:8500/barcode";
+        String apiUrl = "http://10.53.192.103:8500/barcode";
         String jsonBody = String.format(
                 "{ \"action\":\"%s\", \"code\": \"%s\", \"data\": \"%s\", \"delay\": %d, \"station\": %d, \"auto\": true }",
                 actionValue, code, dataUPCA, delay, stationValue
@@ -139,8 +141,8 @@ public class ApiHelper extends TestBase {
     }
 
     public static void captureBarcode(String transactionNumber) {
-        String apiUrl = "http://172.16.70.22:8500/capture-receipt-barcode";
-
+        //String apiUrl = "http://172.16.70.22:8500/capture-receipt-barcode";
+        String apiUrl = "http://10.53.192.103:8500/capture-receipt-barcode";
         String jsonBody = String.format(
                 "{ \"txn_no\":\"%s\"}", transactionNumber
         );
@@ -148,7 +150,7 @@ public class ApiHelper extends TestBase {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(apiUrl))
-                .timeout(Duration.ofSeconds(12)) // Adjust timeout as necessary
+                .timeout(Duration.ofSeconds(10)) // Adjust timeout as necessary
                 .header("Content-Type", "application/json")
                 .POST(HttpRequest.BodyPublishers.ofString(jsonBody))
                 .build();
@@ -165,8 +167,8 @@ public class ApiHelper extends TestBase {
     }
 
     public static String getPhysicalReceiptData(String transactionNumber) {
-        String apiUrl = "http://172.16.70.22:8500/Capture_receipt";
-
+        //String apiUrl = "http://172.16.70.22:8500/Capture_receipt";
+        String apiUrl = "http://10.53.192.103:8500/Capture_receipt";
         String jsonBody = String.format(
                 "{ \"transactionnumber\": \"%s\"}", transactionNumber
         );

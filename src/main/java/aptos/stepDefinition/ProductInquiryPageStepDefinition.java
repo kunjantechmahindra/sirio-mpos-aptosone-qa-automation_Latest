@@ -27,7 +27,8 @@ public class ProductInquiryPageStepDefinition extends TestBase {
     }
 
     @And("the sales assistant navigate to product inquiry page")
-    public void theSalesAssistantNavigateToProductInquiryPage() {
+    public void theSalesAssistantNavigateToProductInquiryPage() throws InterruptedException {
+        Thread.sleep(7000);
         productInquiryPage.navigateToProductInquiryPage();
     }
 
@@ -109,7 +110,8 @@ public class ProductInquiryPageStepDefinition extends TestBase {
     }
 
     @And("the sales assistant clicks on back button from product inquiry search page")
-    public void theSalesAssistantClicksOnBackButtonFromProductInquirySearchPage() {
+    public void theSalesAssistantClicksOnBackButtonFromProductInquirySearchPage() throws InterruptedException {
+        Thread.sleep(7000);
         productInquiryPage.clicksOnBackButtonFromProductInquiry();
     }
 

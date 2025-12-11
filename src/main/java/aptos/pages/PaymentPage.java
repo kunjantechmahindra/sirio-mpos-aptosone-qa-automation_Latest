@@ -68,7 +68,7 @@ public class PaymentPage extends TestBase {
 
     // @name == "ReceiptOptionForm-print-button"
 
-    @FindBy(xpath = "(//*[contains(@label, 'Printer-55')])[last()]")
+    @FindBy(xpath = "(//*[contains(@label, 'Simulated Printer Device')])[last()]")
     WebElement printerIdTbl;
 
     @FindBy(xpath = "(//*[contains(@label, 'Printer-1')])[last()]")
@@ -335,8 +335,8 @@ public class PaymentPage extends TestBase {
     }
 
     public void selectPrinterByEnteringName() throws InterruptedException {
-        mobileActions.enterText(printerName, properties.getProperty("PrinterName"));
-        mobileActions.clickHideKeyboard();
+        //mobileActions.enterText(printerName, properties.getProperty("PrinterName"));
+        //mobileActions.clickHideKeyboard();
         if (properties.getProperty("Brand").equals("TNF")) {
             mobileActions.clickOnElement(printerIdTnf);
         } else if (properties.getProperty("Brand").equals("DCK")) {

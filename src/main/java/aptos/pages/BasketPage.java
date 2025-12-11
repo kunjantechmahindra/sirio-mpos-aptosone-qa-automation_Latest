@@ -1660,9 +1660,12 @@ public class BasketPage extends TestBase {
         else
         {
             mobileActions.enterText(address1,Address1);
+            mobileActions.clickHideKeyboard();
             mobileActions.enterText(address2,Address2);
+            mobileActions.clickHideKeyboard();
             mobileActions.enterText(city,City);
-            mobileActions.clickOnElement(state);
+            mobileActions.clickHideKeyboard();
+            mobileActions.waitAndClickOnElement(state,3);
             mobileActions.enterText(stateSearch,State);
             mobileActions.clickHideKeyboard();
             mobileActions.clickOnElement(searchedState);
