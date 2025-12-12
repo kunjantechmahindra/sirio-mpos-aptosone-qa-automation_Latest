@@ -142,7 +142,7 @@ public class LandingPage extends TestBase {
 
     //Actions
     public void clickOnStartBasket() {
-        mobileActions.clickOnElement(startBasket);
+        mobileActions.waitAndClickOnElement(startBasket,2);
     }
 
     public void clickOnHamburgerMenu() {

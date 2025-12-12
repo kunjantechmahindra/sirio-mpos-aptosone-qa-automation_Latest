@@ -5,6 +5,7 @@ import aptos.pages.PaymentPage;
 import aptos.pages.ReturnPage;
 import aptos.utility.ApiHelper;
 import aptos.utility.TestDataHelper;
+import io.cucumber.java.PendingException;
 import io.cucumber.java.en.And;
 import org.json.simple.parser.ParseException;
 import org.junit.Assert;
@@ -445,5 +446,21 @@ public class PaymentPageStepDefinition extends TestBase {
     @And("the sales assistant validate the loyalty points of a new loyalty customer in physical receipt")
     public void theSalesAssistantValidateTheLoyaltyPointsOfANewLoyaltyCustomerInPhysicalReceipt() throws InterruptedException {
         paymentPage.validatesLoyaltyPointsNewCustomerInPhysicalReceipt();
+    }
+
+    @And("the sales assistant verifies all payment methods on STH payment screen")
+    public void theSalesAssistantVerifiesAllPaymentMethodsOnSTHPaymentScreen() throws IOException {
+        paymentPage.verifyPaymentoptionsonSTHPage();
+    }
+
+    @And("the sales assistant verifies all payment methods on carry_out payment screen")
+    public void theSalesAssistantVerifiesAllPaymentMethodsOnCarry_outPaymentScreen() throws IOException {
+        paymentPage.verifyPaymentoptionsoncarryoutPage();
+    }
+
+    @And("the sales assistant verifies all payment methods on more screen")
+    public void theSalesAssistantVerifiesAllPaymentMethodsOnMoreScreen() throws IOException {
+        paymentPage.verifyPaymentoptiononmorescreen();
+        paymentPage.clickOnCancelButton();
     }
 }

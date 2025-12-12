@@ -1,4 +1,4 @@
-@VFG10X-297 @Omni @Regression
+@VFG10X-2346 @Omni @Regression
 Feature: Complete a Delivery Transaction with Multiple Items Price Override Payment completed with Only Rewards
 
   Scenario: Complete a Delivery Transaction with Multiple Items Price Override Payment completed with Only Rewards

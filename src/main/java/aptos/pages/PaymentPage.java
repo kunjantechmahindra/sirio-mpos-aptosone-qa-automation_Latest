@@ -5,6 +5,7 @@ import aptos.utility.ApiHelper;
 import aptos.utility.GeneralUtility;
 import aptos.utility.MobileActions;
 import aptos.utility.TestDataHelper;
+import io.cucumber.java.en.And;
 import org.json.simple.parser.ParseException;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -71,7 +72,8 @@ public class PaymentPage extends TestBase {
     @FindBy(xpath = "(//*[contains(@label, 'Simulated Printer Device')])[last()]")
     WebElement printerIdTbl;
 
-    @FindBy(xpath = "(//*[contains(@label, 'Printer-1')])[last()]")
+    //@FindBy(xpath = "(//*[contains(@label, 'Printer-1')])[last()]")
+    @FindBy(xpath = "(//*[contains(@label, 'Simulated Printer Device')])[last()]")
     WebElement printerIdTnf;
 
     @FindBy(xpath = "(//*[contains(@label, 'Printer-1')])[last()]")
@@ -230,6 +232,9 @@ public class PaymentPage extends TestBase {
 
     @FindBy(xpath = "//XCUIElementTypeOther[@name='RCM Tenders']")
     WebElement RCMTendersButton;
+
+    @FindBy(xpath="//*[@name='Cancel']")
+    WebElement CancelfromMore;
 
 //    @FindBy(xpath = "//XCUIElementTypeOther[@name='TenderLineList-tender']/XCUIElementTypeScrollView/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther")
 //    WebElement voidPaymentButton;
@@ -856,7 +861,7 @@ public class PaymentPage extends TestBase {
     }
 
     public void validateGiftCardInsufficientBalanceMessage() {
-        Assert.assertTrue("Test Failed: Payment refusal message is not displayed", generalUtility.isElementDisplayed(giftCardRefusalMessage));
+        assertTrue("Test Failed: Payment refusal message is not displayed", generalUtility.isElementDisplayed(giftCardRefusalMessage));
     }
 
     public void validateNegativeExchangeTransactionTotalWithBagFee() {
@@ -916,7 +921,7 @@ public class PaymentPage extends TestBase {
     }
 
     public void paymentDeclinedErrorMessage() {
-        Assert.assertTrue("Test Failed: Payment refusal message is not displayed", generalUtility.isElementDisplayed(cardDeclinedRefusalMessage));
+        assertTrue("Test Failed: Payment refusal message is not displayed", generalUtility.isElementDisplayed(cardDeclinedRefusalMessage));
     }
 
     public void clicksOnUSDollar() {
@@ -1013,5 +1018,98 @@ public class PaymentPage extends TestBase {
         String physicalReceiptContent = ApiHelper.getPhysicalReceiptData(saleTransactionID);
         System.out.println(physicalReceiptContent);
         assertTrue("loyalty points mismatch", physicalReceiptContent.contains("\\nPoint Balance (Available):\\nJoin the Timberland Community\\nto unlock the best of Timberland.\\n0\\n0\\n"));
+    }
+
+    public void verifyPaymentoptionsonSTHPage() throws IOException {
+        Boolean card_check;
+        Boolean gift_card_check;
+        Boolean membership_rewards_check;
+        Boolean cash_check;
+        Boolean rcm_check1;
+        Boolean rcm_check2;
+        Boolean more_check;
+
+        if (properties.getProperty("Brand").equals("TNF"))
+        {
+            String scenarioname="TNF_Omni_Payment_Check";
+            card_check=generalUtility.isElementExists((By.xpath("//*[@name='Payment-Card-button']")));
+            gift_card_check=generalUtility.isElementExists((By.xpath("//XCUIElementTypeOther[@name='Payment-Gift Card-button']")));
+            membership_rewards_check=generalUtility.isElementExists((By.xpath("//*[@name='Payment-Membership Rewards-button']")));
+            cash_check=generalUtility.isElementExists((By.xpath("(//*[@name='Payment-Cash-button'])[last()]")));
+            rcm_check1=generalUtility.isElementExists((By.xpath("//XCUIElementTypeOther[@name='RCM Tenders']")));
+            rcm_check2=generalUtility.isElementExists(By.xpath("//XCUIElementTypeOther[@name='Payment-RCM Tenders-button']"));
+            more_check=generalUtility.isElementExists(By.xpath("//XCUIElementTypeOther[@name='Payment-otherTenders-button']"));
+            if(card_check && gift_card_check && membership_rewards_check && !cash_check && !rcm_check1 && !rcm_check2 && !more_check)
+                System.out.println("Passed: STH has Card, Gift Card and Rewards Payment options");
+            else
+                System.out.println("Failed");
+            generalUtility.captureScreenshot(scenarioname);
+        }
+        else
+        {
+            String scenarioname="TBL_Omni_Payment_Check";
+            card_check=generalUtility.isElementExists((By.xpath("//*[@name='Payment-Card-button']")));
+            gift_card_check=generalUtility.isElementExists((By.xpath("//XCUIElementTypeOther[@name='Payment-Gift Card-button']")));
+            membership_rewards_check=generalUtility.isElementExists((By.xpath("//*[@name='Payment-Membership Rewards-button']")));
+            cash_check=generalUtility.isElementExists((By.xpath("(//*[@name='Payment-Cash-button'])[last()]")));
+            if(card_check && gift_card_check && membership_rewards_check && !cash_check)
+                System.out.println("Passed: STH has Card, Gift Card and Rewards Payment options");
+            else
+                System.out.println("Failed");
+            generalUtility.captureScreenshot(scenarioname);
+        }
+    }
+
+    public void verifyPaymentoptionsoncarryoutPage() throws IOException {
+        Boolean card_check;
+        Boolean gift_card_check;
+        Boolean membership_rewards_check;
+        Boolean cash_check;
+        Boolean rcm_check;
+
+        if (properties.getProperty("Brand").equals("TNF"))
+        {
+            String scenarioname="TNF_CarryOut_Payment_Check";
+            card_check=generalUtility.isElementExists((By.xpath("//*[@name='Payment-Card-button']")));
+            gift_card_check=generalUtility.isElementExists((By.xpath("//XCUIElementTypeOther[@name='Payment-Gift Card-button']")));
+            membership_rewards_check=generalUtility.isElementExists((By.xpath("//*[@name='Payment-Membership Rewards-button']")));
+            cash_check=generalUtility.isElementExists((By.xpath("(//*[@name='Payment-Cash-button'])[last()]")));
+            rcm_check=generalUtility.isElementExists((By.xpath("//XCUIElementTypeOther[@name='RCM Tenders']")));
+            if(card_check && gift_card_check && cash_check)
+            System.out.println("Cash, Card and Gift Card Options are present");
+            else
+                System.out.println("Failed");
+            generalUtility.captureScreenshot(scenarioname);
+        }
+        else
+        {
+            String scenarioname="TBL_CarryOut_Payment_Check";
+            card_check=generalUtility.isElementExists((By.xpath("//*[@name='Payment-Card-button']")));
+            gift_card_check=generalUtility.isElementExists((By.xpath("//XCUIElementTypeOther[@name='Payment-Gift Card-button']")));
+            membership_rewards_check=generalUtility.isElementExists((By.xpath("//*[@name='Payment-Membership Rewards-button']")));
+            cash_check=generalUtility.isElementExists((By.xpath("(//*[@name='Payment-Cash-button'])[last()]")));
+            if(card_check && gift_card_check && membership_rewards_check && cash_check)
+                System.out.println("Passed: STH has Cash, Card, Gift Card and Rewards Payment options");
+            else
+                System.out.println("Failed");
+            generalUtility.captureScreenshot(scenarioname);
+        }
+    }
+
+    public void verifyPaymentoptiononmorescreen() throws IOException {
+        Boolean membership_rewards_check;
+        Boolean rcm_check;
+        String scenarioname="TNF_more_page_check";
+        membership_rewards_check=generalUtility.isElementExists((By.xpath("//*[@name='Membership Rewards']")));
+        rcm_check=generalUtility.isElementExists((By.xpath("//XCUIElementTypeOther[@name='RCM Tenders']")));
+        if(membership_rewards_check && rcm_check)
+            System.out.println("MemberShip Rewards and RCM Tenders options are also present");
+        else
+            System.out.println("Failed on More Page");
+        generalUtility.captureScreenshot(scenarioname);
+    }
+
+    public void clickOnCancelButton() {
+        mobileActions.waitAndClickOnElement(CancelfromMore,3);
     }
 }

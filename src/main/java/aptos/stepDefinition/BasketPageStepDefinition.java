@@ -42,6 +42,7 @@ public class BasketPageStepDefinition extends TestBase {
 
     @And("the sales assistant clicks on Skip button")
     public void theSalesAssistantClicksOnSkipButton() throws InterruptedException {
+        Thread.sleep(5000);
         customerPage.clickOnSkipButton();
     }
 
@@ -51,7 +52,8 @@ public class BasketPageStepDefinition extends TestBase {
     }
 
     @And("the sales assistant logout from the application")
-    public void theSalesAssistantLogoutFromTheApplication() {
+    public void theSalesAssistantLogoutFromTheApplication() throws InterruptedException {
+        Thread.sleep(3000);
         basketPage.logoutFromApplication();
     }
 
@@ -928,4 +930,12 @@ public class BasketPageStepDefinition extends TestBase {
             throw new IllegalArgumentException("Invalid field: " + deliveryOption);
     }
 }
+
+    @And("the sales assistant enters Bill to Information on Delivery page")
+    public void theSalesAssistantEntersBillToInformationOnDeliveryPage() {
+        basketPage.enterBillingLastName("valid");
+        basketPage.enterBillingFirstName("valid");
+        basketPage.enterBillingEmail("valid");
+        basketPage.enterBillingPhoneNumber("valid");
+    }
 }
