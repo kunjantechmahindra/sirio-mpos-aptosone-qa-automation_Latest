@@ -17,6 +17,7 @@ Feature: VFG10X-1314 Gift card_Sales transaction by typing the Gift Card number 
     And the sales assistant enter the gift card number for payment from index 0
     And the sales assistant clicks on redeem button
     And the sales assistant enter the the pin from index 0
+    And the sales assistant enter the the pin from index 0
     And the sales assistant save the payment details for the sales transaction
     And the sales assistant clicks on Print button
     And the sales assistant select the printer

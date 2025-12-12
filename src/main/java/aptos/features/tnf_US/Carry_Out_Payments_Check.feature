@@ -13,6 +13,8 @@ Feature: Check whether all Cash, Cards, Membership Rewards and Gift Cards paymen
     And the sales assistant clicks on Accept button
     And the sales assistant save the transaction details of the sales transaction
     And the sales assistant verifies all payment methods on carry_out payment screen
+    And the sales assistant clicks on More button
+    And the sales assistant verifies all payment methods on more screen
 
     #Void transaction
     And the sales assistant void the transaction from payment with reason code "Cashier Error"

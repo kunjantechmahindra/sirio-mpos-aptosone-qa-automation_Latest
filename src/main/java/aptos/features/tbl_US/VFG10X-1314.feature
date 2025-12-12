@@ -6,7 +6,7 @@ Feature: VFG10X-1314 Gift card_Sales transaction by typing the Gift Card number 
   # Login and add product
     Given the sales assistant login to the application with valid username and password
     When the sales assistant clicks on Start Basket button
-    Then the sales assistant add 1 items from "General" product to the basket without customer
+    Then the sales assistant add 2 items from "General" product to the basket without customer
 
   # Payment transaction
     And the sales assistant clicks on Pay button

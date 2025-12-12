@@ -2,6 +2,7 @@ package aptos.pages;
 
 import aptos.base.TestBase;
 import aptos.utility.*;
+import com.github.javafaker.Faker;
 import org.json.simple.parser.ParseException;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -36,6 +37,7 @@ import static org.junit.Assert.*;
 
 public class BasketPage extends TestBase {
 
+    Faker faker = new Faker();
     GeneralUtility generalUtility = new GeneralUtility();
     MobileActions mobileActions = new MobileActions();
     CustomerPage customerPage = new CustomerPage();
@@ -57,6 +59,10 @@ public class BasketPage extends TestBase {
     public static Double originalPriceAfterDiscount;
 
 
+    public static String firstName;
+    public static String lastName;
+    public static String emailAddress1;
+    public static String phoneNumber;
     public static List<String> salespersonList;
 
     ApiHelper apiHelper = new ApiHelper();
@@ -467,6 +473,18 @@ public class BasketPage extends TestBase {
     @FindBy(xpath="(//XCUIElementTypeOther[@name='Continue'])[2]")
     WebElement continueButtonDeliveryOption;
 
+    @FindBy(xpath = "//XCUIElementTypeTextField[@name='OrderDeliveryAddress-lastName-textInput']")
+    WebElement lastNameText;
+
+    @FindBy(xpath = "//XCUIElementTypeTextField[@name='OrderDeliveryAddress-firstName-textInput']")
+    WebElement firstNameText;
+
+    @FindBy(xpath = "//XCUIElementTypeTextField[@name='OrderDeliveryAddress-emailAddress-textInput']")
+    WebElement emailAddressText;
+
+    @FindBy(xpath = "//XCUIElementTypeTextField[@name='OrderDeliveryAddress-phoneNumber-textInput']")
+    WebElement phoneNumberText;
+
 
     //Actions
     public void clickOnCameraButton() {
@@ -485,7 +503,7 @@ public class BasketPage extends TestBase {
     }
 
     public void logoutFromApplication() {
-        mobileActions.clickOnElement(hamburgerButton);
+        mobileActions.waitAndClickOnElement(hamburgerButton,2);
         if (properties.getProperty("DeviceName").contains("iPhone")) {
             w3CActions.scrollDownWithPercentage(30);
         }
@@ -1691,5 +1709,59 @@ public class BasketPage extends TestBase {
         mobileActions.clickOnElement(nextdayShipping);
         mobileActions.clickOnElement(continueButtonDeliveryOption);
     }
+
+
+    public void enterBillingLastName(String validationStatus) {
+        lastName = faker.name().lastName();
+        if (validationStatus == null) {
+            mobileActions.enterText(lastNameText, "");
+        } else {
+            if (validationStatus.equals("valid")) {
+                mobileActions.enterText(lastNameText, lastName);
+            } else {
+                mobileActions.enterText(lastNameText, "!nval1D");
+            }
+        }
+    }
+
+    public void enterBillingFirstName(String validationStatus) {
+        firstName = faker.name().lastName();
+        if (validationStatus == null) {
+            mobileActions.enterText(firstNameText, "");
+        } else {
+            if (validationStatus.equals("valid")) {
+                mobileActions.enterText(firstNameText, firstName);
+            } else {
+                mobileActions.enterText(firstNameText, "!nval1D");
+            }
+        }
+    }
+
+    public void enterBillingEmail(String validationStatus) {
+        emailAddress1 = faker.internet().emailAddress();
+        if (validationStatus == null) {
+            mobileActions.enterText(emailAddressText, "");
+        } else {
+            if (validationStatus.equals("valid")) {
+                mobileActions.enterText(emailAddressText, emailAddress1);
+            } else {
+                mobileActions.enterText(emailAddressText, "!nval1D");
+            }
+        }
+    }
+
+    public void enterBillingPhoneNumber(String validationStatus) {
+        phoneNumber = TestDataHelper.generatePhoneNumber();
+        if (validationStatus == null) {
+            mobileActions.enterText(phoneNumberText, "");
+        } else {
+            if (validationStatus.equals("valid")) {
+                mobileActions.enterText(phoneNumberText, String.valueOf(phoneNumber));
+            } else {
+                mobileActions.enterText(phoneNumberText, "!nval1D");
+            }
+        }
+    }
+
 }
 

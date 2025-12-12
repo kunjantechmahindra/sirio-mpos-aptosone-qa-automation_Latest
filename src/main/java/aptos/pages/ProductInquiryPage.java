@@ -106,7 +106,7 @@ public class ProductInquiryPage extends TestBase {
             mobileActions.clickOnElement(hamburgerButton);
         }
         generalUtility.isElementEnabled(productInquiryButton);
-        mobileActions.clickOnElement(productInquiryButton);
+        mobileActions.waitAndClickOnElement(productInquiryButton,2);
     }
 
     public void searchProduct(String style) throws InterruptedException {
@@ -207,7 +207,7 @@ public class ProductInquiryPage extends TestBase {
 
 
     public void clicksOnBackButtonFromProductInquiry() {
-        mobileActions.clickOnElement(backButtonFromProductSearchPage);
+        mobileActions.waitAndClickOnElement(backButtonFromProductSearchPage,2);
     }
 
     public void enterPartialDescription(String partialDesc) throws InterruptedException {
